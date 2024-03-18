@@ -1,0 +1,1253 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Base Env · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../evaluation/" />
+    
+    
+    <link rel="prev" href="BaseData.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Welcome to EasyRL4Rec!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../Introduction/Installation.html">
+            
+                <a href="../../../Introduction/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../Introduction/RunningCommands.html">
+            
+                <a href="../../../Introduction/RunningCommands.html">
+            
+                    
+                    Running Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../Introduction/ImplementationDetails.html">
+            
+                <a href="../../../Introduction/ImplementationDetails.html">
+            
+                    
+                    Implementation Details
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Docs.html">
+            
+                <a href="../../Docs.html">
+            
+                    
+                    Documentation for src/core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../collector/">
+            
+                <a href="../collector/">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../collector/collector.html">
+            
+                <a href="../collector/collector.html">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../collector/collector_set.html">
+            
+                <a href="../collector/collector_set.html">
+            
+                    
+                    Collector Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Envs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="Coat/">
+            
+                <a href="Coat/">
+            
+                    
+                    Coat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="Coat/CoatData.html">
+            
+                <a href="Coat/CoatData.html">
+            
+                    
+                    Coat Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="Coat/CoatEnv.html">
+            
+                <a href="Coat/CoatEnv.html">
+            
+                    
+                    Coat Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="KuaiRand_Pure/">
+            
+                <a href="KuaiRand_Pure/">
+            
+                    
+                    KuaiRand Pure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="KuaiRand_Pure/KuaiRandData.html">
+            
+                <a href="KuaiRand_Pure/KuaiRandData.html">
+            
+                    
+                    Kuai Rand Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="KuaiRand_Pure/KuaiRandEnv.html">
+            
+                <a href="KuaiRand_Pure/KuaiRandEnv.html">
+            
+                    
+                    Kuai Rand Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                <a href="KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                    
+                    Preprocessing Kuairand
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="KuaiRec/">
+            
+                <a href="KuaiRec/">
+            
+                    
+                    KuaiRec
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="KuaiRec/KuaiData.html">
+            
+                <a href="KuaiRec/KuaiData.html">
+            
+                    
+                    Kuai Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="KuaiRec/KuaiEnv.html">
+            
+                <a href="KuaiRec/KuaiEnv.html">
+            
+                    
+                    Kuai Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="KuaiRec/preprocessing_kuairec.html">
+            
+                <a href="KuaiRec/preprocessing_kuairec.html">
+            
+                    
+                    Preprocessing Kuairec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="MovieLens/">
+            
+                <a href="MovieLens/">
+            
+                    
+                    MovieLens
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="MovieLens/MovieLensData.html">
+            
+                <a href="MovieLens/MovieLensData.html">
+            
+                    
+                    MovieLens Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="MovieLens/MovieLensEnv.html">
+            
+                <a href="MovieLens/MovieLensEnv.html">
+            
+                    
+                    MovieLens Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="Simulated_Env/">
+            
+                <a href="Simulated_Env/">
+            
+                    
+                    SimulatedEnv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="Simulated_Env/base.html">
+            
+                <a href="Simulated_Env/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="Simulated_Env/intrinsic.html">
+            
+                <a href="Simulated_Env/intrinsic.html">
+            
+                    
+                    Intrinsic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="Simulated_Env/penalty_ent_exp.html">
+            
+                <a href="Simulated_Env/penalty_ent_exp.html">
+            
+                    
+                    Penalty Ent Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="Simulated_Env/penalty_var.html">
+            
+                <a href="Simulated_Env/penalty_var.html">
+            
+                    
+                    Penalty Var
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="YahooR3/">
+            
+                <a href="YahooR3/">
+            
+                    
+                    YahooR3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="YahooR3/YahooData.html">
+            
+                <a href="YahooR3/YahooData.html">
+            
+                    
+                    Yahoo Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="YahooR3/YahooEnv.html">
+            
+                <a href="YahooR3/YahooEnv.html">
+            
+                    
+                    Yahoo Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="BaseData.html">
+            
+                <a href="BaseData.html">
+            
+                    
+                    Base Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.8" data-path="BaseEnv.html">
+            
+                <a href="BaseEnv.html">
+            
+                    
+                    Base Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../evaluation/">
+            
+                <a href="../evaluation/">
+            
+                    
+                    Evaluation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../evaluation/evaluator_static.html">
+            
+                <a href="../evaluation/evaluator_static.html">
+            
+                    
+                    Evaluator Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../evaluation/evaluator.html">
+            
+                <a href="../evaluation/evaluator.html">
+            
+                    
+                    Evaluator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../evaluation/loggers.html">
+            
+                <a href="../evaluation/loggers.html">
+            
+                    
+                    Loggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../evaluation/metrics.html">
+            
+                <a href="../evaluation/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../evaluation/utils.html">
+            
+                <a href="../evaluation/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../policy/">
+            
+                <a href="../policy/">
+            
+                    
+                    Policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../policy/RecPolicy.html">
+            
+                <a href="../policy/RecPolicy.html">
+            
+                    
+                    RecPolicy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../state_tracker/">
+            
+                <a href="../state_tracker/">
+            
+                    
+                    State Tracker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../state_tracker/Average.html">
+            
+                <a href="../state_tracker/Average.html">
+            
+                    
+                    Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../state_tracker/base.html">
+            
+                <a href="../state_tracker/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../state_tracker/Caser.html">
+            
+                <a href="../state_tracker/Caser.html">
+            
+                    
+                    Caser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../state_tracker/GRU.html">
+            
+                <a href="../state_tracker/GRU.html">
+            
+                    
+                    GRU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../state_tracker/NextItNet.html">
+            
+                <a href="../state_tracker/NextItNet.html">
+            
+                    
+                    NextItNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="../state_tracker/SASRec.html">
+            
+                <a href="../state_tracker/SASRec.html">
+            
+                    
+                    SASRec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../userModel/">
+            
+                <a href="../userModel/">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../userModel/user_model_ensemble.html">
+            
+                <a href="../userModel/user_model_ensemble.html">
+            
+                    
+                    User Model Ensemble
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../userModel/user_model_mmoe.html">
+            
+                <a href="../userModel/user_model_mmoe.html">
+            
+                    
+                    User Model Mmoe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../userModel/user_model_pairwise_variance.html">
+            
+                <a href="../userModel/user_model_pairwise_variance.html">
+            
+                    
+                    User Model Pairwise Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../userModel/user_model_pairwise.html">
+            
+                <a href="../userModel/user_model_pairwise.html">
+            
+                    
+                    User Model Pairwise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../userModel/user_model_variance.html">
+            
+                <a href="../userModel/user_model_variance.html">
+            
+                    
+                    User Model Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../userModel/user_model.html">
+            
+                <a href="../userModel/user_model.html">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../util/">
+            
+                <a href="../util/">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../util/data.html">
+            
+                <a href="../util/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../util/inputs.html">
+            
+                <a href="../util/inputs.html">
+            
+                    
+                    Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../util/layers.html">
+            
+                <a href="../util/layers.html">
+            
+                    
+                    Layers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../util/loss.html">
+            
+                <a href="../util/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../util/static_dataset.html">
+            
+                <a href="../util/static_dataset.html">
+            
+                    
+                    Static Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../util/utils.html">
+            
+                <a href="../util/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Base Env</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="classdef-baseenv">ClassDef BaseEnv</h2>
+<p><strong>BaseEnv</strong>: BaseEnv &#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF0C;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x73AF;&#x5883;&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x548C;&#x884C;&#x4E3A;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x573A;&#x666F;&#x4E2D;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>:</p>
+<ul>
+<li><code>max_turn</code>: &#x6700;&#x5927;&#x8F6E;&#x6B21;&#x6570;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x4EA4;&#x4E92;&#x6B21;&#x6570;&#x3002;</li>
+<li><code>random_init</code>: &#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x968F;&#x673A;&#x521D;&#x59CB;&#x5316;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x3002;</li>
+<li><code>observation_space</code>: &#x89C2;&#x5BDF;&#x7A7A;&#x95F4;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x7684;&#x5F62;&#x72B6;&#x548C;&#x8FB9;&#x754C;&#x3002;</li>
+<li><code>action_space</code>: &#x52A8;&#x4F5C;&#x7A7A;&#x95F4;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x53EF;&#x6267;&#x884C;&#x52A8;&#x4F5C;&#x7684;&#x5F62;&#x72B6;&#x548C;&#x8FB9;&#x754C;&#x3002;</li>
+<li><code>num_leave_compute</code>: &#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x7528;&#x6237;&#x662F;&#x5426;&#x79BB;&#x5F00;&#x7684;&#x52A8;&#x4F5C;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>leave_threshold</code>: &#x79BB;&#x5F00;&#x9608;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x7528;&#x6237;&#x662F;&#x5426;&#x4F1A;&#x56E0;&#x4E3A;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x800C;&#x79BB;&#x5F00;&#x3002;</li>
+<li><code>cum_reward</code>: &#x7D2F;&#x79EF;&#x5956;&#x52B1;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x4ECE;&#x73AF;&#x5883;&#x5F00;&#x59CB;&#x5230;&#x5F53;&#x524D;&#x4E3A;&#x6B62;&#x7684;&#x603B;&#x5956;&#x52B1;&#x3002;</li>
+<li><code>total_turn</code>: &#x603B;&#x8F6C;&#x6570;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x5F53;&#x524D;&#x4EA4;&#x4E92;&#x7684;&#x8F6E;&#x6B21;&#x3002;</li>
+<li><code>cur_user</code>: &#x5F53;&#x524D;&#x7528;&#x6237;&#x3002;</li>
+<li><code>action</code>: &#x5F53;&#x524D;&#x52A8;&#x4F5C;&#x3002;</li>
+<li><code>history_action</code>: &#x5386;&#x53F2;&#x52A8;&#x4F5C;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x6BCF;&#x4E00;&#x8F6E;&#x7684;&#x52A8;&#x4F5C;&#x3002;</li>
+<li><code>sequence_action</code>: &#x52A8;&#x4F5C;&#x5E8F;&#x5217;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x5386;&#x53F2;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x52A8;&#x4F5C;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+BaseEnv &#x7C7B;&#x7EE7;&#x627F;&#x81EA; ABC (&#x62BD;&#x8C61;&#x57FA;&#x7C7B;) &#x548C; gym.Env&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x4E0E; OpenAI Gym &#x63A5;&#x53E3;&#x517C;&#x5BB9;&#x7684;&#x73AF;&#x5883;&#x57FA;&#x7840;&#x3002;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x73AF;&#x5883;&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x62EC;&#x521D;&#x59CB;&#x5316;&#x3001;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x3001;&#x6267;&#x884C;&#x52A8;&#x4F5C;&#x3001;&#x89C2;&#x5BDF;&#x72B6;&#x6001;&#x548C;&#x5956;&#x52B1;&#x8BA1;&#x7B97;&#x7B49;&#x3002;&#x6B64;&#x7C7B;&#x901A;&#x8FC7;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x5F3A;&#x5236;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#x7279;&#x5B9A;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x5982; <code>_determine_whether_to_leave</code> &#x548C; <code>_reset_history</code>&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x573A;&#x666F;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;BaseEnv &#x88AB;&#x591A;&#x4E2A;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#xFF0C;&#x5982; <code>CoatEnv</code>&#x3001;<code>KuaiRandEnv</code>&#x3001;<code>KuaiEnv</code>&#x3001;<code>MovieLensEnv</code> &#x548C; <code>YahooEnv</code>&#x3002;&#x8FD9;&#x4E9B;&#x5B50;&#x7C7B;&#x6839;&#x636E;&#x7279;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x96C6;&#x548C;&#x63A8;&#x8350;&#x573A;&#x666F;&#x5B9E;&#x73B0;&#x4E86; BaseEnv &#x7684;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x53EF;&#x80FD;&#x6DFB;&#x52A0;&#x4E86;&#x989D;&#x5916;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x4EE5;&#x9002;&#x5E94;&#x7279;&#x5B9A;&#x7684;&#x9700;&#x6C42;&#x3002;&#x4F8B;&#x5982;&#xFF0C;<code>CoatEnv</code> &#x548C; <code>KuaiRandEnv</code> &#x5206;&#x522B;&#x9488;&#x5BF9; Coat &#x6570;&#x636E;&#x96C6;&#x548C; KuaiRand &#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x4E86;&#x7279;&#x5B9A;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5305;&#x62EC;&#x5982;&#x4F55;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x3001;&#x8BA1;&#x7B97;&#x7528;&#x6237;&#x662F;&#x5426;&#x79BB;&#x5F00;&#x7684;&#x903B;&#x8F91;&#x7B49;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>BaseEnv &#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5B9E;&#x4F8B;&#x5316;&#x3002;&#x5B83;&#x9700;&#x8981;&#x88AB;&#x7EE7;&#x627F;&#xFF0C;&#x5E76;&#x4E14;&#x5B50;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x6240;&#x6709;&#x7684;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x5728;&#x4F7F;&#x7528; BaseEnv &#x6216;&#x5176;&#x5B50;&#x7C7B;&#x65F6;&#xFF0C;&#x5E94;&#x786E;&#x4FDD;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;&#x6240;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5982; <code>max_turn</code>&#x3001;<code>random_init</code> &#x7B49;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x73AF;&#x5883;&#x6309;&#x9884;&#x671F;&#x5DE5;&#x4F5C;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x7531;&#x4E8E; BaseEnv &#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x57FA;&#x7C7B;&#xFF0C;&#x5B83;&#x672C;&#x8EAB;&#x4E0D;&#x76F4;&#x63A5;&#x4EA7;&#x751F;&#x8F93;&#x51FA;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;&#x73AF;&#x5883;&#x4EA4;&#x4E92;&#x8FC7;&#x7A0B;&#x53EF;&#x80FD;&#x4F1A;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#x7684;&#x5143;&#x7EC4;&#xFF1A;</p>
+<pre><code class="lang-python">(state, reward, terminated, truncated, info)
+</code></pre>
+<p>&#x5176;&#x4E2D; <code>state</code> &#x662F;&#x73AF;&#x5883;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;<code>reward</code> &#x662F;&#x6267;&#x884C;&#x52A8;&#x4F5C;&#x540E;&#x83B7;&#x5F97;&#x7684;&#x5373;&#x65F6;&#x5956;&#x52B1;&#xFF0C;<code>terminated</code> &#x8868;&#x793A;&#x662F;&#x5426;&#x8FBE;&#x5230;&#x7EC8;&#x6B62;&#x6761;&#x4EF6;&#xFF0C;<code>truncated</code> &#x8868;&#x793A;&#x662F;&#x5426;&#x56E0;&#x4E3A;&#x67D0;&#x4E9B;&#x539F;&#x56E0;&#x63D0;&#x524D;&#x7EC8;&#x6B62;&#xFF0C;<code>info</code> &#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x989D;&#x5916;&#x7684;&#x73AF;&#x5883;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="functiondef-initself-numleavecompute-leavethreshold-maxturn-randominit">FunctionDef <strong>init</strong>(self, num_leave_compute, leave_threshold, max_turn, random_init)</h3>
+<p><strong><strong>init</strong></strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x521D;&#x59CB;&#x5316;BaseEnv&#x73AF;&#x5883;&#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>num_leave_compute</code>: &#x79BB;&#x5F00;&#x8BA1;&#x7B97;&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>leave_threshold</code>: &#x79BB;&#x5F00;&#x9608;&#x503C;&#x3002;</li>
+<li><code>max_turn</code>: &#x6700;&#x5927;&#x8F6C;&#x6570;&#x3002;</li>
+<li><code>random_init</code>: &#x968F;&#x673A;&#x521D;&#x59CB;&#x5316;&#x6807;&#x5FD7;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>__init__</code> &#x65B9;&#x6CD5;&#x662F; <code>BaseEnv</code> &#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8D1F;&#x8D23;&#x521D;&#x59CB;&#x5316;&#x73AF;&#x5883;&#x7684;&#x57FA;&#x672C;&#x5C5E;&#x6027;&#x548C;&#x72B6;&#x6001;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x8BBE;&#x7F6E;&#x4E86;&#x6700;&#x5927;&#x8F6C;&#x6570; (<code>max_turn</code>) &#x548C;&#x968F;&#x673A;&#x521D;&#x59CB;&#x5316;&#x6807;&#x5FD7; (<code>random_init</code>)&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x89C2;&#x5BDF;&#x7A7A;&#x95F4; (<code>observation_space</code>) &#x548C;&#x52A8;&#x4F5C;&#x7A7A;&#x95F4; (<code>action_space</code>)&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x7A7A;&#x95F4;&#x7684;&#x5B9A;&#x4E49;&#x4F9D;&#x8D56;&#x4E8E;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#x77E9;&#x9635; (<code>self.mat</code>)&#xFF0C;&#x8FD9;&#x91CC;&#x5047;&#x8BBE; <code>self.mat</code> &#x5DF2;&#x7ECF;&#x5728;&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x88AB;&#x5B9A;&#x4E49;&#x3002;&#x89C2;&#x5BDF;&#x7A7A;&#x95F4;&#x548C;&#x52A8;&#x4F5C;&#x7A7A;&#x95F4;&#x90FD;&#x662F;&#x4F7F;&#x7528; <code>gym.spaces.Box</code> &#x6765;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x8FD9;&#x8868;&#x660E;&#x73AF;&#x5883;&#x4E0E; OpenAI Gym &#x5E93;&#x517C;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x5229;&#x7528; Gym &#x63D0;&#x4F9B;&#x7684;&#x5DE5;&#x5177;&#x548C;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x5B9E;&#x9A8C;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;<code>__init__</code> &#x65B9;&#x6CD5;&#x8FD8;&#x8BBE;&#x7F6E;&#x4E86;&#x79BB;&#x5F00;&#x8BA1;&#x7B97;&#x7684;&#x6570;&#x91CF; (<code>num_leave_compute</code>) &#x548C;&#x79BB;&#x5F00;&#x9608;&#x503C; (<code>leave_threshold</code>)&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x63A7;&#x5236;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x903B;&#x8F91;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>self.reset()</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x73AF;&#x5883;&#x91CD;&#x7F6E;&#x5230;&#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF0C;&#x51C6;&#x5907;&#x5F00;&#x59CB;&#x65B0;&#x7684;&#x6A21;&#x62DF;&#x5468;&#x671F;&#x3002;</p>
+<p>&#x4ECE;&#x529F;&#x80FD;&#x89D2;&#x5EA6;&#x6765;&#x770B;&#xFF0C;<code>reset</code> &#x65B9;&#x6CD5;&#x5728; <code>__init__</code> &#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x8C03;&#x7528;&#x786E;&#x4FDD;&#x4E86;&#x6BCF;&#x6B21;&#x521B;&#x5EFA; <code>BaseEnv</code> &#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x73AF;&#x5883;&#x90FD;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x5E76;&#x51C6;&#x5907;&#x597D;&#x63A5;&#x53D7;&#x65B0;&#x7684;&#x6A21;&#x62DF;&#x3002;<code>reset</code> &#x65B9;&#x6CD5;&#x7684;&#x8BE6;&#x7EC6;&#x6587;&#x6863;&#x5DF2;&#x7ECF;&#x63CF;&#x8FF0;&#x4E86;&#x5B83;&#x5982;&#x4F55;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x72B6;&#x6001;&#xFF0C;&#x5305;&#x62EC;&#x91CD;&#x7F6E;&#x7D2F;&#x79EF;&#x5956;&#x52B1;&#x3001;&#x603B;&#x8F6C;&#x6570;&#x3001;&#x5F53;&#x524D;&#x7528;&#x6237;&#x3001;&#x521D;&#x59CB;&#x52A8;&#x4F5C;&#x548C;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x7B49;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF08;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528; <code>reset</code>&#xFF09;&#x662F;&#x73AF;&#x5883;&#x8BBE;&#x8BA1;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x505A;&#x6CD5;&#xFF0C;&#x65E8;&#x5728;&#x7B80;&#x5316;&#x73AF;&#x5883;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x91CD;&#x7F6E;&#x6D41;&#x7A0B;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x5728;&#x4F7F;&#x7528; <code>BaseEnv</code> &#x7C7B;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4F20;&#x9012;&#x6240;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5E94;&#x8BE5;&#x786E;&#x4FDD; <code>self.mat</code> &#x5728;&#x8C03;&#x7528; <code>__init__</code> &#x65B9;&#x6CD5;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x88AB;&#x6B63;&#x786E;&#x5B9A;&#x4E49;&#x548C;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x76F4;&#x63A5;&#x5F71;&#x54CD;&#x5230;&#x89C2;&#x5BDF;&#x7A7A;&#x95F4;&#x548C;&#x52A8;&#x4F5C;&#x7A7A;&#x95F4;&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+<hr>
+<h3 id="functiondef-stateself">FunctionDef state(self)</h3>
+<p><strong>state</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>state</code> &#x51FD;&#x6570;&#x662F; <code>BaseEnv</code> &#x7C7B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x5E76;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x72B6;&#x6001;&#x662F;&#x901A;&#x8FC7;&#x5C06;&#x5F53;&#x524D;&#x7528;&#x6237; (<code>cur_user</code>) &#x548C;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x7684;&#x884C;&#x52A8; (<code>action</code>) &#x7EC4;&#x5408;&#x6210;&#x4E00;&#x4E2A; NumPy &#x6570;&#x7EC4;&#x6765;&#x8868;&#x793A;&#x7684;&#x3002;&#x8FD9;&#x79CD;&#x72B6;&#x6001;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x7B80;&#x5355;&#x76F4;&#x89C2;&#xFF0C;&#x4FBF;&#x4E8E;&#x540E;&#x7EED;&#x7684;&#x5904;&#x7406;&#x548C;&#x5206;&#x6790;&#x3002;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>state</code> &#x51FD;&#x6570;&#x88AB;&#x591A;&#x4E2A;&#x5730;&#x65B9;&#x8C03;&#x7528;&#xFF0C;&#x5305;&#x62EC; <code>step</code> &#x65B9;&#x6CD5;&#x3001;<code>reset</code> &#x65B9;&#x6CD5;&#x548C; <code>Simulated_Env</code> &#x4E2D;&#x7684; <code>_construct_state</code> &#x65B9;&#x6CD5;&#x3002;&#x5728; <code>step</code> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;<code>state</code> &#x7528;&#x4E8E;&#x5728;&#x6BCF;&#x4E00;&#x6B65;&#x64CD;&#x4F5C;&#x540E;&#x83B7;&#x53D6;&#x65B0;&#x7684;&#x73AF;&#x5883;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x4FBF;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x7684;&#x51B3;&#x7B56;&#x6216;&#x8BC4;&#x4F30;&#x3002;&#x5728; <code>reset</code> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;<code>state</code> &#x7528;&#x4E8E;&#x5728;&#x73AF;&#x5883;&#x91CD;&#x7F6E;&#x65F6;&#x83B7;&#x53D6;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x3002;&#x800C;&#x5728; <code>Simulated_Env</code> &#x7684; <code>_construct_state</code> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;<code>state</code> &#x88AB;&#x7528;&#x6765;&#x6784;&#x5EFA;&#x6A21;&#x62DF;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x4E9B;&#x8C03;&#x7528;&#x60C5;&#x51B5;&#x8868;&#x660E;&#xFF0C;<code>state</code> &#x51FD;&#x6570;&#x662F;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x7684;&#x6838;&#x5FC3;&#x90E8;&#x5206;&#xFF0C;&#x5BF9;&#x4E8E;&#x73AF;&#x5883;&#x7684;&#x64CD;&#x4F5C;&#x548C;&#x8BC4;&#x4F30;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD; <code>cur_user</code> &#x548C; <code>action</code> &#x5DF2;&#x7ECF;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#x6216;&#x66F4;&#x65B0;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x72B6;&#x6001;&#x7684;&#x51C6;&#x786E;&#x6027;&#x3002;</p>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>: &#x5047;&#x8BBE;&#x5F53;&#x524D;&#x7528;&#x6237; (<code>cur_user</code>) &#x7684;&#x503C;&#x4E3A; 1&#xFF0C;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x7684;&#x884C;&#x52A8; (<code>action</code>) &#x7684;&#x503C;&#x4E3A; 2&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>array([1, 2])
+</code></pre><hr>
+<h3 id="functiondef-usergeneratorself">FunctionDef __user_generator(self)</h3>
+<p><strong>__user_generator</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x968F;&#x673A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7D22;&#x5F15;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>__user_generator</code> &#x51FD;&#x6570;&#x662F;<code>BaseEnv</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x73AF;&#x5883;&#x4E2D;&#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x9996;&#x5148;&#x4F7F;&#x7528;<code>random.randint</code>&#x65B9;&#x6CD5;&#x4ECE;0&#x5230;<code>self.mat</code>&#x7684;&#x957F;&#x5EA6;&#x51CF;1&#x4E4B;&#x95F4;&#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x4F5C;&#x4E3A;&#x7528;&#x6237;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x8FD9;&#x91CC;&#x7684;<code>self.mat</code>&#x5F88;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x6216;&#x72B6;&#x6001;&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x5177;&#x4F53;&#x542B;&#x4E49;&#x53D6;&#x51B3;&#x4E8E;<code>BaseEnv</code>&#x7C7B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x548C;&#x8BBE;&#x8BA1;&#x3002;&#x901A;&#x8FC7;&#x968F;&#x673A;&#x9009;&#x62E9;&#x7528;&#x6237;&#x7D22;&#x5F15;&#xFF0C;<code>__user_generator</code>&#x652F;&#x6301;&#x73AF;&#x5883;&#x5728;&#x6BCF;&#x6B21;&#x91CD;&#x7F6E;&#x6216;&#x5728;&#x7279;&#x5B9A;&#x60C5;&#x5883;&#x4E0B;&#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x73AF;&#x5883;&#x7684;&#x591A;&#x6837;&#x6027;&#x548C;&#x4E0D;&#x53EF;&#x9884;&#x6D4B;&#x6027;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>__user_generator</code> &#x88AB; <code>reset</code> &#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;<code>reset</code> &#x65B9;&#x6CD5;&#x8D1F;&#x8D23;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x5230;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x5C06;&#x7D2F;&#x79EF;&#x5956;&#x52B1;&#x3001;&#x603B;&#x8F6C;&#x6570;&#x5F52;&#x96F6;&#xFF0C;&#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x7528;&#x6237;&#x548C;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#xFF0C;&#x5E76;&#x91CD;&#x7F6E;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;<code>__user_generator</code> &#x8D1F;&#x8D23;&#x63D0;&#x4F9B;&#x968F;&#x673A;&#x9009;&#x62E9;&#x7684;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7D22;&#x5F15;&#xFF0C;&#x8FD9;&#x662F;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x91CD;&#x7F6E;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;<code>__user_generator</code> &#x4E0E;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x548C;&#x91CD;&#x7F6E;&#x903B;&#x8F91;&#x7D27;&#x5BC6;&#x76F8;&#x5173;&#x8054;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x7531;&#x4E8E;<code>__user_generator</code>&#x662F;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EC5;&#x5728;<code>BaseEnv</code>&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x76F4;&#x63A5;&#x4ECE;&#x7C7B;&#x5916;&#x90E8;&#x8BBF;&#x95EE;&#x6216;&#x4FEE;&#x6539;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x5C01;&#x88C5;&#x4E86;&#x7528;&#x6237;&#x751F;&#x6210;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x4FDD;&#x8BC1;&#x4E86;&#x7C7B;&#x7684;&#x5185;&#x805A;&#x6027;&#x548C;&#x5C01;&#x88C5;&#x6027;&#x3002;</p>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>: &#x5047;&#x8BBE;<code>self.mat</code>&#x7684;&#x957F;&#x5EA6;&#x4E3A;10&#xFF0C;<code>__user_generator</code>&#x53EF;&#x80FD;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4ECB;&#x4E8E;0&#x5230;9&#x4E4B;&#x95F4;&#x7684;&#x6574;&#x6570;&#xFF0C;&#x4F8B;&#x5982;<code>4</code>&#x3002;</p>
+<hr>
+<h3 id="functiondef-itemgeneratorself">FunctionDef __item_generator(self)</h3>
+<p><strong>__item_generator</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>__item_generator</code> &#x51FD;&#x6570;&#x662F; <code>BaseEnv</code> &#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x6839;&#x636E;&#x73AF;&#x5883;&#x7684;&#x914D;&#x7F6E;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF08;item&#xFF09;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x5982;&#x679C; <code>random_init</code> &#x5C5E;&#x6027;&#x4E3A;&#x771F;&#xFF0C;&#x5219;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x968F;&#x673A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5728;&#x77E9;&#x9635; <code>self.mat[0]</code> &#x957F;&#x5EA6;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6574;&#x6570;&#x4F5C;&#x4E3A;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#xFF1B;&#x5982;&#x679C; <code>random_init</code> &#x4E3A;&#x5047;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <code>self.mat[0]</code> &#x7684;&#x957F;&#x5EA6;&#x4F5C;&#x4E3A;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x88AB;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x6216;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x65F6;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;<code>__item_generator</code> &#x65B9;&#x6CD5;&#x88AB; <code>reset</code> &#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;&#x5728; <code>reset</code> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;<code>__item_generator</code> &#x88AB;&#x7528;&#x6765;&#x4E3A;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x5F53;&#x524D;&#x52A8;&#x4F5C;&#xFF08;action&#xFF09;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x3002;&#x8FD9;&#x662F;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x91CD;&#x7F6E;&#x8FC7;&#x7A0B;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x786E;&#x4FDD;&#x6BCF;&#x6B21;&#x73AF;&#x5883;&#x91CD;&#x7F6E;&#x65F6;&#xFF0C;&#x90FD;&#x80FD;&#x6839;&#x636E;&#x914D;&#x7F6E;&#xFF08;&#x968F;&#x673A;&#x6216;&#x975E;&#x968F;&#x673A;&#xFF09;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x7531;&#x4E8E; <code>__item_generator</code> &#x662F;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EC5;&#x5728; <code>BaseEnv</code> &#x7C7B;&#x5185;&#x90E8;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x5E94;&#x76F4;&#x63A5;&#x4ECE;&#x7C7B;&#x5916;&#x90E8;&#x8BBF;&#x95EE;&#x6216;&#x4FEE;&#x6539;&#x3002;</p>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>: &#x5047;&#x8BBE; <code>self.mat[0]</code> &#x7684;&#x957F;&#x5EA6;&#x4E3A; 10&#xFF0C;&#x4E14; <code>random_init</code> &#x4E3A;&#x771F;&#xFF0C;&#x5219; <code>__item_generator</code> &#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A; 0 &#x5230; 9 &#x4E4B;&#x95F4;&#x7684;&#x4EFB;&#x610F;&#x6574;&#x6570;&#x3002;&#x5982;&#x679C; <code>random_init</code> &#x4E3A;&#x5047;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x503C;&#x5C06;&#x662F; 10&#x3002;</p>
+<hr>
+<h3 id="functiondef-stepself-action">FunctionDef step(self, action)</h3>
+<p><strong>step</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#x5E76;&#x66F4;&#x65B0;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>action</code>: &#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>step</code> &#x51FD;&#x6570;&#x662F; <code>BaseEnv</code> &#x7C7B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x73AF;&#x5883;&#x4E2D;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#x5E76;&#x66F4;&#x65B0;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x9996;&#x5148;&#x5C06;&#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C;&#x4FDD;&#x5B58;&#x5230; <code>self.action</code> &#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x5F53;&#x524D;&#x7684;&#x603B;&#x56DE;&#x5408;&#x6570; <code>t</code>&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>_determine_whether_to_leave</code> &#x65B9;&#x6CD5;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x7ED3;&#x675F;&#x5F53;&#x524D;&#x56DE;&#x5408;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x56DE;&#x5408;&#x6570;&#x8FBE;&#x5230;&#x6700;&#x5927;&#x56DE;&#x5408;&#x6570; <code>self.max_turn - 1</code>&#xFF0C;&#x5219;&#x5C06; <code>terminated</code> &#x6807;&#x5FD7;&#x8BBE;&#x7F6E;&#x4E3A; <code>True</code>&#x3002;&#x4E4B;&#x540E;&#xFF0C;&#x8C03;&#x7528; <code>_add_action_to_history</code> &#x65B9;&#x6CD5;&#x5C06;&#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C;&#x6DFB;&#x52A0;&#x5230;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#x3002;</p>
+<p>&#x8BE5;&#x51FD;&#x6570;&#x8FD8;&#x6839;&#x636E;&#x5F53;&#x524D;&#x7528;&#x6237; <code>self.cur_user</code> &#x548C;&#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C; <code>action</code> &#x4ECE;&#x5956;&#x52B1;&#x77E9;&#x9635; <code>self.mat</code> &#x4E2D;&#x83B7;&#x53D6;&#x5956;&#x52B1;&#x503C; <code>reward</code>&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x7D2F;&#x52A0;&#x5230;&#x7D2F;&#x8BA1;&#x5956;&#x52B1; <code>self.cum_reward</code> &#x4E2D;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x603B;&#x56DE;&#x5408;&#x6570; <code>self.total_turn</code> &#x589E;&#x52A0; 1&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x72B6;&#x6001; <code>self.state</code>&#xFF08;&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>state</code> &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#xFF09;&#x3001;&#x5956;&#x52B1; <code>reward</code>&#x3001;&#x662F;&#x5426;&#x7EC8;&#x6B62; <code>terminated</code>&#x3001;&#x662F;&#x5426;&#x622A;&#x65AD; <code>truncated</code> &#x548C;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x7D2F;&#x8BA1;&#x5956;&#x52B1;&#x7684;&#x5B57;&#x5178;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>step</code> &#x65B9;&#x6CD5;&#x88AB; <code>construct_buffer_from_offline_data</code> &#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x79BB;&#x7EBF;&#x6570;&#x636E;&#x7F13;&#x51B2;&#x533A;&#x3002;&#x5728;&#x6784;&#x5EFA;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;<code>step</code> &#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x52A8;&#x4F5C;&#x5E76;&#x83B7;&#x53D6;&#x73AF;&#x5883;&#x7684;&#x53CD;&#x9988;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x751F;&#x6210;&#x7528;&#x6237;&#x4E0E;&#x9879;&#x76EE;&#x4EA4;&#x4E92;&#x7684;&#x8F68;&#x8FF9;&#x975E;&#x5E38;&#x5173;&#x952E;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x8C03;&#x7528; <code>step</code> &#x65B9;&#x6CD5;&#x4E4B;&#x524D;&#xFF0C;&#x5E94;&#x786E;&#x4FDD; <code>action</code> &#x53C2;&#x6570;&#x5DF2;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;&#x3002;</li>
+<li><code>step</code> &#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5305;&#x542B;&#x4E86;&#x73AF;&#x5883;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3001;&#x672C;&#x6B21;&#x52A8;&#x4F5C;&#x7684;&#x5956;&#x52B1;&#x3001;&#x662F;&#x5426;&#x7EC8;&#x6B62;&#x3001;&#x662F;&#x5426;&#x622A;&#x65AD;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x4FE1;&#x606F;&#xFF0C;&#x8C03;&#x7528;&#x8005;&#x5E94;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x540E;&#x7EED;&#x5904;&#x7406;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>: &#x5047;&#x8BBE;&#x5728;&#x67D0;&#x6B21;&#x8C03;&#x7528;&#x4E2D;&#xFF0C;<code>action</code> &#x4E3A; 2&#xFF0C;&#x7D2F;&#x8BA1;&#x5956;&#x52B1;&#x4E3A; 5&#xFF0C;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x4E3A; <code>[1, 2]</code>&#xFF0C;&#x5956;&#x52B1;&#x4E3A; 1&#xFF0C;&#x672A;&#x8FBE;&#x5230;&#x6700;&#x5927;&#x56DE;&#x5408;&#x6570;&#xFF0C;&#x4E14;&#x672A;&#x622A;&#x65AD;&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>([1, 2], 1, False, False, {&apos;cum_reward&apos;: 6})
+</code></pre><hr>
+<h3 id="functiondef-resetself">FunctionDef reset(self)</h3>
+<p><strong>reset</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x5230;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>reset</code> &#x51FD;&#x6570;&#x662F; <code>BaseEnv</code> &#x7C7B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8D1F;&#x8D23;&#x5C06;&#x73AF;&#x5883;&#x91CD;&#x7F6E;&#x5230;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x4FBF;&#x5F00;&#x59CB;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6A21;&#x62DF;&#x5468;&#x671F;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<ol>
+<li>&#x5C06;&#x7D2F;&#x79EF;&#x5956;&#x52B1; (<code>cum_reward</code>) &#x91CD;&#x7F6E;&#x4E3A; 0&#x3002;</li>
+<li>&#x5C06;&#x603B;&#x8F6C;&#x6570; (<code>total_turn</code>) &#x91CD;&#x7F6E;&#x4E3A; 0&#x3002;</li>
+<li>&#x8C03;&#x7528; <code>__user_generator</code> &#x65B9;&#x6CD5;&#x968F;&#x673A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x7528;&#x6237; (<code>cur_user</code>)&#x3002;</li>
+<li>&#x8C03;&#x7528; <code>__item_generator</code> &#x65B9;&#x6CD5;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x52A8;&#x4F5C; (<code>action</code>)&#x3002;</li>
+<li>&#x8C03;&#x7528; <code>_reset_history</code> &#x65B9;&#x6CD5;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;</li>
+</ol>
+<p>&#x5728;&#x91CD;&#x7F6E;&#x8FC7;&#x7A0B;&#x7ED3;&#x675F;&#x540E;&#xFF0C;<code>reset</code> &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001; (<code>state</code>) &#x548C;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x7D2F;&#x79EF;&#x5956;&#x52B1; (<code>cum_reward</code>) &#x7684;&#x5B57;&#x5178;&#x3002;<code>state</code> &#x65B9;&#x6CD5;&#x8D1F;&#x8D23;&#x751F;&#x6210;&#x5E76;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x662F;&#x901A;&#x8FC7;&#x5C06;&#x5F53;&#x524D;&#x7528;&#x6237; (<code>cur_user</code>) &#x548C;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x7684;&#x884C;&#x52A8; (<code>action</code>) &#x7EC4;&#x5408;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x8868;&#x793A;&#x7684;&#x3002;&#x8FD9;&#x79CD;&#x72B6;&#x6001;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x7B80;&#x5355;&#x76F4;&#x89C2;&#xFF0C;&#x4FBF;&#x4E8E;&#x540E;&#x7EED;&#x7684;&#x5904;&#x7406;&#x548C;&#x5206;&#x6790;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>reset</code> &#x65B9;&#x6CD5;&#x88AB; <code>__init__</code> &#x65B9;&#x6CD5;&#x5728;&#x73AF;&#x5883;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x53CA;&#x5728; <code>construct_buffer_from_offline_data</code> &#x51FD;&#x6570;&#x4E2D;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x6784;&#x5EFA;&#x79BB;&#x7EBF;&#x6570;&#x636E;&#x7F13;&#x51B2;&#x533A;&#x65F6;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x8868;&#x660E; <code>reset</code> &#x65B9;&#x6CD5;&#x662F;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x548C;&#x91CD;&#x7F6E;&#x903B;&#x8F91;&#x7684;&#x6838;&#x5FC3;&#x90E8;&#x5206;&#xFF0C;&#x5BF9;&#x4E8E;&#x73AF;&#x5883;&#x7684;&#x64CD;&#x4F5C;&#x548C;&#x8BC4;&#x4F30;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x5728;&#x4F7F;&#x7528; <code>reset</code> &#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4F20;&#x9012;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x5E94;&#x786E;&#x4FDD;&#x6839;&#x636E;&#x8FD4;&#x56DE;&#x7684;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#x6216;&#x5206;&#x6790;&#x3002;</p>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>: &#x5047;&#x8BBE;&#x5728;&#x8C03;&#x7528; <code>reset</code> &#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x5F53;&#x524D;&#x7528;&#x6237; (<code>cur_user</code>) &#x7684;&#x503C;&#x4E3A; 1&#xFF0C;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x7684;&#x884C;&#x52A8; (<code>action</code>) &#x7684;&#x503C;&#x4E3A; 2&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>(array([1, 2]), {&apos;cum_reward&apos;: 0.0})
+</code></pre><p>&#x8FD9;&#x8868;&#x793A;&#x73AF;&#x5883;&#x5DF2;&#x88AB;&#x91CD;&#x7F6E;&#xFF0C;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x4E3A;&#x7528;&#x6237; 1 &#x548C;&#x52A8;&#x4F5C; 2 &#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x7D2F;&#x79EF;&#x5956;&#x52B1;&#x88AB;&#x91CD;&#x7F6E;&#x4E3A; 0.0&#x3002;</p>
+<hr>
+<h3 id="functiondef-resethistoryself">FunctionDef _reset_history(self)</h3>
+<p><strong>_reset_history</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>_reset_history</code>&#x51FD;&#x6570;&#x662F;<code>BaseEnv</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x73AF;&#x5883;&#x7684;&#x4E00;&#x4E2A;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x65F6;&#x91CD;&#x7F6E;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x5C06;<code>history_action</code>&#x5B57;&#x5178;&#x6E05;&#x7A7A;&#xFF0C;&#x8BE5;&#x5B57;&#x5178;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x5386;&#x53F2;&#x52A8;&#x4F5C;&#x4FE1;&#x606F;&#xFF1B;&#x5C06;<code>sequence_action</code>&#x5217;&#x8868;&#x6E05;&#x7A7A;&#xFF0C;&#x8BE5;&#x5217;&#x8868;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x52A8;&#x4F5C;&#x5E8F;&#x5217;&#xFF1B;&#x5C06;<code>max_history</code>&#x53D8;&#x91CF;&#x91CD;&#x7F6E;&#x4E3A;0&#xFF0C;<code>max_history</code>&#x53EF;&#x80FD;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x5386;&#x53F2;&#x52A8;&#x4F5C;&#x7684;&#x6700;&#x5927;&#x6570;&#x91CF;&#x6216;&#x5176;&#x4ED6;&#x4E0E;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x76F8;&#x5173;&#x7684;&#x6700;&#x5927;&#x503C;&#x4FE1;&#x606F;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x786E;&#x4FDD;&#x4E86;&#x6BCF;&#x6B21;&#x73AF;&#x5883;&#x91CD;&#x7F6E;&#x65F6;&#xFF0C;&#x4E0E;&#x5386;&#x53F2;&#x52A8;&#x4F5C;&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x90FD;&#x88AB;&#x6E05;&#x9664;&#xFF0C;&#x4ECE;&#x800C;&#x4E3A;&#x65B0;&#x7684;&#x73AF;&#x5883;&#x5468;&#x671F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5E72;&#x51C0;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>_reset_history</code>&#x65B9;&#x6CD5;&#x88AB;<code>reset</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;<code>reset</code>&#x65B9;&#x6CD5;&#x662F;<code>BaseEnv</code>&#x7C7B;&#x4E2D;&#x7528;&#x4E8E;&#x91CD;&#x7F6E;&#x73AF;&#x5883;&#x5230;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x7684;&#x516C;&#x5171;&#x65B9;&#x6CD5;&#x3002;&#x5728;<code>reset</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x8C03;&#x7528;<code>_reset_history</code>&#x91CD;&#x7F6E;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x5916;&#xFF0C;&#x8FD8;&#x91CD;&#x7F6E;&#x4E86;&#x7D2F;&#x79EF;&#x5956;&#x52B1;(<code>cum_reward</code>)&#x3001;&#x603B;&#x8F6C;&#x6570;(<code>total_turn</code>)&#x7B49;&#x73AF;&#x5883;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x751F;&#x6210;&#x4E86;&#x65B0;&#x7684;&#x7528;&#x6237;(<code>cur_user</code>)&#x548C;&#x52A8;&#x4F5C;(<code>action</code>)&#x3002;&#x8FD9;&#x8868;&#x660E;<code>_reset_history</code>&#x5728;&#x73AF;&#x5883;&#x6BCF;&#x6B21;&#x91CD;&#x7F6E;&#x65F6;&#x8D77;&#x7740;&#x91CD;&#x8981;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x786E;&#x4FDD;&#x4E86;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x7684;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E3A;&#x6A21;&#x62DF;&#x65B0;&#x7684;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x5468;&#x671F;&#x63D0;&#x4F9B;&#x4E86;&#x5FC5;&#x8981;&#x7684;&#x51C6;&#x5907;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: <code>_reset_history</code>&#x4F5C;&#x4E3A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x4EC5;&#x5728;<code>BaseEnv</code>&#x7C7B;&#x5185;&#x90E8;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4E0D;&#x5E94;&#x76F4;&#x63A5;&#x4ECE;&#x7C7B;&#x5916;&#x90E8;&#x8BBF;&#x95EE;&#x3002;&#x5728;&#x8BBE;&#x8BA1;&#x7C7B;&#x4F3C;&#x7684;&#x73AF;&#x5883;&#x65F6;&#xFF0C;&#x5E94;&#x786E;&#x4FDD;&#x5728;&#x6BCF;&#x6B21;&#x73AF;&#x5883;&#x91CD;&#x7F6E;&#x6216;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x8C03;&#x7528;&#x6B64;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x5386;&#x53F2;&#x6570;&#x636E;&#x5BF9;&#x65B0;&#x5468;&#x671F;&#x7684;&#x5F71;&#x54CD;&#x3002;</p>
+<hr>
+<h3 id="functiondef-addactiontohistoryself-t-action">FunctionDef _add_action_to_history(self, t, action)</h3>
+<p><strong>_add_action_to_history</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5C06;&#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C;&#x6DFB;&#x52A0;&#x5230;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>t</code>: &#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;&#x6B65;&#x3002;</li>
+<li><code>action</code>: &#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>_add_action_to_history</code> &#x51FD;&#x6570;&#x662F; <code>BaseEnv</code> &#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x73AF;&#x5883;&#x4E2D;&#x8DDF;&#x8E2A;&#x6BCF;&#x4E00;&#x6B65;&#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;&#x6B65; <code>t</code> &#x548C;&#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C; <code>action</code>&#x3002;&#x5B83;&#x9996;&#x5148;&#x5C06;&#x52A8;&#x4F5C;&#x6DFB;&#x52A0;&#x5230; <code>sequence_action</code> &#x5217;&#x8868;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x8FD9;&#x4E2A;&#x5217;&#x8868;&#x8BB0;&#x5F55;&#x4E86;&#x6240;&#x6709;&#x6267;&#x884C;&#x8FC7;&#x7684;&#x52A8;&#x4F5C;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x5B83;&#x5728; <code>history_action</code> &#x5B57;&#x5178;&#x4E2D;&#x4EE5;&#x65F6;&#x95F4;&#x6B65; <code>t</code> &#x4F5C;&#x4E3A;&#x952E;&#xFF0C;&#x5C06;&#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C; <code>action</code> &#x4F5C;&#x4E3A;&#x503C;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x65AD;&#x8A00;&#x9A8C;&#x8BC1;&#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;&#x6B65; <code>t</code> &#x662F;&#x5426;&#x7B49;&#x4E8E; <code>max_history</code>&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x52A8;&#x4F5C;&#x7684;&#x6DFB;&#x52A0;&#x987A;&#x5E8F;&#x6B63;&#x786E;&#x65E0;&#x8BEF;&#x3002;&#x6700;&#x540E;&#xFF0C;<code>max_history</code> &#x7684;&#x503C;&#x589E;&#x52A0; 1&#xFF0C;&#x4E3A;&#x8BB0;&#x5F55;&#x4E0B;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#x7684;&#x5386;&#x53F2;&#x505A;&#x51C6;&#x5907;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>_add_action_to_history</code> &#x51FD;&#x6570;&#x88AB; <code>step</code> &#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;<code>step</code> &#x65B9;&#x6CD5;&#x662F;&#x73AF;&#x5883;&#x4E2D;&#x6267;&#x884C;&#x52A8;&#x4F5C;&#x5E76;&#x63A8;&#x8FDB;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x6838;&#x5FC3;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x6267;&#x884C;&#x52A8;&#x4F5C;&#x5E76;&#x8BA1;&#x7B97;&#x5956;&#x52B1;&#x4E4B;&#x540E;&#xFF0C;<code>step</code> &#x65B9;&#x6CD5;&#x4F1A;&#x8C03;&#x7528; <code>_add_action_to_history</code>&#xFF0C;&#x5C06;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x6B65;&#x548C;&#x6267;&#x884C;&#x7684;&#x52A8;&#x4F5C;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x6709;&#x52A9;&#x4E8E;&#x8DDF;&#x8E2A;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x52A8;&#x4F5C;&#x5386;&#x53F2;&#xFF0C;&#x5BF9;&#x4E8E;&#x5206;&#x6790;&#x73AF;&#x5883;&#x7684;&#x884C;&#x4E3A;&#x548C;&#x8C03;&#x8BD5;&#x7A0B;&#x5E8F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li><code>_add_action_to_history</code> &#x662F;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4EC5;&#x5728; <code>BaseEnv</code> &#x7C7B;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x7C7B;&#x5916;&#x90E8;&#x7684;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x3002;</li>
+<li>&#x65AD;&#x8A00; <code>assert self.max_history == t</code> &#x7528;&#x4E8E;&#x786E;&#x4FDD;&#x52A8;&#x4F5C;&#x7684;&#x6DFB;&#x52A0;&#x987A;&#x5E8F;&#x6B63;&#x786E;&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x4E0D;&#x4E00;&#x81F4;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x7A0B;&#x5E8F;&#x5C06;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x8C03;&#x8BD5;&#x8F85;&#x52A9;&#x624B;&#x6BB5;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x53D1;&#x73B0;&#x6F5C;&#x5728;&#x7684;&#x9519;&#x8BEF;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-seedself-sd">FunctionDef seed(self, sd)</h3>
+<p><strong>seed</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;&#x5668;&#x7684;&#x79CD;&#x5B50;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>sd</strong>: &#x79CD;&#x5B50;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>seed</code>&#x51FD;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x73AF;&#x5883;&#x7C7B;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x5B9E;&#x9A8C;&#x7684;&#x53EF;&#x91CD;&#x590D;&#x6027;&#x3002;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>torch.manual_seed(sd)</code>&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x4E86;PyTorch&#x6846;&#x67B6;&#x7684;&#x5168;&#x5C40;&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;&#x5668;&#x7684;&#x79CD;&#x5B50;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5728;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x79CD;&#x5B50;&#x503C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;PyTorch&#x76F8;&#x5173;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x5982;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x3001;&#x968F;&#x673A;&#x9009;&#x62E9;&#x7B49;&#xFF09;&#x5C06;&#x4EA7;&#x751F;&#x76F8;&#x540C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1;&#x4E86;&#x4E0D;&#x540C;&#x5B9E;&#x9A8C;&#x4E4B;&#x95F4;&#x7684;&#x53EF;&#x6BD4;&#x8F83;&#x6027;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x5B9E;&#x9A8C;&#x6216;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x7ED3;&#x679C;&#x7684;&#x53EF;&#x91CD;&#x590D;&#x6027;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;&#x5B9E;&#x9A8C;&#x5F00;&#x59CB;&#x524D;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x7684;&#x79CD;&#x5B50;&#x503C;&#x3002;</li>
+<li>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5373;&#x4F7F;&#x8BBE;&#x7F6E;&#x4E86;&#x79CD;&#x5B50;&#xFF0C;&#x7531;&#x4E8E;&#x73AF;&#x5883;&#x7684;&#x5DEE;&#x5F02;&#xFF08;&#x5982;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6216;PyTorch&#x7248;&#x672C;&#xFF09;&#xFF0C;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x673A;&#x5668;&#x4E0A;&#x8FD0;&#x884C;&#x76F8;&#x540C;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x80FD;&#x4ECD;&#x7136;&#x4F1A;&#x5F97;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x679C;&#x3002;</li>
+<li>&#x6B64;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;&#x5176;&#x4ED6;&#x5E93;&#xFF08;&#x5982;NumPy&#xFF09;&#x4E5F;&#x6D89;&#x53CA;&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;&#xFF0C;&#x4E3A;&#x4E86;&#x5B8C;&#x5168;&#x63A7;&#x5236;&#x5B9E;&#x9A8C;&#x7684;&#x968F;&#x673A;&#x6027;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x989D;&#x5916;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E9B;&#x5E93;&#x7684;&#x968F;&#x673A;&#x79CD;&#x5B50;&#x3002;</li>
+</ul>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="BaseData.html" class="navigation navigation-prev " aria-label="Previous page: Base Data">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../evaluation/" class="navigation navigation-next " aria-label="Next page: Evaluation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Base Env","level":"1.2.2.8","depth":3,"next":{"title":"Evaluation","level":"1.2.3","depth":2,"path":"src/core/evaluation/README.md","ref":"src/core/evaluation/README.md","articles":[{"title":"Evaluator Static","level":"1.2.3.1","depth":3,"path":"src/core/evaluation/evaluator_static.md","ref":"src/core/evaluation/evaluator_static.md","articles":[]},{"title":"Evaluator","level":"1.2.3.2","depth":3,"path":"src/core/evaluation/evaluator.md","ref":"src/core/evaluation/evaluator.md","articles":[]},{"title":"Loggers","level":"1.2.3.3","depth":3,"path":"src/core/evaluation/loggers.md","ref":"src/core/evaluation/loggers.md","articles":[]},{"title":"Metrics","level":"1.2.3.4","depth":3,"path":"src/core/evaluation/metrics.md","ref":"src/core/evaluation/metrics.md","articles":[]},{"title":"Utils","level":"1.2.3.5","depth":3,"path":"src/core/evaluation/utils.md","ref":"src/core/evaluation/utils.md","articles":[]}]},"previous":{"title":"Base Data","level":"1.2.2.7","depth":3,"path":"src/core/envs/BaseData.md","ref":"src/core/envs/BaseData.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/core/envs/BaseEnv.md","mtime":"2024-03-18T12:56:52.418Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-18T14:39:28.553Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

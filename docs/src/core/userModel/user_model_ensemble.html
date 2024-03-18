@@ -1,0 +1,1501 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>User Model Ensemble · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="user_model_mmoe.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Welcome to EasyRL4Rec!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../Introduction/Installation.html">
+            
+                <a href="../../../Introduction/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../Introduction/RunningCommands.html">
+            
+                <a href="../../../Introduction/RunningCommands.html">
+            
+                    
+                    Running Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../Introduction/ImplementationDetails.html">
+            
+                <a href="../../../Introduction/ImplementationDetails.html">
+            
+                    
+                    Implementation Details
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Docs.html">
+            
+                <a href="../../Docs.html">
+            
+                    
+                    Documentation for src/core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../collector/">
+            
+                <a href="../collector/">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../collector/collector.html">
+            
+                <a href="../collector/collector.html">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../collector/collector_set.html">
+            
+                <a href="../collector/collector_set.html">
+            
+                    
+                    Collector Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../envs/">
+            
+                <a href="../envs/">
+            
+                    
+                    Envs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../envs/Coat/">
+            
+                <a href="../envs/Coat/">
+            
+                    
+                    Coat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../envs/Coat/CoatData.html">
+            
+                <a href="../envs/Coat/CoatData.html">
+            
+                    
+                    Coat Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../envs/Coat/CoatEnv.html">
+            
+                <a href="../envs/Coat/CoatEnv.html">
+            
+                    
+                    Coat Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../envs/KuaiRand_Pure/">
+            
+                <a href="../envs/KuaiRand_Pure/">
+            
+                    
+                    KuaiRand Pure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                    
+                    Kuai Rand Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                    
+                    Kuai Rand Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                <a href="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                    
+                    Preprocessing Kuairand
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../envs/KuaiRec/">
+            
+                <a href="../envs/KuaiRec/">
+            
+                    
+                    KuaiRec
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../envs/KuaiRec/KuaiData.html">
+            
+                <a href="../envs/KuaiRec/KuaiData.html">
+            
+                    
+                    Kuai Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../envs/KuaiRec/KuaiEnv.html">
+            
+                <a href="../envs/KuaiRec/KuaiEnv.html">
+            
+                    
+                    Kuai Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                <a href="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                    
+                    Preprocessing Kuairec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../envs/MovieLens/">
+            
+                <a href="../envs/MovieLens/">
+            
+                    
+                    MovieLens
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../envs/MovieLens/MovieLensData.html">
+            
+                <a href="../envs/MovieLens/MovieLensData.html">
+            
+                    
+                    MovieLens Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../envs/MovieLens/MovieLensEnv.html">
+            
+                <a href="../envs/MovieLens/MovieLensEnv.html">
+            
+                    
+                    MovieLens Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../envs/Simulated_Env/">
+            
+                <a href="../envs/Simulated_Env/">
+            
+                    
+                    SimulatedEnv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../envs/Simulated_Env/base.html">
+            
+                <a href="../envs/Simulated_Env/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../envs/Simulated_Env/intrinsic.html">
+            
+                <a href="../envs/Simulated_Env/intrinsic.html">
+            
+                    
+                    Intrinsic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                <a href="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                    
+                    Penalty Ent Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="../envs/Simulated_Env/penalty_var.html">
+            
+                <a href="../envs/Simulated_Env/penalty_var.html">
+            
+                    
+                    Penalty Var
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../envs/YahooR3/">
+            
+                <a href="../envs/YahooR3/">
+            
+                    
+                    YahooR3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../envs/YahooR3/YahooData.html">
+            
+                <a href="../envs/YahooR3/YahooData.html">
+            
+                    
+                    Yahoo Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../envs/YahooR3/YahooEnv.html">
+            
+                <a href="../envs/YahooR3/YahooEnv.html">
+            
+                    
+                    Yahoo Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../envs/BaseData.html">
+            
+                <a href="../envs/BaseData.html">
+            
+                    
+                    Base Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../envs/BaseEnv.html">
+            
+                <a href="../envs/BaseEnv.html">
+            
+                    
+                    Base Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../evaluation/">
+            
+                <a href="../evaluation/">
+            
+                    
+                    Evaluation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../evaluation/evaluator_static.html">
+            
+                <a href="../evaluation/evaluator_static.html">
+            
+                    
+                    Evaluator Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../evaluation/evaluator.html">
+            
+                <a href="../evaluation/evaluator.html">
+            
+                    
+                    Evaluator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../evaluation/loggers.html">
+            
+                <a href="../evaluation/loggers.html">
+            
+                    
+                    Loggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../evaluation/metrics.html">
+            
+                <a href="../evaluation/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../evaluation/utils.html">
+            
+                <a href="../evaluation/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../policy/">
+            
+                <a href="../policy/">
+            
+                    
+                    Policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../policy/RecPolicy.html">
+            
+                <a href="../policy/RecPolicy.html">
+            
+                    
+                    RecPolicy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../state_tracker/">
+            
+                <a href="../state_tracker/">
+            
+                    
+                    State Tracker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../state_tracker/Average.html">
+            
+                <a href="../state_tracker/Average.html">
+            
+                    
+                    Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../state_tracker/base.html">
+            
+                <a href="../state_tracker/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../state_tracker/Caser.html">
+            
+                <a href="../state_tracker/Caser.html">
+            
+                    
+                    Caser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../state_tracker/GRU.html">
+            
+                <a href="../state_tracker/GRU.html">
+            
+                    
+                    GRU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../state_tracker/NextItNet.html">
+            
+                <a href="../state_tracker/NextItNet.html">
+            
+                    
+                    NextItNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="../state_tracker/SASRec.html">
+            
+                <a href="../state_tracker/SASRec.html">
+            
+                    
+                    SASRec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.6.1" data-path="user_model_ensemble.html">
+            
+                <a href="user_model_ensemble.html">
+            
+                    
+                    User Model Ensemble
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="user_model_mmoe.html">
+            
+                <a href="user_model_mmoe.html">
+            
+                    
+                    User Model Mmoe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="user_model_pairwise_variance.html">
+            
+                <a href="user_model_pairwise_variance.html">
+            
+                    
+                    User Model Pairwise Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="user_model_pairwise.html">
+            
+                <a href="user_model_pairwise.html">
+            
+                    
+                    User Model Pairwise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="user_model_variance.html">
+            
+                <a href="user_model_variance.html">
+            
+                    
+                    User Model Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="user_model.html">
+            
+                <a href="user_model.html">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../util/">
+            
+                <a href="../util/">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../util/data.html">
+            
+                <a href="../util/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../util/inputs.html">
+            
+                <a href="../util/inputs.html">
+            
+                    
+                    Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../util/layers.html">
+            
+                <a href="../util/layers.html">
+            
+                    
+                    Layers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../util/loss.html">
+            
+                <a href="../util/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../util/static_dataset.html">
+            
+                <a href="../util/static_dataset.html">
+            
+                    
+                    Static Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../util/utils.html">
+            
+                <a href="../util/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >User Model Ensemble</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="classdef-ensemblemodel">ClassDef EnsembleModel</h2>
+<p><strong>EnsembleModel</strong>: EnsembleModel&#x7C7B;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x96C6;&#x6210;&#xFF0C;&#x7528;&#x4E8E;&#x8BAD;&#x7EC3;&#x3001;&#x8BC4;&#x4F30;&#x548C;&#x4FDD;&#x5B58;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#x548C;&#x53D8;&#x5F02;&#x6027;&#x5206;&#x6790;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>:</p>
+<ul>
+<li>user_models: &#x7528;&#x6237;&#x6A21;&#x578B;&#x5217;&#x8868;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x6A21;&#x578B;&#x6570;&#x91CF;&#x521B;&#x5EFA;&#x3002;</li>
+<li>MODEL_SAVE_PATH: &#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>PREDICTION_MAT_PATH: &#x9884;&#x6D4B;&#x77E9;&#x9635;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>VAR_MAT_PATH: &#x53D8;&#x5F02;&#x6027;&#x77E9;&#x9635;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>Entropy_PATH: &#x71B5;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#xFF08;&#x5F53;&#x524D;&#x672A;&#x4F7F;&#x7528;&#xFF09;&#x3002;</li>
+<li>MODEL_PARAMS_PATH: &#x6A21;&#x578B;&#x53C2;&#x6570;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>MODEL_PATH: &#x6A21;&#x578B;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>MODEL_EMBEDDING_PATH: &#x6A21;&#x578B;&#x5D4C;&#x5165;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#xFF08;&#x5DF2;&#x5F03;&#x7528;&#xFF09;&#x3002;</li>
+<li>USER_EMBEDDING_PATH: &#x7528;&#x6237;&#x5D4C;&#x5165;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>ITEM_EMBEDDING_PATH: &#x9879;&#x76EE;&#x5D4C;&#x5165;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>USER_VAL_EMBEDDING_PATH: &#x7528;&#x6237;&#x9A8C;&#x8BC1;&#x5D4C;&#x5165;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>ITEM_VAL_EMBEDDING_PATH: &#x9879;&#x76EE;&#x9A8C;&#x8BC1;&#x5D4C;&#x5165;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+EnsembleModel&#x7C7B;&#x901A;&#x8FC7;&#x521D;&#x59CB;&#x5316;&#x6307;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x7528;&#x6237;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x5B9A;&#x4E49;&#x4E86;&#x7F16;&#x8BD1;&#x3001;&#x8BAD;&#x7EC3;&#x3001;&#x8BC4;&#x4F30;&#x3001;&#x6570;&#x636E;&#x62DF;&#x5408;&#x3001;&#x6A21;&#x578B;&#x52A0;&#x8F7D;&#x3001;&#x5D4C;&#x5165;&#x52A0;&#x8F7D;&#x3001;&#x5747;&#x503C;&#x548C;&#x53D8;&#x5F02;&#x6027;&#x8BA1;&#x7B97;&#x3001;&#x9884;&#x6D4B;&#x3001;&#x6A21;&#x578B;&#x548C;&#x5D4C;&#x5165;&#x4FDD;&#x5B58;&#x7B49;&#x4E00;&#x7CFB;&#x5217;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5141;&#x8BB8;&#x5BF9;&#x96C6;&#x6210;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x7075;&#x6D3B;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5305;&#x62EC;&#x4F46;&#x4E0D;&#x9650;&#x4E8E;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x3001;&#x8BC4;&#x4F30;&#x3001;&#x53C2;&#x6570;&#x8C03;&#x6574;&#x548C;&#x7ED3;&#x679C;&#x4FDD;&#x5B58;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;EnsembleModel&#x7C7B;&#x88AB;&#x7528;&#x4E8E;&#x4E0D;&#x540C;&#x573A;&#x666F;&#x4E0B;&#x7684;&#x7528;&#x6237;&#x6A21;&#x578B;&#x51C6;&#x5907;&#x548C;&#x8BBE;&#x7F6E;&#xFF0C;&#x5982;&#x5728;<code>prepare_user_model</code>&#x548C;<code>setup_user_model</code>&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x4F20;&#x9012;&#x4E0D;&#x540C;&#x7684;&#x53C2;&#x6570;&#x6765;&#x521D;&#x59CB;&#x5316;EnsembleModel&#x5B9E;&#x4F8B;&#xFF0C;&#x8FDB;&#x800C;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x3001;&#x7F16;&#x8BD1;&#x548C;&#x8BAD;&#x7EC3;&#x6A21;&#x578B;&#x3002;&#x8FD9;&#x8868;&#x660E;EnsembleModel&#x7C7B;&#x5728;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x6D41;&#x7A0B;&#x4E2D;&#x8D77;&#x7740;&#x6838;&#x5FC3;&#x4F5C;&#x7528;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5728;&#x5904;&#x7406;&#x9700;&#x8981;&#x96C6;&#x6210;&#x591A;&#x4E2A;&#x6A21;&#x578B;&#x4EE5;&#x63D0;&#x9AD8;&#x9884;&#x6D4B;&#x6027;&#x80FD;&#x548C;&#x9C81;&#x68D2;&#x6027;&#x7684;&#x573A;&#x666F;&#x4E2D;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;EnsembleModel&#x7C7B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;MODEL_SAVE_PATH&#x7B49;&#x8DEF;&#x5F84;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;&#xFF0C;&#x4EE5;&#x4FBF;&#x6B63;&#x786E;&#x4FDD;&#x5B58;&#x548C;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x53CA;&#x5176;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x5728;&#x8FDB;&#x884C;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x65F6;&#xFF0C;&#x5E94;&#x6CE8;&#x610F;&#x8C03;&#x6574;&#x76F8;&#x5173;&#x53C2;&#x6570;&#x4EE5;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x7684;&#x6027;&#x80FD;&#x548C;&#x8D44;&#x6E90;&#x9700;&#x6C42;&#x3002;</li>
+<li>&#x5728;&#x4FDD;&#x5B58;&#x548C;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x6A21;&#x578B;&#x7684;&#x8BBE;&#x5907;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x5982;&#x662F;&#x5426;&#x9700;&#x8981;&#x5C06;&#x6A21;&#x578B;&#x4ECE;GPU&#x8F6C;&#x79FB;&#x5230;CPU&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x7531;&#x4E8E;EnsembleModel&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x4E3B;&#x8981;&#x6D89;&#x53CA;&#x6A21;&#x578B;&#x64CD;&#x4F5C;&#x800C;&#x975E;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#xFF0C;&#x56E0;&#x6B64;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x7684;&#x8F93;&#x51FA;&#x793A;&#x4F8B;&#x3002;&#x4F46;&#x5728;&#x4F7F;&#x7528;&#x4F8B;&#x5982;<code>train</code>&#x6216;<code>eval</code>&#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x671F;&#x5F85;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8BAD;&#x7EC3;&#x6216;&#x8BC4;&#x4F30;&#x540E;&#x7684;&#x6A21;&#x578B;&#x5217;&#x8868;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x800C;&#x4F7F;&#x7528;<code>get_prediction_and_maxvar</code>&#x65B9;&#x6CD5;&#x5219;&#x4F1A;&#x8FD4;&#x56DE;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x548C;&#x6700;&#x5927;&#x53D8;&#x5F02;&#x6027;&#x7684;&#x77E9;&#x9635;&#x3002;</p>
+<h3 id="functiondef-initself-nummodels-message-modelsavepath">FunctionDef <strong>init</strong>(self, num_models, message, MODEL_SAVE_PATH)</h3>
+<p><strong><strong>init</strong></strong>: &#x521D;&#x59CB;&#x5316;EnsembleModel&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>num_models: &#x9700;&#x8981;&#x96C6;&#x6210;&#x7684;&#x6A21;&#x578B;&#x6570;&#x91CF;&#x3002;</li>
+<li>message: &#x7528;&#x4E8E;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E2D;&#x7684;&#x6807;&#x8BC6;&#x4FE1;&#x606F;&#x3002;</li>
+<li>MODEL_SAVE_PATH: &#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x7684;&#x6839;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>*args: &#x4F20;&#x9012;&#x7ED9;UserModel_Pairwise_Variance&#x6A21;&#x578B;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x3002;</li>
+<li>**kwargs: &#x4F20;&#x9012;&#x7ED9;UserModel_Pairwise_Variance&#x6A21;&#x578B;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x662F;EnsembleModel&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x96C6;&#x6210;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;UserModel_Pairwise_Variance&#x6A21;&#x578B;&#x5217;&#x8868;&#xFF0C;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6A21;&#x578B;&#x6570;&#x91CF;&#x7531;&#x53C2;&#x6570;num_models&#x51B3;&#x5B9A;&#xFF0C;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x90FD;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;<em>args&#x548C;*</em>kwargs&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;&#x8FD9;&#x8868;&#x660E;&#x6240;&#x6709;&#x96C6;&#x6210;&#x7684;&#x6A21;&#x578B;&#x90FD;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BAD;&#x7EC3;&#x5B66;&#x4E60;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x7279;&#x5F81;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x4E86;&#x51E0;&#x4E2A;&#x4E0E;&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x76F8;&#x5173;&#x7684;&#x8DEF;&#x5F84;&#x5C5E;&#x6027;&#x3002;&#x8FD9;&#x4E9B;&#x8DEF;&#x5F84;&#x5305;&#x62EC;&#x6A21;&#x578B;&#x7684;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3001;&#x9884;&#x6D4B;&#x77E9;&#x9635;&#x7684;&#x8DEF;&#x5F84;&#x3001;&#x65B9;&#x5DEE;&#x77E9;&#x9635;&#x7684;&#x8DEF;&#x5F84;&#x3001;&#x71B5;&#x7684;&#x8DEF;&#x5F84;&#x3001;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x7684;&#x8DEF;&#x5F84;&#x3001;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x4EE5;&#x53CA;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x8DEF;&#x5F84;&#x3002;&#x8FD9;&#x4E9B;&#x8DEF;&#x5F84;&#x7684;&#x751F;&#x6210;&#x4F9D;&#x8D56;&#x4E8E;MODEL_SAVE_PATH&#x548C;message&#x53C2;&#x6570;&#xFF0C;&#x786E;&#x4FDD;&#x4E86;&#x6A21;&#x578B;&#x548C;&#x76F8;&#x5173;&#x6570;&#x636E;&#x7684;&#x7EC4;&#x7EC7;&#x65B9;&#x5F0F;&#x65E2;&#x6E05;&#x6670;&#x53C8;&#x5177;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;EnsembleModel&#x7C7B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;MODEL_SAVE_PATH&#x8DEF;&#x5F84;&#x5B58;&#x5728;&#x4E14;&#x53EF;&#x5199;&#x3002;</li>
+<li>message&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x533A;&#x5206;&#x4E0D;&#x540C;&#x5B9E;&#x9A8C;&#x6216;&#x6A21;&#x578B;&#x914D;&#x7F6E;&#x4E0B;&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x4E2D;&#x5E94;&#x4FDD;&#x8BC1;&#x5176;&#x5177;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x63CF;&#x8FF0;&#x6027;&#x548C;&#x552F;&#x4E00;&#x6027;&#x3002;</li>
+<li>&#x4F20;&#x9012;&#x7ED9;UserModel_Pairwise_Variance&#x6A21;&#x578B;&#x7684;<em>args&#x548C;*</em>kwargs&#x53C2;&#x6570;&#x5E94;&#x5F53;&#x4E0E;UserModel_Pairwise_Variance&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x6A21;&#x578B;&#x80FD;&#x591F;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#x3002;</li>
+<li>&#x7531;&#x4E8E;EnsembleModel&#x7C7B;&#x4F9D;&#x8D56;&#x4E8E;UserModel_Pairwise_Variance&#x7C7B;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x4F7F;&#x7528;&#x524D;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x5DF2;&#x7ECF;&#x6B63;&#x786E;&#x7406;&#x89E3;&#x5E76;&#x80FD;&#x591F;&#x4F7F;&#x7528;UserModel_Pairwise_Variance&#x7C7B;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-compileself">FunctionDef compile(self)</h3>
+<p><strong>compile</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x7F16;&#x8BD1;&#x7528;&#x6237;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>&#xFF1A;&#x6B64;&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x53EF;&#x53D8;&#x6570;&#x91CF;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;(<em>args)&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;(*</em>kwargs)&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>&#xFF1A;
+<code>compile</code>&#x51FD;&#x6570;&#x662F;<code>EnsembleModel</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x7F16;&#x8BD1;&#x8BE5;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;&#x7F16;&#x8BD1;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4E3A;&#x6A21;&#x578B;&#x914D;&#x7F6E;&#x5B66;&#x4E60;&#x8FC7;&#x7A0B;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x5305;&#x62EC;&#x8BBE;&#x7F6E;&#x4F18;&#x5316;&#x5668;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x548C;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x7B49;&#x3002;&#x5177;&#x4F53;&#x5230;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>self.user_models</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x5BF9;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x8C03;&#x7528;&#x5176;<code>compile</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x4F20;&#x5165;&#x7684;&#x4EFB;&#x4F55;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;(<em>args)&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;(*</em>kwargs)&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;<code>compile</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x88AB;&#x591A;&#x4E2A;&#x573A;&#x666F;&#x4E2D;&#x7684;<code>setup_user_model</code>&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x914D;&#x7F6E;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728;<code>run_DeepFM_IPS.py</code>&#x3001;<code>run_DeepFM_ensemble.py</code>&#x548C;<code>run_Egreedy.py</code>&#x4E2D;&#xFF0C;<code>setup_user_model</code>&#x51FD;&#x6570;&#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;<code>EnsembleModel</code>&#x5B9E;&#x4F8B;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;&#x5176;<code>compile</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4F20;&#x9012;&#x4E86;&#x4F18;&#x5316;&#x5668;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x51FD;&#x6570;&#x7B49;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x8868;&#x660E;<code>compile</code>&#x51FD;&#x6570;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x51C6;&#x5907;&#x9636;&#x6BB5;&#x8D77;&#x7740;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x786E;&#x4FDD;&#x4E86;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x90FD;&#x88AB;&#x6B63;&#x786E;&#x5730;&#x914D;&#x7F6E;&#x4EE5;&#x8FDB;&#x884C;&#x540E;&#x7EED;&#x7684;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x5728;&#x8C03;&#x7528;<code>compile</code>&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x5E94;&#x4E0E;&#x6A21;&#x578B;&#x7684;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#x76F8;&#x5339;&#x914D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F18;&#x5316;&#x5668;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x548C;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x51FD;&#x6570;&#x7B49;&#x53C2;&#x6570;&#x5E94;&#x6839;&#x636E;&#x6A21;&#x578B;&#x7684;&#x5177;&#x4F53;&#x4EFB;&#x52A1;&#x548C;&#x8BBE;&#x8BA1;&#x6765;&#x9009;&#x62E9;&#x3002;</li>
+<li>&#x7531;&#x4E8E;<code>compile</code>&#x65B9;&#x6CD5;&#x4F1A;&#x904D;&#x5386;&#x5E76;&#x7F16;&#x8BD1;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x6A21;&#x578B;&#x90FD;&#x652F;&#x6301;&#x4F20;&#x5165;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-trainself">FunctionDef train(self)</h3>
+<p><strong>train</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BAD;&#x7EC3;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>*args: &#x53EF;&#x53D8;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;train&#x65B9;&#x6CD5;&#x3002;</li>
+<li>**kwargs: &#x53EF;&#x53D8;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;train&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>train</code>&#x51FD;&#x6570;&#x662F;<code>EnsembleModel</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x8BAD;&#x7EC3;&#x8BE5;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>self.user_models</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;<code>train</code>&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x8FD9;&#x4E9B;<code>train</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;(<em>args)&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;(*</em>kwargs)&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;<code>train</code>&#x51FD;&#x6570;&#x5728;&#x8C03;&#x7528;&#x65F6;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x5730;&#x4F20;&#x9012;&#x4E0D;&#x540C;&#x7684;&#x8BAD;&#x7EC3;&#x53C2;&#x6570;&#x7ED9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x3002;&#x5B8C;&#x6210;&#x8BAD;&#x7EC3;&#x540E;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x5728;&#x8C03;&#x7528;<code>train</code>&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;<code>self.user_models</code>&#x5DF2;&#x7ECF;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#x5E76;&#x4E14;&#x5305;&#x542B;&#x4E86;&#x9700;&#x8981;&#x8BAD;&#x7EC3;&#x7684;&#x7528;&#x6237;&#x6A21;&#x578B;&#x3002;</li>
+<li>&#x4F20;&#x9012;&#x7ED9;<code>train</code>&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;(<em>args&#x548C;*</em>kwargs)&#x5E94;&#x8BE5;&#x4E0E;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;<code>train</code>&#x65B9;&#x6CD5;&#x6240;&#x671F;&#x671B;&#x7684;&#x53C2;&#x6570;&#x517C;&#x5BB9;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x53D1;&#x9519;&#x8BEF;&#x3002;</li>
+<li>&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x64CD;&#x4F5C;&#x6216;&#x8BC4;&#x4F30;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E24;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7528;&#x6237;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x6211;&#x4EEC;&#x8C03;&#x7528;&#x4E86;<code>train</code>&#x51FD;&#x6570;&#xFF0C;&#x4E0D;&#x4F20;&#x9012;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x3002;&#x5219;&#x8BE5;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-python">[&lt;UserModel1 instance&gt;, &lt;UserModel2 instance&gt;]
+</code></pre>
+<p>&#x8FD9;&#x8868;&#x793A;&#x4E24;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x5DF2;&#x7ECF;&#x88AB;&#x8BAD;&#x7EC3;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x4EEC;&#x7684;&#x5B9E;&#x4F8B;&#x88AB;&#x5305;&#x542B;&#x5728;&#x8FD4;&#x56DE;&#x7684;&#x5217;&#x8868;&#x4E2D;&#x3002;</p>
+<hr>
+<h3 id="functiondef-evalself">FunctionDef eval(self)</h3>
+<p><strong>eval</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5C06;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7F6E;&#x4E8E;&#x8BC4;&#x4F30;&#x6A21;&#x5F0F;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>*args</code>: &#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;<code>eval</code>&#x65B9;&#x6CD5;&#x3002;</li>
+<li><code>**kwargs</code>: &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x540C;&#x6837;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;<code>eval</code>&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>eval</code>&#x51FD;&#x6570;&#x662F;<code>EnsembleModel</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x65E8;&#x5728;&#x5C06;&#x5305;&#x542B;&#x5728;&#x8BE5;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7F6E;&#x4E8E;&#x8BC4;&#x4F30;&#x6A21;&#x5F0F;&#x3002;&#x8FD9;&#x662F;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>self.user_models</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x5BF9;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x8C03;&#x7528;&#x5176;<code>eval</code>&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x540C;&#x65F6;&#x5C06;&#x4EFB;&#x4F55;&#x4F20;&#x5165;&#x7684;<code>args</code>&#x548C;<code>kwargs</code>&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x4E9B;<code>eval</code>&#x65B9;&#x6CD5;&#x3002;&#x6B64;&#x64CD;&#x4F5C;&#x786E;&#x4FDD;&#x4E86;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6A21;&#x578B;&#x90FD;&#x51C6;&#x5907;&#x597D;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#xFF0C;&#x800C;&#x4E0D;&#x8FDB;&#x884C;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x8BAD;&#x7EC3;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x786E;&#x4FDD;<code>self.user_models</code>&#x5DF2;&#x7ECF;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5E76;&#x4E14;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x9700;&#x8981;&#x8BC4;&#x4F30;&#x7684;&#x6A21;&#x578B;&#x3002;</li>
+<li>&#x4F20;&#x9012;&#x7ED9;<code>eval</code>&#x65B9;&#x6CD5;&#x7684;<code>*args</code>&#x548C;<code>**kwargs</code>&#x53C2;&#x6570;&#x5E94;&#x8BE5;&#x4E0E;&#x6A21;&#x578B;&#x7684;<code>eval</code>&#x65B9;&#x6CD5;&#x517C;&#x5BB9;&#x3002;</li>
+<li>&#x6B64;&#x51FD;&#x6570;&#x4E0D;&#x4FEE;&#x6539;&#x6A21;&#x578B;&#x7684;&#x6743;&#x91CD;&#x6216;&#x7ED3;&#x6784;&#xFF0C;&#x4EC5;&#x6539;&#x53D8;&#x6A21;&#x578B;&#x7684;&#x6A21;&#x5F0F;&#x4E3A;&#x8BC4;&#x4F30;&#x6A21;&#x5F0F;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;<code>self.user_models</code>&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#xFF0C;&#x8C03;&#x7528;<code>eval()</code>&#x540E;&#xFF0C;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8FD9;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<hr>
+<h3 id="functiondef-compilerltestself">FunctionDef compile_RL_test(self)</h3>
+<p><strong>compile_RL_test</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4E3A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x7F16;&#x8BD1;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>*args</code>: &#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#x3002;</li>
+<li><code>**kwargs</code>: &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#x904D;&#x5386;<code>EnsembleModel</code>&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x5BF9;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x8C03;&#x7528;&#x5176;<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x4EFB;&#x4F55;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF08;<code>*args</code>&#xFF09;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF08;<code>**kwargs</code>&#xFF09;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x3002;&#x8FD9;&#x4E2A;&#x8BBE;&#x8BA1;&#x5141;&#x8BB8;&#x5728;&#x96C6;&#x6210;&#x6A21;&#x578B;&#x5C42;&#x9762;&#x7EDF;&#x4E00;&#x914D;&#x7F6E;&#x548C;&#x51C6;&#x5907;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#xFF0C;&#x4EE5;&#x4FBF;&#x8FDB;&#x884C;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#x88AB;&#x7528;&#x4E8E;&#x51C6;&#x5907;&#x7528;&#x6237;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x8FDB;&#x884C;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x73AF;&#x5883;&#x4E0B;&#x7684;&#x6D4B;&#x8BD5;&#x3002;&#x901A;&#x8FC7;&#x67E5;&#x770B;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5B83;&#x901A;&#x5E38;&#x4E0E;<code>functools.partial</code>&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x4F20;&#x9012;&#x7279;&#x5B9A;&#x7684;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x73AF;&#x5883;&#x5BF9;&#x8C61;<code>env</code>&#x3001;&#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x96C6;<code>dataset_val</code>&#x3001;&#x662F;&#x5426;&#x4F7F;&#x7528;softmax&#x7B56;&#x7565;<code>is_softmax</code>&#x3001;&#x63A2;&#x7D22;&#x7B56;&#x7565;&#x53C2;&#x6570;&#x5982;<code>epsilon</code>&#x548C;<code>is_ucb</code>&#x7B49;&#x3002;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x5BF9;&#x4E8E;&#x5728;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x73AF;&#x5883;&#x4E2D;&#x8BC4;&#x4F30;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x6027;&#x80FD;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5728;<code>run_DeepFM_IPS.py</code>&#x3001;<code>run_DeepFM_ensemble.py</code>&#x548C;<code>run_Egreedy.py</code>&#x4E2D;&#xFF0C;<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#x88AB;&#x7528;&#x6765;&#x914D;&#x7F6E;&#x7528;&#x6237;&#x6A21;&#x578B;&#x96C6;&#x5408;&#xFF0C;&#x4EE5;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x73AF;&#x5883;&#x4E0B;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x3002;&#x8FD9;&#x4E9B;&#x811A;&#x672C;&#x901A;&#x8FC7;<code>functools.partial</code>&#x4F20;&#x9012;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x7ED9;<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;&#x73AF;&#x5883;&#x5BF9;&#x8C61;&#x3001;&#x662F;&#x5426;&#x4F7F;&#x7528;softmax&#x7B56;&#x7565;&#x3001;&#x63A2;&#x7D22;&#x7B56;&#x7565;&#x53C2;&#x6570;&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x76F4;&#x63A5;&#x5F71;&#x54CD;&#x4E86;&#x6A21;&#x578B;&#x5728;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x6D4B;&#x8BD5;&#x4E2D;&#x7684;&#x884C;&#x4E3A;&#x548C;&#x6027;&#x80FD;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x4E0E;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;<code>compile_RL_test</code>&#x65B9;&#x6CD5;&#x517C;&#x5BB9;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5728;&#x4F7F;&#x7528;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x65F6;&#x3002;</li>
+<li>&#x8003;&#x8651;&#x5230;&#x6B64;&#x65B9;&#x6CD5;&#x6D89;&#x53CA;&#x5230;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x73AF;&#x5883;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5E94;&#x786E;&#x4FDD;&#x5BF9;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x73AF;&#x5883;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x6709;&#x5145;&#x5206;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x6A21;&#x578B;&#x80FD;&#x5728;&#x9002;&#x5F53;&#x7684;&#x73AF;&#x5883;&#x4E0B;&#x8FDB;&#x884C;&#x6709;&#x6548;&#x7684;&#x6D4B;&#x8BD5;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-fitdataself">FunctionDef fit_data(self)</h3>
+<p><strong>fit_data</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BAD;&#x7EC3;&#x6A21;&#x578B;&#x5E76;&#x6536;&#x96C6;&#x8BAD;&#x7EC3;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>&#xFF1A;&#x6B64;&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x53EF;&#x53D8;&#x6570;&#x91CF;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF08;<em>args&#xFF09;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF08;*</em>kwargs&#xFF09;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x5B83;&#x5728;&#x8C03;&#x7528;&#x65F6;&#x975E;&#x5E38;&#x7075;&#x6D3B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4E0D;&#x540C;&#x7684;&#x8BAD;&#x7EC3;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x3001;&#x8BAD;&#x7EC3;&#x8F6E;&#x6570;&#x7B49;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>&#xFF1A;
+<code>fit_data</code>&#x51FD;&#x6570;&#x662F;<code>EnsembleModel</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x7528;&#x6237;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x8BAD;&#x7EC3;&#xFF0C;&#x5E76;&#x6536;&#x96C6;&#x5B83;&#x4EEC;&#x7684;&#x8BAD;&#x7EC3;&#x5386;&#x53F2;&#x3002;&#x5728;&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x7A7A;&#x5217;&#x8868;<code>history_list</code>&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x5386;&#x53F2;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x904D;&#x5386;<code>self.user_models</code>&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x8C03;&#x7528;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;<code>fit_data</code>&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x8BAD;&#x7EC3;&#xFF0C;&#x5C06;<code>*args</code>&#x548C;<code>**kwargs</code>&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x51FD;&#x6570;&#x3002;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x5386;&#x53F2;&#x88AB;&#x6DFB;&#x52A0;&#x5230;<code>history_list</code>&#x4E2D;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x5668;&#x8F93;&#x51FA;&#x8BAD;&#x7EC3;&#x5B8C;&#x6210;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;<code>history_list</code>&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>fit_data</code>&#x51FD;&#x6570;&#x88AB;&#x591A;&#x4E2A;&#x573A;&#x666F;&#x8C03;&#x7528;&#xFF0C;&#x5305;&#x62EC;<code>run_DeepFM_IPS.py</code>&#x3001;<code>run_DeepFM_ensemble.py</code>&#x548C;<code>run_Egreedy.py</code>&#x7B49;&#x811A;&#x672C;&#x4E2D;&#x3002;&#x8FD9;&#x4E9B;&#x8C03;&#x7528;&#x573A;&#x666F;&#x901A;&#x5E38;&#x6D89;&#x53CA;&#x51C6;&#x5907;&#x6570;&#x636E;&#x96C6;&#x3001;&#x8BBE;&#x7F6E;&#x6A21;&#x578B;&#x3001;&#x7F16;&#x8BD1;&#x6A21;&#x578B;&#x4EE5;&#x53CA;&#x8C03;&#x7528;<code>fit_data</code>&#x8FDB;&#x884C;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x3002;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;<code>fit_data</code>&#x7684;&#x53C2;&#x6570;&#x5305;&#x62EC;&#x8BAD;&#x7EC3;&#x96C6;&#x3001;&#x9A8C;&#x8BC1;&#x96C6;&#x3001;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x3001;&#x8BAD;&#x7EC3;&#x8F6E;&#x6570;&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x901A;&#x8FC7;<code>*args</code>&#x548C;<code>**kwargs</code>&#x7075;&#x6D3B;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x5728;&#x4F7F;&#x7528;<code>fit_data</code>&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x4E0E;&#x7528;&#x6237;&#x6A21;&#x578B;&#x7684;<code>fit_data</code>&#x65B9;&#x6CD5;&#x517C;&#x5BB9;&#xFF0C;&#x4F8B;&#x5982;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x3001;&#x8BAD;&#x7EC3;&#x8F6E;&#x6570;&#x7B49;&#x53C2;&#x6570;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x524D;&#x5E94;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x5DF2;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#x5E76;&#x51C6;&#x5907;&#x597D;&#x8FDB;&#x884C;&#x8BAD;&#x7EC3;&#x3002;</p>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>&#xFF1A;
+&#x8C03;&#x7528;<code>fit_data</code>&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x7684;<code>history_list</code>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">[
+    {<span class="hljs-string">&apos;loss&apos;</span>: [<span class="hljs-number">0.5</span>, <span class="hljs-number">0.4</span>, <span class="hljs-number">0.3</span>], <span class="hljs-string">&apos;accuracy&apos;</span>: [<span class="hljs-number">0.7</span>, <span class="hljs-number">0.8</span>, <span class="hljs-number">0.9</span>]},
+    {<span class="hljs-string">&apos;loss&apos;</span>: [<span class="hljs-number">0.6</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">0.4</span>], <span class="hljs-string">&apos;accuracy&apos;</span>: [<span class="hljs-number">0.65</span>, <span class="hljs-number">0.75</span>, <span class="hljs-number">0.85</span>]}
+]
+</code></pre>
+<p>&#x6B64;&#x5217;&#x8868;&#x5305;&#x542B;&#x4E86;&#x96C6;&#x5408;&#x4E2D;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x5386;&#x53F2;&#xFF0C;&#x6BCF;&#x4E2A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x4F8B;&#x5982;&#x635F;&#x5931;&#x503C;&#x548C;&#x51C6;&#x786E;&#x7387;&#x7B49;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x6307;&#x6807;&#x3002;</p>
+<hr>
+<h3 id="functiondef-loadallmodelsself">FunctionDef load_all_models(self)</h3>
+<p><strong>load_all_models</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x7528;&#x6237;&#x6A21;&#x578B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x53C2;&#x6570;&#xFF0C;&#x4F46;&#x4F9D;&#x8D56;&#x4E8E;<code>self</code>&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>load_all_models</code>&#x65B9;&#x6CD5;&#x904D;&#x5386;<code>self.user_models</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6A21;&#x578B;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x5B83;&#x9996;&#x5148;&#x4F7F;&#x7528;<code>get_detailed_path</code>&#x51FD;&#x6570;&#x548C;&#x6A21;&#x578B;&#x7684;&#x7D22;&#x5F15;&#xFF08;<code>i</code>&#xFF09;&#x6765;&#x751F;&#x6210;&#x65B0;&#x7684;&#x6A21;&#x578B;&#x8DEF;&#x5F84;&#xFF08;<code>MODEL_PATH_new</code>&#xFF09;&#x3002;&#x8FD9;&#x4E2A;&#x65B0;&#x8DEF;&#x5F84;&#x662F;&#x6839;&#x636E;&#x539F;&#x59CB;&#x6A21;&#x578B;&#x8DEF;&#x5F84;&#xFF08;<code>self.MODEL_PATH</code>&#xFF09;&#x548C;&#x6A21;&#x578B;&#x7684;&#x7D22;&#x5F15;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x786E;&#x4FDD;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;<code>torch.load</code>&#x51FD;&#x6570;&#x4ECE;&#x8FD9;&#x4E2A;&#x65B0;&#x8DEF;&#x5F84;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x7684;&#x72B6;&#x6001;&#x5B57;&#x5178;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;<code>load_state_dict</code>&#x65B9;&#x6CD5;&#x5C06;&#x5176;&#x5E94;&#x7528;&#x5230;&#x5F53;&#x524D;&#x6A21;&#x578B;&#x4E0A;&#x3002;</p>
+<p>&#x6B64;&#x8FC7;&#x7A0B;&#x786E;&#x4FDD;&#x4E86;&#x96C6;&#x6210;&#x6A21;&#x578B;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B50;&#x6A21;&#x578B;&#x90FD;&#x80FD;&#x88AB;&#x6B63;&#x786E;&#x5730;&#x4ECE;&#x5404;&#x81EA;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x8F7D;&#x51FA;&#x6765;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x5B9E;&#x73B0;&#x6A21;&#x578B;&#x7684;&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x548C;&#x63D0;&#x9AD8;&#x9884;&#x6D4B;&#x6027;&#x80FD;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;</p>
+<p><strong>&#x8C03;&#x7528;&#x60C5;&#x51B5;</strong>: &#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>load_all_models</code>&#x65B9;&#x6CD5;&#x88AB;<code>prepare_user_model</code>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x3002;<code>prepare_user_model</code>&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x51C6;&#x5907;&#x7528;&#x6237;&#x6A21;&#x578B;&#xFF0C;&#x5305;&#x62EC;&#x8BBE;&#x5B9A;&#x968F;&#x673A;&#x79CD;&#x5B50;&#x3001;&#x786E;&#x5B9A;&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#x3001;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x6700;&#x7EC8;&#x8C03;&#x7528;<code>load_all_models</code>&#x65B9;&#x6CD5;&#x6765;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x5B50;&#x6A21;&#x578B;&#x3002;&#x8FD9;&#x8868;&#x660E;<code>load_all_models</code>&#x65B9;&#x6CD5;&#x662F;&#x6A21;&#x578B;&#x51C6;&#x5907;&#x548C;&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x6B65;&#x9AA4;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: </p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>self.user_models</code>&#x5217;&#x8868;&#x5DF2;&#x7ECF;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E14;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x7684;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x3002;</li>
+<li><code>self.MODEL_PATH</code>&#x5E94;&#x4E3A;&#x6709;&#x6548;&#x7684;&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x8DEF;&#x5F84;&#xFF0C;&#x4E14;<code>get_detailed_path</code>&#x51FD;&#x6570;&#x9700;&#x8981;&#x80FD;&#x591F;&#x6839;&#x636E;&#x6B64;&#x8DEF;&#x5F84;&#x548C;&#x6A21;&#x578B;&#x7D22;&#x5F15;&#x751F;&#x6210;&#x6B63;&#x786E;&#x7684;&#x65B0;&#x8DEF;&#x5F84;&#x3002;</li>
+<li>&#x4F7F;&#x7528;<code>torch.load</code>&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#x4E14;&#x8DEF;&#x5F84;&#x6B63;&#x786E;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-loadvaluseritemembeddingself-modeli-freezeemb">FunctionDef load_val_user_item_embedding(self, model_i, freeze_emb)</h3>
+<p><strong>load_val_user_item_embedding</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x52A0;&#x8F7D;&#x9A8C;&#x8BC1;&#x96C6;&#x4E2D;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x7684;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>model_i: &#x6A21;&#x578B;&#x7684;&#x7D22;&#x5F15;&#x7F16;&#x53F7;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#x3002;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x52A0;&#x8F7D;&#x54EA;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x5D4C;&#x5165;&#x3002;</li>
+<li>freeze_emb: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;True&#x3002;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x51BB;&#x7ED3;&#x52A0;&#x8F7D;&#x7684;&#x5D4C;&#x5165;&#xFF0C;&#x5373;&#x4E0D;&#x5141;&#x8BB8;&#x5728;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x66F4;&#x65B0;&#x8FD9;&#x4E9B;&#x5D4C;&#x5165;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>load_val_user_item_embedding</code> &#x51FD;&#x6570;&#x9996;&#x5148;&#x4F7F;&#x7528;<code>get_detailed_path</code>&#x51FD;&#x6570;&#x4E3A;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x5D4C;&#x5165;&#x751F;&#x6210;&#x5177;&#x4F53;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x8FD9;&#x4E9B;&#x8DEF;&#x5F84;&#x57FA;&#x4E8E;&#x539F;&#x59CB;&#x7684;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x9A8C;&#x8BC1;&#x96C6;&#x5D4C;&#x5165;&#x8DEF;&#x5F84;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x6A21;&#x578B;&#x7D22;&#x5F15;&#x7F16;&#x53F7;&#xFF08;<code>model_i</code>&#xFF09;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;<code>torch.load</code>&#x65B9;&#x6CD5;&#x52A0;&#x8F7D;&#x8FD9;&#x4E9B;&#x8DEF;&#x5F84;&#x6307;&#x5B9A;&#x7684;&#x5D4C;&#x5165;&#x6587;&#x4EF6;&#x3002;&#x52A0;&#x8F7D;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x4F7F;&#x7528;<code>torch.nn.Embedding.from_pretrained</code>&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x9884;&#x8BAD;&#x7EC3;&#x7684;&#x5D4C;&#x5165;&#x5C42;&#xFF0C;&#x5176;&#x4E2D;<code>freeze=freeze_emb</code>&#x53C2;&#x6570;&#x63A7;&#x5236;&#x8FD9;&#x4E9B;&#x5D4C;&#x5165;&#x5C42;&#x662F;&#x5426;&#x5728;&#x540E;&#x7EED;&#x7684;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x88AB;&#x51BB;&#x7ED3;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x8FD9;&#x4E9B;&#x5D4C;&#x5165;&#x5C42;&#x5C01;&#x88C5;&#x5728;&#x4E00;&#x4E2A;<code>torch.nn.ModuleDict</code>&#x4E2D;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x65E2;&#x5305;&#x542B;&#x4E86;&#x7528;&#x6237;&#x5D4C;&#x5165;&#xFF0C;&#x4E5F;&#x5305;&#x542B;&#x4E86;&#x9879;&#x76EE;&#x5D4C;&#x5165;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x5D4C;&#x5165;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x88AB;&#x51BB;&#x7ED3;&#x6216;&#x8005;&#x66F4;&#x65B0;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>load_val_user_item_embedding</code> &#x51FD;&#x6570;&#x88AB;<code>setup_state_tracker</code>&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x7B56;&#x7565;&#x6A21;&#x578B;&#x7684;&#x72B6;&#x6001;&#x8DDF;&#x8E2A;&#x5668;&#x8BBE;&#x7F6E;&#x8FC7;&#x7A0B;&#x4E2D;&#x52A0;&#x8F7D;&#x9A8C;&#x8BC1;&#x96C6;&#x7684;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x5D4C;&#x5165;&#x3002;&#x8FD9;&#x4E9B;&#x5D4C;&#x5165;&#x968F;&#x540E;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x72B6;&#x6001;&#x8DDF;&#x8E2A;&#x5668;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x7279;&#x5F81;&#xFF0C;&#x4EE5;&#x53CA;&#x5728;&#x67D0;&#x4E9B;&#x914D;&#x7F6E;&#x4E0B;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x72B6;&#x6001;&#x7EF4;&#x5EA6;&#x3002;&#x8FD9;&#x8868;&#x660E;<code>load_val_user_item_embedding</code>&#x51FD;&#x6570;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x626E;&#x6F14;&#x7740;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x9884;&#x5904;&#x7406;&#x548C;&#x6A21;&#x578B;&#x521D;&#x59CB;&#x5316;&#x9636;&#x6BB5;&#x7684;&#x5173;&#x952E;&#x89D2;&#x8272;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x7684;&#x5D4C;&#x5165;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x6309;&#x7167;&#x9884;&#x671F;&#x7684;&#x8DEF;&#x5F84;&#x548C;&#x683C;&#x5F0F;&#x88AB;&#x4FDD;&#x5B58;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x5728;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x7528;&#x6237;&#x6216;&#x9879;&#x76EE;&#x5D4C;&#x5165;&#xFF0C;&#x5E94;&#x5C06;<code>freeze_emb</code>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;False&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x8C03;&#x7528;<code>load_val_user_item_embedding(model_i=1, freeze_emb=True)</code>&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x7684;<code>saved_embedding</code>&#x793A;&#x4F8B;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;feat_user&quot;</span>: Embedding(&#x7528;&#x6237;&#x6570;&#x91CF;, &#x5D4C;&#x5165;&#x7EF4;&#x5EA6;, padding_idx=<span class="hljs-number">0</span>),
+    <span class="hljs-string">&quot;feat_item&quot;</span>: Embedding(&#x9879;&#x76EE;&#x6570;&#x91CF;, &#x5D4C;&#x5165;&#x7EF4;&#x5EA6;, padding_idx=<span class="hljs-number">0</span>)
+}
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF0C;<code>&#x7528;&#x6237;&#x6570;&#x91CF;</code>&#x548C;<code>&#x9879;&#x76EE;&#x6570;&#x91CF;</code>&#x53D6;&#x51B3;&#x4E8E;&#x52A0;&#x8F7D;&#x7684;&#x5D4C;&#x5165;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;<code>&#x5D4C;&#x5165;&#x7EF4;&#x5EA6;</code>&#x662F;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x7684;&#x957F;&#x5EA6;&#x3002;</p>
+<hr>
+<h3 id="functiondef-computemeanvarself-datasetval-dfuser-dfitem-userfeatures-itemfeatures-xcolumns-ycolumns-useauxiliary">FunctionDef compute_mean_var(self, dataset_val, df_user, df_item, user_features, item_features, x_columns, y_columns, use_auxiliary)</h3>
+<p><strong>compute_mean_var</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BA1;&#x7B97;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x6240;&#x6709;&#x7528;&#x6237;&#x5BF9;&#x6240;&#x6709;&#x7269;&#x54C1;&#x7684;&#x9884;&#x6D4B;&#x5956;&#x52B1;&#x7684;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>dataset_val</code>: &#x7528;&#x4E8E;&#x8BC4;&#x4F30;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x5305;&#x542B;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;&#x4EA4;&#x4E92;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>df_user</code>: &#x5305;&#x542B;&#x7528;&#x6237;&#x7279;&#x5F81;&#x7684;DataFrame&#x3002;</li>
+<li><code>df_item</code>: &#x5305;&#x542B;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x7684;DataFrame&#x3002;</li>
+<li><code>user_features</code>: &#x7528;&#x6237;&#x7279;&#x5F81;&#x5217;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><code>item_features</code>: &#x7269;&#x54C1;&#x7279;&#x5F81;&#x5217;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><code>x_columns</code>: &#x8F93;&#x5165;&#x7279;&#x5F81;&#x5217;&#x7684;&#x540D;&#x79F0;&#x3002;</li>
+<li><code>y_columns</code>: &#x8F93;&#x51FA;&#x76EE;&#x6807;&#x5217;&#x7684;&#x540D;&#x79F0;&#x3002;</li>
+<li><code>use_auxiliary</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x8F85;&#x52A9;&#x65B9;&#x5F0F;&#x6784;&#x5EFA;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;ID&#x6570;&#x7EC4;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x9996;&#x5148;&#xFF0C;<code>compute_mean_var</code>&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>construct_complete_val_x</code>&#x51FD;&#x6570;&#x6784;&#x5EFA;&#x5B8C;&#x6574;&#x7684;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x7279;&#x5F81;&#x77E9;&#x9635;&#xFF0C;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x7684;&#x8BC4;&#x4F30;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x8BA1;&#x7B97;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x552F;&#x4E00;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5E76;&#x6253;&#x5370;&#x51FA;&#x9884;&#x6D4B;&#x6240;&#x6709;&#x7528;&#x6237;&#x5BF9;&#x6240;&#x6709;&#x7269;&#x54C1;&#x7684;&#x5956;&#x52B1;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>StaticDataset</code>&#x5B9E;&#x4F8B;<code>dataset_um</code>&#xFF0C;&#x5E76;&#x4F7F;&#x7528;<code>compile_dataset</code>&#x65B9;&#x6CD5;&#x7F16;&#x8BD1;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x5176;&#x4E2D;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x4E3A;&#x5B8C;&#x6574;&#x7684;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x7279;&#x5F81;&#x77E9;&#x9635;&#xFF0C;&#x8F93;&#x51FA;&#x6807;&#x7B7E;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x5168;&#x96F6;&#x7684;DataFrame&#x3002;&#x6B64;&#x6B65;&#x9AA4;&#x51C6;&#x5907;&#x4E86;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x8BC4;&#x4F30;&#x7684;&#x6570;&#x636E;&#x96C6;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6839;&#x636E;&#x6570;&#x636E;&#x96C6;&#x7684;&#x5927;&#x5C0F;&#x548C;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;epoch&#x7684;&#x6B65;&#x9AA4;&#x6570;&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>DataLoader</code>&#x5B9E;&#x4F8B;<code>test_loader</code>&#xFF0C;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x52A0;&#x8F7D;&#x8BC4;&#x4F30;&#x6570;&#x636E;&#x96C6;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x4F7F;&#x7528;<code>get_one_predicted_res</code>&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x8BE5;&#x6A21;&#x578B;&#x5BF9;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x96C6;&#x7684;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x53CA;&#x5176;&#x65B9;&#x5DEE;&#xFF0C;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x5206;&#x522B;&#x5B58;&#x50A8;&#x5728;<code>mean_mat_list</code>&#x548C;<code>var_mat_list</code>&#x5217;&#x8868;&#x4E2D;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x6A21;&#x578B;&#x7684;&#x9884;&#x6D4B;&#x5747;&#x503C;&#x5217;&#x8868;&#x548C;&#x65B9;&#x5DEE;&#x5217;&#x8868;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>df_user</code>&#x548C;<code>df_item</code>&#x4E2D;&#x7684;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x5DF2;&#x7ECF;&#x6309;&#x7167;&#x671F;&#x671B;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4E86;&#x9884;&#x5904;&#x7406;&#x3002;</li>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;<code>user_features</code>&#x548C;<code>item_features</code>&#x6B63;&#x786E;&#x5730;&#x53CD;&#x6620;&#x4E86;&#x6A21;&#x578B;&#x8BC4;&#x4F30;&#x6240;&#x9700;&#x7684;&#x7279;&#x5F81;&#x5217;&#x3002;</li>
+<li><code>use_auxiliary</code>&#x53C2;&#x6570;&#x5E94;&#x6839;&#x636E;&#x6570;&#x636E;&#x96C6;&#x7684;&#x7279;&#x6027;&#x548C;&#x9700;&#x6C42;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5982;&#x679C;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x4E14;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x96C6;&#x5305;&#x542B;3&#x4E2A;&#x7528;&#x6237;&#x548C;2&#x4E2A;&#x7269;&#x54C1;&#xFF0C;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x7684;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#x5217;&#x8868;&#xFF1A;</p>
+<ul>
+<li><code>mean_mat_list</code> = [ [[0.5, 0.6], [0.7, 0.8], [0.9, 1.0]], [[0.4, 0.5], [0.6, 0.7], [0.8, 0.9]] ]</li>
+<li><code>var_mat_list</code> = [ [[0.1, 0.2], [0.3, 0.4], [0.5, 0.6]], [[0.2, 0.3], [0.4, 0.5], [0.6, 0.7]] ]</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;<code>EnsembleModel</code>&#x7C7B;&#x4E2D;&#x7684;&#x5173;&#x952E;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x5BF9;&#x4E8E;&#x7ED9;&#x5B9A;&#x6570;&#x636E;&#x96C6;&#x7684;&#x9884;&#x6D4B;&#x6027;&#x80FD;&#xFF0C;&#x8FDB;&#x800C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x7684;&#x8BC4;&#x4F30;&#x548C;&#x9009;&#x62E9;&#x3002;</p>
+<hr>
+<h3 id="functiondef-getpredictionandmaxvarself-meanmatlist-varmatlist-deterministic">FunctionDef get_prediction_and_maxvar(self, mean_mat_list, var_mat_list, deterministic)</h3>
+<p><strong>get_prediction_and_maxvar</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x57FA;&#x4E8E;&#x7ED9;&#x5B9A;&#x7684;&#x5747;&#x503C;&#x77E9;&#x9635;&#x5217;&#x8868;&#x548C;&#x65B9;&#x5DEE;&#x77E9;&#x9635;&#x5217;&#x8868;&#xFF0C;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x503C;&#x548C;&#x6700;&#x5927;&#x65B9;&#x5DEE;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>mean_mat_list: &#x5747;&#x503C;&#x77E9;&#x9635;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x77E9;&#x9635;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x6837;&#x672C;&#x7684;&#x9884;&#x6D4B;&#x5747;&#x503C;&#x3002;</li>
+<li>var_mat_list: &#x65B9;&#x5DEE;&#x77E9;&#x9635;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x77E9;&#x9635;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x6837;&#x672C;&#x9884;&#x6D4B;&#x7684;&#x65B9;&#x5DEE;&#x3002;</li>
+<li>deterministic: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x4EE5;&#x786E;&#x5B9A;&#x6027;&#x65B9;&#x5F0F;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x503C;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x8BE5;&#x51FD;&#x6570;&#x9996;&#x5148;&#x68C0;&#x67E5;<code>deterministic</code>&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x51B3;&#x5B9A;&#x9884;&#x6D4B;&#x503C;&#x7684;&#x8BA1;&#x7B97;&#x65B9;&#x5F0F;&#x3002;&#x5982;&#x679C;<code>deterministic</code>&#x4E3A;True&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;<code>mean_mat_list</code>&#x4E2D;&#x6240;&#x6709;&#x77E9;&#x9635;&#x7684;&#x5E73;&#x5747;&#x503C;&#x4F5C;&#x4E3A;&#x9884;&#x6D4B;&#x503C;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x9002;&#x7528;&#x4E8E;&#x9700;&#x8981;&#x7A33;&#x5B9A;&#x8F93;&#x51FA;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>deterministic</code>&#x4E3A;False&#xFF0C;&#x5219;&#x91C7;&#x7528;&#x4E00;&#x79CD;&#x968F;&#x673A;&#x62BD;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x503C;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x9996;&#x5148;&#x968F;&#x673A;&#x9009;&#x62E9;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;&#x7684;&#x6A21;&#x578B;&#xFF08;&#x901A;&#x8FC7;<code>ind_mat</code>&#x7D22;&#x5F15;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#x8BA1;&#x7B97;&#x8BE5;&#x4F4D;&#x7F6E;&#x7684;&#x9884;&#x6D4B;&#x503C;&#xFF0C;&#x5176;&#x4E2D;&#x52A0;&#x5165;&#x4E86;&#x6B63;&#x6001;&#x5206;&#x5E03;&#x566A;&#x58F0;&#x4EE5;&#x6A21;&#x62DF;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x3002;</p>
+<p>&#x65E0;&#x8BBA;&#x54EA;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x6700;&#x540E;&#x90FD;&#x4F1A;&#x8BA1;&#x7B97;<code>var_mat_list</code>&#x4E2D;&#x6240;&#x6709;&#x77E9;&#x9635;&#x7684;&#x6700;&#x5927;&#x65B9;&#x5DEE;&#x503C;&#xFF08;<code>var_max</code>&#xFF09;&#xFF0C;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x8FD9;&#x4E2A;&#x6700;&#x5927;&#x65B9;&#x5DEE;&#x503C;&#x53EF;&#x4EE5;&#x7528;&#x4F5C;&#x8BC4;&#x4F30;&#x9884;&#x6D4B;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x7684;&#x6307;&#x6807;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>get_prediction_and_maxvar</code>&#x51FD;&#x6570;&#x88AB;<code>save_all_models</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x548C;&#x76F8;&#x5173;&#x6570;&#x636E;&#x524D;&#xFF0C;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x503C;&#x548C;&#x6700;&#x5927;&#x65B9;&#x5DEE;&#x3002;&#x8FD9;&#x5728;&#x6A21;&#x578B;&#x8BC4;&#x4F30;&#x548C;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#x4E2D;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#x5230;&#x6A21;&#x578B;&#x7684;&#x6027;&#x80FD;&#x548C;&#x53EF;&#x9760;&#x6027;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;&#x975E;&#x786E;&#x5B9A;&#x6027;&#x65B9;&#x5F0F;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x503C;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;&#x5F15;&#x5165;&#x4E86;&#x968F;&#x673A;&#x6027;&#xFF0C;&#x76F8;&#x540C;&#x7684;&#x8F93;&#x5165;&#x53EF;&#x80FD;&#x4F1A;&#x5F97;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x8F93;&#x51FA;&#x3002;&#x8FD9;&#x4E00;&#x70B9;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x3002;</li>
+<li>&#x8BA1;&#x7B97;&#x6700;&#x5927;&#x65B9;&#x5DEE;&#x65F6;&#xFF0C;&#x662F;&#x5728;&#x6240;&#x6709;&#x6A21;&#x578B;&#x9884;&#x6D4B;&#x7684;&#x65B9;&#x5DEE;&#x4E2D;&#x9009;&#x62E9;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6700;&#x7EC8;&#x7684;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x8BC4;&#x4F30;&#x503E;&#x5411;&#x4E8E;&#x4FDD;&#x5B88;&#x4F30;&#x8BA1;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5047;&#x8BBE;mean_mat_list&#x548C;var_mat_list&#x5404;&#x5305;&#x542B;3&#x4E2A;&#x5F62;&#x72B6;&#x4E3A;(2, 2)&#x7684;&#x77E9;&#x9635;</span>
+prediction, var_max = get_prediction_and_maxvar(mean_mat_list, var_mat_list, deterministic=<span class="hljs-keyword">True</span>)
+<span class="hljs-comment"># prediction&#x53EF;&#x80FD;&#x7684;&#x5F62;&#x72B6;&#x4E3A;(2, 2)&#xFF0C;var_max&#x7684;&#x5F62;&#x72B6;&#x4E5F;&#x4E3A;(2, 2)</span>
+</code></pre>
+<hr>
+<h3 id="functiondef-saveallmodelsself-datasetval-xcolumns-ycolumns-dfuser-dfitem-dfuserval-dfitemval-dataset-isuserinfo-deterministic-useauxiliary">FunctionDef save_all_models(self, dataset_val, x_columns, y_columns, df_user, df_item, df_user_val, df_item_val, dataset, is_userinfo, deterministic, use_auxiliary)</h3>
+<p><strong>save_all_models</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4FDD;&#x5B58;&#x6240;&#x6709;&#x6A21;&#x578B;&#x7684;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x3001;&#x65B9;&#x5DEE;&#x3001;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x3001;&#x6A21;&#x578B;&#x72B6;&#x6001;&#x4EE5;&#x53CA;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>dataset_val</code>: &#x7528;&#x4E8E;&#x9A8C;&#x8BC1;&#x7684;&#x6570;&#x636E;&#x96C6;&#x3002;</li>
+<li><code>x_columns</code>: &#x8F93;&#x5165;&#x7279;&#x5F81;&#x5217;&#x7684;&#x540D;&#x79F0;&#x5217;&#x8868;&#x3002;</li>
+<li><code>y_columns</code>: &#x8F93;&#x51FA;&#x76EE;&#x6807;&#x5217;&#x7684;&#x540D;&#x79F0;&#x5217;&#x8868;&#x3002;</li>
+<li><code>df_user</code>: &#x5305;&#x542B;&#x7528;&#x6237;&#x7279;&#x5F81;&#x7684;DataFrame&#x3002;</li>
+<li><code>df_item</code>: &#x5305;&#x542B;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x7684;DataFrame&#x3002;</li>
+<li><code>df_user_val</code>: &#x9A8C;&#x8BC1;&#x96C6;&#x4E2D;&#x5305;&#x542B;&#x7528;&#x6237;&#x7279;&#x5F81;&#x7684;DataFrame&#x3002;</li>
+<li><code>df_item_val</code>: &#x9A8C;&#x8BC1;&#x96C6;&#x4E2D;&#x5305;&#x542B;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x7684;DataFrame&#x3002;</li>
+<li><code>dataset</code>: &#x6570;&#x636E;&#x96C6;&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>is_userinfo</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x9700;&#x8981;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x6765;&#x83B7;&#x53D6;&#x7279;&#x5F81;&#x3002;</li>
+<li><code>deterministic</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x4EE5;&#x786E;&#x5B9A;&#x6027;&#x65B9;&#x5F0F;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x503C;&#x3002;</li>
+<li><code>use_auxiliary</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x8F85;&#x52A9;&#x65B9;&#x5F0F;&#x6784;&#x5EFA;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;ID&#x6570;&#x7EC4;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x9996;&#x5148;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>dataset.get_features</code>&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7279;&#x5F81;&#x3001;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x548C;&#x5956;&#x52B1;&#x7279;&#x5F81;&#x7684;&#x5217;&#x8868;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5B83;&#x8C03;&#x7528;<code>compute_mean_var</code>&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x6240;&#x6709;&#x7528;&#x6237;&#x5BF9;&#x6240;&#x6709;&#x7269;&#x54C1;&#x7684;&#x9884;&#x6D4B;&#x5956;&#x52B1;&#x7684;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#xFF0C;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x4FDD;&#x5B58;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x51FD;&#x6570;&#x4F7F;&#x7528;<code>get_prediction_and_maxvar</code>&#x65B9;&#x6CD5;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x503C;&#x548C;&#x6700;&#x5927;&#x65B9;&#x5DEE;&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x51FD;&#x6570;&#x8FD8;&#x66F4;&#x65B0;&#x5E76;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x53C2;&#x6570;&#xFF0C;&#x5305;&#x62EC;&#x6A21;&#x578B;&#x6570;&#x91CF;&#x548C;&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x5176;&#x72B6;&#x6001;&#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x8FD9;&#x662F;&#x901A;&#x8FC7;<code>get_detailed_path</code>&#x51FD;&#x6570;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x6709;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x4E3A;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x4FDD;&#x5B58;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;&#x8FD9;&#x662F;&#x901A;&#x8FC7;&#x5B9A;&#x4E49;&#x7684;<code>save_embedding</code>&#x5185;&#x90E8;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x5B83;&#x5C06;DataFrame&#x4E2D;&#x7684;&#x7279;&#x5F81;&#x8F6C;&#x6362;&#x4E3A;&#x5F20;&#x91CF;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x5E76;&#x4FDD;&#x5B58;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x786E;&#x4FDD;&#x63D0;&#x4F9B;&#x7684;DataFrame&#x5DF2;&#x7ECF;&#x6309;&#x7167;&#x671F;&#x671B;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4E86;&#x9884;&#x5904;&#x7406;&#x3002;</li>
+<li><code>deterministic</code>&#x53C2;&#x6570;&#x5E94;&#x6839;&#x636E;&#x6A21;&#x578B;&#x8BC4;&#x4F30;&#x7684;&#x9700;&#x6C42;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;&#xFF0C;&#x4EE5;&#x51B3;&#x5B9A;&#x9884;&#x6D4B;&#x503C;&#x7684;&#x8BA1;&#x7B97;&#x65B9;&#x5F0F;&#x3002;</li>
+<li>&#x4FDD;&#x5B58;&#x7684;&#x6A21;&#x578B;&#x548C;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x540E;&#x7EED;&#x7684;&#x6A21;&#x578B;&#x8BC4;&#x4F30;&#x548C;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x6784;&#x5EFA;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4F46;&#x5B83;&#x4F1A;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x8DEF;&#x5F84;&#x4E0B;&#x4FDD;&#x5B58;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5305;&#x62EC;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x3001;&#x65B9;&#x5DEE;&#x3001;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x3001;&#x6A21;&#x578B;&#x72B6;&#x6001;&#x548C;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x7684;&#x6A21;&#x578B;&#x8DEF;&#x5F84;&#x4E3A;<code>model/user_model.pth</code>&#xFF0C;&#x5219;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x72B6;&#x6001;&#x53EF;&#x80FD;&#x88AB;&#x4FDD;&#x5B58;&#x4E3A;<code>model/user_model_M1.pth</code>&#x3001;<code>model/user_model_M2.pth</code>&#x7B49;&#xFF0C;&#x5176;&#x4E2D;<code>M1</code>&#x3001;<code>M2</code>&#x8868;&#x793A;&#x6A21;&#x578B;&#x7F16;&#x53F7;&#x3002;</p>
+<h4 id="functiondef-saveembeddingmodel-dfsave-columns-savepath">FunctionDef save_embedding(model, df_save, columns, SAVEPATH)</h4>
+<p><strong>save_embedding</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x7684;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x5230;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>model</code>: &#x6A21;&#x578B;&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x4F9B;&#x5D4C;&#x5165;&#x5B57;&#x5178;&#x3002;</li>
+<li><code>df_save</code>: &#x9700;&#x8981;&#x4FDD;&#x5B58;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x7684;DataFrame&#x3002;</li>
+<li><code>columns</code>: &#x7279;&#x5F81;&#x5217;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6307;&#x5B9A;&#x4E86;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x7279;&#x5F81;&#x3002;</li>
+<li><code>SAVEPATH</code>: &#x5D4C;&#x5165;&#x8868;&#x793A;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>save_embedding</code>&#x51FD;&#x6570;&#x9996;&#x5148;&#x91CD;&#x7F6E;<code>df_save</code>&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x987A;&#x5E8F;&#x6027;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x5B83;&#x6839;&#x636E;<code>columns</code>&#x53C2;&#x6570;&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x7279;&#x5F81;&#x5217;&#xFF0C;&#x7B5B;&#x9009;&#x51FA;&#x76F8;&#x5E94;&#x7684;&#x5217;&#x3002;&#x8FD9;&#x4E00;&#x6B65;&#x786E;&#x4FDD;&#x4E86;&#x53EA;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x7279;&#x5F81;&#x88AB;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x51FD;&#x6570;&#x8C03;&#x7528;<code>build_input_features</code>&#x51FD;&#x6570;&#xFF08;&#x6B64;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x672A;&#x63D0;&#x4F9B;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x63A8;&#x65AD;&#x5176;&#x4F5C;&#x7528;&#x662F;&#x6784;&#x5EFA;&#x7279;&#x5F81;&#x7684;&#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;<code>input_from_feature_columns</code>&#x51FD;&#x6570;&#x6765;&#x4ECE;&#x7279;&#x5F81;&#x5217;&#x4E2D;&#x63D0;&#x53D6;&#x7A00;&#x758F;&#x548C;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x7684;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;<code>input_from_feature_columns</code>&#x51FD;&#x6570;&#x7684;&#x8BE6;&#x7EC6;&#x529F;&#x80FD;&#x548C;&#x53C2;&#x6570;&#x5DF2;&#x5728;&#x76F8;&#x5173;&#x6587;&#x6863;&#x4E2D;&#x8BF4;&#x660E;&#xFF0C;&#x5B83;&#x80FD;&#x591F;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7279;&#x5F81;&#x5217;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x548C;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x7684;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x4E4B;&#x540E;&#xFF0C;<code>save_embedding</code>&#x51FD;&#x6570;&#x4F7F;&#x7528;<code>combined_dnn_input</code>&#x51FD;&#x6570;&#xFF08;&#x6B64;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x672A;&#x63D0;&#x4F9B;&#xFF0C;&#x4F46;&#x6839;&#x636E;&#x540D;&#x79F0;&#x548C;&#x4E0A;&#x4E0B;&#x6587;&#x53EF;&#x4EE5;&#x63A8;&#x65AD;&#xFF0C;&#x5176;&#x4F5C;&#x7528;&#x662F;&#x5408;&#x5E76;&#x7A00;&#x758F;&#x548C;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x7684;&#x5D4C;&#x5165;&#x8868;&#x793A;&#xFF09;&#xFF0C;&#x4EE5;&#x4FBF;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7EDF;&#x4E00;&#x7684;&#x8868;&#x793A;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x7684;&#x8F93;&#x5165;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;<code>torch.save</code>&#x65B9;&#x6CD5;&#x5C06;&#x5F97;&#x5230;&#x7684;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x4FDD;&#x5B58;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x8DEF;&#x5F84;<code>SAVEPATH</code>&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>SAVEPATH</code>&#x662F;&#x6709;&#x6548;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x4E14;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x6743;&#x9650;&#x8FDB;&#x884C;&#x6587;&#x4EF6;&#x5199;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;<code>model</code>&#x4E2D;&#x7684;&#x5D4C;&#x5165;&#x5B57;&#x5178;&#x5DF2;&#x7ECF;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5E76;&#x4E14;<code>df_save</code>&#x548C;<code>columns</code>&#x6B63;&#x786E;&#x5339;&#x914D;&#x6570;&#x636E;&#x96C6;&#x7684;&#x7ED3;&#x6784;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x4E0D;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x53EF;&#x89C6;&#x5316;&#x7ED3;&#x679C;&#xFF0C;&#x800C;&#x662F;&#x5C06;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x4FDD;&#x5B58;&#x5230;&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x4F46;&#x8FD4;&#x56DE;&#x7684;<code>representation_save</code>&#x53EF;&#x4EE5;&#x88AB;&#x89C6;&#x4E3A;&#x4E00;&#x4E2A;Tensor&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x5177;&#x4F53;&#x5F62;&#x72B6;&#x548C;&#x5185;&#x5BB9;&#x53D6;&#x51B3;&#x4E8E;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x7684;&#x7EF4;&#x5EA6;&#x548C;&#x6570;&#x91CF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x5904;&#x7406;&#x4E86;&#x4E24;&#x4E2A;&#x7279;&#x5F81;&#x5E76;&#x4E14;&#x6BCF;&#x4E2A;&#x7279;&#x5F81;&#x7684;&#x5D4C;&#x5165;&#x7EF4;&#x5EA6;&#x4E3A;10&#xFF0C;&#x90A3;&#x4E48;<code>representation_save</code>&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x5F62;&#x72B6;&#x4E3A;[n, 20]&#x7684;Tensor&#xFF0C;&#x5176;&#x4E2D;n&#x662F;<code>df_save</code>&#x4E2D;&#x884C;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<hr>
+<hr>
+<h2 id="functiondef-getdetailedpathpathold-num">FunctionDef get_detailed_path(Path_old, num)</h2>
+<p><strong>get_detailed_path</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6839;&#x636E;&#x539F;&#x59CB;&#x8DEF;&#x5F84;&#x548C;&#x6A21;&#x578B;&#x7F16;&#x53F7;&#x751F;&#x6210;&#x65B0;&#x7684;&#x8BE6;&#x7EC6;&#x8DEF;&#x5F84;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>Path_old: &#x539F;&#x59CB;&#x8DEF;&#x5F84;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li>num: &#x6A21;&#x578B;&#x7684;&#x7F16;&#x53F7;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>get_detailed_path</code> &#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF08;<code>Path_old</code>&#xFF09;&#x548C;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x7F16;&#x53F7;&#xFF08;<code>num</code>&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;&#x8FD9;&#x4E2A;&#x65B0;&#x8DEF;&#x5F84;&#x5728;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x540D;&#x548C;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x4E4B;&#x95F4;&#x63D2;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x6A21;&#x578B;&#x7F16;&#x53F7;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x4F8B;&#x5982;<code>_M1</code>&#xFF09;&#xFF0C;&#x4ECE;&#x800C;&#x4E3A;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x6216;&#x7248;&#x672C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x51FD;&#x6570;&#x9996;&#x5148;&#x5C06;&#x539F;&#x59CB;&#x8DEF;&#x5F84;&#x6309;&#x7167;<code>.</code>&#x5206;&#x5272;&#x6210;&#x5217;&#x8868;&#xFF0C;&#x786E;&#x4FDD;&#x8DEF;&#x5F84;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#xFF08;&#x6587;&#x4EF6;&#x540D;&#x548C;&#x6269;&#x5C55;&#x540D;&#xFF09;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5B83;&#x4F1A;&#x53D6;&#x51FA;&#x6587;&#x4EF6;&#x540D;&#xFF08;&#x4E0D;&#x5305;&#x62EC;&#x6269;&#x5C55;&#x540D;&#x7684;&#x90E8;&#x5206;&#xFF09;&#xFF0C;&#x5E76;&#x5728;&#x5176;&#x540E;&#x6DFB;&#x52A0;<code>_M{num}</code>&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x5176;&#x4E2D;<code>{num}</code>&#x662F;&#x4F20;&#x5165;&#x7684;&#x6A21;&#x578B;&#x7F16;&#x53F7;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x8FD9;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x4E0E;&#x539F;&#x59CB;&#x7684;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x91CD;&#x65B0;&#x7EC4;&#x5408;&#x6210;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x65B0;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>get_detailed_path</code> &#x51FD;&#x6570;&#x88AB;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x3001;&#x9A8C;&#x8BC1;&#x96C6;&#x7528;&#x6237;&#x9879;&#x5D4C;&#x5165;&#x7B49;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x8FD9;&#x4E9B;&#x8C03;&#x7528;&#x573A;&#x666F;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li>&#x5728;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x6A21;&#x578B;&#x7684;<code>load_all_models</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x4E3A;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6A21;&#x578B;&#x8DEF;&#x5F84;&#xFF0C;&#x4EE5;&#x4FBF;&#x4ECE;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x8F7D;&#x6A21;&#x578B;&#x72B6;&#x6001;&#x3002;</li>
+<li>&#x5728;&#x52A0;&#x8F7D;&#x9A8C;&#x8BC1;&#x96C6;&#x7528;&#x6237;&#x9879;&#x5D4C;&#x5165;&#x7684;<code>load_val_user_item_embedding</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x4E3A;&#x7528;&#x6237;&#x5D4C;&#x5165;&#x548C;&#x9879;&#x5D4C;&#x5165;&#x751F;&#x6210;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x4EE5;&#x4FBF;&#x4ECE;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x8F7D;&#x5D4C;&#x5165;&#x3002;</li>
+<li>&#x5728;&#x4FDD;&#x5B58;&#x6240;&#x6709;&#x6A21;&#x578B;&#x7684;<code>save_all_models</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x4E3A;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x53CA;&#x5176;&#x76F8;&#x5173;&#x7684;&#x7528;&#x6237;&#x548C;&#x9879;&#x5D4C;&#x5165;&#x751F;&#x6210;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x4EE5;&#x4FBF;&#x5C06;&#x5B83;&#x4EEC;&#x4FDD;&#x5B58;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</li>
+</ul>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>Path_old</code>&#x81F3;&#x5C11;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x540D;&#x548C;&#x6269;&#x5C55;&#x540D;&#x4E24;&#x90E8;&#x5206;&#x3002;</li>
+<li><code>num</code>&#x53C2;&#x6570;&#x5E94;&#x4E3A;&#x6574;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x6A21;&#x578B;&#x7684;&#x7F16;&#x53F7;&#xFF0C;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x552F;&#x4E00;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5982;&#x679C;<code>Path_old</code>&#x4E3A;<code>&quot;model/user_model.pth&quot;</code>&#xFF0C;<code>num</code>&#x4E3A;<code>1</code>&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x65B0;&#x8DEF;&#x5F84;&#x5C06;&#x4E3A;<code>&quot;model/user_model_M1.pth&quot;</code>&#x3002;</p>
+<h2 id="functiondef-constructcompletevalxdatasetval-dfuser-dfitem-userfeatures-itemfeatures-useauxiliary">FunctionDef construct_complete_val_x(dataset_val, df_user, df_item, user_features, item_features, use_auxiliary)</h2>
+<p><strong>construct_complete_val_x</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6784;&#x5EFA;&#x5B8C;&#x6574;&#x7684;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x7279;&#x5F81;&#x77E9;&#x9635;&#xFF0C;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x7684;&#x8BC4;&#x4F30;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>dataset_val</code>: &#x8BC4;&#x4F30;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x5305;&#x542B;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;&#x4EA4;&#x4E92;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>df_user</code>: &#x7528;&#x6237;&#x7279;&#x5F81;&#x7684;DataFrame&#x3002;</li>
+<li><code>df_item</code>: &#x7269;&#x54C1;&#x7279;&#x5F81;&#x7684;DataFrame&#x3002;</li>
+<li><code>user_features</code>: &#x7528;&#x6237;&#x7279;&#x5F81;&#x5217;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><code>item_features</code>: &#x7269;&#x54C1;&#x7279;&#x5F81;&#x5217;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><code>use_auxiliary</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x8F85;&#x52A9;&#x65B9;&#x5F0F;&#x6784;&#x5EFA;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;ID&#x6570;&#x7EC4;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x6839;&#x636E;<code>use_auxiliary</code>&#x53C2;&#x6570;&#x7684;&#x503C;&#x786E;&#x5B9A;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;ID&#x6570;&#x7EC4;&#x3002;&#x5982;&#x679C;<code>use_auxiliary</code>&#x4E3A;True&#xFF0C;&#x5219;&#x4F7F;&#x7528;<code>df_user</code>&#x548C;<code>df_item</code>&#x7684;&#x7D22;&#x5F15;&#x4F5C;&#x4E3A;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;ID&#xFF1B;&#x5426;&#x5219;&#xFF0C;&#x4ECE;<code>dataset_val</code>&#x4E2D;&#x63D0;&#x53D6;&#x552F;&#x4E00;&#x7684;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;ID&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;ID&#x6765;&#x4ECE;<code>df_user</code>&#x548C;<code>df_item</code>&#x4E2D;&#x9009;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7279;&#x5F81;&#xFF0C;&#x5E76;&#x6784;&#x5EFA;&#x5B8C;&#x6574;&#x7684;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x7279;&#x5F81;&#x77E9;&#x9635;&#x3002;&#x8FD9;&#x4E2A;&#x77E9;&#x9635;&#x662F;&#x901A;&#x8FC7;&#x91CD;&#x590D;&#x7528;&#x6237;&#x7279;&#x5F81;&#x548C;&#x5E73;&#x94FA;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x6700;&#x7EC8;&#x901A;&#x8FC7;&#x6A2A;&#x5411;&#x8FDE;&#x63A5;&#x8FD9;&#x4E24;&#x90E8;&#x5206;&#x7279;&#x5F81;&#x5F97;&#x5230;&#x5B8C;&#x6574;&#x7684;&#x7279;&#x5F81;&#x77E9;&#x9635;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>construct_complete_val_x</code>&#x51FD;&#x6570;&#x88AB;<code>EnsembleModel</code>&#x7C7B;&#x7684;<code>compute_mean_var</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x6240;&#x6709;&#x7528;&#x6237;&#x5BF9;&#x6240;&#x6709;&#x7269;&#x54C1;&#x7684;&#x5B8C;&#x6574;&#x7279;&#x5F81;&#x77E9;&#x9635;&#xFF0C;&#x4EE5;&#x4FBF;&#x8FDB;&#x4E00;&#x6B65;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#x5BF9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x5BF9;&#x7684;&#x9884;&#x6D4B;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#x3002;&#x8FD9;&#x662F;&#x5B9E;&#x73B0;&#x6A21;&#x578B;&#x8BC4;&#x4F30;&#x548C;&#x96C6;&#x6210;&#x9884;&#x6D4B;&#x7684;&#x5173;&#x952E;&#x6B65;&#x9AA4;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>df_user</code>&#x548C;<code>df_item</code>&#x7684;&#x7D22;&#x5F15;&#x6B63;&#x786E;&#x5730;&#x53CD;&#x6620;&#x4E86;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;ID&#x3002;</li>
+<li><code>user_features</code>&#x548C;<code>item_features</code>&#x5E94;&#x4EC5;&#x5305;&#x542B;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x8BC4;&#x4F30;&#x7684;&#x7279;&#x5F81;&#x5217;&#x3002;</li>
+<li>&#x5F53;<code>use_auxiliary</code>&#x4E3A;False&#x65F6;&#xFF0C;&#x786E;&#x4FDD;<code>dataset_val</code>&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x7528;&#x6237;&#x5217;&#x548C;&#x7269;&#x54C1;&#x5217;&#x7D22;&#x5F15;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;2&#x4E2A;&#x7528;&#x6237;&#x7279;&#x5F81;&#x548C;3&#x4E2A;&#x7269;&#x54C1;&#x7279;&#x5F81;&#xFF0C;&#x7528;&#x6237;ID&#x4E3A;[1, 2]&#xFF0C;&#x7269;&#x54C1;ID&#x4E3A;[101, 102]&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;DataFrame&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>user_feature1</th>
+<th>user_feature2</th>
+<th>item_feature1</th>
+<th>item_feature2</th>
+<th>item_feature3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1</td>
+<td>0.2</td>
+<td>1.1</td>
+<td>1.2</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>0.2</td>
+<td>2.1</td>
+<td>2.2</td>
+<td>2.3</td>
+</tr>
+<tr>
+<td>0.3</td>
+<td>0.4</td>
+<td>1.1</td>
+<td>1.2</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>0.3</td>
+<td>0.4</td>
+<td>2.1</td>
+<td>2.2</td>
+<td>2.3</td>
+</tr>
+</tbody>
+</table>
+<p>&#x8FD9;&#x4E2A;&#x8F93;&#x51FA;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6240;&#x6709;&#x7528;&#x6237;&#x5BF9;&#x6240;&#x6709;&#x7269;&#x54C1;&#x7684;&#x7279;&#x5F81;&#x7EC4;&#x5408;&#x7684;&#x5B8C;&#x6574;&#x77E9;&#x9635;&#x3002;</p>
+<h2 id="functiondef-getonepredictedresmodel-dfxcomplete-testloader-stepsperepoch">FunctionDef get_one_predicted_res(model, df_x_complete, test_loader, steps_per_epoch)</h2>
+<p><strong>get_one_predicted_res</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x83B7;&#x53D6;&#x5355;&#x4E2A;&#x6A21;&#x578B;&#x5BF9;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x96C6;&#x7684;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x53CA;&#x5176;&#x65B9;&#x5DEE;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>model</code>: &#x6A21;&#x578B;&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x9884;&#x6D4B;&#x3002;</li>
+<li><code>df_x_complete</code>: &#x5B8C;&#x6574;&#x7684;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x5305;&#x542B;&#x7528;&#x6237;ID&#x548C;&#x7269;&#x54C1;ID&#x3002;</li>
+<li><code>test_loader</code>: &#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x7684;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x5904;&#x7406;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x3002;</li>
+<li><code>steps_per_epoch</code>: &#x6BCF;&#x4E2A;epoch&#x4E2D;&#x7684;&#x6B65;&#x9AA4;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x8FDB;&#x5EA6;&#x6761;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>get_one_predicted_res</code>&#x51FD;&#x6570;&#x9996;&#x5148;&#x521D;&#x59CB;&#x5316;&#x4E24;&#x4E2A;&#x5217;&#x8868;<code>mean_all</code>&#x548C;<code>var_all</code>&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6240;&#x6709;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#x3002;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>test_loader</code>&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x4F20;&#x5165;&#x7684;&#x6A21;&#x578B;&#x5BF9;&#x6BCF;&#x6279;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#xFF0C;&#x5E76;&#x5C06;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;&#x5747;&#x503C;&#x548C;&#x5BF9;&#x6570;&#x65B9;&#x5DEE;&#x8F6C;&#x6362;&#x4E3A;CPU&#x4E0A;&#x7684;numpy&#x6570;&#x7EC4;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x8BA1;&#x7B97;&#x6BCF;&#x6279;&#x6570;&#x636E;&#x7684;&#x65B9;&#x5DEE;&#xFF0C;&#x5E76;&#x5C06;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#x5206;&#x522B;&#x8FFD;&#x52A0;&#x5230;<code>mean_all</code>&#x548C;<code>var_all</code>&#x5217;&#x8868;&#x4E2D;&#x3002;&#x4E4B;&#x540E;&#xFF0C;&#x4F7F;&#x7528;<code>np.concatenate</code>&#x5C06;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x548C;&#x65B9;&#x5DEE;&#x5408;&#x5E76;&#xFF0C;&#x5E76;&#x8C03;&#x6574;&#x5F62;&#x72B6;&#x4EE5;&#x5339;&#x914D;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x96C6;&#x7684;&#x7ED3;&#x6784;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;&#x7528;&#x6237;ID&#x548C;&#x7269;&#x54C1;ID&#x7684;&#x7F16;&#x7801;&#x95EE;&#x9898;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;ID&#x6216;&#x7269;&#x54C1;ID&#x5728;&#x6D4B;&#x8BD5;&#x96C6;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;&#x52A0;&#x4E00;&#x4E0D;&#x7B49;&#x4E8E;&#x552F;&#x4E00;&#x503C;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x8868;&#x660E;ID&#x4E0D;&#x8FDE;&#x7EED;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>LabelEncoder</code>&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x7F16;&#x7801;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x7A00;&#x758F;&#x77E9;&#x9635;<code>csr_matrix</code>&#x6784;&#x5EFA;&#x9884;&#x6D4B;&#x5747;&#x503C;&#x77E9;&#x9635;<code>mean_mat</code>&#x548C;&#x65B9;&#x5DEE;&#x77E9;&#x9635;<code>var_mat</code>&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x7528;&#x6237;ID&#x548C;&#x7269;&#x54C1;ID&#x7684;&#x7F16;&#x7801;&#x60C5;&#x51B5;&#x8FD4;&#x56DE;&#x8FD9;&#x4E24;&#x4E2A;&#x77E9;&#x9635;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>get_one_predicted_res</code>&#x51FD;&#x6570;&#x88AB;<code>EnsembleModel</code>&#x7C7B;&#x7684;<code>compute_mean_var</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#x96C6;&#x5408;&#x4E2D;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x5BF9;&#x4E8E;&#x7ED9;&#x5B9A;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x96C6;&#x7684;&#x9884;&#x6D4B;&#x5747;&#x503C;&#x548C;&#x65B9;&#x5DEE;&#x77E9;&#x9635;&#x3002;&#x8FD9;&#x4E9B;&#x77E9;&#x9635;&#x968F;&#x540E;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x5206;&#x6790;&#x6216;&#x6A21;&#x578B;&#x96C6;&#x6210;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>model</code>&#x5BF9;&#x8C61;&#x5177;&#x6709;<code>forward</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4E14;&#x8BE5;&#x65B9;&#x6CD5;&#x80FD;&#x591F;&#x8FD4;&#x56DE;&#x9884;&#x6D4B;&#x7684;&#x5747;&#x503C;&#x548C;&#x5BF9;&#x6570;&#x65B9;&#x5DEE;&#x3002;</li>
+<li><code>df_x_complete</code>&#x5E94;&#x5305;&#x542B;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x7684;&#x7528;&#x6237;ID&#x548C;&#x7269;&#x54C1;ID&#x3002;</li>
+<li>&#x4F7F;&#x7528;<code>test_loader</code>&#x65F6;&#xFF0C;&#x786E;&#x4FDD;&#x5176;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x548C;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x4E0E;&#x6A21;&#x578B;&#x9884;&#x671F;&#x76F8;&#x5339;&#x914D;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x77E9;&#x9635;<code>mean_mat</code>&#x548C;<code>var_mat</code>&#xFF0C;&#x5176;&#x4E2D;<code>mean_mat</code>&#x4E3A;&#x9884;&#x6D4B;&#x7684;&#x5747;&#x503C;&#x77E9;&#x9635;&#xFF0C;<code>var_mat</code>&#x4E3A;&#x9884;&#x6D4B;&#x7684;&#x65B9;&#x5DEE;&#x77E9;&#x9635;&#x3002;&#x5982;&#x679C;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x96C6;&#x5305;&#x542B;3&#x4E2A;&#x7528;&#x6237;&#x548C;2&#x4E2A;&#x7269;&#x54C1;&#xFF0C;&#x90A3;&#x4E48;&#x8F93;&#x51FA;&#x7684;&#x77E9;&#x9635;&#x53EF;&#x80FD;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<ul>
+<li><code>mean_mat</code> = [[0.5, 0.6], [0.7, 0.8], [0.9, 1.0]]</li>
+<li><code>var_mat</code> = [[0.1, 0.2], [0.3, 0.4], [0.5, 0.6]]</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: User Model">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="user_model_mmoe.html" class="navigation navigation-next " aria-label="Next page: User Model Mmoe">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"User Model Ensemble","level":"1.2.6.1","depth":3,"next":{"title":"User Model Mmoe","level":"1.2.6.2","depth":3,"path":"src/core/userModel/user_model_mmoe.md","ref":"src/core/userModel/user_model_mmoe.md","articles":[]},"previous":{"title":"User Model","level":"1.2.6","depth":2,"path":"src/core/userModel/README.md","ref":"src/core/userModel/README.md","articles":[{"title":"User Model Ensemble","level":"1.2.6.1","depth":3,"path":"src/core/userModel/user_model_ensemble.md","ref":"src/core/userModel/user_model_ensemble.md","articles":[]},{"title":"User Model Mmoe","level":"1.2.6.2","depth":3,"path":"src/core/userModel/user_model_mmoe.md","ref":"src/core/userModel/user_model_mmoe.md","articles":[]},{"title":"User Model Pairwise Variance","level":"1.2.6.3","depth":3,"path":"src/core/userModel/user_model_pairwise_variance.md","ref":"src/core/userModel/user_model_pairwise_variance.md","articles":[]},{"title":"User Model Pairwise","level":"1.2.6.4","depth":3,"path":"src/core/userModel/user_model_pairwise.md","ref":"src/core/userModel/user_model_pairwise.md","articles":[]},{"title":"User Model Variance","level":"1.2.6.5","depth":3,"path":"src/core/userModel/user_model_variance.md","ref":"src/core/userModel/user_model_variance.md","articles":[]},{"title":"User Model","level":"1.2.6.6","depth":3,"path":"src/core/userModel/user_model.md","ref":"src/core/userModel/user_model.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/core/userModel/user_model_ensemble.md","mtime":"2024-03-18T12:56:52.422Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-18T14:39:28.553Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

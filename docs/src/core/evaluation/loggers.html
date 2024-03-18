@@ -1,0 +1,1340 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Loggers · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="metrics.html" />
+    
+    
+    <link rel="prev" href="evaluator.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Welcome to EasyRL4Rec!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../Introduction/Installation.html">
+            
+                <a href="../../../Introduction/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../Introduction/RunningCommands.html">
+            
+                <a href="../../../Introduction/RunningCommands.html">
+            
+                    
+                    Running Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../Introduction/ImplementationDetails.html">
+            
+                <a href="../../../Introduction/ImplementationDetails.html">
+            
+                    
+                    Implementation Details
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Docs.html">
+            
+                <a href="../../Docs.html">
+            
+                    
+                    Documentation for src/core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../collector/">
+            
+                <a href="../collector/">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../collector/collector.html">
+            
+                <a href="../collector/collector.html">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../collector/collector_set.html">
+            
+                <a href="../collector/collector_set.html">
+            
+                    
+                    Collector Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../envs/">
+            
+                <a href="../envs/">
+            
+                    
+                    Envs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../envs/Coat/">
+            
+                <a href="../envs/Coat/">
+            
+                    
+                    Coat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../envs/Coat/CoatData.html">
+            
+                <a href="../envs/Coat/CoatData.html">
+            
+                    
+                    Coat Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../envs/Coat/CoatEnv.html">
+            
+                <a href="../envs/Coat/CoatEnv.html">
+            
+                    
+                    Coat Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../envs/KuaiRand_Pure/">
+            
+                <a href="../envs/KuaiRand_Pure/">
+            
+                    
+                    KuaiRand Pure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                    
+                    Kuai Rand Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                    
+                    Kuai Rand Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                <a href="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                    
+                    Preprocessing Kuairand
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../envs/KuaiRec/">
+            
+                <a href="../envs/KuaiRec/">
+            
+                    
+                    KuaiRec
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../envs/KuaiRec/KuaiData.html">
+            
+                <a href="../envs/KuaiRec/KuaiData.html">
+            
+                    
+                    Kuai Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../envs/KuaiRec/KuaiEnv.html">
+            
+                <a href="../envs/KuaiRec/KuaiEnv.html">
+            
+                    
+                    Kuai Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                <a href="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                    
+                    Preprocessing Kuairec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../envs/MovieLens/">
+            
+                <a href="../envs/MovieLens/">
+            
+                    
+                    MovieLens
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../envs/MovieLens/MovieLensData.html">
+            
+                <a href="../envs/MovieLens/MovieLensData.html">
+            
+                    
+                    MovieLens Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../envs/MovieLens/MovieLensEnv.html">
+            
+                <a href="../envs/MovieLens/MovieLensEnv.html">
+            
+                    
+                    MovieLens Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../envs/Simulated_Env/">
+            
+                <a href="../envs/Simulated_Env/">
+            
+                    
+                    SimulatedEnv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../envs/Simulated_Env/base.html">
+            
+                <a href="../envs/Simulated_Env/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../envs/Simulated_Env/intrinsic.html">
+            
+                <a href="../envs/Simulated_Env/intrinsic.html">
+            
+                    
+                    Intrinsic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                <a href="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                    
+                    Penalty Ent Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="../envs/Simulated_Env/penalty_var.html">
+            
+                <a href="../envs/Simulated_Env/penalty_var.html">
+            
+                    
+                    Penalty Var
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../envs/YahooR3/">
+            
+                <a href="../envs/YahooR3/">
+            
+                    
+                    YahooR3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../envs/YahooR3/YahooData.html">
+            
+                <a href="../envs/YahooR3/YahooData.html">
+            
+                    
+                    Yahoo Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../envs/YahooR3/YahooEnv.html">
+            
+                <a href="../envs/YahooR3/YahooEnv.html">
+            
+                    
+                    Yahoo Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../envs/BaseData.html">
+            
+                <a href="../envs/BaseData.html">
+            
+                    
+                    Base Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../envs/BaseEnv.html">
+            
+                <a href="../envs/BaseEnv.html">
+            
+                    
+                    Base Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Evaluation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="evaluator_static.html">
+            
+                <a href="evaluator_static.html">
+            
+                    
+                    Evaluator Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="evaluator.html">
+            
+                <a href="evaluator.html">
+            
+                    
+                    Evaluator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.3" data-path="loggers.html">
+            
+                <a href="loggers.html">
+            
+                    
+                    Loggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="metrics.html">
+            
+                <a href="metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="utils.html">
+            
+                <a href="utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../policy/">
+            
+                <a href="../policy/">
+            
+                    
+                    Policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../policy/RecPolicy.html">
+            
+                <a href="../policy/RecPolicy.html">
+            
+                    
+                    RecPolicy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../state_tracker/">
+            
+                <a href="../state_tracker/">
+            
+                    
+                    State Tracker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../state_tracker/Average.html">
+            
+                <a href="../state_tracker/Average.html">
+            
+                    
+                    Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../state_tracker/base.html">
+            
+                <a href="../state_tracker/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../state_tracker/Caser.html">
+            
+                <a href="../state_tracker/Caser.html">
+            
+                    
+                    Caser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../state_tracker/GRU.html">
+            
+                <a href="../state_tracker/GRU.html">
+            
+                    
+                    GRU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../state_tracker/NextItNet.html">
+            
+                <a href="../state_tracker/NextItNet.html">
+            
+                    
+                    NextItNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="../state_tracker/SASRec.html">
+            
+                <a href="../state_tracker/SASRec.html">
+            
+                    
+                    SASRec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../userModel/">
+            
+                <a href="../userModel/">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../userModel/user_model_ensemble.html">
+            
+                <a href="../userModel/user_model_ensemble.html">
+            
+                    
+                    User Model Ensemble
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../userModel/user_model_mmoe.html">
+            
+                <a href="../userModel/user_model_mmoe.html">
+            
+                    
+                    User Model Mmoe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../userModel/user_model_pairwise_variance.html">
+            
+                <a href="../userModel/user_model_pairwise_variance.html">
+            
+                    
+                    User Model Pairwise Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../userModel/user_model_pairwise.html">
+            
+                <a href="../userModel/user_model_pairwise.html">
+            
+                    
+                    User Model Pairwise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../userModel/user_model_variance.html">
+            
+                <a href="../userModel/user_model_variance.html">
+            
+                    
+                    User Model Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../userModel/user_model.html">
+            
+                <a href="../userModel/user_model.html">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../util/">
+            
+                <a href="../util/">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../util/data.html">
+            
+                <a href="../util/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../util/inputs.html">
+            
+                <a href="../util/inputs.html">
+            
+                    
+                    Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../util/layers.html">
+            
+                <a href="../util/layers.html">
+            
+                    
+                    Layers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../util/loss.html">
+            
+                <a href="../util/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../util/static_dataset.html">
+            
+                <a href="../util/static_dataset.html">
+            
+                    
+                    Static Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../util/utils.html">
+            
+                <a href="../util/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Loggers</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="classdef-loggerevalusermodel">ClassDef LoggerEval_UserModel</h2>
+<p><strong>LoggerEval_UserModel</strong>: LoggerEval_UserModel&#x7C7B;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>: &#x8BE5;&#x7C7B;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: LoggerEval_UserModel&#x7C7B;&#x7EE7;&#x627F;&#x81EA;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#xFF08;&#x5C3D;&#x7BA1;&#x5728;&#x63D0;&#x4F9B;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x4E2D;&#x672A;&#x660E;&#x786E;&#x663E;&#x793A;&#x5176;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#xFF09;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x51E0;&#x4E2A;&#x5173;&#x952E;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5904;&#x7406;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x4EFB;&#x52A1;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;<code>on_epoch_begin</code>&#x3001;<code>on_train_begin</code>&#x3001;<code>on_train_end</code>&#x548C;<code>on_epoch_end</code>&#x8FD9;&#x56DB;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5728;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x3001;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x3001;&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x4EE5;&#x53CA;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x5728;&#x63D0;&#x4F9B;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;<code>on_epoch_end</code>&#x5916;&#xFF0C;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x90FD;&#x53EA;&#x662F;&#x7B80;&#x5355;&#x5730;&#x901A;&#x8FC7;<code>pass</code>&#x8BED;&#x53E5;&#x5B9E;&#x73B0;&#xFF0C;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x5177;&#x4F53;&#x7684;&#x64CD;&#x4F5C;&#x3002;<code>on_epoch_end</code>&#x65B9;&#x6CD5;&#x5219;&#x8D1F;&#x8D23;&#x8BB0;&#x5F55;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x5468;&#x671F;&#x7F16;&#x53F7;&#x548C;&#x76F8;&#x5173;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>logger.info</code>&#x65B9;&#x6CD5;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;LoggerEval_UserModel&#x7C7B;&#x88AB;&#x7528;&#x4F5C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x811A;&#x672C;&#x4E2D;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x5E76;&#x4F20;&#x9012;&#x7ED9;&#x6A21;&#x578B;&#x7684;<code>fit_data</code>&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E9B;&#x811A;&#x672C;&#x5305;&#x62EC;<code>run_DeepFM_IPS.py</code>&#x3001;<code>run_DeepFM_ensemble.py</code>&#x548C;<code>run_Egreedy.py</code>&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;LoggerEval_UserModel&#x5B9E;&#x4F8B;&#x6765;&#x8BB0;&#x5F55;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5173;&#x952E;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x548C;&#x7814;&#x7A76;&#x8005;&#x76D1;&#x63A7;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x72B6;&#x6001;&#x548C;&#x6027;&#x80FD;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x4F7F;&#x7528;LoggerEval_UserModel&#x7C7B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;<code>logger</code>&#x5DF2;&#x7ECF;&#x88AB;&#x6B63;&#x786E;&#x914D;&#x7F6E;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;<code>on_epoch_end</code>&#x65B9;&#x6CD5;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x867D;&#x7136;&#x5728;&#x63D0;&#x4F9B;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x4E2D;&#x5176;&#x4ED6;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x65B9;&#x6CD5;&#x672A;&#x8FDB;&#x884C;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x5728;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x4E2D;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x903B;&#x8F91;&#xFF0C;&#x4EE5;&#x66F4;&#x5168;&#x9762;&#x5730;&#x76D1;&#x63A7;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x3002;</p>
+<h3 id="functiondef-initself">FunctionDef <strong>init</strong>(self)</h3>
+<p><strong><strong>init</strong></strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x521D;&#x59CB;&#x5316;LoggerEval_UserModel&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>__init__</code>&#x51FD;&#x6570;&#x662F;LoggerEval<em>UserModel&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;`super().<em>_init</em></em>()`&#xFF0C;&#x5B83;&#x9996;&#x5148;&#x8C03;&#x7528;&#x4E86;&#x5176;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x4E2D;&#x5E38;&#x89C1;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x786E;&#x4FDD;&#x4E86;&#x7236;&#x7C7B;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4F7F;&#x5F97;&#x5F53;&#x524D;&#x7C7B;&#x80FD;&#x591F;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x7684;&#x521D;&#x59CB;&#x5316;&#x4EE3;&#x7801;&#x88AB;&#x6DFB;&#x52A0;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;LoggerEval_UserModel&#x7C7B;&#x4E3B;&#x8981;&#x4F9D;&#x8D56;&#x4E8E;&#x5176;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6765;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x4F7F;&#x7528;LoggerEval<em>UserModel&#x7C7B;&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4F20;&#x9012;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x7ED9;`<em>_init</em></em>`&#x51FD;&#x6570;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5E94;&#x5F53;&#x4E86;&#x89E3;&#xFF0C;&#x7531;&#x4E8E;&#x5B83;&#x8C03;&#x7528;&#x4E86;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7236;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x4EFB;&#x4F55;&#x521D;&#x59CB;&#x5316;&#x903B;&#x8F91;&#x90FD;&#x5C06;&#x88AB;&#x6267;&#x884C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E86;&#x89E3;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x903B;&#x8F91;&#x5BF9;&#x4E8E;&#x6B63;&#x786E;&#x4F7F;&#x7528;LoggerEval_UserModel&#x7C7B;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x672A;&#x6765;&#x5BF9;LoggerEval_UserModel&#x7C7B;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#xFF0C;&#x6DFB;&#x52A0;&#x66F4;&#x591A;&#x7684;&#x521D;&#x59CB;&#x5316;&#x903B;&#x8F91;&#x65F6;&#xFF0C;&#x5E94;&#x5F53;&#x6CE8;&#x610F;&#x4FDD;&#x6301;&#x5BF9;&#x7236;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x4FDD;&#x6301;&#x7C7B;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x548C;&#x529F;&#x80FD;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
+<hr>
+<h3 id="functiondef-onepochbeginself-epoch">FunctionDef on_epoch_begin(self, epoch)</h3>
+<p><strong>on_epoch_begin</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x65F6;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>epoch: &#x5F53;&#x524D;&#x7684;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x3002;</li>
+<li>**kwargs: &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x4E0D;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>on_epoch_begin</code>&#x51FD;&#x6570;&#x8BBE;&#x8BA1;&#x7528;&#x4E8E;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x524D;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x5728;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4F53;&#x4E3A;&#x7A7A;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x7B26;&#x5B58;&#x5728;&#xFF0C;&#x5141;&#x8BB8;&#x5728;&#x672A;&#x6765;&#x6839;&#x636E;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x7279;&#x5B9A;&#x7684;&#x903B;&#x8F91;&#x6216;&#x64CD;&#x4F5C;&#x3002;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x8BBE;&#x8BA1;&#x53EF;&#x4EE5;&#x4E3A;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x4F9B;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x4F7F;&#x4ED6;&#x4EEC;&#x80FD;&#x591F;&#x6839;&#x636E;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5177;&#x4F53;&#x9700;&#x6C42;&#xFF0C;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x65F6;&#x6267;&#x884C;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x91CD;&#x7F6E;&#x67D0;&#x4E9B;&#x72B6;&#x6001;&#x3001;&#x6253;&#x5370;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x3001;&#x8C03;&#x6574;&#x5B66;&#x4E60;&#x7387;&#x7B49;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>on_epoch_begin</code>&#x51FD;&#x6570;&#x88AB;<code>UserModel_Variance</code>&#x7C7B;&#x4E2D;&#x7684;<code>fit_data</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;&#x5728;<code>fit_data</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;<code>on_epoch_begin</code>&#x901A;&#x8FC7;&#x904D;&#x5386;<code>callbacks</code>&#x5217;&#x8868;&#x5E76;&#x5BF9;&#x6BCF;&#x4E2A;&#x56DE;&#x8C03;&#x6267;&#x884C;<code>on_epoch_begin</code>&#x65B9;&#x6CD5;&#x6765;&#x8C03;&#x7528;&#xFF0C;&#x4F20;&#x9012;&#x5F53;&#x524D;&#x7684;&#x8BAD;&#x7EC3;&#x5468;&#x671F;<code>epoch</code>&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x8868;&#x660E;<code>on_epoch_begin</code>&#x51FD;&#x6570;&#x662F;&#x4F5C;&#x4E3A;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x673A;&#x5236;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x65E8;&#x5728;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x65F6;&#x53EF;&#x4EE5;&#x4ECB;&#x5165;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x4EE3;&#x7801;&#x7684;&#x70B9;&#x3002;&#x5C3D;&#x7BA1;&#x5728;&#x5F53;&#x524D;&#x5B9E;&#x73B0;&#x4E2D;&#x8BE5;&#x51FD;&#x6570;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x5B83;&#x7684;&#x5B58;&#x5728;&#x4E3A;&#x672A;&#x6765;&#x53EF;&#x80FD;&#x7684;&#x9700;&#x6C42;&#x63D0;&#x4F9B;&#x4E86;&#x6269;&#x5C55;&#x70B9;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x867D;&#x7136;&#x5F53;&#x524D;<code>on_epoch_begin</code>&#x51FD;&#x6570;&#x4F53;&#x4E3A;&#x7A7A;&#xFF0C;&#x4F46;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x5E94;&#x6CE8;&#x610F;&#x5176;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x7279;&#x6027;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x7684;&#x5177;&#x4F53;&#x9700;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x4E2D;&#x6DFB;&#x52A0;&#x9002;&#x5F53;&#x7684;&#x903B;&#x8F91;&#x3002;</li>
+<li>&#x5728;&#x6DFB;&#x52A0;&#x4EFB;&#x4F55;&#x903B;&#x8F91;&#x4E4B;&#x524D;&#xFF0C;&#x5E94;&#x786E;&#x4FDD;&#x7406;&#x89E3;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7684;&#x5F00;&#x59CB;&#x9636;&#x6BB5;&#x9700;&#x8981;&#x6267;&#x884C;&#x54EA;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x5BF9;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x7684;&#x5F71;&#x54CD;&#x3002;</li>
+<li>&#x7531;&#x4E8E;<code>on_epoch_begin</code>&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E0D;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF08;**kwargs&#xFF09;&#xFF0C;&#x8FD9;&#x63D0;&#x4F9B;&#x4E86;&#x989D;&#x5916;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x5141;&#x8BB8;&#x5728;&#x4E0D;&#x4FEE;&#x6539;&#x51FD;&#x6570;&#x7B7E;&#x540D;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F20;&#x9012;&#x989D;&#x5916;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x5E94;&#x6CE8;&#x610F;&#x5408;&#x7406;&#x5229;&#x7528;&#x8FD9;&#x4E00;&#x7279;&#x6027;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-ontrainbeginself">FunctionDef on_train_begin(self)</h3>
+<p><strong>on_train_begin</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x524D;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x8BE5;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F46;&#x652F;&#x6301;&#x901A;&#x8FC7;**kwargs&#x63A5;&#x6536;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x63D0;&#x4F9B;&#x4E86;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x5141;&#x8BB8;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x8C03;&#x7528;&#x573A;&#x666F;&#x4E0B;&#x4F20;&#x9012;&#x989D;&#x5916;&#x7684;&#x4FE1;&#x606F;&#x6216;&#x914D;&#x7F6E;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>on_train_begin</code>&#x51FD;&#x6570;&#x662F;<code>LoggerEval_UserModel</code>&#x7C7B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x8BBE;&#x8BA1;&#x521D;&#x8877;&#x662F;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x6216;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x64CD;&#x4F5C;&#x3002;&#x5728;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4F53;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x7B26;&#x6216;&#x63A5;&#x53E3;&#x5B58;&#x5728;&#xFF0C;&#x4F9B;&#x672A;&#x6765;&#x6269;&#x5C55;&#x6216;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x4F7F;&#x7528;&#x3002;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x91CD;&#x5199;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x6DFB;&#x52A0;&#x4F8B;&#x5982;&#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x3001;&#x8BBE;&#x7F6E;&#x8BAD;&#x7EC3;&#x72B6;&#x6001;&#x6807;&#x5FD7;&#x3001;&#x8BB0;&#x5F55;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x7B49;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x4ECE;&#x5176;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x8C03;&#x7528;&#x60C5;&#x51B5;&#x6765;&#x770B;&#xFF0C;<code>on_train_begin</code>&#x51FD;&#x6570;&#x88AB;<code>UserModel_Variance</code>&#x7C7B;&#x7684;<code>fit_data</code>&#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5217;&#x8868;&#xFF08;callbacks&#xFF09;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x8868;&#x660E;&#xFF0C;&#x5728;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x5F00;&#x59CB;&#x524D;&#xFF0C;&#x4F1A;&#x904D;&#x5386;&#x6267;&#x884C;&#x6240;&#x6709;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5217;&#x8868;&#x4E2D;&#x7684;<code>on_train_begin</code>&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5141;&#x8BB8;&#x5728;&#x8BAD;&#x7EC3;&#x6D41;&#x7A0B;&#x7684;&#x4E0D;&#x540C;&#x9636;&#x6BB5;&#x63D2;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x4EE3;&#x7801;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x524D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6B64;&#x65B9;&#x6CD5;&#x8BB0;&#x5F55;&#x8BAD;&#x7EC3;&#x914D;&#x7F6E;&#x3001;&#x521D;&#x59CB;&#x5316;&#x8D44;&#x6E90;&#x6216;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x867D;&#x7136;&#x5F53;&#x524D;&#x5B9E;&#x73B0;&#x4E3A;&#x7A7A;&#xFF0C;&#x4F46;&#x5728;&#x91CD;&#x5199;&#x6B64;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5E94;&#x786E;&#x4FDD;&#x4E0D;&#x5F15;&#x5165;&#x4EFB;&#x4F55;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x8BAD;&#x7EC3;&#x6D41;&#x7A0B;&#x4E2D;&#x65AD;&#x6216;&#x5F02;&#x5E38;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8003;&#x8651;&#x5230;<code>**kwargs</code>&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x5F53;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x903B;&#x8F91;&#x65F6;&#xFF0C;&#x5E94;&#x6CE8;&#x610F;&#x5904;&#x7406;&#x4EFB;&#x4F55;&#x4F20;&#x5165;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x786E;&#x4FDD;&#x4EE3;&#x7801;&#x7684;&#x5065;&#x58EE;&#x6027;&#x3002;</p>
+<hr>
+<h3 id="functiondef-ontrainendself">FunctionDef on_train_end(self)</h3>
+<p><strong>on_train_end</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x65F6;&#x6267;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x8BE5;&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF08;**kwargs&#xFF09;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B83;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x5F62;&#x5F0F;&#x4E3A;&#x952E;=&#x503C;&#x7684;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F46;&#x5728;&#x5F53;&#x524D;&#x5B9E;&#x73B0;&#x4E2D;&#x5E76;&#x672A;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>on_train_end</code>&#x51FD;&#x6570;&#x8BBE;&#x8BA1;&#x4E3A;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x7ED3;&#x675F;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x6E05;&#x7406;&#x6216;&#x540E;&#x5904;&#x7406;&#x5DE5;&#x4F5C;&#x3002;&#x5728;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4F53;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5B83;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x70B9;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x57FA;&#x7840;&#x4E0A;&#x6839;&#x636E;&#x9700;&#x8981;&#x91CD;&#x5199;&#x6216;&#x6DFB;&#x52A0;&#x4EE3;&#x7801;&#x6765;&#x5B9E;&#x73B0;&#x7279;&#x5B9A;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x3001;&#x8F93;&#x51FA;&#x8BAD;&#x7EC3;&#x62A5;&#x544A;&#x6216;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x7B49;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>on_train_end</code>&#x51FD;&#x6570;&#x88AB;<code>fit_data</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F4D;&#x4E8E;<code>UserModel_Variance</code>&#x7C7B;&#x4E2D;&#x3002;<code>fit_data</code>&#x65B9;&#x6CD5;&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#xFF0C;&#x5305;&#x62EC;&#x6570;&#x636E;&#x7684;&#x52A0;&#x8F7D;&#x3001;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x8FED;&#x4EE3;&#x4EE5;&#x53CA;&#x8BC4;&#x4F30;&#x3002;&#x5728;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x7684;&#x6700;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>callbacks</code>&#x5217;&#x8868;&#x6765;&#x8C03;&#x7528;<code>on_train_end</code>&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x88AB;&#x4F20;&#x9012;&#x7ED9;<code>fit_data</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6BCF;&#x4E2A;&#x56DE;&#x8C03;&#x7684;<code>on_train_end</code>&#x90FD;&#x5C06;&#x88AB;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5141;&#x8BB8;&#x7075;&#x6D3B;&#x5730;&#x5728;&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x65F6;&#x63D2;&#x5165;&#x591A;&#x79CD;&#x81EA;&#x5B9A;&#x4E49;&#x884C;&#x4E3A;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x4FEE;&#x6539;<code>fit_data</code>&#x65B9;&#x6CD5;&#x672C;&#x8EAB;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x867D;&#x7136;&#x5F53;&#x524D;<code>on_train_end</code>&#x7684;&#x5B9E;&#x73B0;&#x4E3A;&#x7A7A;&#xFF0C;&#x4F46;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x5E94;&#x6CE8;&#x610F;&#xFF0C;&#x4EFB;&#x4F55;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x4E2D;&#x6DFB;&#x52A0;&#x7684;&#x4EE3;&#x7801;&#x90FD;&#x5C06;&#x5728;&#x6BCF;&#x6B21;&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x65F6;&#x6267;&#x884C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5E94;&#x786E;&#x4FDD;&#x8FD9;&#x91CC;&#x7684;&#x64CD;&#x4F5C;&#x4E0D;&#x4F1A;&#x610F;&#x5916;&#x5730;&#x5F71;&#x54CD;&#x5230;&#x6A21;&#x578B;&#x7684;&#x72B6;&#x6001;&#x6216;&#x8BAD;&#x7EC3;&#x7ED3;&#x679C;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x8BE5;&#x51FD;&#x6570;&#x652F;&#x6301;&#x63A5;&#x6536;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x6269;&#x5C55;&#x529F;&#x80FD;&#x65F6;&#x5E94;&#x8C28;&#x614E;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#xFF0C;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x53C2;&#x6570;&#x672A;&#x5B9A;&#x4E49;&#x6216;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<hr>
+<h3 id="functiondef-onepochendself-epoch-logs">FunctionDef on_epoch_end(self, epoch, logs)</h3>
+<p><strong>on_epoch_end</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>epoch</code>: &#x5F53;&#x524D;&#x7ED3;&#x675F;&#x7684;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x3002;</li>
+<li><code>logs</code>: &#x5305;&#x542B;&#x5F53;&#x524D;&#x5468;&#x671F;&#x8BAD;&#x7EC3;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>on_epoch_end</code>&#x51FD;&#x6570;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x5668;&#xFF08;logger&#xFF09;&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x5468;&#x671F;&#x7684;&#x7F16;&#x53F7;&#x548C;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x901A;&#x8FC7;<code>logs</code>&#x53C2;&#x6570;&#x4F20;&#x5165;&#xFF0C;&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x635F;&#x5931;&#x503C;&#x3001;&#x51C6;&#x786E;&#x7387;&#x6216;&#x5176;&#x4ED6;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x3002;&#x51FD;&#x6570;&#x5185;&#x90E8;&#xFF0C;&#x4F7F;&#x7528;<code>logger.info</code>&#x65B9;&#x6CD5;&#x5C06;<code>epoch</code>&#xFF08;&#x5F53;&#x524D;&#x5468;&#x671F;&#x7F16;&#x53F7;&#xFF09;&#x548C;<code>logs</code>&#xFF08;&#x5468;&#x671F;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF09;&#x683C;&#x5F0F;&#x5316;&#x540E;&#x8F93;&#x51FA;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BBE;&#x8BA1;&#x4F7F;&#x5F97;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x7684;&#x76D1;&#x63A7;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x76F4;&#x89C2;&#x548C;&#x65B9;&#x4FBF;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x5FEB;&#x901F;&#x5B9A;&#x4F4D;&#x95EE;&#x9898;&#x548C;&#x8BC4;&#x4F30;&#x6A21;&#x578B;&#x6027;&#x80FD;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>on_epoch_end</code>&#x51FD;&#x6570;&#x88AB;<code>UserModel_Variance</code>&#x7C7B;&#x4E2D;&#x7684;<code>fit_data</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;&#x5728;<code>fit_data</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;<code>on_epoch_end</code>&#x4F5C;&#x4E3A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#x88AB;&#x89E6;&#x53D1;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8C03;&#x7528;&#x5173;&#x7CFB;&#x8BF4;&#x660E;&#x4E86;<code>on_epoch_end</code>&#x51FD;&#x6570;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x4F5C;&#x7528;&#xFF1A;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x76D1;&#x63A7;&#x548C;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x8DDF;&#x8E2A;&#x8BAD;&#x7EC3;&#x8FDB;&#x5EA6;&#x548C;&#x6027;&#x80FD;&#x53D8;&#x5316;&#x3002;&#x901A;&#x8FC7;&#x5728;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#x8BB0;&#x5F55;&#x5173;&#x952E;&#x4FE1;&#x606F;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x5730;&#x7406;&#x89E3;&#x6A21;&#x578B;&#x5728;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4ECE;&#x800C;&#x5BF9;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x8C03;&#x4F18;&#x548C;&#x6539;&#x8FDB;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x5728;&#x4F7F;&#x7528;<code>on_epoch_end</code>&#x51FD;&#x6570;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x6B63;&#x786E;&#x914D;&#x7F6E;&#x4E86;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x5668;&#xFF08;logger&#xFF09;&#xFF0C;&#x4EE5;&#x4FBF;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>logs</code>&#x53C2;&#x6570;&#x5E94;&#x5305;&#x542B;&#x6240;&#x6709;&#x4F60;&#x5E0C;&#x671B;&#x5728;&#x65E5;&#x5FD7;&#x4E2D;&#x8BB0;&#x5F55;&#x7684;&#x8BAD;&#x7EC3;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x9700;&#x8981;&#x5728;&#x8C03;&#x7528;<code>on_epoch_end</code>&#x4E4B;&#x524D;&#x51C6;&#x5907;&#x597D;&#x5E76;&#x4EE5;&#x5B57;&#x5178;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x3002;</li>
+</ul>
+<hr>
+<h2 id="classdef-loggerevalpolicy">ClassDef LoggerEval_Policy</h2>
+<p><strong>LoggerEval_Policy</strong>: LoggerEval_Policy&#x7C7B;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x8BB0;&#x5F55;&#x7B56;&#x7565;&#x6027;&#x80FD;&#x7684;&#x5173;&#x952E;&#x6307;&#x6807;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>:</p>
+<ul>
+<li><code>force_length</code>: &#x5F3A;&#x5236;&#x957F;&#x5EA6;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x8BC4;&#x4F30;&#x65F6;&#x5F3A;&#x5236;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#x7684;&#x957F;&#x5EA6;&#x3002;</li>
+<li><code>metrics</code>: &#x9700;&#x8981;&#x8BB0;&#x5F55;&#x7684;&#x6027;&#x80FD;&#x6307;&#x6807;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x4E0E;&#x8BC4;&#x4F30;&#x51FD;&#x6570;&#x76F8;&#x5BF9;&#x5E94;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+LoggerEval_Policy&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7075;&#x6D3B;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x8BB0;&#x5F55;&#x5173;&#x952E;&#x6027;&#x80FD;&#x6307;&#x6807;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x5B9A;&#x4E49;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF08;&#x5982;<code>on_epoch_begin</code>, <code>on_train_begin</code>, <code>on_train_end</code>, <code>on_epoch_end</code>&#x7B49;&#xFF09;&#xFF0C;&#x5141;&#x8BB8;&#x5728;&#x8BAD;&#x7EC3;&#x7684;&#x4E0D;&#x540C;&#x9636;&#x6BB5;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x7684;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x64CD;&#x4F5C;&#x3002;&#x5176;&#x4E2D;&#xFF0C;<code>on_epoch_end</code>&#x65B9;&#x6CD5;&#x662F;&#x6700;&#x6838;&#x5FC3;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5B83;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8D1F;&#x8D23;&#x8BA1;&#x7B97;&#x5E76;&#x8BB0;&#x5F55;&#x6307;&#x5B9A;&#x7684;&#x6027;&#x80FD;&#x6307;&#x6807;&#x3002;</p>
+<p>&#x5728;<code>on_epoch_end</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x901A;&#x8FC7;<code>find_item_domination_results</code>&#x548C;<code>get_one_result</code>&#x4E24;&#x4E2A;&#x5185;&#x90E8;&#x51FD;&#x6570;&#x5BF9;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x548C;&#x63D0;&#x53D6;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x6307;&#x5B9A;&#x7684;<code>metrics</code>&#x5217;&#x8868;&#x6765;&#x51B3;&#x5B9A;&#x54EA;&#x4E9B;&#x6307;&#x6807;&#x9700;&#x8981;&#x88AB;&#x8BB0;&#x5F55;&#x3002;&#x652F;&#x6301;&#x7684;&#x6307;&#x6807;&#x5305;&#x62EC;&#x4F20;&#x7EDF;&#x7684;&#x957F;&#x5EA6;&#x3001;&#x5956;&#x52B1;&#x3001;&#x70B9;&#x51FB;&#x7387;&#x7B49;&#xFF0C;&#x4E5F;&#x652F;&#x6301;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x6307;&#x6807;&#x5982;&#x591A;&#x6837;&#x6027;&#x3001;&#x65B0;&#x9896;&#x6027;&#x7B49;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x7279;&#x5B9A;&#x524D;&#x7F00;&#x7684;&#x6307;&#x6807;&#xFF0C;&#x4EE5;&#x652F;&#x6301;&#x4E0D;&#x540C;&#x6D4B;&#x8BD5;&#x96C6;&#x6216;&#x6761;&#x4EF6;&#x4E0B;&#x7684;&#x6027;&#x80FD;&#x6BD4;&#x8F83;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;LoggerEval_Policy&#x7C7B;&#x88AB;&#x7528;&#x4E8E;<code>learn_policy</code>&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x4F5C;&#x4E3A;&#x7B56;&#x7565;&#x5B66;&#x4E60;&#x8FC7;&#x7A0B;&#x7684;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x5B83;&#x4E0E;&#x5176;&#x4ED6;&#x8BC4;&#x4F30;&#x5668;&#xFF08;&#x5982;<code>Evaluator_Feat</code>, <code>Evaluator_Coverage_Count</code>, <code>Evaluator_User_Experience</code>&#x7B49;&#xFF09;&#x4E00;&#x8D77;&#xFF0C;&#x6784;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x8BC4;&#x4F30;&#x548C;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x673A;&#x5236;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x5728;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x5B9E;&#x65F6;&#x76D1;&#x63A7;&#x6A21;&#x578B;&#x7684;&#x6027;&#x80FD;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x9700;&#x8981;&#x8C03;&#x6574;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x6216;&#x8BAD;&#x7EC3;&#x7B56;&#x7565;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;LoggerEval_Policy&#x7C7B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;<code>metrics</code>&#x53C2;&#x6570;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x6027;&#x80FD;&#x6307;&#x6807;&#x4E0E;&#x8BC4;&#x4F30;&#x51FD;&#x6570;&#x80FD;&#x591F;&#x5BF9;&#x5E94;&#x4E0A;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x8BB0;&#x5F55;&#x8FC7;&#x7A0B;&#x4E2D;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x3002;</li>
+<li><code>force_length</code>&#x53C2;&#x6570;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5728;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x5F3A;&#x5236;&#x6307;&#x5B9A;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x8FD9;&#x5728;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x6D4B;&#x8BD5;&#x573A;&#x666F;&#x4E2D;&#x53EF;&#x80FD;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x5728;&#x4E00;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;LoggerEval_Policy&#x8BB0;&#x5F55;&#x7684;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>Epoch: [1], Info: [{&apos;num_test&apos;: 100, &apos;len_tra&apos;: 5.5, &apos;R_tra&apos;: 0.8, &apos;ctr&apos;: &apos;0.14545&apos;, &apos;Diversity&apos;: &apos;0.75000&apos;}]
+</code></pre><p>&#x8FD9;&#x8868;&#x793A;&#x5728;&#x7B2C;1&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x6A21;&#x578B;&#x5728;100&#x6B21;&#x6D4B;&#x8BD5;&#x4E2D;&#x5E73;&#x5747;&#x6BCF;&#x6B21;&#x5C1D;&#x8BD5;&#x7684;&#x957F;&#x5EA6;&#x4E3A;5.5&#xFF0C;&#x5E73;&#x5747;&#x5956;&#x52B1;&#x4E3A;0.8&#xFF0C;&#x70B9;&#x51FB;&#x7387;&#x4E3A;0.14545&#xFF0C;&#x591A;&#x6837;&#x6027;&#x4E3A;0.75&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8F93;&#x51FA;&#x6709;&#x52A9;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x5FEB;&#x901F;&#x4E86;&#x89E3;&#x6A21;&#x578B;&#x5728;&#x4E0D;&#x540C;&#x6027;&#x80FD;&#x6307;&#x6807;&#x4E0A;&#x7684;&#x8868;&#x73B0;&#x3002;</p>
+<h3 id="functiondef-initself-forcelength-metrics">FunctionDef <strong>init</strong>(self, force_length, metrics)</h3>
+<p><strong><strong>init</strong></strong>: &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;LoggerEval_Policy&#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>force_length</code>: &#x5F3A;&#x5236;&#x957F;&#x5EA6;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x65F6;&#x7684;&#x67D0;&#x4E9B;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x3002;</li>
+<li><code>metrics</code>: &#x8BC4;&#x4F30;&#x6307;&#x6807;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x9700;&#x8981;&#x4E0E;&#x8BC4;&#x4F30;&#x5668;&#x51FD;&#x6570;&#x76F8;&#x5BF9;&#x5E94;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>__init__</code>&#x51FD;&#x6570;&#x662F;<code>LoggerEval_Policy</code>&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8D1F;&#x8D23;&#x521D;&#x59CB;&#x5316;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;<code>force_length</code>&#x548C;<code>metrics</code>&#x3002;<code>force_length</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x5728;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x8FC7;&#x7A0B;&#x4E2D;&#x5F3A;&#x5236;&#x5E94;&#x7528;&#x67D0;&#x4E9B;&#x957F;&#x5EA6;&#x9650;&#x5236;&#xFF0C;&#x5176;&#x5177;&#x4F53;&#x4F5C;&#x7528;&#x4F9D;&#x8D56;&#x4E8E;<code>LoggerEval_Policy</code>&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;<code>metrics</code>&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x5C06;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x6307;&#x6807;&#x3002;&#x8FD9;&#x4E9B;&#x6307;&#x6807;&#x9700;&#x8981;&#x4E0E;&#x8BC4;&#x4F30;&#x5668;(evaluator)&#x51FD;&#x6570;&#x7684;&#x8981;&#x6C42;&#x76F8;&#x5339;&#x914D;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x7684;&#x987A;&#x5229;&#x8FDB;&#x884C;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x5C06;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x503C;&#x5206;&#x522B;&#x8D4B;&#x503C;&#x7ED9;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;<code>self.force_length</code>&#x548C;<code>self.metrics</code>&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x8FD9;&#x4E9B;&#x503C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x4E2D;&#x88AB;&#x8BBF;&#x95EE;&#x548C;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x5B9E;&#x73B0;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x548C;&#x8BC4;&#x4F30;&#x7684;&#x76F8;&#x5173;&#x529F;&#x80FD;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;<code>LoggerEval_Policy</code>&#x7C7B;&#x4E4B;&#x524D;&#xFF0C;&#x786E;&#x4FDD;&#x7406;&#x89E3;<code>force_length</code>&#x548C;<code>metrics</code>&#x53C2;&#x6570;&#x7684;&#x5177;&#x4F53;&#x542B;&#x4E49;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x5982;&#x4F55;&#x5F71;&#x54CD;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x3002;</li>
+<li><code>metrics</code>&#x53C2;&#x6570;&#x9700;&#x8981;&#x4E0E;&#x8BC4;&#x4F30;&#x5668;&#x51FD;&#x6570;&#x7684;&#x8981;&#x6C42;&#x76F8;&#x5339;&#x914D;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5728;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#xFF0C;&#x5E94;&#x5F53;&#x6E05;&#x695A;&#x8BC4;&#x4F30;&#x5668;&#x51FD;&#x6570;&#x7684;&#x6307;&#x6807;&#x9700;&#x6C42;&#x3002;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x6307;&#x6807;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x5931;&#x8D25;&#x6216;&#x4EA7;&#x751F;&#x4E0D;&#x51C6;&#x786E;&#x7684;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-onepochbeginself-epoch">FunctionDef on_epoch_begin(self, epoch)</h3>
+<p><strong>on_epoch_begin</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x65F6;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>epoch</code>: &#x5F53;&#x524D;&#x7684;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x3002;</li>
+<li><code>**kwargs</code>: &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x4E0D;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x5141;&#x8BB8;&#x5728;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x65F6;&#x4F20;&#x5165;&#x989D;&#x5916;&#x7684;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>on_epoch_begin</code>&#x51FD;&#x6570;&#x662F;<code>LoggerEval_Policy</code>&#x7C7B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8BBE;&#x8BA1;&#x7528;&#x4E8E;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x65F6;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;<code>epoch</code>&#x548C;<code>**kwargs</code>&#x3002;<code>epoch</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x5F53;&#x524D;&#x7684;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7F16;&#x53F7;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x3002;<code>**kwargs</code>&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x5B57;&#x5178;&#xFF0C;&#x5176;&#x5141;&#x8BB8;&#x5728;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x65F6;&#x4F20;&#x5165;&#x989D;&#x5916;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x4E3A;&#x51FD;&#x6570;&#x63D0;&#x4F9B;&#x4E86;&#x9AD8;&#x5EA6;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x548C;&#x6269;&#x5C55;&#x6027;&#x3002;</p>
+<p>&#x5728;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;<code>on_epoch_begin</code>&#x51FD;&#x6570;&#x4F53;&#x5185;&#x4EC5;&#x5305;&#x542B;&#x4E00;&#x4E2A;<code>pass</code>&#x8BED;&#x53E5;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x8BE5;&#x51FD;&#x6570;&#x9ED8;&#x8BA4;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x5141;&#x8BB8;&#x5F00;&#x53D1;&#x8005;&#x6839;&#x636E;&#x9700;&#x8981;&#x91CD;&#x5199;&#x6216;&#x6269;&#x5C55;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x5B9E;&#x73B0;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x65F6;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x7684;&#x7279;&#x5B9A;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x3001;&#x8D44;&#x6E90;&#x5206;&#x914D;&#x3001;&#x53C2;&#x6570;&#x8C03;&#x6574;&#x7B49;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x4E2D;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x6839;&#x636E;&#x5177;&#x4F53;&#x7684;&#x8BAD;&#x7EC3;&#x9700;&#x6C42;&#x91CD;&#x5199;<code>on_epoch_begin</code>&#x65B9;&#x6CD5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x65B9;&#x6CD5;&#x4E2D;&#x6DFB;&#x52A0;&#x4EE3;&#x7801;&#x6765;&#x8BB0;&#x5F55;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7684;&#x5F00;&#x59CB;&#x3001;&#x66F4;&#x65B0;&#x8BAD;&#x7EC3;&#x53C2;&#x6570;&#x6216;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x7531;&#x4E8E;<code>**kwargs</code>&#x53C2;&#x6570;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x5F53;&#x91CD;&#x5199;&#x6B64;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x5730;&#x63A5;&#x6536;&#x5E76;&#x5904;&#x7406;&#x989D;&#x5916;&#x4F20;&#x5165;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x4E3A;&#x65B9;&#x6CD5;&#x7684;&#x6269;&#x5C55;&#x63D0;&#x4F9B;&#x4E86;&#x4FBF;&#x5229;&#x3002;</li>
+<li>&#x867D;&#x7136;&#x5F53;&#x524D;&#x5B9E;&#x73B0;&#x4E2D;&#x6B64;&#x65B9;&#x6CD5;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x5728;&#x7EE7;&#x627F;&#x6216;&#x6269;&#x5C55;<code>LoggerEval_Policy</code>&#x7C7B;&#x65F6;&#xFF0C;&#x4FDD;&#x7559;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x662F;&#x4E00;&#x4E2A;&#x826F;&#x597D;&#x7684;&#x7F16;&#x7A0B;&#x4E60;&#x60EF;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x5728;&#x7C7B;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x7BA1;&#x7406;&#x4E2D;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x6027;&#x548C;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-ontrainbeginself">FunctionDef on_train_begin(self)</h3>
+<p><strong>on_train_begin</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x65F6;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>kwargs</strong>: &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x4F20;&#x9012;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x65F6;&#x9700;&#x8981;&#x7684;&#x4EFB;&#x4F55;&#x989D;&#x5916;&#x4FE1;&#x606F;&#x6216;&#x914D;&#x7F6E;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>on_train_begin</code> &#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5728; <code>LoggerEval_Policy</code> &#x7C7B;&#x4E2D;&#xFF0C;&#x5C5E;&#x4E8E; <code>loggers.py</code> &#x6587;&#x4EF6;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x4F4D;&#x4E8E;&#x9879;&#x76EE;&#x7684; <code>src/core/evaluation</code> &#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x6B64;&#x51FD;&#x6570;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5728;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x5F00;&#x59CB;&#x524D;&#x6267;&#x884C;&#x7684;&#x94A9;&#x5B50;&#xFF08;hook&#xFF09;&#xFF0C;&#x5141;&#x8BB8;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x8BAD;&#x7EC3;&#x7B97;&#x6CD5;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x524D;&#x8FDB;&#x884C;&#x5FC5;&#x8981;&#x7684;&#x51C6;&#x5907;&#x6216;&#x8BBE;&#x7F6E;&#x3002;&#x7531;&#x4E8E;&#x51FD;&#x6570;&#x4F53;&#x5185;&#x4EC5;&#x5305;&#x542B; <code>pass</code> &#x8BED;&#x53E5;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5728;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x91CD;&#x5199;&#x6216;&#x6269;&#x5C55;&#x6B64;&#x51FD;&#x6570;&#xFF0C;&#x4EE5;&#x5305;&#x542B;&#x8BF8;&#x5982;&#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x8BB0;&#x5F55;&#x3001;&#x8BBE;&#x7F6E;&#x8BAD;&#x7EC3;&#x53C2;&#x6570;&#x3001;&#x52A0;&#x8F7D;&#x5FC5;&#x8981;&#x8D44;&#x6E90;&#x7B49;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x867D;&#x7136;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x4E3A;&#x7A7A;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x5F00;&#x53D1;&#x8005;&#x5E94;&#x5F53;&#x6CE8;&#x610F;&#xFF0C;&#x4EFB;&#x4F55;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x4E2D;&#x6DFB;&#x52A0;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x5C06;&#x5728;&#x6BCF;&#x6B21;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x5F00;&#x59CB;&#x65F6;&#x6267;&#x884C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5E94;&#x786E;&#x4FDD;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x5BF9;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x662F;&#x5FC5;&#x8981;&#x4E14;&#x6709;&#x76CA;&#x7684;&#x3002;</li>
+<li>&#x4F7F;&#x7528; <code>**kwargs</code> &#x53C2;&#x6570;&#x5141;&#x8BB8;&#x6B64;&#x51FD;&#x6570;&#x5177;&#x6709;&#x5F88;&#x9AD8;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x8BAD;&#x7EC3;&#x914D;&#x7F6E;&#x4F20;&#x9012;&#x4E0D;&#x540C;&#x7684;&#x53C2;&#x6570;&#x548C;&#x503C;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x5E94;&#x6CE8;&#x610F;&#x68C0;&#x67E5;&#x548C;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x53EF;&#x80FD;&#x7684;&#x9519;&#x8BEF;&#x6216;&#x5F02;&#x5E38;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-ontrainendself">FunctionDef on_train_end(self)</h3>
+<p><strong>on_train_end</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x65F6;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>kwargs</strong>: &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x5141;&#x8BB8;&#x4F20;&#x9012;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x53C2;&#x6570;&#x540D;&#x79F0;&#x548C;&#x503C;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x6839;&#x636E;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>on_train_end</code> &#x51FD;&#x6570;&#x662F; <code>LoggerEval_Policy</code> &#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x65E8;&#x5728;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x7ED3;&#x675F;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF08;**kwargs&#xFF09;&#xFF0C;&#x8FD9;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x7075;&#x6D3B;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x4F20;&#x9012;&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x65F6;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7684;&#x4EFB;&#x4F55;&#x989D;&#x5916;&#x4FE1;&#x606F;&#x6216;&#x72B6;&#x6001;&#x3002;&#x5F53;&#x524D;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#x4E3A;&#x7A7A;&#xFF08;<code>pass</code>&#xFF09;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x901A;&#x5E38;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x4E00;&#x4E2A;&#x94A9;&#x5B50;&#xFF08;hook&#xFF09;&#xFF0C;&#x4F9B;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x6839;&#x636E;&#x9700;&#x8981;&#x91CD;&#x5199;&#x548C;&#x5B9E;&#x73B0;&#x5177;&#x4F53;&#x7684;&#x903B;&#x8F91;&#x3002;</p>
+<p>&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5177;&#x4F53;&#x9700;&#x6C42;&#x91CD;&#x5199;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x6267;&#x884C;&#x5982;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x3001;&#x8BB0;&#x5F55;&#x8BAD;&#x7EC3;&#x65E5;&#x5FD7;&#x3001;&#x53D1;&#x9001;&#x8BAD;&#x7EC3;&#x5B8C;&#x6210;&#x7684;&#x901A;&#x77E5;&#x7B49;&#x64CD;&#x4F5C;&#x3002;&#x7531;&#x4E8E;&#x5176;&#x8BBE;&#x8BA1;&#x4E0A;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;<code>on_train_end</code> &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x7684;&#x7ED3;&#x679C;&#x6216;&#x72B6;&#x6001;&#x6267;&#x884C;&#x5E7F;&#x6CDB;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4ECE;&#x800C;&#x4E3A;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x63D0;&#x4F9B;&#x4E86;&#x989D;&#x5916;&#x7684;&#x5B9A;&#x5236;&#x5316;&#x652F;&#x6301;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x867D;&#x7136;&#x5F53;&#x524D;&#x5B9E;&#x73B0;&#x4E3A;&#x7A7A;&#xFF0C;&#x4F46;&#x5728;&#x91CD;&#x5199;&#x6B64;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5E94;&#x786E;&#x4FDD;&#x8003;&#x8651;&#x5230;&#x6240;&#x6709;&#x4F20;&#x9012;&#x7ED9;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x6B64;&#x65B9;&#x6CD5;&#x8BBE;&#x8BA1;&#x4E3A;&#x5728;&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x5B9E;&#x73B0;&#x65F6;&#x5E94;&#x907F;&#x514D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x53EF;&#x80FD;&#x663E;&#x8457;&#x5EF6;&#x957F;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x9664;&#x975E;&#x8FD9;&#x662F;&#x9884;&#x671F;&#x7684;&#x884C;&#x4E3A;&#x3002;</li>
+<li>&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x91CD;&#x5199;&#x6B64;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5EFA;&#x8BAE;&#x8C03;&#x7528; <code>super().on_train_end(**kwargs)</code> &#x4EE5;&#x4FDD;&#x6301;&#x7236;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x9664;&#x975E;&#x6709;&#x610F;&#x8986;&#x76D6;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-onepochendself-epoch-results">FunctionDef on_epoch_end(self, epoch, results)</h3>
+<p><strong>on_epoch_end</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#x6C47;&#x603B;&#x548C;&#x8BB0;&#x5F55;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>epoch</code>: &#x5F53;&#x524D;&#x5468;&#x671F;&#x7684;&#x7D22;&#x5F15;&#x3002;</li>
+<li><code>results</code>: &#x5305;&#x542B;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x7684;&#x5B57;&#x5178;&#x3002;</li>
+<li><code>**kwargs</code>: &#x63A5;&#x6536;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x4E3B;&#x8981;&#x7531;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1A;<code>find_item_domination_results</code>&#x3001;<code>get_one_result</code>&#x548C;&#x4E3B;&#x4F53;&#x90E8;&#x5206;&#x3002;</p>
+<ol>
+<li><p><code>find_item_domination_results</code>&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x524D;&#x7F00;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5339;&#x914D;&#x4EE5;&#x8BE5;&#x524D;&#x7F00;&#x5F00;&#x5934;&#x4E14;&#x5305;&#x542B;&quot;ifeat_&quot;&#x7684;&#x952E;&#xFF0C;&#x4ECE;<code>results</code>&#x4E2D;&#x627E;&#x51FA;&#x8FD9;&#x4E9B;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5B57;&#x5178;&#x4E2D;&#x8FD4;&#x56DE;&#x3002;</p>
+</li>
+<li><p><code>get_one_result</code>&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x524D;&#x7F00;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x9996;&#x5148;&#x8BA1;&#x7B97;&#x6D4B;&#x8BD5;&#x6B21;&#x6570;&#x3001;&#x8F68;&#x8FF9;&#x957F;&#x5EA6;&#x3001;&#x603B;&#x5956;&#x52B1;&#x548C;&#x70B9;&#x51FB;&#x7387;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6839;&#x636E;<code>self.metrics</code>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6307;&#x6807;&#xFF0C;&#x4ECE;<code>results</code>&#x4E2D;&#x63D0;&#x53D6;&#x76F8;&#x5E94;&#x7684;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#xFF0C;&#x5E76;&#x4EE5;&#x5B57;&#x5178;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x3002;&#x7279;&#x522B;&#x5730;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x6807;&#x4E3A;&quot;all_feats&quot;&#x4E14;&#x5B58;&#x5728;&#x4E8E;<code>results</code>&#x4E2D;&#xFF0C;&#x5219;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x4E3A;&#x5217;&#x8868;&#x3002;</p>
+</li>
+<li><p>&#x4E3B;&#x4F53;&#x90E8;&#x5206;&#x9996;&#x5148;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x7A7A;&#x5B57;&#x5178;<code>results_all</code>&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6240;&#x6709;&#x7684;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E09;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x524D;&#x7F00;&#xFF08;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x3001;&quot;NX<em>0</em>&quot;&#x548C;<code>f&quot;NX_{self.force_length}_&quot;</code>&#xFF09;&#xFF0C;&#x8C03;&#x7528;<code>get_one_result</code>&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x7ED3;&#x679C;&#x5E76;&#x66F4;&#x65B0;&#x5230;<code>results_all</code>&#x4E2D;&#x3002;&#x5982;&#x679C;<code>self.metrics</code>&#x4E2D;&#x5305;&#x542B;&quot;ifeat_&quot;&#xFF0C;&#x5219;&#x8C03;&#x7528;<code>find_item_domination_results</code>&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x652F;&#x914D;&#x7ED3;&#x679C;&#x5E76;&#x66F4;&#x65B0;&#x5230;<code>results_all</code>&#x4E2D;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x4F7F;&#x7528;logger&#x8BB0;&#x5F55;&#x5F53;&#x524D;&#x5468;&#x671F;&#x548C;&#x6240;&#x6709;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x3002;</p>
+</li>
+</ol>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>results</code>&#x53C2;&#x6570;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x952E;&#x503C;&#x5BF9;&#x3002;</li>
+<li><code>self.metrics</code>&#x5E94;&#x8BE5;&#x5728;&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x88AB;&#x6B63;&#x786E;&#x5B9A;&#x4E49;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x3002;</li>
+<li>&#x6B64;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;&#x5916;&#x90E8;&#x7684;logger&#x914D;&#x7F6E;&#x6765;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x7531;&#x4E8E;&#x6B64;&#x51FD;&#x6570;&#x4E0D;&#x8FD4;&#x56DE;&#x503C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#xFF0C;&#x56E0;&#x6B64;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x793A;&#x4F8B;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x53EF;&#x80FD;&#x4F1A;&#x7C7B;&#x4F3C;&#x4E8E;&#xFF1A;</p>
+<pre><code>Epoch: [5], Info: [{&apos;num_test&apos;: 100, &apos;len_tra&apos;: 50.0, &apos;R_tra&apos;: 500, &apos;ctr&apos;: &apos;10.00000&apos;, &apos;NX_0_len_tra&apos;: 45.0, &apos;NX_0_R_tra&apos;: 450, &apos;NX_0_ctr&apos;: &apos;10.00000&apos;, ...}]
+</code></pre><h4 id="functiondef-finditemdominationresultsprefix">FunctionDef find_item_domination_results(prefix)</h4>
+<p><strong>find_item_domination_results</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x524D;&#x7F00;&#xFF0C;&#x4ECE;&#x7ED3;&#x679C;&#x96C6;&#x4E2D;&#x627E;&#x51FA;&#x6240;&#x6709;&#x5339;&#x914D;&#x8BE5;&#x524D;&#x7F00;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8FD9;&#x4E9B;&#x9879;&#x76EE;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x7EC4;&#x6210;&#x7684;&#x5B57;&#x5178;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>prefix</strong>: &#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x5339;&#x914D;&#x7684;&#x524D;&#x7F00;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>find_item_domination_results</code> &#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570; <code>prefix</code>&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x9700;&#x8981;&#x5728;&#x7ED3;&#x679C;&#x96C6;&#x4E2D;&#x67E5;&#x627E;&#x7684;&#x9879;&#x76EE;&#x7684;&#x524D;&#x7F00;&#x3002;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x9996;&#x5148;&#x4F7F;&#x7528; <code>re.compile</code> &#x65B9;&#x6CD5;&#x7ED3;&#x5408;&#x7ED9;&#x5B9A;&#x7684; <code>prefix</code> &#x548C;&#x56FA;&#x5B9A;&#x5B57;&#x7B26;&#x4E32; &quot;ifeat<em>&quot; &#x6765;&#x7F16;&#x8BD1;&#x4E00;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x6A21;&#x5F0F;&#x3002;&#x968F;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x904D;&#x5386;&#x5168;&#x5C40;&#x53D8;&#x91CF; <code>results</code>&#xFF08;&#x4E00;&#x4E2A;&#x5047;&#x5B9A;&#x5B58;&#x5728;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x4F5C;&#x4E3A;&#x952E;&#xFF0C;&#x9879;&#x76EE;&#x503C;&#x4F5C;&#x4E3A;&#x503C;&#x7684;&#x952E;&#x503C;&#x5BF9;&#xFF09;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E2A;&#x952E;&#xFF08;&#x9879;&#x76EE;&#x540D;&#x79F0;&#xFF09;&#x4F7F;&#x7528; <code>re.match</code> &#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6B63;&#x5219;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x952E;&#x540D;&#x4E0E;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#xFF0C;&#x5373;&#x952E;&#x540D;&#x4EE5;&#x7ED9;&#x5B9A;&#x7684; <code>prefix</code> &#x52A0;&#x4E0A; &quot;ifeat</em>&quot; &#x5F00;&#x5934;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230; <code>res_domination</code> &#x5B57;&#x5178;&#x4E2D;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE; <code>res_domination</code> &#x5B57;&#x5178;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x5339;&#x914D;&#x7ED9;&#x5B9A;&#x524D;&#x7F00;&#x7684;&#x9879;&#x76EE;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x5168;&#x5C40;&#x53D8;&#x91CF; <code>results</code> &#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x88AB;&#x5B9A;&#x4E49;&#x5E76;&#x4E14;&#x5305;&#x542B;&#x4E86;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x6B64;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x5339;&#x914D;&#xFF0C;&#x56E0;&#x6B64;&#x4F20;&#x5165;&#x7684; <code>prefix</code> &#x5E94;&#x5F53;&#x907F;&#x514D;&#x5305;&#x542B;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#xFF0C;&#x9664;&#x975E;&#x8FD9;&#x662F;&#x9884;&#x671F;&#x7684;&#x5339;&#x914D;&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x5178; <code>res_domination</code> &#x4E2D;&#x7684;&#x952E;&#x662F;&#x4EE5;&#x7ED9;&#x5B9A;&#x7684; <code>prefix</code> &#x52A0;&#x4E0A; &quot;ifeat_&quot; &#x5F00;&#x5934;&#x7684;&#x9879;&#x76EE;&#x540D;&#x79F0;&#xFF0C;&#x503C;&#x662F;&#x5BF9;&#x5E94;&#x7684;&#x9879;&#x76EE;&#x503C;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x5168;&#x5C40;&#x53D8;&#x91CF; <code>results</code> &#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">results = {
+    <span class="hljs-string">&quot;A_ifeat_size&quot;</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;B_ifeat_weight&quot;</span>: <span class="hljs-number">20</span>,
+    <span class="hljs-string">&quot;A_ifeat_color&quot;</span>: <span class="hljs-string">&quot;red&quot;</span>,
+    <span class="hljs-string">&quot;C_size&quot;</span>: <span class="hljs-number">15</span>
+}
+</code></pre>
+<p>&#x8C03;&#x7528; <code>find_item_domination_results(&quot;A_&quot;)</code> &#x5C06;&#x8FD4;&#x56DE;&#xFF1A;</p>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;A_ifeat_size&quot;</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;A_ifeat_color&quot;</span>: <span class="hljs-string">&quot;red&quot;</span>
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x5B57;&#x5178;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x4EE5; &quot;A<em>ifeat</em>&quot; &#x5F00;&#x5934;&#x7684;&#x9879;&#x76EE;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x3002;</p>
+<hr>
+<h4 id="functiondef-getoneresultprefix">FunctionDef get_one_result(prefix)</h4>
+<p><strong>get_one_result</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x524D;&#x7F00;&#x4ECE;&#x7ED3;&#x679C;&#x4E2D;&#x63D0;&#x53D6;&#x5E76;&#x8BA1;&#x7B97;&#x7279;&#x5B9A;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>prefix</strong>: &#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x4ECE;&#x7ED3;&#x679C;&#x4E2D;&#x63D0;&#x53D6;&#x54EA;&#x4E9B;&#x6307;&#x6807;&#x7684;&#x524D;&#x7F00;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>get_one_result</code> &#x51FD;&#x6570;&#x9996;&#x5148;&#x4ECE;&#x5168;&#x5C40;&#x53D8;&#x91CF; <code>results</code> &#x4E2D;&#x63D0;&#x53D6;&#x6D4B;&#x8BD5;&#x6B21;&#x6570;&#xFF08;<code>num_test</code>&#xFF09;&#x548C;&#x4E0E;&#x7ED9;&#x5B9A;&#x524D;&#x7F00;&#x76F8;&#x5173;&#x7684;&#x5176;&#x4ED6;&#x6307;&#x6807;&#x503C;&#x3002;&#x5B83;&#x8BA1;&#x7B97;&#x4E86;&#x8F68;&#x8FF9;&#x957F;&#x5EA6;&#xFF08;<code>len_tra</code>&#xFF09;&#xFF0C;&#x8F68;&#x8FF9;&#x5956;&#x52B1;&#xFF08;<code>R_tra</code>&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x70B9;&#x51FB;&#x7387;&#xFF08;<code>ctr</code>&#xFF09;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6839;&#x636E;&#x5728; <code>self.metrics</code> &#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6307;&#x6807;&#x5217;&#x8868;&#xFF0C;&#x51FD;&#x6570;&#x904D;&#x5386;&#x6BCF;&#x4E2A;&#x6307;&#x6807;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x6761;&#x4EF6;&#x5C06;&#x76F8;&#x5E94;&#x7684;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x6DFB;&#x52A0;&#x5230;&#x8FD4;&#x56DE;&#x7684;&#x5B57;&#x5178; <code>res</code> &#x4E2D;&#x3002;&#x8FD9;&#x5305;&#x62EC;&#x8F68;&#x8FF9;&#x957F;&#x5EA6;&#x3001;&#x8F68;&#x8FF9;&#x5956;&#x52B1;&#x3001;&#x70B9;&#x51FB;&#x7387;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x8BC4;&#x4F30;&#x5668;&#x8BA1;&#x7B97;&#x597D;&#x7684;&#x6307;&#x6807;&#xFF08;&#x5982;CV&#x3001;CV_turn&#x3001;Diversity&#x3001;Novelty&#x3001;Serendipity&#xFF09;&#x3002;&#x5982;&#x679C;&#x6307;&#x6807;&#x662F;&#x201C;all_feats&#x201D;&#x4E14;&#x5B58;&#x5728;&#x4E8E;&#x7ED3;&#x679C;&#x4E2D;&#xFF0C;&#x5B83;&#x8FD8;&#x4F1A;&#x5C06;&#x8BE5;&#x6307;&#x6807;&#x7684;&#x503C;&#x8F6C;&#x6362;&#x4E3A;&#x5217;&#x8868;&#x5E76;&#x6DFB;&#x52A0;&#x5230;&#x8FD4;&#x56DE;&#x5B57;&#x5178;&#x4E2D;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;&#x5168;&#x5C40;&#x53D8;&#x91CF; <code>results</code>&#xFF0C;&#x8BE5;&#x53D8;&#x91CF;&#x9700;&#x8981;&#x5728;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x524D;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#x548C;&#x586B;&#x5145;&#x3002;</li>
+<li><code>self.metrics</code> &#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6240;&#x6709;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x548C;&#x8FD4;&#x56DE;&#x7684;&#x6307;&#x6807;&#x540D;&#x79F0;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x8BC4;&#x4F30;&#x5668;&#x8BA1;&#x7B97;&#x597D;&#x7684;&#x6307;&#x6807;&#xFF0C;&#x51FD;&#x6570;&#x4EC5;&#x5C06;&#x5B83;&#x4EEC;&#x7684;&#x503C;&#x683C;&#x5F0F;&#x5316;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x4FDD;&#x7559;&#x4E94;&#x4F4D;&#x5C0F;&#x6570;&#x3002;</li>
+<li>&#x5982;&#x679C; <code>prefix + &quot;all_feats&quot;</code> &#x5B58;&#x5728;&#x4E8E; <code>results</code> &#x4E2D;&#xFF0C;&#x5176;&#x503C;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x5217;&#x8868;&#x683C;&#x5F0F;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE; <code>self.metrics</code> &#x5305;&#x542B; <code>[&apos;len_tra&apos;, &apos;R_tra&apos;, &apos;ctr&apos;, &apos;CV&apos;]</code>&#xFF0C;&#x4E14; <code>prefix</code> &#x4E3A; <code>&quot;test_&quot;</code>&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x5B57;&#x5178;&#xFF1A;</p>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&apos;num_test&apos;</span>: <span class="hljs-number">100</span>,
+    <span class="hljs-string">&apos;test_len_tra&apos;</span>: <span class="hljs-number">20</span>,
+    <span class="hljs-string">&apos;test_R_tra&apos;</span>: <span class="hljs-number">1500</span>,
+    <span class="hljs-string">&apos;test_ctr&apos;</span>: <span class="hljs-string">&apos;75.00000&apos;</span>,
+    <span class="hljs-string">&apos;test_CV&apos;</span>: <span class="hljs-string">&apos;0.05000&apos;</span>
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x5B57;&#x5178;&#x5305;&#x542B;&#x4E86;&#x6D4B;&#x8BD5;&#x6B21;&#x6570;&#x3001;&#x8F68;&#x8FF9;&#x957F;&#x5EA6;&#x3001;&#x8F68;&#x8FF9;&#x5956;&#x52B1;&#x3001;&#x70B9;&#x51FB;&#x7387;&#x4EE5;&#x53CA;CV&#x6307;&#x6807;&#x7684;&#x503C;&#xFF0C;&#x5176;&#x4E2D;&#x6570;&#x503C;&#x578B;&#x6307;&#x6807;&#x5DF2;&#x7ECF;&#x6839;&#x636E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E86;&#x683C;&#x5F0F;&#x5316;&#x3002;</p>
+<hr>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="evaluator.html" class="navigation navigation-prev " aria-label="Previous page: Evaluator">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="metrics.html" class="navigation navigation-next " aria-label="Next page: Metrics">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Loggers","level":"1.2.3.3","depth":3,"next":{"title":"Metrics","level":"1.2.3.4","depth":3,"path":"src/core/evaluation/metrics.md","ref":"src/core/evaluation/metrics.md","articles":[]},"previous":{"title":"Evaluator","level":"1.2.3.2","depth":3,"path":"src/core/evaluation/evaluator.md","ref":"src/core/evaluation/evaluator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/core/evaluation/loggers.md","mtime":"2024-03-18T12:56:52.420Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-18T14:39:28.553Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

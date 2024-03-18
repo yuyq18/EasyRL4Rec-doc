@@ -1,0 +1,1226 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Kuai Env · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="preprocessing_kuairec.html" />
+    
+    
+    <link rel="prev" href="KuaiData.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Welcome to EasyRL4Rec!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../../Introduction/Installation.html">
+            
+                <a href="../../../../Introduction/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../../Introduction/RunningCommands.html">
+            
+                <a href="../../../../Introduction/RunningCommands.html">
+            
+                    
+                    Running Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../../Introduction/ImplementationDetails.html">
+            
+                <a href="../../../../Introduction/ImplementationDetails.html">
+            
+                    
+                    Implementation Details
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../Docs.html">
+            
+                <a href="../../../Docs.html">
+            
+                    
+                    Documentation for src/core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../collector/">
+            
+                <a href="../../collector/">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../collector/collector.html">
+            
+                <a href="../../collector/collector.html">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../collector/collector_set.html">
+            
+                <a href="../../collector/collector_set.html">
+            
+                    
+                    Collector Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Envs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../Coat/">
+            
+                <a href="../Coat/">
+            
+                    
+                    Coat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../Coat/CoatData.html">
+            
+                <a href="../Coat/CoatData.html">
+            
+                    
+                    Coat Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../Coat/CoatEnv.html">
+            
+                <a href="../Coat/CoatEnv.html">
+            
+                    
+                    Coat Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../KuaiRand_Pure/">
+            
+                <a href="../KuaiRand_Pure/">
+            
+                    
+                    KuaiRand Pure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../KuaiRand_Pure/KuaiRandData.html">
+            
+                <a href="../KuaiRand_Pure/KuaiRandData.html">
+            
+                    
+                    Kuai Rand Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../KuaiRand_Pure/KuaiRandEnv.html">
+            
+                <a href="../KuaiRand_Pure/KuaiRandEnv.html">
+            
+                    
+                    Kuai Rand Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                <a href="../KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                    
+                    Preprocessing Kuairand
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    KuaiRec
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="KuaiData.html">
+            
+                <a href="KuaiData.html">
+            
+                    
+                    Kuai Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.3.2" data-path="KuaiEnv.html">
+            
+                <a href="KuaiEnv.html">
+            
+                    
+                    Kuai Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="preprocessing_kuairec.html">
+            
+                <a href="preprocessing_kuairec.html">
+            
+                    
+                    Preprocessing Kuairec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../MovieLens/">
+            
+                <a href="../MovieLens/">
+            
+                    
+                    MovieLens
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../MovieLens/MovieLensData.html">
+            
+                <a href="../MovieLens/MovieLensData.html">
+            
+                    
+                    MovieLens Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../MovieLens/MovieLensEnv.html">
+            
+                <a href="../MovieLens/MovieLensEnv.html">
+            
+                    
+                    MovieLens Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../Simulated_Env/">
+            
+                <a href="../Simulated_Env/">
+            
+                    
+                    SimulatedEnv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../Simulated_Env/base.html">
+            
+                <a href="../Simulated_Env/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../Simulated_Env/intrinsic.html">
+            
+                <a href="../Simulated_Env/intrinsic.html">
+            
+                    
+                    Intrinsic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="../Simulated_Env/penalty_ent_exp.html">
+            
+                <a href="../Simulated_Env/penalty_ent_exp.html">
+            
+                    
+                    Penalty Ent Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="../Simulated_Env/penalty_var.html">
+            
+                <a href="../Simulated_Env/penalty_var.html">
+            
+                    
+                    Penalty Var
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../YahooR3/">
+            
+                <a href="../YahooR3/">
+            
+                    
+                    YahooR3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../YahooR3/YahooData.html">
+            
+                <a href="../YahooR3/YahooData.html">
+            
+                    
+                    Yahoo Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../YahooR3/YahooEnv.html">
+            
+                <a href="../YahooR3/YahooEnv.html">
+            
+                    
+                    Yahoo Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../BaseData.html">
+            
+                <a href="../BaseData.html">
+            
+                    
+                    Base Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../BaseEnv.html">
+            
+                <a href="../BaseEnv.html">
+            
+                    
+                    Base Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../evaluation/">
+            
+                <a href="../../evaluation/">
+            
+                    
+                    Evaluation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../evaluation/evaluator_static.html">
+            
+                <a href="../../evaluation/evaluator_static.html">
+            
+                    
+                    Evaluator Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../evaluation/evaluator.html">
+            
+                <a href="../../evaluation/evaluator.html">
+            
+                    
+                    Evaluator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../evaluation/loggers.html">
+            
+                <a href="../../evaluation/loggers.html">
+            
+                    
+                    Loggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../evaluation/metrics.html">
+            
+                <a href="../../evaluation/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../evaluation/utils.html">
+            
+                <a href="../../evaluation/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../policy/">
+            
+                <a href="../../policy/">
+            
+                    
+                    Policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../policy/RecPolicy.html">
+            
+                <a href="../../policy/RecPolicy.html">
+            
+                    
+                    RecPolicy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../state_tracker/">
+            
+                <a href="../../state_tracker/">
+            
+                    
+                    State Tracker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../state_tracker/Average.html">
+            
+                <a href="../../state_tracker/Average.html">
+            
+                    
+                    Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../state_tracker/base.html">
+            
+                <a href="../../state_tracker/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../../state_tracker/Caser.html">
+            
+                <a href="../../state_tracker/Caser.html">
+            
+                    
+                    Caser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../../state_tracker/GRU.html">
+            
+                <a href="../../state_tracker/GRU.html">
+            
+                    
+                    GRU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../../state_tracker/NextItNet.html">
+            
+                <a href="../../state_tracker/NextItNet.html">
+            
+                    
+                    NextItNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="../../state_tracker/SASRec.html">
+            
+                <a href="../../state_tracker/SASRec.html">
+            
+                    
+                    SASRec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../userModel/">
+            
+                <a href="../../userModel/">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../userModel/user_model_ensemble.html">
+            
+                <a href="../../userModel/user_model_ensemble.html">
+            
+                    
+                    User Model Ensemble
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../userModel/user_model_mmoe.html">
+            
+                <a href="../../userModel/user_model_mmoe.html">
+            
+                    
+                    User Model Mmoe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../../userModel/user_model_pairwise_variance.html">
+            
+                <a href="../../userModel/user_model_pairwise_variance.html">
+            
+                    
+                    User Model Pairwise Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../../userModel/user_model_pairwise.html">
+            
+                <a href="../../userModel/user_model_pairwise.html">
+            
+                    
+                    User Model Pairwise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../../userModel/user_model_variance.html">
+            
+                <a href="../../userModel/user_model_variance.html">
+            
+                    
+                    User Model Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../../userModel/user_model.html">
+            
+                <a href="../../userModel/user_model.html">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../util/">
+            
+                <a href="../../util/">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../../util/data.html">
+            
+                <a href="../../util/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../../util/inputs.html">
+            
+                <a href="../../util/inputs.html">
+            
+                    
+                    Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../../util/layers.html">
+            
+                <a href="../../util/layers.html">
+            
+                    
+                    Layers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../../util/loss.html">
+            
+                <a href="../../util/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../../util/static_dataset.html">
+            
+                <a href="../../util/static_dataset.html">
+            
+                    
+                    Static Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../../util/utils.html">
+            
+                <a href="../../util/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >Kuai Env</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="classdef-kuaienv">ClassDef KuaiEnv</h2>
+<p><strong>KuaiEnv</strong>: KuaiEnv &#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x6A21;&#x62DF;&#x5FEB;&#x901F;&#x63A8;&#x8350;&#x73AF;&#x5883;&#x7684;&#x7C7B;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>:</p>
+<ul>
+<li><code>mat</code>: &#x7528;&#x6237;&#x4E0E;&#x7269;&#x54C1;&#x4EA4;&#x4E92;&#x77E9;&#x9635;&#x3002;</li>
+<li><code>lbe_user</code>: &#x7528;&#x6237;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#x3002;</li>
+<li><code>lbe_item</code>: &#x7269;&#x54C1;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#x3002;</li>
+<li><code>list_feat</code>: &#x7269;&#x54C1;&#x7279;&#x5F81;&#x5217;&#x8868;&#x3002;</li>
+<li><code>df_dist_small</code>: &#x7269;&#x54C1;&#x95F4;&#x7684;&#x8DDD;&#x79BB;&#x77E9;&#x9635;&#x3002;</li>
+<li><code>list_feat_small</code>: &#x7F16;&#x7801;&#x540E;&#x7684;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x5217;&#x8868;&#x3002;</li>
+<li><code>num_leave_compute</code>: &#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x7528;&#x6237;&#x662F;&#x5426;&#x79BB;&#x5F00;&#x7684;&#x52A8;&#x4F5C;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>leave_threshold</code>: &#x79BB;&#x5F00;&#x9608;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x7528;&#x6237;&#x662F;&#x5426;&#x4F1A;&#x56E0;&#x4E3A;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x800C;&#x79BB;&#x5F00;&#x3002;</li>
+<li><code>max_turn</code>: &#x6700;&#x5927;&#x8F6E;&#x6B21;&#x6570;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x4EA4;&#x4E92;&#x6B21;&#x6570;&#x3002;</li>
+<li><code>random_init</code>: &#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x968F;&#x673A;&#x521D;&#x59CB;&#x5316;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+KuaiEnv &#x7C7B;&#x7EE7;&#x627F;&#x81EA; BaseEnv &#x7C7B;&#xFF0C;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x6A21;&#x62DF;&#x5FEB;&#x901F;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x73AF;&#x5883;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x63A5;&#x6536;&#x7528;&#x6237;&#x4E0E;&#x7269;&#x54C1;&#x7684;&#x4EA4;&#x4E92;&#x77E9;&#x9635;&#x3001;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#x7684;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#x3001;&#x7269;&#x54C1;&#x7279;&#x5F81;&#x5217;&#x8868;&#x4EE5;&#x53CA;&#x7269;&#x54C1;&#x95F4;&#x7684;&#x8DDD;&#x79BB;&#x77E9;&#x9635;&#x7B49;&#x53C2;&#x6570;&#x6765;&#x521D;&#x59CB;&#x5316;&#x73AF;&#x5883;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x4F1A;&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>load_env_data</code> &#x65B9;&#x6CD5;&#x6765;&#x52A0;&#x8F7D;&#x73AF;&#x5883;&#x6570;&#x636E;&#x3002;&#x6B64;&#x5916;&#xFF0C;KuaiEnv &#x91CD;&#x5199;&#x4E86; BaseEnv &#x7684; <code>render</code> &#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x6BCF;&#x4E00;&#x6B65;&#x52A8;&#x4F5C;&#x540E;&#x6E32;&#x67D3;&#x73AF;&#x5883;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x53CA; <code>_determine_whether_to_leave</code> &#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x884C;&#x4E3A;&#x5386;&#x53F2;&#x548C;&#x5F53;&#x524D;&#x52A8;&#x4F5C;&#x6765;&#x5224;&#x65AD;&#x7528;&#x6237;&#x662F;&#x5426;&#x4F1A;&#x79BB;&#x5F00;&#x73AF;&#x5883;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;KuaiEnv &#x901A;&#x8FC7; <code>get_true_env</code> &#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x52A8;&#x6001;&#x9009;&#x62E9;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x4E0D;&#x540C;&#x7684;&#x73AF;&#x5883;&#x7C7B;&#x5B9E;&#x4F8B;&#xFF0C;&#x5305;&#x62EC; KuaiEnv&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x4F7F;&#x5F97; KuaiEnv &#x53EF;&#x4EE5;&#x4E0E;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x73AF;&#x5883;&#x7C7B;&#xFF08;&#x5982; CoatEnv&#x3001;YahooEnv &#x7B49;&#xFF09;&#x4E00;&#x8D77;&#xFF0C;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x9700;&#x6C42;&#x548C;&#x573A;&#x666F;&#x7075;&#x6D3B;&#x5730;&#x88AB;&#x9879;&#x76EE;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x6240;&#x4F7F;&#x7528;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528; KuaiEnv &#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x6B63;&#x786E;&#xFF0C;&#x7279;&#x522B;&#x662F; <code>mat</code>&#x3001;<code>lbe_user</code>&#x3001;<code>lbe_item</code>&#x3001;<code>list_feat</code> &#x548C; <code>df_dist_small</code>&#xFF0C;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x5BF9;&#x4E8E;&#x73AF;&#x5883;&#x7684;&#x521D;&#x59CB;&#x5316;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;</li>
+<li>KuaiEnv &#x7C7B;&#x4F9D;&#x8D56;&#x4E8E; BaseEnv &#x7C7B;&#x7684;&#x7ED3;&#x6784;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x5148;&#x7406;&#x89E3; BaseEnv &#x7C7B;&#x7684;&#x57FA;&#x672C;&#x529F;&#x80FD;&#x548C;&#x5C5E;&#x6027;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x8C03;&#x7528; <code>render</code> &#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x4F1A;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#x7684;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code class="lang-python">(cur_user, history_action, category)
+</code></pre>
+<p>&#x5176;&#x4E2D; <code>cur_user</code> &#x662F;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7684;&#x6807;&#x8BC6;&#xFF0C;<code>history_action</code> &#x662F;&#x5386;&#x53F2;&#x52A8;&#x4F5C;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x6BCF;&#x4E00;&#x8F6E;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;<code>category</code> &#x662F;&#x6839;&#x636E;&#x5386;&#x53F2;&#x52A8;&#x4F5C;&#x8BA1;&#x7B97;&#x51FA;&#x7684;&#x7269;&#x54C1;&#x7C7B;&#x522B;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="functiondef-initself-mat-lbeuser-lbeitem-listfeat-dfdistsmall-numleavecompute-leavethreshold-maxturn-randominit">FunctionDef <strong>init</strong>(self, mat, lbe_user, lbe_item, list_feat, df_dist_small, num_leave_compute, leave_threshold, max_turn, random_init)</h3>
+<p><strong><strong>init</strong></strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x521D;&#x59CB;&#x5316;KuaiEnv&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>mat</code>: &#x7528;&#x6237;-&#x7269;&#x54C1;&#x4EA4;&#x4E92;&#x77E9;&#x9635;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li><code>lbe_user</code>: &#x7528;&#x6237;ID&#x7684;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#x5B9E;&#x4F8B;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li><code>lbe_item</code>: &#x7269;&#x54C1;ID&#x7684;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#x5B9E;&#x4F8B;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li><code>list_feat</code>: &#x7269;&#x54C1;&#x7C7B;&#x522B;&#x7279;&#x5F81;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li><code>df_dist_small</code>: &#x57FA;&#x4E8E;&#x7269;&#x54C1;&#x7C7B;&#x522B;&#x7279;&#x5F81;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x7269;&#x54C1;&#x95F4;&#x8DDD;&#x79BB;&#x77E9;&#x9635;&#x7684;DataFrame&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li><code>num_leave_compute</code>: &#x8BA1;&#x7B97;&#x79BB;&#x5F00;&#x6B21;&#x6570;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x6574;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;5&#x3002;</li>
+<li><code>leave_threshold</code>: &#x79BB;&#x5F00;&#x9608;&#x503C;&#xFF0C;&#x6574;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1&#x3002;</li>
+<li><code>max_turn</code>: &#x6700;&#x5927;&#x8F6E;&#x6B21;&#xFF0C;&#x6574;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;100&#x3002;</li>
+<li><code>random_init</code>: &#x662F;&#x5426;&#x968F;&#x673A;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x68C0;&#x67E5;<code>mat</code>&#x53C2;&#x6570;&#x662F;&#x5426;&#x4E3A;None&#x3002;&#x5982;&#x679C;&#x4E0D;&#x4E3A;None&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x503C;&#x521D;&#x59CB;&#x5316;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;<code>mat</code>&#x3001;<code>lbe_user</code>&#x3001;<code>lbe_item</code>&#x3001;<code>list_feat</code>&#x548C;<code>df_dist_small</code>&#x3002;&#x5982;&#x679C;<code>mat</code>&#x4E3A;None&#xFF0C;&#x5219;&#x8C03;&#x7528;<code>load_env_data</code>&#x65B9;&#x6CD5;&#x52A0;&#x8F7D;&#x73AF;&#x5883;&#x6240;&#x9700;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x521D;&#x59CB;&#x5316;&#x76F8;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x6620;&#x5C04;<code>list_feat</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x5230;<code>lbe_item.classes_</code>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x522B;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5217;&#x8868;<code>list_feat_small</code>&#x3002;&#x8FD9;&#x4E00;&#x6B65;&#x9AA4;&#x662F;&#x4E3A;&#x4E86;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E0E;&#x7269;&#x54C1;ID&#x7F16;&#x7801;&#x5668;&#x4E2D;&#x7684;&#x7C7B;&#x522B;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x7279;&#x5F81;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>super(KuaiEnv, self).__init__</code>&#xFF0C;&#x5C06;<code>num_leave_compute</code>&#x3001;<code>leave_threshold</code>&#x3001;<code>max_turn</code>&#x548C;<code>random_init</code>&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5B8C;&#x6210;KuaiEnv&#x7C7B;&#x5B9E;&#x4F8B;&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F20;&#x9012;<code>mat</code>&#x3001;<code>lbe_user</code>&#x3001;<code>lbe_item</code>&#x3001;<code>list_feat</code>&#x548C;<code>df_dist_small</code>&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x83B7;&#x5F97;&#xFF0C;&#x6216;&#x8005;&#x5141;&#x8BB8;<code>__init__</code>&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>load_env_data</code>&#x65B9;&#x6CD5;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x3002;</li>
+<li><code>load_env_data</code>&#x65B9;&#x6CD5;&#x662F;KuaiEnv&#x7C7B;&#x7684;&#x5173;&#x952E;&#x90E8;&#x5206;&#xFF0C;&#x5B83;&#x8D1F;&#x8D23;&#x52A0;&#x8F7D;&#x548C;&#x51C6;&#x5907;&#x5FEB;&#x624B;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x4E2D;&#x6240;&#x9700;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5305;&#x62EC;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x4EA4;&#x4E92;&#x77E9;&#x9635;&#x3001;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#x548C;&#x7269;&#x54C1;&#x95F4;&#x8DDD;&#x79BB;&#x77E9;&#x9635;&#x7B49;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x786E;&#x4FDD;&#x5728;&#x8C03;&#x7528;<code>__init__</code>&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#x8DEF;&#x5F84;&#x5DF2;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;&#xFF0C;&#x5E76;&#x4E14;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#x4E14;&#x683C;&#x5F0F;&#x6B63;&#x786E;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x3002;</li>
+<li><code>num_leave_compute</code>&#x3001;<code>leave_threshold</code>&#x3001;<code>max_turn</code>&#x548C;<code>random_init</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x73AF;&#x5883;&#x7684;&#x884C;&#x4E3A;&#x548C;&#x6A21;&#x62DF;&#x8FC7;&#x7A0B;&#xFF0C;&#x5E94;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-loadenvdata">FunctionDef load_env_data</h3>
+<p><strong>load_env_data</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x52A0;&#x8F7D;&#x5FEB;&#x624B;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x6240;&#x9700;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x4E0D;&#x63A5;&#x53D7;&#x4EFB;&#x4F55;&#x5916;&#x90E8;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>load_env_data</code> &#x51FD;&#x6570;&#x662F; <code>KuaiEnv</code> &#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x52A0;&#x8F7D;&#x548C;&#x51C6;&#x5907;&#x5FEB;&#x624B;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x4E2D;&#x6240;&#x9700;&#x7684;&#x6570;&#x636E;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x9996;&#x5148;&#x8C03;&#x7528; <code>KuaiData</code> &#x7C7B;&#x7684; <code>load_mat</code> &#x9759;&#x6001;&#x65B9;&#x6CD5;&#x6765;&#x52A0;&#x8F7D;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x4EA4;&#x4E92;&#x77E9;&#x9635;&#x548C;&#x4E24;&#x4E2A;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#xFF08;&#x5206;&#x522B;&#x7528;&#x4E8E;&#x7528;&#x6237;&#x548C;&#x7269;&#x54C1;&#xFF09;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x8C03;&#x7528; <code>load_category</code> &#x9759;&#x6001;&#x65B9;&#x6CD5;&#x6765;&#x52A0;&#x8F7D;&#x7269;&#x54C1;&#x7684;&#x7C7B;&#x522B;&#x7279;&#x5F81;&#x5217;&#x8868;&#x548C;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x7279;&#x5F81;&#x7684; DataFrame&#x3002;&#x6700;&#x540E;&#xFF0C;&#x901A;&#x8FC7; <code>get_saved_distance_mat</code> &#x9759;&#x6001;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x57FA;&#x4E8E;&#x7C7B;&#x522B;&#x7279;&#x5F81;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x7269;&#x54C1;&#x95F4;&#x8DDD;&#x79BB;&#x77E9;&#x9635;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>load_env_data</code> &#x65B9;&#x6CD5;&#x88AB; <code>KuaiEnv</code> &#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570; (<code>__init__</code>) &#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x521D;&#x59CB;&#x5316;&#x73AF;&#x5883;&#x5B9E;&#x4F8B;&#x65F6;&#x52A0;&#x8F7D;&#x6240;&#x9700;&#x7684;&#x6570;&#x636E;&#x3002;&#x6B64;&#x5916;&#xFF0C;<code>get_true_env</code> &#x51FD;&#x6570;&#x4E5F;&#x8C03;&#x7528;&#x4E86;&#x6B64;&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x5FEB;&#x624B;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x7684;&#x5B9E;&#x4F8B;&#x548C;&#x76F8;&#x5173;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x6A21;&#x62DF;&#x548C;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD; <code>KuaiData</code> &#x7C7B;&#x4E2D;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#x8DEF;&#x5F84;&#x5DF2;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;&#xFF0C;&#x5E76;&#x4E14;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#x4E14;&#x683C;&#x5F0F;&#x6B63;&#x786E;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x6570;&#x636E;&#x5904;&#x7406;&#x548C;&#x52A0;&#x8F7D;&#x53EF;&#x80FD;&#x6D89;&#x53CA;&#x5927;&#x91CF;&#x7684;&#x78C1;&#x76D8;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x6267;&#x884C;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4E00;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x7531;&#x4E8E;&#x6B64;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x53EF;&#x80FD;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x793A;&#x4F8B;&#xFF1A;</p>
+<ul>
+<li><code>mat</code>: &#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x8868;&#x793A;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x7684;&#x89C2;&#x770B;&#x6BD4;&#x4F8B;&#x77E9;&#x9635;&#x3002;</li>
+<li><code>lbe_user</code>: &#x7528;&#x6237;ID&#x7684;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#x5B9E;&#x4F8B;&#x3002;</li>
+<li><code>lbe_item</code>: &#x7269;&#x54C1;ID&#x7684;&#x6807;&#x7B7E;&#x7F16;&#x7801;&#x5668;&#x5B9E;&#x4F8B;&#x3002;</li>
+<li><code>list_feat</code>: &#x7269;&#x54C1;&#x7C7B;&#x522B;&#x7279;&#x5F81;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><code>df_dist_small</code>: &#x57FA;&#x4E8E;&#x7269;&#x54C1;&#x7C7B;&#x522B;&#x7279;&#x5F81;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x7269;&#x54C1;&#x95F4;&#x8DDD;&#x79BB;&#x77E9;&#x9635;&#x7684; DataFrame&#x3002;</li>
+</ul>
+<p>&#x8FD9;&#x4E9B;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x5FEB;&#x624B;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x7684;&#x521D;&#x59CB;&#x5316;&#x548C;&#x540E;&#x7EED;&#x7684;&#x6A21;&#x62DF;&#x8BAD;&#x7EC3;&#x63D0;&#x4F9B;&#x4E86;&#x5FC5;&#x8981;&#x7684;&#x6570;&#x636E;&#x57FA;&#x7840;&#x3002;</p>
+<hr>
+<h3 id="functiondef-renderself-mode-close">FunctionDef render(self, mode, close)</h3>
+<p><strong>render</strong>: render&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6E32;&#x67D3;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5305;&#x62EC;&#x7528;&#x6237;&#x3001;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#x548C;&#x64CD;&#x4F5C;&#x7C7B;&#x522B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>mode: &#x6E32;&#x67D3;&#x6A21;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&apos;human&apos;&#x3002;&#x8BE5;&#x53C2;&#x6570;&#x51B3;&#x5B9A;&#x4E86;&#x6E32;&#x67D3;&#x7684;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x5728;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E2D;&#x672A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;</li>
+<li>close: &#x662F;&#x5426;&#x5173;&#x95ED;&#x6E32;&#x67D3;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;&#x8BE5;&#x53C2;&#x6570;&#x5728;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E2D;&#x672A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+render&#x51FD;&#x6570;&#x9996;&#x5148;&#x4ECE;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x4E2D;&#x83B7;&#x53D6;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#xFF08;history_action&#xFF09;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x5386;&#x53F2;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#x4FE1;&#x606F;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#x4FE1;&#x606F;&#xFF0C;&#x901A;&#x8FC7;&#x67E5;&#x627E;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;list_feat_small&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5B57;&#x5178;category&#xFF0C;&#x8BE5;&#x5B57;&#x5178;&#x5C06;&#x64CD;&#x4F5C;&#x540D;&#x79F0;&#x6620;&#x5C04;&#x5230;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x522B;&#x4E0A;&#x3002;&#x8FD9;&#x91CC;&#x7684;list_feat_small&#x662F;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x64CD;&#x4F5C;&#x53EF;&#x80FD;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x522B;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7528;&#x6237;&#xFF08;cur_user&#xFF09;&#x3001;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#xFF08;history_action&#xFF09;&#x548C;&#x64CD;&#x4F5C;&#x7C7B;&#x522B;&#xFF08;category&#xFF09;&#x3002;&#x8FD9;&#x4E09;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x8C03;&#x7528;&#x8005;&#x63D0;&#x4F9B;&#x4E86;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x7684;&#x4E00;&#x4E2A;&#x5FEB;&#x7167;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x4E86;&#x5F53;&#x524D;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3001;&#x6240;&#x6267;&#x884C;&#x7684;&#x5386;&#x53F2;&#x64CD;&#x4F5C;&#x53CA;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x522B;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5C3D;&#x7BA1;&#x53C2;&#x6570;mode&#x548C;close&#x5728;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4E2D;&#x63D0;&#x4F9B;&#xFF0C;&#x4F46;&#x5728;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#x5E76;&#x672A;&#x88AB;&#x4F7F;&#x7528;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x63A5;&#x53E3;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x6216;&#x4E3A;&#x672A;&#x6765;&#x7684;&#x529F;&#x80FD;&#x6269;&#x5C55;&#x9884;&#x7559;&#x7A7A;&#x95F4;&#x3002;</li>
+<li>&#x8FD4;&#x56DE;&#x7684;&#x64CD;&#x4F5C;&#x7C7B;&#x522B;&#x662F;&#x901A;&#x8FC7;&#x67E5;&#x627E;list_feat_small&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x64CD;&#x4F5C;&#x7C7B;&#x522B;&#x7684;&#x786E;&#x5B9A;&#x4F9D;&#x8D56;&#x4E8E;list_feat_small&#x7684;&#x6B63;&#x786E;&#x7EF4;&#x62A4;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<pre><code class="lang-python">(<span class="hljs-string">&apos;user123&apos;</span>, {<span class="hljs-string">&apos;action1&apos;</span>: <span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-string">&apos;action2&apos;</span>: <span class="hljs-string">&apos;view&apos;</span>}, {<span class="hljs-string">&apos;action1&apos;</span>: <span class="hljs-string">&apos;categoryA&apos;</span>, <span class="hljs-string">&apos;action2&apos;</span>: <span class="hljs-string">&apos;categoryB&apos;</span>})
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;<code>cur_user</code>&#x662F;&apos;user123&apos;&#xFF0C;&#x8868;&#x793A;&#x5F53;&#x524D;&#x7684;&#x7528;&#x6237;&#x3002;<code>history_action</code>&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x7528;&#x6237;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&apos;action1&apos;&#x5BF9;&#x5E94;&apos;click&apos;&#xFF0C;&apos;action2&apos;&#x5BF9;&#x5E94;&apos;view&apos;&#x3002;<code>category</code>&#x540C;&#x6837;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x6620;&#x5C04;&#x5230;&#x4E86;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x522B;&#xFF0C;&#x5982;&apos;action1&apos;&#x6620;&#x5C04;&#x5230;&apos;categoryA&apos;&#xFF0C;&apos;action2&apos;&#x6620;&#x5C04;&#x5230;&apos;categoryB&apos;&#x3002;</p>
+<hr>
+<h3 id="functiondef-determinewhethertoleaveself-t-action">FunctionDef _determine_whether_to_leave(self, t, action)</h3>
+<p><strong>_determine_whether_to_leave</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5224;&#x65AD;&#x5728;&#x7ED9;&#x5B9A;&#x65F6;&#x95F4;&#x70B9;&#x548C;&#x884C;&#x52A8;&#x4E0B;&#xFF0C;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x79BB;&#x5F00;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>t</code>: &#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;&#x6B65;&#x3002;</li>
+<li><code>action</code>: &#x5F53;&#x524D;&#x91C7;&#x53D6;&#x7684;&#x884C;&#x52A8;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5904;&#x4E8E;&#x65F6;&#x95F4;&#x6B65;0&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;False&#xFF0C;&#x8868;&#x793A;&#x4E0D;&#x79BB;&#x5F00;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5728;&#x521D;&#x59CB;&#x6B65;&#x9AA4;&#xFF08;t=0&#xFF09;&#x65F6;&#xFF0C;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x5386;&#x53F2;&#x4FE1;&#x606F;&#x6765;&#x505A;&#x51FA;&#x79BB;&#x5F00;&#x7684;&#x51B3;&#x5B9A;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x5185;&#x7684;&#x884C;&#x52A8;&#x5E8F;&#x5217;&#xFF0C;&#x8FD9;&#x4E2A;&#x7A97;&#x53E3;&#x7531;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x6B65;&#x5411;&#x524D;&#x63A8;<code>num_leave_compute</code>&#x6B65;&#x3002;&#x5BF9;&#x4E8E;&#x7A97;&#x53E3;&#x5185;&#x7684;&#x6BCF;&#x4E2A;&#x884C;&#x52A8;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;<code>list_feat_small</code>&#x6620;&#x5C04;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x522B;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x8FD9;&#x4E9B;&#x7C7B;&#x522B;&#x5217;&#x8868;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x7684;&#x7C7B;&#x522B;&#x5217;&#x8868;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;<code>Counter</code>&#x6765;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x7C7B;&#x522B;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5386;&#x53F2;&#x7C7B;&#x522B;&#x7684;&#x9891;&#x7387;&#x5206;&#x5E03;&#x5B57;&#x5178;<code>hist_dict</code>&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x884C;&#x52A8;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x522B;&#x5217;&#x8868;<code>category_a</code>&#xFF0C;&#x51FD;&#x6570;&#x68C0;&#x67E5;&#x8FD9;&#x4E9B;&#x7C7B;&#x522B;&#x5728;&#x5386;&#x53F2;&#x9891;&#x7387;&#x5206;&#x5E03;&#x4E2D;&#x7684;&#x51FA;&#x73B0;&#x6B21;&#x6570;&#x662F;&#x5426;&#x8D85;&#x8FC7;&#x4E86;&#x8BBE;&#x5B9A;&#x7684;&#x9608;&#x503C;<code>leave_threshold</code>&#x3002;&#x5982;&#x679C;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x7C7B;&#x522B;&#x7684;&#x51FA;&#x73B0;&#x6B21;&#x6570;&#x8D85;&#x8FC7;&#x4E86;&#x9608;&#x503C;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x8FD4;&#x56DE;True&#xFF0C;&#x8868;&#x793A;&#x5E94;&#x8BE5;&#x79BB;&#x5F00;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x8FD4;&#x56DE;False&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;&#x7C7B;&#x5185;&#x90E8;&#x7684;&#x591A;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x5982;<code>num_leave_compute</code>&#x3001;<code>sequence_action</code>&#x3001;<code>list_feat_small</code>&#x548C;<code>leave_threshold</code>&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x9700;&#x8981;&#x5728;&#x7C7B;&#x7684;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#x548C;&#x66F4;&#x65B0;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x7684;&#x8BBE;&#x8BA1;&#x5047;&#x8BBE;&#x4E86;<code>list_feat_small</code>&#x80FD;&#x591F;&#x4E3A;&#x6BCF;&#x4E2A;&#x884C;&#x52A8;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7C7B;&#x522B;&#x6807;&#x7B7E;&#xFF0C;&#x8FD9;&#x9700;&#x8981;&#x5728;&#x73AF;&#x5883;&#x8BBE;&#x7F6E;&#x4E2D;&#x88AB;&#x6B63;&#x786E;&#x914D;&#x7F6E;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x5728;&#x65F6;&#x95F4;&#x6B65;5&#xFF0C;&#x884C;&#x52A8;3&#x88AB;&#x91C7;&#x53D6;&#xFF0C;&#x4E14;&#x6839;&#x636E;&#x5386;&#x53F2;&#x884C;&#x52A8;&#x548C;&#x7C7B;&#x522B;&#x9891;&#x7387;&#x5206;&#x5E03;&#xFF0C;&#x8BE5;&#x884C;&#x52A8;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x522B;&#x5728;&#x5386;&#x53F2;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;&#x8D85;&#x8FC7;&#x4E86;&#x79BB;&#x5F00;&#x9608;&#x503C;&#x3002;&#x5219;&#x51FD;&#x6570;&#x8C03;&#x7528;<code>_determine_whether_to_leave(5, 3)</code>&#x5C06;&#x8FD4;&#x56DE;<code>True</code>&#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E9B;&#x6761;&#x4EF6;&#x6CA1;&#x6709;&#x88AB;&#x6EE1;&#x8DB3;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x8FD4;&#x56DE;<code>False</code>&#x3002;</p>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="KuaiData.html" class="navigation navigation-prev " aria-label="Previous page: Kuai Data">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="preprocessing_kuairec.html" class="navigation navigation-next " aria-label="Next page: Preprocessing Kuairec">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kuai Env","level":"1.2.2.3.2","depth":4,"next":{"title":"Preprocessing Kuairec","level":"1.2.2.3.3","depth":4,"path":"src/core/envs/KuaiRec/preprocessing_kuairec.md","ref":"src/core/envs/KuaiRec/preprocessing_kuairec.md","articles":[]},"previous":{"title":"Kuai Data","level":"1.2.2.3.1","depth":4,"path":"src/core/envs/KuaiRec/KuaiData.md","ref":"src/core/envs/KuaiRec/KuaiData.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/core/envs/KuaiRec/KuaiEnv.md","mtime":"2024-03-18T12:56:52.419Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-18T14:39:28.553Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1355 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Metrics · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="utils.html" />
+    
+    
+    <link rel="prev" href="loggers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Welcome to EasyRL4Rec!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../Introduction/Installation.html">
+            
+                <a href="../../../Introduction/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../Introduction/RunningCommands.html">
+            
+                <a href="../../../Introduction/RunningCommands.html">
+            
+                    
+                    Running Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../Introduction/ImplementationDetails.html">
+            
+                <a href="../../../Introduction/ImplementationDetails.html">
+            
+                    
+                    Implementation Details
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Docs.html">
+            
+                <a href="../../Docs.html">
+            
+                    
+                    Documentation for src/core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../collector/">
+            
+                <a href="../collector/">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../collector/collector.html">
+            
+                <a href="../collector/collector.html">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../collector/collector_set.html">
+            
+                <a href="../collector/collector_set.html">
+            
+                    
+                    Collector Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../envs/">
+            
+                <a href="../envs/">
+            
+                    
+                    Envs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../envs/Coat/">
+            
+                <a href="../envs/Coat/">
+            
+                    
+                    Coat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../envs/Coat/CoatData.html">
+            
+                <a href="../envs/Coat/CoatData.html">
+            
+                    
+                    Coat Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../envs/Coat/CoatEnv.html">
+            
+                <a href="../envs/Coat/CoatEnv.html">
+            
+                    
+                    Coat Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../envs/KuaiRand_Pure/">
+            
+                <a href="../envs/KuaiRand_Pure/">
+            
+                    
+                    KuaiRand Pure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                    
+                    Kuai Rand Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                    
+                    Kuai Rand Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                <a href="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                    
+                    Preprocessing Kuairand
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../envs/KuaiRec/">
+            
+                <a href="../envs/KuaiRec/">
+            
+                    
+                    KuaiRec
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../envs/KuaiRec/KuaiData.html">
+            
+                <a href="../envs/KuaiRec/KuaiData.html">
+            
+                    
+                    Kuai Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../envs/KuaiRec/KuaiEnv.html">
+            
+                <a href="../envs/KuaiRec/KuaiEnv.html">
+            
+                    
+                    Kuai Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                <a href="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                    
+                    Preprocessing Kuairec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../envs/MovieLens/">
+            
+                <a href="../envs/MovieLens/">
+            
+                    
+                    MovieLens
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../envs/MovieLens/MovieLensData.html">
+            
+                <a href="../envs/MovieLens/MovieLensData.html">
+            
+                    
+                    MovieLens Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../envs/MovieLens/MovieLensEnv.html">
+            
+                <a href="../envs/MovieLens/MovieLensEnv.html">
+            
+                    
+                    MovieLens Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../envs/Simulated_Env/">
+            
+                <a href="../envs/Simulated_Env/">
+            
+                    
+                    SimulatedEnv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../envs/Simulated_Env/base.html">
+            
+                <a href="../envs/Simulated_Env/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../envs/Simulated_Env/intrinsic.html">
+            
+                <a href="../envs/Simulated_Env/intrinsic.html">
+            
+                    
+                    Intrinsic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                <a href="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                    
+                    Penalty Ent Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="../envs/Simulated_Env/penalty_var.html">
+            
+                <a href="../envs/Simulated_Env/penalty_var.html">
+            
+                    
+                    Penalty Var
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../envs/YahooR3/">
+            
+                <a href="../envs/YahooR3/">
+            
+                    
+                    YahooR3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../envs/YahooR3/YahooData.html">
+            
+                <a href="../envs/YahooR3/YahooData.html">
+            
+                    
+                    Yahoo Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../envs/YahooR3/YahooEnv.html">
+            
+                <a href="../envs/YahooR3/YahooEnv.html">
+            
+                    
+                    Yahoo Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../envs/BaseData.html">
+            
+                <a href="../envs/BaseData.html">
+            
+                    
+                    Base Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../envs/BaseEnv.html">
+            
+                <a href="../envs/BaseEnv.html">
+            
+                    
+                    Base Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Evaluation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="evaluator_static.html">
+            
+                <a href="evaluator_static.html">
+            
+                    
+                    Evaluator Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="evaluator.html">
+            
+                <a href="evaluator.html">
+            
+                    
+                    Evaluator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="loggers.html">
+            
+                <a href="loggers.html">
+            
+                    
+                    Loggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.4" data-path="metrics.html">
+            
+                <a href="metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="utils.html">
+            
+                <a href="utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../policy/">
+            
+                <a href="../policy/">
+            
+                    
+                    Policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../policy/RecPolicy.html">
+            
+                <a href="../policy/RecPolicy.html">
+            
+                    
+                    RecPolicy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../state_tracker/">
+            
+                <a href="../state_tracker/">
+            
+                    
+                    State Tracker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../state_tracker/Average.html">
+            
+                <a href="../state_tracker/Average.html">
+            
+                    
+                    Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../state_tracker/base.html">
+            
+                <a href="../state_tracker/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../state_tracker/Caser.html">
+            
+                <a href="../state_tracker/Caser.html">
+            
+                    
+                    Caser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../state_tracker/GRU.html">
+            
+                <a href="../state_tracker/GRU.html">
+            
+                    
+                    GRU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../state_tracker/NextItNet.html">
+            
+                <a href="../state_tracker/NextItNet.html">
+            
+                    
+                    NextItNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="../state_tracker/SASRec.html">
+            
+                <a href="../state_tracker/SASRec.html">
+            
+                    
+                    SASRec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../userModel/">
+            
+                <a href="../userModel/">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../userModel/user_model_ensemble.html">
+            
+                <a href="../userModel/user_model_ensemble.html">
+            
+                    
+                    User Model Ensemble
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../userModel/user_model_mmoe.html">
+            
+                <a href="../userModel/user_model_mmoe.html">
+            
+                    
+                    User Model Mmoe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../userModel/user_model_pairwise_variance.html">
+            
+                <a href="../userModel/user_model_pairwise_variance.html">
+            
+                    
+                    User Model Pairwise Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../userModel/user_model_pairwise.html">
+            
+                <a href="../userModel/user_model_pairwise.html">
+            
+                    
+                    User Model Pairwise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../userModel/user_model_variance.html">
+            
+                <a href="../userModel/user_model_variance.html">
+            
+                    
+                    User Model Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../userModel/user_model.html">
+            
+                <a href="../userModel/user_model.html">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../util/">
+            
+                <a href="../util/">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../util/data.html">
+            
+                <a href="../util/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../util/inputs.html">
+            
+                <a href="../util/inputs.html">
+            
+                    
+                    Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../util/layers.html">
+            
+                <a href="../util/layers.html">
+            
+                    
+                    Layers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../util/loss.html">
+            
+                <a href="../util/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../util/static_dataset.html">
+            
+                <a href="../util/static_dataset.html">
+            
+                    
+                    Static Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../util/utils.html">
+            
+                <a href="../util/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Metrics</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="functiondef-getdiversityitemlist-similaritymat">FunctionDef get_diversity(item_list, similarity_mat)</h2>
+<p><strong>get_diversity</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BA1;&#x7B97;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7684;&#x591A;&#x6837;&#x6027;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>item_list</strong>: &#x9879;&#x76EE;&#x5217;&#x8868;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x591A;&#x6837;&#x6027;&#x3002;</li>
+<li><strong>similarity_mat</strong>: &#x76F8;&#x4F3C;&#x5EA6;&#x77E9;&#x9635;&#xFF0C;&#x8868;&#x793A;&#x9879;&#x76EE;&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x4F3C;&#x5EA6;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>get_diversity</code>&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x5217;&#x8868;&#x548C;&#x4E00;&#x4E2A;&#x76F8;&#x4F3C;&#x5EA6;&#x77E9;&#x9635;&#x4F5C;&#x4E3A;&#x8F93;&#x5165;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x5B83;&#x68C0;&#x67E5;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x5982;&#x679C;&#x5217;&#x8868;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;1&#xFF0C;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;1.0&#xFF0C;&#x8868;&#x793A;&#x6700;&#x5927;&#x7684;&#x591A;&#x6837;&#x6027;&#x3002;&#x5BF9;&#x4E8E;&#x957F;&#x5EA6;&#x5927;&#x4E8E;1&#x7684;&#x5217;&#x8868;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x904D;&#x5386;&#x9879;&#x76EE;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x5BF9;&#x9879;&#x76EE;&#xFF0C;&#x4F7F;&#x7528;&#x76F8;&#x4F3C;&#x5EA6;&#x77E9;&#x9635;&#x8BA1;&#x7B97;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x4E0D;&#x76F8;&#x4F3C;&#x5EA6;&#xFF08;1&#x51CF;&#x53BB;&#x76F8;&#x4F3C;&#x5EA6;&#xFF09;&#xFF0C;&#x5E76;&#x7D2F;&#x52A0;&#x8FD9;&#x4E9B;&#x503C;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x7D2F;&#x52A0;&#x7684;&#x603B;&#x548C;&#x9664;&#x4EE5;&#x9879;&#x76EE;&#x5BF9;&#x7684;&#x603B;&#x6570;&#xFF08;&#x5373;&#x5217;&#x8868;&#x957F;&#x5EA6;&#x4E58;&#x4EE5;&#x5217;&#x8868;&#x957F;&#x5EA6;&#x51CF;1&#xFF0C;&#x518D;&#x9664;&#x4EE5;2&#xFF0C;&#x56E0;&#x4E3A;&#x662F;&#x65E0;&#x5E8F;&#x5BF9;&#xFF09;&#xFF0C;&#x5F97;&#x5230;&#x5E73;&#x5747;&#x4E0D;&#x76F8;&#x4F3C;&#x5EA6;&#xFF0C;&#x5373;&#x591A;&#x6837;&#x6027;&#x5EA6;&#x91CF;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x591A;&#x6837;&#x6027;&#x503C;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>get_diversity</code>&#x51FD;&#x6570;&#x88AB;<code>get_results_for_one_collector</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x8BC4;&#x4F30;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x904D;&#x5386;&#x7528;&#x6237;&#x7684;&#x884C;&#x4E3A;&#x5217;&#x8868;&#xFF08;actions&#xFF09;&#x3001;&#x5956;&#x52B1;&#x5217;&#x8868;&#xFF08;rews&#xFF09;&#x548C;&#x7528;&#x6237;&#x5217;&#x8868;&#xFF08;users&#xFF09;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x751F;&#x6210;&#x7684;&#x9879;&#x76EE;&#x5217;&#x8868;&#x8C03;&#x7528;<code>get_diversity</code>&#x51FD;&#x6570;&#xFF0C;&#x8BA1;&#x7B97;&#x5176;&#x591A;&#x6837;&#x6027;&#xFF0C;&#x5E76;&#x5C06;&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x591A;&#x6837;&#x6027;&#x5E73;&#x5747;&#x503C;&#x4F5C;&#x4E3A;&#x6574;&#x4F53;&#x7684;&#x591A;&#x6837;&#x6027;&#x6307;&#x6807;&#x3002;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x4E86;&#x89E3;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x662F;&#x5426;&#x80FD;&#x591F;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x591A;&#x6837;&#x5316;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>item_list</code>&#x662F;&#x6709;&#x6548;&#x7684;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x5217;&#x8868;&#xFF0C;&#x4E14;<code>similarity_mat</code>&#x6B63;&#x786E;&#x8868;&#x793A;&#x4E86;&#x9879;&#x76EE;&#x95F4;&#x7684;&#x76F8;&#x4F3C;&#x5EA6;&#x3002;</li>
+<li>&#x591A;&#x6837;&#x6027;&#x503C;&#x7684;&#x8303;&#x56F4;&#x662F;0&#x5230;1&#xFF0C;&#x5176;&#x4E2D;0&#x8868;&#x793A;&#x5B8C;&#x5168;&#x4E0D;&#x591A;&#x6837;&#xFF08;&#x5373;&#x6240;&#x6709;&#x9879;&#x76EE;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF09;&#xFF0C;1&#x8868;&#x793A;&#x5B8C;&#x5168;&#x591A;&#x6837;&#xFF08;&#x5373;&#x6240;&#x6709;&#x9879;&#x76EE;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#xFF09;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5982;&#x679C;&#x6709;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x5217;&#x8868;<code>[1, 2, 3]</code>&#x548C;&#x4E00;&#x4E2A;&#x76F8;&#x4F3C;&#x5EA6;&#x77E9;&#x9635;&#xFF0C;&#x5176;&#x4E2D;&#x9879;&#x76EE;&#x95F4;&#x7684;&#x76F8;&#x4F3C;&#x5EA6;&#x5747;&#x4E3A;0.5&#xFF0C;&#x5219;<code>get_diversity</code>&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5C06;&#x662F;0.5&#xFF0C;&#x8868;&#x793A;&#x8FD9;&#x7EC4;&#x9879;&#x76EE;&#x7684;&#x5E73;&#x5747;&#x4E0D;&#x76F8;&#x4F3C;&#x5EA6;&#x3002;</p>
+<h2 id="functiondef-getnoveltyitemlist-popularitylist">FunctionDef get_novelty(item_list, popularity_list)</h2>
+<p><strong>get_novelty</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BA1;&#x7B97;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7684;&#x65B0;&#x9896;&#x5EA6;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>item_list: &#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x7528;&#x6237;&#x4E92;&#x52A8;&#x7684;&#x9879;&#x76EE;ID&#x3002;</li>
+<li>popularity_list: &#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x952E;&#x4E3A;&#x9879;&#x76EE;ID&#xFF0C;&#x503C;&#x4E3A;&#x8BE5;&#x9879;&#x76EE;&#x7684;&#x6D41;&#x884C;&#x5EA6;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>get_novelty</code> &#x51FD;&#x6570;&#x901A;&#x8FC7;&#x9879;&#x76EE;&#x5217;&#x8868;&#x548C;&#x6D41;&#x884C;&#x5EA6;&#x5217;&#x8868;&#x8BA1;&#x7B97;&#x7ED9;&#x5B9A;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7684;&#x5E73;&#x5747;&#x65B0;&#x9896;&#x5EA6;&#x3002;&#x5B83;&#x9996;&#x5148;&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x7136;&#x540E;&#x521D;&#x59CB;&#x5316;&#x65B0;&#x9896;&#x5EA6;&#xFF08;nov&#xFF09;&#x4E3A;0.0&#x3002;&#x5BF9;&#x4E8E;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x51FD;&#x6570;&#x67E5;&#x627E;&#x5176;&#x6D41;&#x884C;&#x5EA6;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5176;&#x8D1F;&#x5BF9;&#x6570;&#x52A0;&#x5230;&#x65B0;&#x9896;&#x5EA6;&#x53D8;&#x91CF;&#x4E0A;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x7D2F;&#x79EF;&#x7684;&#x65B0;&#x9896;&#x5EA6;&#x9664;&#x4EE5;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5F97;&#x5230;&#x5E73;&#x5747;&#x65B0;&#x9896;&#x5EA6;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>get_novelty</code> &#x51FD;&#x6570;&#x88AB; <code>get_results_for_one_collector</code> &#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x6BCF;&#x4E2A;epoch&#x7ED3;&#x675F;&#x65F6;&#x8BA1;&#x7B97;&#x4E00;&#x7EC4;&#x7528;&#x6237;&#x4E92;&#x52A8;&#x9879;&#x76EE;&#x7684;&#x5E73;&#x5747;&#x65B0;&#x9896;&#x5EA6;&#x3002;&#x8FD9;&#x662F;&#x901A;&#x8FC7;&#x8BC4;&#x4F30;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x6765;&#x8861;&#x91CF;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x63A8;&#x8350;&#x5185;&#x5BB9;&#x7684;&#x65B0;&#x9896;&#x6027;&#x3002;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;&#x6240;&#x6709;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7684;&#x65B0;&#x9896;&#x5EA6;&#x7684;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x6574;&#x4F53;&#x7684;&#x65B0;&#x9896;&#x5EA6;&#x6307;&#x6807;&#xFF0C;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x4E86;&#x89E3;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x662F;&#x5426;&#x80FD;&#x591F;&#x5411;&#x7528;&#x6237;&#x63A8;&#x8350;&#x4ED6;&#x4EEC;&#x4E0D;&#x592A;&#x53EF;&#x80FD;&#x81EA;&#x884C;&#x53D1;&#x73B0;&#x7684;&#x65B0;&#x9896;&#x5185;&#x5BB9;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>popularity_list</code>&#x4E2D;&#x7684;&#x9879;&#x76EE;ID&#x4E0E;<code>item_list</code>&#x4E2D;&#x7684;&#x9879;&#x76EE;ID&#x76F8;&#x5339;&#x914D;&#xFF0C;&#x5E76;&#x4E14;&#x6D41;&#x884C;&#x5EA6;&#x503C;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x8D1F;&#x5BF9;&#x6570;&#x8BA1;&#x7B97;&#x5BF9;&#x4E8E;&#x975E;&#x6B63;&#x503C;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x3002;</li>
+<li>&#x8BE5;&#x51FD;&#x6570;&#x5047;&#x8BBE;&#x6240;&#x6709;&#x4F20;&#x5165;&#x7684;&#x9879;&#x76EE;ID&#x90FD;&#x5728;<code>popularity_list</code>&#x4E2D;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x6D41;&#x884C;&#x5EA6;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x9879;&#x76EE;ID&#x5728;<code>popularity_list</code>&#x4E2D;&#x627E;&#x4E0D;&#x5230;&#xFF0C;&#x5C06;&#x4F1A;&#x5F15;&#x53D1;&#x9519;&#x8BEF;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x5217;&#x8868;<code>[1, 2, 3]</code>&#xFF0C;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x6D41;&#x884C;&#x5EA6;&#x5217;&#x8868;&#x4E3A;<code>{1: 0.5, 2: 0.3, 3: 0.2}</code>&#xFF0C;&#x5219;<code>get_novelty</code>&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x4E3A;<code>1.2039728043259361</code>&#xFF0C;&#x8FD9;&#x8868;&#x793A;&#x7ED9;&#x5B9A;&#x9879;&#x76EE;&#x5217;&#x8868;&#x7684;&#x5E73;&#x5747;&#x65B0;&#x9896;&#x5EA6;&#x3002;</p>
+<h2 id="functiondef-getserendipity">FunctionDef get_serendipity</h2>
+<p><strong>get_serendipity</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BA1;&#x7B97;&#x5E76;&#x8FD4;&#x56DE;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x610F;&#x5916;&#x53D1;&#x73B0;&#x5EA6;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x8BE5;&#x51FD;&#x6570;&#x76EE;&#x524D;&#x4E0D;&#x63A5;&#x53D7;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>get_serendipity</code>&#x51FD;&#x6570;&#x4F4D;&#x4E8E;&#x9879;&#x76EE;&#x7684;<code>src/core/evaluation/metrics.py</code>&#x8DEF;&#x5F84;&#x4E0B;&#xFF0C;&#x76EE;&#x524D;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x5C1A;&#x672A;&#x5B8C;&#x6210;&#xFF0C;&#x4EC5;&#x5305;&#x542B;&#x4E00;&#x4E2A;<code>pass</code>&#x8BED;&#x53E5;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x51FD;&#x6570;&#x7684;&#x5177;&#x4F53;&#x903B;&#x8F91;&#x8FD8;&#x9700;&#x8981;&#x6839;&#x636E;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x9700;&#x6C42;&#x6765;&#x8FDB;&#x4E00;&#x6B65;&#x5F00;&#x53D1;&#x548C;&#x5B8C;&#x5584;&#x3002;&#x610F;&#x5916;&#x53D1;&#x73B0;&#x5EA6;&#xFF08;Serendipity&#xFF09;&#x662F;&#x8861;&#x91CF;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x63A8;&#x8350;&#x7ED3;&#x679C;&#x4E2D;&#x65B0;&#x9896;&#x6027;&#x548C;&#x7528;&#x6237;&#x672A;&#x9884;&#x671F;&#x53D1;&#x73B0;&#x7684;&#x80FD;&#x529B;&#x7684;&#x6307;&#x6807;&#x3002;&#x5728;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x51C6;&#x786E;&#x6027;&#x4E4B;&#x5916;&#xFF0C;&#x80FD;&#x591F;&#x7ED9;&#x7528;&#x6237;&#x5E26;&#x6765;&#x610F;&#x5916;&#x60CA;&#x559C;&#x7684;&#x63A8;&#x8350;&#x540C;&#x6837;&#x91CD;&#x8981;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5F00;&#x53D1;&#x6B64;&#x51FD;&#x6570;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x8BC4;&#x4F30;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x80FD;&#x5426;&#x8D85;&#x51FA;&#x7528;&#x6237;&#x7684;&#x671F;&#x671B;&#xFF0C;&#x63A8;&#x8350;&#x4E00;&#x4E9B;&#x7528;&#x6237;&#x53EF;&#x80FD;&#x672A;&#x66FE;&#x8003;&#x8651;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x53EF;&#x80FD;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x9879;&#x76EE;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x7531;&#x4E8E;<code>get_serendipity</code>&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#x5C1A;&#x672A;&#x5B8C;&#x6210;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x5B8C;&#x6210;&#x51FD;&#x6570;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#xFF0C;&#x5305;&#x62EC;&#x5B9A;&#x4E49;&#x8BA1;&#x7B97;&#x610F;&#x5916;&#x53D1;&#x73B0;&#x5EA6;&#x7684;&#x7B97;&#x6CD5;&#x3001;&#x786E;&#x5B9A;&#x6240;&#x9700;&#x7684;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x7B49;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x5B9E;&#x73B0;&#x8BE5;&#x51FD;&#x6570;&#x65F6;&#x5E94;&#x8003;&#x8651;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#xFF08;&#x5982;&#x57FA;&#x4E8E;&#x5185;&#x5BB9;&#x7684;&#x63A8;&#x8350;&#x3001;&#x534F;&#x540C;&#x8FC7;&#x6EE4;&#x63A8;&#x8350;&#x7B49;&#xFF09;&#x53EF;&#x80FD;&#x5BF9;&#x610F;&#x5916;&#x53D1;&#x73B0;&#x5EA6;&#x7684;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x8981;&#x6C42;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5B9E;&#x73B0;&#x65F6;&#x9700;&#x8981;&#x7075;&#x6D3B;&#x8C03;&#x6574;&#x7B97;&#x6CD5;&#x4EE5;&#x9002;&#x5E94;&#x4E0D;&#x540C;&#x7684;&#x63A8;&#x8350;&#x573A;&#x666F;&#x3002;</p>
+<h2 id="functiondef-getmrrreclist-truelist-truerel">FunctionDef get_MRR(rec_list, true_list, true_rel)</h2>
+<p><strong>get_MRR</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x5E73;&#x5747;&#x5012;&#x6392;&#x540D;&#xFF08;Mean Reciprocal Rank, MRR&#xFF09;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>rec_list</code>: &#x63A8;&#x8350;&#x5217;&#x8868;&#xFF0C;&#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x5217;&#x8868;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;&#x5B50;&#x5217;&#x8868;&#x5305;&#x542B;&#x5BF9;&#x5355;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x9879;&#x3002;</li>
+<li><code>true_list</code>: &#x771F;&#x5B9E;&#x5217;&#x8868;&#xFF0C;&#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x5217;&#x8868;&#xFF0C;&#x4E0E;&#x63A8;&#x8350;&#x5217;&#x8868;&#x76F8;&#x5BF9;&#x5E94;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B50;&#x5217;&#x8868;&#x5305;&#x542B;&#x5BF9;&#x5355;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x3002;</li>
+<li><code>true_rel</code>: &#x771F;&#x5B9E;&#x76F8;&#x5173;&#x6027;&#xFF0C;&#x6B64;&#x53C2;&#x6570;&#x5728;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E2D;&#x672A;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x53EF;&#x80FD;&#x9884;&#x7559;&#x7ED9;&#x6269;&#x5C55;&#x529F;&#x80FD;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x51FD;&#x6570;<code>get_MRR</code>&#x8BA1;&#x7B97;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x5E73;&#x5747;&#x5012;&#x6392;&#x540D;&#xFF08;MRR&#xFF09;&#x3002;MRR&#x662F;&#x8861;&#x91CF;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x7684;&#x6307;&#x6807;&#x4E4B;&#x4E00;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5728;&#x8003;&#x8651;&#x63A8;&#x8350;&#x7ED3;&#x679C;&#x7684;&#x6392;&#x540D;&#x65F6;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x904D;&#x5386;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x5217;&#x8868;(<code>rec_list</code>)&#xFF0C;&#x5E76;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x68C0;&#x67E5;&#x5176;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;(<code>true_list</code>)&#x662F;&#x5426;&#x51FA;&#x73B0;&#x5728;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x51FA;&#x73B0;&#xFF0C;&#x5219;&#x8BA1;&#x7B97;&#x8BE5;&#x9879;&#x7684;&#x5012;&#x6392;&#x540D;&#xFF08;&#x5373;1&#x9664;&#x4EE5;&#x8BE5;&#x9879;&#x5728;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x52A0;1&#xFF0C;&#x56E0;&#x4E3A;&#x4F4D;&#x7F6E;&#x7D22;&#x5F15;&#x4ECE;0&#x5F00;&#x59CB;&#xFF09;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x5012;&#x6392;&#x540D;&#x6C42;&#x548C;&#xFF0C;&#x6700;&#x540E;&#x9664;&#x4EE5;&#x7528;&#x6237;&#x603B;&#x6570;&#xFF0C;&#x5F97;&#x5230;&#x5E73;&#x5747;&#x5012;&#x6392;&#x540D;&#x3002;</p>
+<p>&#x5728;&#x904D;&#x5386;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E00;&#x65E6;&#x627E;&#x5230;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x5728;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5C31;&#x4F1A;&#x8DF3;&#x51FA;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#xFF0C;&#x8F6C;&#x800C;&#x5904;&#x7406;&#x4E0B;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x5217;&#x8868;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x53EA;&#x8BA1;&#x7B97;&#x7B2C;&#x4E00;&#x4E2A;&#x627E;&#x5230;&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x7684;&#x5012;&#x6392;&#x540D;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>rec_list</code>&#x548C;<code>true_list</code>&#x7684;&#x7ED3;&#x6784;&#x6B63;&#x786E;&#xFF0C;&#x4E14;&#x5B83;&#x4EEC;&#x7684;&#x957F;&#x5EA6;&#x76F8;&#x7B49;&#xFF0C;&#x5373;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x5217;&#x8868;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x3002;</li>
+<li>&#x8BE5;&#x51FD;&#x6570;&#x5047;&#x8BBE;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x5728;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x5B8C;&#x5168;&#x4E0D;&#x5728;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x5219;&#x8BE5;&#x7528;&#x6237;&#x5BF9;MRR&#x7684;&#x8D21;&#x732E;&#x4E3A;0&#x3002;</li>
+<li>&#x7D22;&#x5F15;&#x4ECE;0&#x5F00;&#x59CB;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x8BA1;&#x7B97;&#x5012;&#x6392;&#x540D;&#x65F6;&#x9700;&#x8981;&#x52A0;1&#x4EE5;&#x907F;&#x514D;&#x9664;&#x4EE5;0&#x7684;&#x60C5;&#x51B5;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;&#x4EE5;&#x4E0B;&#x8F93;&#x5165;&#xFF1A;</p>
+<ul>
+<li><code>rec_list = [[1, 2, 3], [4, 5, 6]]</code></li>
+<li><code>true_list = [[3], [5]]</code></li>
+</ul>
+<p>&#x51FD;&#x6570;<code>get_MRR</code>&#x7684;&#x8F93;&#x51FA;&#x5C06;&#x662F;0.75&#x3002;&#x89E3;&#x91CA;&#x5982;&#x4E0B;&#xFF1A;&#x5BF9;&#x4E8E;&#x7B2C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;3&#x5728;&#x63A8;&#x8350;&#x5217;&#x8868;&#x7684;&#x7B2C;&#x4E09;&#x4F4D;&#xFF0C;&#x5012;&#x6392;&#x540D;&#x4E3A;1/3&#xFF1B;&#x5BF9;&#x4E8E;&#x7B2C;&#x4E8C;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;5&#x5728;&#x63A8;&#x8350;&#x5217;&#x8868;&#x7684;&#x7B2C;&#x4E8C;&#x4F4D;&#xFF0C;&#x5012;&#x6392;&#x540D;&#x4E3A;1/2&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5E73;&#x5747;&#x5012;&#x6392;&#x540D;&#x4E3A;(1/3 + 1/2) / 2 = 0.75&#x3002;</p>
+<h2 id="functiondef-gethrreclist-truelist-truerel">FunctionDef get_HR(rec_list, true_list, true_rel)</h2>
+<p><strong>get_HR</strong>: &#x6B64;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x547D;&#x4E2D;&#x7387;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>rec_list</strong>: &#x63A8;&#x8350;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x4E00;&#x4E2A;&#x63A8;&#x8350;&#x9879;&#x76EE;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><strong>true_list</strong>: &#x771F;&#x5B9E;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x7528;&#x6237;&#x5B9E;&#x9645;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x9879;&#x76EE;&#x5217;&#x8868;&#x3002;</li>
+<li><strong>true_rel</strong>: &#x6B64;&#x53C2;&#x6570;&#x5728;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E2D;&#x672A;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x53EF;&#x80FD;&#x9884;&#x7559;&#x7ED9;&#x672A;&#x6765;&#x6269;&#x5C55;&#xFF0C;&#x7528;&#x4E8E;&#x8003;&#x8651;&#x76F8;&#x5173;&#x6027;&#x8BC4;&#x5206;&#x6216;&#x5176;&#x4ED6;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>get_HR</code>&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x6BD4;&#x8F83;&#x63A8;&#x8350;&#x5217;&#x8868;&#xFF08;<code>rec_list</code>&#xFF09;&#x548C;&#x771F;&#x5B9E;&#x5217;&#x8868;&#xFF08;<code>true_list</code>&#xFF09;&#x4E2D;&#x7684;&#x9879;&#x76EE;&#x6765;&#x8BA1;&#x7B97;&#x547D;&#x4E2D;&#x7387;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#xFF08;&#x6216;&#x6BCF;&#x4E2A;&#x5217;&#x8868;&#x9879;&#xFF09;&#xFF0C;&#x51FD;&#x6570;&#x9996;&#x5148;&#x5C06;&#x63A8;&#x8350;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x8F6C;&#x6362;&#x4E3A;&#x96C6;&#x5408;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x8FD9;&#x4E24;&#x4E2A;&#x96C6;&#x5408;&#x7684;&#x4EA4;&#x96C6;&#xFF0C;&#x5373;&#x540C;&#x65F6;&#x51FA;&#x73B0;&#x5728;&#x63A8;&#x8350;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x9879;&#x76EE;&#x6570;&#x91CF;&#x3002;&#x5982;&#x679C;&#x4EA4;&#x96C6;&#x7684;&#x5927;&#x5C0F;&#x5927;&#x4E8E;0&#xFF0C;&#x8868;&#x793A;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x63A8;&#x8350;&#x9879;&#x76EE;&#x662F;&#x7528;&#x6237;&#x5B9E;&#x9645;&#x611F;&#x5174;&#x8DA3;&#x7684;&#xFF0C;&#x8FD9;&#x65F6;&#x547D;&#x4E2D;&#x6B21;&#x6570;&#xFF08;<code>hits</code>&#xFF09;&#x589E;&#x52A0;1&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x547D;&#x4E2D;&#x6B21;&#x6570;&#x9664;&#x4EE5;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x7684;&#x603B;&#x957F;&#x5EA6;&#xFF0C;&#x5373;&#x547D;&#x4E2D;&#x7387;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>rec_list</code>&#x548C;<code>true_list</code>&#x7684;&#x957F;&#x5EA6;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x540C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x9879;&#x76EE;&#x5217;&#x8868;&#x3002;</li>
+<li>&#x6B64;&#x51FD;&#x6570;&#x672A;&#x8003;&#x8651;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E2D;&#x9879;&#x76EE;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x53EA;&#x8981;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E2D;&#x6709;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x51FA;&#x73B0;&#x5728;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x5373;&#x89C6;&#x4E3A;&#x547D;&#x4E2D;&#x3002;</li>
+<li>&#x53C2;&#x6570;<code>true_rel</code>&#x5728;&#x5F53;&#x524D;&#x7248;&#x672C;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x672A;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x672A;&#x6765;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x6DFB;&#x52A0;&#x76F8;&#x5173;&#x6027;&#x8BC4;&#x5206;&#x7684;&#x8003;&#x8651;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;&#x4EE5;&#x4E0B;&#x8F93;&#x5165;&#xFF1A;</p>
+<ul>
+<li><code>rec_list = [[1, 2, 3], [4, 5, 6]]</code></li>
+<li><code>true_list = [[3, 4, 5], [6, 7, 8]]</code></li>
+</ul>
+<p>&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5C06;&#x662F;<code>0.5</code>&#xFF0C;&#x8868;&#x793A;&#x6709;&#x4E00;&#x534A;&#x7684;&#x63A8;&#x8350;&#x5217;&#x8868;&#x6210;&#x529F;&#x547D;&#x4E2D;&#x4E86;&#x7528;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x5174;&#x8DA3;&#x3002;</p>
+<h2 id="functiondef-getaprec-true">FunctionDef get_AP(rec, true)</h2>
+<p><strong>get_AP</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x7CBE;&#x5EA6;&#x5747;&#x503C;&#xFF08;Average Precision&#xFF0C;&#x7B80;&#x79F0;AP&#xFF09;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>rec: &#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x9884;&#x6D4B;&#x4E3A;&#x6B63;&#x4F8B;&#x7684;&#x5143;&#x7D20;&#x3002;</li>
+<li>true: &#x771F;&#x5B9E;&#x7ED3;&#x679C;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x5B9E;&#x9645;&#x4E3A;&#x6B63;&#x4F8B;&#x7684;&#x5143;&#x7D20;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>get_AP</code>&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x6BD4;&#x8F83;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x5217;&#x8868;<code>rec</code>&#x4E0E;&#x771F;&#x5B9E;&#x7ED3;&#x679C;&#x5217;&#x8868;<code>true</code>&#x6765;&#x8BA1;&#x7B97;&#x7CBE;&#x5EA6;&#x5747;&#x503C;&#x3002;&#x5B83;&#x9996;&#x5148;&#x521D;&#x59CB;&#x5316;&#x547D;&#x4E2D;&#x6B21;&#x6570;<code>hits</code>&#x548C;&#x7CBE;&#x5EA6;&#x603B;&#x548C;<code>sum_precs</code>&#x4E3A;0&#x3002;&#x7136;&#x540E;&#xFF0C;&#x904D;&#x5386;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x5217;&#x8868;<code>rec</code>&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x5143;&#x7D20;&#x4E5F;&#x51FA;&#x73B0;&#x5728;&#x771F;&#x5B9E;&#x7ED3;&#x679C;&#x5217;&#x8868;<code>true</code>&#x4E2D;&#xFF0C;&#x5219;&#x5C06;&#x547D;&#x4E2D;&#x6B21;&#x6570;<code>hits</code>&#x589E;&#x52A0;1&#xFF0C;&#x5E76;&#x66F4;&#x65B0;&#x7CBE;&#x5EA6;&#x603B;&#x548C;<code>sum_precs</code>&#xFF0C;&#x5176;&#x4E2D;&#x7CBE;&#x5EA6;&#x662F;&#x901A;&#x8FC7;&#x547D;&#x4E2D;&#x6B21;&#x6570;&#x9664;&#x4EE5;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x5728;&#x9884;&#x6D4B;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x4ECE;1&#x5F00;&#x59CB;&#x8BA1;&#x6570;&#xFF09;&#x6765;&#x8BA1;&#x7B97;&#x7684;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x547D;&#x4E2D;&#xFF08;&#x5373;<code>hits</code>&#x5927;&#x4E8E;0&#xFF09;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7CBE;&#x5EA6;&#x603B;&#x548C;&#x9664;&#x4EE5;&#x771F;&#x5B9E;&#x6B63;&#x4F8B;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;0&#x3002;</p>
+<p>&#x6B64;&#x51FD;&#x6570;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x88AB;<code>get_MAP</code>&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x5E73;&#x5747;&#x7CBE;&#x5EA6;&#x5747;&#x503C;&#xFF08;Mean Average Precision&#xFF0C;&#x7B80;&#x79F0;MAP&#xFF09;&#x3002;<code>get_MAP</code>&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x5BF9;&#x591A;&#x4E2A;&#x63A8;&#x8350;&#x5217;&#x8868;&#x548C;&#x5BF9;&#x5E94;&#x7684;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x4F7F;&#x7528;<code>get_AP</code>&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x5404;&#x81EA;&#x7684;AP&#x503C;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x8FD9;&#x4E9B;AP&#x503C;&#x7684;&#x5E73;&#x5747;&#x503C;&#x6765;&#x5F97;&#x5230;MAP&#x503C;&#xFF0C;&#x4ECE;&#x800C;&#x8BC4;&#x4F30;&#x6574;&#x4F53;&#x7684;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>rec</code>&#x548C;<code>true</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x4E00;&#x81F4;&#xFF0C;&#x4EE5;&#x4FBF;&#x6B63;&#x786E;&#x6BD4;&#x8F83;&#x3002;</li>
+<li>&#x6B64;&#x51FD;&#x6570;&#x5047;&#x8BBE;<code>rec</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x662F;&#x6839;&#x636E;&#x5176;&#x9884;&#x6D4B;&#x4E3A;&#x6B63;&#x4F8B;&#x7684;&#x6982;&#x7387;&#x964D;&#x5E8F;&#x6392;&#x5217;&#x7684;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x5217;&#x8868;<code>rec = [1, 3, 2]</code>&#x548C;&#x771F;&#x5B9E;&#x7ED3;&#x679C;&#x5217;&#x8868;<code>true = [2, 1]</code>&#xFF0C;&#x5219;<code>get_AP(rec, true)</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x4E3A;<code>0.75</code>&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF08;1&#xFF09;&#x548C;&#x7B2C;&#x4E09;&#x4E2A;&#x5143;&#x7D20;&#xFF08;2&#xFF09;&#x662F;&#x6B63;&#x786E;&#x7684;&#x9884;&#x6D4B;&#xFF0C;&#x800C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#xFF08;3&#xFF09;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x9884;&#x6D4B;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x7CBE;&#x5EA6;&#x4E3A;1&#xFF08;1/1&#xFF09;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x7CBE;&#x5EA6;&#x4E3A;0.5&#xFF08;2/3&#xFF09;&#xFF0C;&#x5E73;&#x5747;&#x7CBE;&#x5EA6;&#x4E3A;&#xFF08;1 + 0.5&#xFF09;/ 2 = 0.75&#x3002;</p>
+<h2 id="functiondef-getmapreclist-truelist-truerel">FunctionDef get_MAP(rec_list, true_list, true_rel)</h2>
+<p><strong>get_MAP</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x5E73;&#x5747;&#x7CBE;&#x5EA6;&#x5747;&#x503C;&#xFF08;Mean Average Precision&#xFF0C;&#x7B80;&#x79F0;MAP&#xFF09;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>rec_list: &#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x5217;&#x8868;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x9884;&#x6D4B;&#x4E3A;&#x6B63;&#x4F8B;&#x7684;&#x5143;&#x7D20;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li>true_list: &#x771F;&#x5B9E;&#x7ED3;&#x679C;&#x5217;&#x8868;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5B9E;&#x9645;&#x4E3A;&#x6B63;&#x4F8B;&#x7684;&#x5143;&#x7D20;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li>true_rel: &#x771F;&#x5B9E;&#x76F8;&#x5173;&#x6027;&#x5217;&#x8868;&#xFF0C;&#x7528;&#x4E8E;&#x8BC4;&#x4F30;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;&#x51C6;&#x786E;&#x6027;&#xFF0C;&#x672C;&#x51FD;&#x6570;&#x4E2D;&#x672A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>get_MAP</code>&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;&#x591A;&#x4E2A;&#x63A8;&#x8350;&#x5217;&#x8868;&#xFF08;rec_list&#xFF09;&#x4E0E;&#x5BF9;&#x5E94;&#x7684;&#x771F;&#x5B9E;&#x5217;&#x8868;&#xFF08;true_list&#xFF09;&#x4E4B;&#x95F4;&#x7684;&#x5E73;&#x5747;&#x7CBE;&#x5EA6;&#x5747;&#x503C;&#xFF08;MAP&#xFF09;&#x6765;&#x8BC4;&#x4F30;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x6574;&#x4F53;&#x6027;&#x80FD;&#x3002;&#x51FD;&#x6570;&#x9996;&#x5148;&#x521D;&#x59CB;&#x5316;&#x7D2F;&#x8BA1;&#x7CBE;&#x5EA6;&#xFF08;ap&#xFF09;&#x4E3A;0&#xFF0C;&#x7136;&#x540E;&#x904D;&#x5386;&#x6BCF;&#x4E2A;&#x63A8;&#x8350;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x4F7F;&#x7528;<code>get_AP</code>&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x6BCF;&#x4E00;&#x5BF9;&#x5217;&#x8868;&#x7684;&#x5E73;&#x5747;&#x7CBE;&#x5EA6;&#xFF08;AP&#xFF09;&#x3002;<code>get_AP</code>&#x51FD;&#x6570;&#x7684;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&#x89C1;&#x5176;&#x6587;&#x6863;&#xFF0C;&#x5B83;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x8BA1;&#x7B97;&#x5355;&#x4E2A;&#x63A8;&#x8350;&#x5217;&#x8868;&#x76F8;&#x5BF9;&#x4E8E;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x7684;&#x7CBE;&#x5EA6;&#x5747;&#x503C;&#x3002;&#x5728;&#x904D;&#x5386;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5C06;&#x6BCF;&#x6B21;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;AP&#x503C;&#x7D2F;&#x52A0;&#x5230;ap&#x53D8;&#x91CF;&#x4E2D;&#x3002;&#x904D;&#x5386;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5C06;&#x7D2F;&#x8BA1;&#x7684;ap&#x503C;&#x9664;&#x4EE5;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5F97;&#x5230;&#x6700;&#x7EC8;&#x7684;MAP&#x503C;&#xFF0C;&#x4F5C;&#x4E3A;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>rec_list</code>&#x548C;<code>true_list</code>&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5217;&#x8868;&#x957F;&#x5EA6;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5217;&#x8868;&#x4EE3;&#x8868;&#x540C;&#x4E00;&#x63A8;&#x8350;&#x573A;&#x666F;&#x7684;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x548C;&#x771F;&#x5B9E;&#x7ED3;&#x679C;&#x3002;</li>
+<li><code>true_rel</code>&#x53C2;&#x6570;&#x5728;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E2D;&#x672A;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x53EF;&#x80FD;&#x5728;&#x6269;&#x5C55;&#x6216;&#x4FEE;&#x6539;&#x51FD;&#x6570;&#x65F6;&#x63D0;&#x4F9B;&#x989D;&#x5916;&#x7684;&#x76F8;&#x5173;&#x6027;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;&#x4E24;&#x7EC4;&#x63A8;&#x8350;&#x7ED3;&#x679C;&#x548C;&#x771F;&#x5B9E;&#x7ED3;&#x679C;&#xFF0C;<code>rec_list = [[1, 3, 2], [1, 2, 4]]</code>&#x548C;<code>true_list = [[2, 1], [1, 3]]</code>&#xFF0C;&#x5219;<code>get_MAP(rec_list, true_list, true_rel)</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x4E3A;<code>0.625</code>&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x7B2C;&#x4E00;&#x7EC4;&#x7684;AP&#x503C;&#x4E3A;0.75&#xFF08;&#x5982;<code>get_AP</code>&#x51FD;&#x6570;&#x8F93;&#x51FA;&#x793A;&#x4F8B;&#x6240;&#x793A;&#xFF09;&#xFF0C;&#x800C;&#x7B2C;&#x4E8C;&#x7EC4;&#x7684;AP&#x503C;&#x4E3A;0.5&#xFF08;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x7CBE;&#x5EA6;&#x4E3A;1&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#x672A;&#x547D;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x7CBE;&#x5EA6;&#x4E3A;0.5&#xFF0C;&#x5E73;&#x5747;&#x7CBE;&#x5EA6;&#x4E3A;&#xFF08;1 + 0.5&#xFF09;/ 2 = 0.75&#xFF09;&#xFF0C;&#x56E0;&#x6B64;MAP&#x503C;&#x4E3A;&#xFF08;0.75 + 0.5&#xFF09;/ 2 = 0.625&#x3002;</p>
+<h2 id="functiondef-getprecisionreclist-truelist-truerel">FunctionDef get_Precision(rec_list, true_list, true_rel)</h2>
+<p><strong>get_Precision</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x7CBE;&#x786E;&#x7387;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>rec_list</strong>: &#x63A8;&#x8350;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x63A8;&#x8350;&#x9879;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x63A8;&#x8350;&#x9879;&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x3002;</li>
+<li><strong>true_list</strong>: &#x771F;&#x5B9E;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x771F;&#x5B9E;&#x9879;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x771F;&#x5B9E;&#x9879;&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x3002;</li>
+<li><strong>true_rel</strong>: &#x8BE5;&#x53C2;&#x6570;&#x5728;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E2D;&#x672A;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x4FDD;&#x7559;&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x672A;&#x6765;&#x7684;&#x529F;&#x80FD;&#x6269;&#x5C55;&#x6216;&#x5176;&#x4ED6;&#x76EE;&#x7684;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x51FD;&#x6570;<code>get_Precision</code>&#x63A5;&#x6536;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;<code>rec_list</code>&#x3001;<code>true_list</code>&#x548C;<code>true_rel</code>&#x3002;&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x8BA1;&#x7B97;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x7CBE;&#x786E;&#x7387;&#x3002;&#x7CBE;&#x786E;&#x7387;&#x662F;&#x8861;&#x91CF;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x7684;&#x5173;&#x952E;&#x6307;&#x6807;&#x4E4B;&#x4E00;&#xFF0C;&#x8868;&#x793A;&#x4E3A;&#x6B63;&#x786E;&#x63A8;&#x8350;&#x7684;&#x9879;&#x5360;&#x63A8;&#x8350;&#x603B;&#x6570;&#x7684;&#x6BD4;&#x4F8B;&#x3002;</p>
+<p>&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#xFF0C;&#x9996;&#x5148;&#x521D;&#x59CB;&#x5316;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;<code>n_union</code>&#x548C;<code>recommend_sum</code>&#xFF0C;&#x5206;&#x522B;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x547D;&#x4E2D;&#x7684;&#x63A8;&#x8350;&#x9879;&#x6570;&#x548C;&#x63A8;&#x8350;&#x9879;&#x7684;&#x603B;&#x6570;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>rec_list</code>&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x63A8;&#x8350;&#x9879;&#x6765;&#x8BA1;&#x7B97;&#x7CBE;&#x786E;&#x7387;&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x63A8;&#x8350;&#x9879;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x5176;&#x4E0E;&#x5BF9;&#x5E94;&#x7684;&#x771F;&#x5B9E;&#x9879;&#xFF08;&#x6765;&#x81EA;<code>true_list</code>&#xFF09;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x8BA1;&#x7B97;&#x4E24;&#x8005;&#x7684;&#x4EA4;&#x96C6;&#xFF0C;&#x5373;&#x547D;&#x4E2D;&#x7684;&#x63A8;&#x8350;&#x9879;&#x6570;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x63A8;&#x8350;&#x9879;&#x7684;&#x7CBE;&#x786E;&#x7387;&#xFF08;&#x547D;&#x4E2D;&#x6570;&#x9664;&#x4EE5;&#x63A8;&#x8350;&#x9879;&#x603B;&#x6570;&#xFF09;&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x4E2A;&#x503C;&#x6DFB;&#x52A0;&#x5230;&#x7ED3;&#x679C;&#x5217;&#x8868;<code>res</code>&#x4E2D;&#x3002;</p>
+<p>&#x5728;&#x904D;&#x5386;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x4F7F;&#x7528;<code>np.mean</code>&#x8BA1;&#x7B97;<code>res</code>&#x5217;&#x8868;&#x4E2D;&#x6240;&#x6709;&#x7CBE;&#x786E;&#x7387;&#x7684;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x4F5C;&#x4E3A;&#x6700;&#x7EC8;&#x7684;&#x7CBE;&#x786E;&#x7387;&#x8FD4;&#x56DE;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x8BE5;&#x51FD;&#x6570;&#x5047;&#x8BBE;<code>rec_list</code>&#x548C;<code>true_list</code>&#x7684;&#x957F;&#x5EA6;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x63A8;&#x8350;&#x9879;&#x548C;&#x771F;&#x5B9E;&#x9879;&#x662F;&#x76F8;&#x5173;&#x8054;&#x7684;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x5E73;&#x5747;&#x7CBE;&#x786E;&#x7387;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#x3002;</li>
+<li>&#x8BE5;&#x51FD;&#x6570;&#x672A;&#x5BF9;&#x8F93;&#x5165;&#x5217;&#x8868;&#x4E3A;&#x7A7A;&#x7684;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x7279;&#x6B8A;&#x5904;&#x7406;&#xFF0C;&#x8C03;&#x7528;&#x65F6;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x8F93;&#x5165;&#x5217;&#x8868;&#x975E;&#x7A7A;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x9664;&#x4EE5;&#x96F6;&#x7684;&#x9519;&#x8BEF;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;&#x4EE5;&#x4E0B;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-python">rec_list = [[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]]
+true_list = [[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">7</span>]]
+</code></pre>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;<code>get_Precision(rec_list, true_list, true_rel)</code>&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x7684;&#x5E73;&#x5747;&#x7CBE;&#x786E;&#x7387;&#x4E3A;<code>0.6667</code>&#xFF0C;&#x8868;&#x793A;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x5E73;&#x5747;&#x7CBE;&#x786E;&#x7387;&#x7EA6;&#x4E3A;66.67%&#x3002;</p>
+<h2 id="functiondef-getrecallreclist-truelist-truerel">FunctionDef get_Recall(rec_list, true_list, true_rel)</h2>
+<p><strong>get_Recall</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x53EC;&#x56DE;&#x7387;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>rec_list</strong>: &#x63A8;&#x8350;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x9879;&#xFF0C;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x9879;&#x4EE5;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x7ED9;&#x51FA;&#x3002;</li>
+<li><strong>true_list</strong>: &#x771F;&#x5B9E;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#xFF0C;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x4EE5;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x7ED9;&#x51FA;&#x3002;</li>
+<li><strong>true_rel</strong>: &#x672A;&#x5728;&#x51FD;&#x6570;&#x4F53;&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x4FDD;&#x7559;&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x540E;&#x7EED;&#x6269;&#x5C55;&#x6216;&#x5176;&#x4ED6;&#x76EE;&#x7684;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x65E8;&#x5728;&#x8BA1;&#x7B97;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x53EC;&#x56DE;&#x7387;&#x3002;&#x53EC;&#x56DE;&#x7387;&#x662F;&#x8861;&#x91CF;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x7684;&#x5173;&#x952E;&#x6307;&#x6807;&#x4E4B;&#x4E00;&#xFF0C;&#x5B83;&#x53CD;&#x6620;&#x4E86;&#x7CFB;&#x7EDF;&#x80FD;&#x591F;&#x5C06;&#x7528;&#x6237;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x9879;&#x63A8;&#x8350;&#x7ED9;&#x7528;&#x6237;&#x7684;&#x80FD;&#x529B;&#x3002;&#x5177;&#x4F53;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x521D;&#x59CB;&#x5316;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;<code>n_union</code>&#x548C;<code>user_sum</code>&#xFF0C;&#x5206;&#x522B;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x547D;&#x4E2D;&#x6570;&#x548C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x7684;&#x603B;&#x6570;&#x3002;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x7A7A;&#x5217;&#x8868;<code>recalls</code>&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x53EC;&#x56DE;&#x7387;&#x3002;</li>
+<li>&#x904D;&#x5386;<code>rec_list</code>&#x548C;<code>true_list</code>&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#xFF1A;<ul>
+<li>&#x5C06;&#x63A8;&#x8350;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x5217;&#x8868;&#x8F6C;&#x6362;&#x4E3A;&#x96C6;&#x5408;&#xFF0C;&#x4EE5;&#x4FBF;&#x8FDB;&#x884C;&#x96C6;&#x5408;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x8BA1;&#x7B97;&#x63A8;&#x8350;&#x96C6;&#x5408;&#x548C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x96C6;&#x5408;&#x7684;&#x4EA4;&#x96C6;&#xFF0C;&#x5373;&#x547D;&#x4E2D;&#x7684;&#x9879;&#x6570;&#x3002;</li>
+<li>&#x8BA1;&#x7B97;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x96C6;&#x5408;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5373;&#x8BE5;&#x7528;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x6570;&#x3002;</li>
+<li>&#x8BA1;&#x7B97;&#x5E76;&#x8BB0;&#x5F55;&#x8BE5;&#x7528;&#x6237;&#x7684;&#x53EC;&#x56DE;&#x7387;&#xFF0C;&#x5373;&#x547D;&#x4E2D;&#x6570;&#x9664;&#x4EE5;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x6570;&#x3002;</li>
+<li>&#x7D2F;&#x52A0;&#x547D;&#x4E2D;&#x6570;&#x5230;<code>n_union</code>&#xFF0C;&#x7D2F;&#x52A0;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x6570;&#x5230;<code>user_sum</code>&#x3002;</li>
+</ul>
+</li>
+<li>&#x8BA1;&#x7B97;&#x6240;&#x6709;&#x7528;&#x6237;&#x53EC;&#x56DE;&#x7387;&#x7684;&#x5E73;&#x5747;&#x503C;&#x4F5C;&#x4E3A;&#x6700;&#x7EC8;&#x7684;&#x53EC;&#x56DE;&#x7387;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x3002;</li>
+</ol>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x8F93;&#x5165;&#x7684;<code>rec_list</code>&#x548C;<code>true_list</code>&#x5E94;&#x5F53;&#x957F;&#x5EA6;&#x76F8;&#x7B49;&#xFF0C;&#x4E14;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x540C;&#x4E00;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x9879;&#x548C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x6240;&#x6709;&#x7528;&#x6237;&#x53EC;&#x56DE;&#x7387;&#x7684;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;<code>numpy</code>&#x5E93;&#x6765;&#x8BA1;&#x7B97;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x4F7F;&#x7528;&#x524D;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86;<code>numpy</code>&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;&#x4E24;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E3A;[1, 2, 3]&#xFF0C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x5217;&#x8868;&#x4E3A;[1, 4]&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E3A;[1, 2]&#xFF0C;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x5217;&#x8868;&#x4E3A;[2, 3]&#x3002;&#x5219;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-number">0.5</span>
+</code></pre>
+<p>&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5E73;&#x5747;&#x800C;&#x8A00;&#xFF0C;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x80FD;&#x591F;&#x8986;&#x76D6;&#x7528;&#x6237;50%&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x3002;</p>
+<h2 id="functiondef-getndcgreclist-truelist-truerel">FunctionDef get_NDCG(rec_list, true_list, true_rel)</h2>
+<p><strong>get_NDCG</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BA1;&#x7B97;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x5F52;&#x4E00;&#x5316;&#x6298;&#x635F;&#x7D2F;&#x79EF;&#x589E;&#x76CA;&#xFF08;Normalized Discounted Cumulative Gain&#xFF0C;NDCG&#xFF09;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>rec_list</strong>: &#x63A8;&#x8350;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x9879;&#x5217;&#x8868;&#x3002;</li>
+<li><strong>true_list</strong>: &#x771F;&#x5B9E;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x5217;&#x8868;&#x3002;</li>
+<li><strong>true_rel</strong>: &#x771F;&#x5B9E;&#x76F8;&#x5173;&#x5EA6;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x611F;&#x5174;&#x8DA3;&#x9879;&#x7684;&#x76F8;&#x5173;&#x5EA6;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x51FD;&#x6570;<code>get_NDCG</code>&#x63A5;&#x6536;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;<code>rec_list</code>&#x3001;<code>true_list</code>&#x548C;<code>true_rel</code>&#xFF0C;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x63A8;&#x8350;&#x5217;&#x8868;&#x3001;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x76F8;&#x5173;&#x5EA6;&#x5217;&#x8868;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x9996;&#x5148;&#x521D;&#x59CB;&#x5316;&#x7D2F;&#x79EF;&#x53D8;&#x91CF;<code>ndcgs</code>&#x4E3A;0&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;NDCG&#x503C;&#x7684;&#x603B;&#x548C;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>rec_list</code>&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x63A8;&#x8350;&#x5217;&#x8868;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x8BA1;&#x7B97;DCG&#xFF08;Discounted Cumulative Gain&#xFF09;&#x548C;IDCG&#xFF08;Ideal DCG&#xFF09;&#x3002;&#x8BA1;&#x7B97;DCG&#x65F6;&#xFF0C;&#x9996;&#x5148;&#x5C06;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x76F8;&#x5173;&#x5EA6;&#x5217;&#x8868;&#x6620;&#x5C04;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x5178;<code>mapscore</code>&#xFF0C;&#x7136;&#x540E;&#x904D;&#x5386;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x9879;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x9879;&#x51FA;&#x73B0;&#x5728;<code>mapscore</code>&#x4E2D;&#xFF0C;&#x5219;&#x8BA1;&#x7B97;&#x8BE5;&#x9879;&#x7684;&#x6298;&#x635F;&#x589E;&#x76CA;&#x5E76;&#x7D2F;&#x52A0;&#x5230;<code>dcg</code>&#x4E2D;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x8BA1;&#x7B97;IDCG&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x771F;&#x5B9E;&#x76F8;&#x5173;&#x5EA6;&#x5217;&#x8868;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x548C;&#x6298;&#x635F;&#x5904;&#x7406;&#x5F97;&#x5230;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x5C06;&#x8BE5;&#x7528;&#x6237;&#x7684;DCG&#x9664;&#x4EE5;IDCG&#x5F97;&#x5230;NDCG&#xFF0C;&#x5E76;&#x7D2F;&#x52A0;&#x5230;<code>ndcgs</code>&#x4E2D;&#x3002;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x7528;&#x6237;NDCG&#x7684;&#x5E73;&#x5747;&#x503C;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>rec_list</code>&#x3001;<code>true_list</code>&#x548C;<code>true_rel</code>&#x4E09;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x957F;&#x5EA6;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#x5206;&#x522B;&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x3002;</li>
+<li><code>true_rel</code>&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x5EA6;&#x503C;&#x5E94;&#x4E3A;&#x6574;&#x6570;&#x3002;</li>
+<li>&#x672C;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;<code>numpy</code>&#x5E93;&#x8FDB;&#x884C;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#xFF0C;&#x786E;&#x4FDD;&#x5728;&#x4F7F;&#x7528;&#x524D;&#x5DF2;&#x6B63;&#x786E;&#x5B89;&#x88C5;<code>numpy</code>&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;&#x4E24;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x63A8;&#x8350;&#x5217;&#x8868;&#x3001;&#x771F;&#x5B9E;&#x5217;&#x8868;&#x548C;&#x771F;&#x5B9E;&#x76F8;&#x5173;&#x5EA6;&#x5217;&#x8868;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">rec_list = [[<span class="hljs-string">&apos;item1&apos;</span>, <span class="hljs-string">&apos;item2&apos;</span>], [<span class="hljs-string">&apos;item3&apos;</span>, <span class="hljs-string">&apos;item4&apos;</span>]]
+true_list = [[<span class="hljs-string">&apos;item2&apos;</span>, <span class="hljs-string">&apos;item3&apos;</span>], [<span class="hljs-string">&apos;item4&apos;</span>, <span class="hljs-string">&apos;item1&apos;</span>]]
+true_rel = [[<span class="hljs-number">2</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>]]
+</code></pre>
+<p>&#x8C03;&#x7528;<code>get_NDCG(rec_list, true_list, true_rel)</code>&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x7684;NDCG&#x5E73;&#x5747;&#x503C;&#x4E3A;0.815&#x3002;&#x8FD9;&#x4E2A;&#x503C;&#x8868;&#x793A;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x7684;&#x6574;&#x4F53;&#x63A8;&#x8350;&#x8D28;&#x91CF;&#xFF0C;&#x503C;&#x8D8A;&#x9AD8;&#x8868;&#x793A;&#x63A8;&#x8350;&#x7ED3;&#x679C;&#x4E0E;&#x7528;&#x6237;&#x7684;&#x5B9E;&#x9645;&#x504F;&#x597D;&#x8D8A;&#x543B;&#x5408;&#x3002;</p>
+<h2 id="functiondef-getrankingresultsxypredict-dftruelist-k-metrics-epoch">FunctionDef get_ranking_results(xy_predict, df_true_list, K, metrics, epoch)</h2>
+<p><strong>get_ranking_results</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6839;&#x636E;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x548C;&#x771F;&#x5B9E;&#x5217;&#x8868;&#xFF0C;&#x8BA1;&#x7B97;&#x4E0D;&#x540C;K&#x503C;&#x4E0B;&#x7684;&#x591A;&#x79CD;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>xy_predict</strong>: &#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;DataFrame&#xFF0C;&#x5305;&#x542B;&quot;user_id&quot;, &quot;item_id&quot;&#x548C;&#x9884;&#x6D4B;&#x5F97;&#x5206;&quot;y_pred&quot;&#x3002;</li>
+<li><strong>df_true_list</strong>: &#x771F;&#x5B9E;&#x7684;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x4EA4;&#x4E92;&#x5217;&#x8868;&#x3002;</li>
+<li><strong>K</strong>: &#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#xFF0C;&#x5305;&#x542B;&#x4E0D;&#x540C;&#x7684;K&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;Top-K&#x63A8;&#x8350;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x3002;</li>
+<li><strong>metrics</strong>: &#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;&#xFF0C;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x3002;</li>
+<li><strong>epoch</strong>: &#x5F53;&#x524D;&#x7684;&#x8BAD;&#x7EC3;&#x8F6E;&#x6B21;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x6839;&#x636E;&quot;user_id&quot;&#x5BF9;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#xFF0C;&#x5E76;&#x5BF9;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x9884;&#x6D4B;&#x5F97;&#x5206;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x4EE5;&#x5F97;&#x5230;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x7684;Top-K&#x63A8;&#x8350;&#x5217;&#x8868;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5B83;&#x5C06;&#x8FD9;&#x4E9B;&#x63A8;&#x8350;&#x5217;&#x8868;&#x4E0E;&#x771F;&#x5B9E;&#x7684;&#x7528;&#x6237;-&#x7269;&#x54C1;&#x4EA4;&#x4E92;&#x5217;&#x8868;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#xFF08;&#x5982;&#x53EC;&#x56DE;&#x7387;&#x3001;&#x7CBE;&#x786E;&#x5EA6;&#x3001;&#x5F52;&#x4E00;&#x5316;&#x6298;&#x635F;&#x7D2F;&#x79EF;&#x589E;&#x76CA;&#xFF08;NDCG&#xFF09;&#x3001;&#x547D;&#x4E2D;&#x7387;&#xFF08;HT&#xFF09;&#x3001;&#x5E73;&#x5747;&#x7CBE;&#x786E;&#x7387;&#xFF08;MAP&#xFF09;&#x3001;&#x5E73;&#x5747;&#x5012;&#x6570;&#x6392;&#x540D;&#xFF08;MRR&#xFF09;&#xFF09;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;K&#x503C;&#x4E0B;&#x7684;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>get_ranking_results</code>&#x51FD;&#x6570;&#x88AB;&#x7528;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x7528;&#x6237;&#x6A21;&#x578B;&#x8BBE;&#x7F6E;&#x4E2D;&#xFF0C;&#x5982;<code>run_DeepFM_IPS.py</code>, <code>run_DeepFM_ensemble.py</code>, &#x548C; <code>run_Egreedy.py</code>&#x4E2D;&#x7684;<code>setup_user_model</code>&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E9B;&#x8C03;&#x7528;&#x573A;&#x666F;&#x8868;&#x660E;&#xFF0C;<code>get_ranking_results</code>&#x51FD;&#x6570;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x8BC4;&#x4F30;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;&#x6A21;&#x578B;&#x7684;&#x6027;&#x80FD;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5728;&#x8003;&#x8651;&#x4E0D;&#x540C;&#x6392;&#x540D;&#x4F18;&#x5316;&#x76EE;&#x6807;&#x548C;&#x635F;&#x5931;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x4E0B;&#x7684;&#x6027;&#x80FD;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>xy_predict</code>&#x548C;<code>df_true_list</code>&#x7684;&#x683C;&#x5F0F;&#x6B63;&#x786E;&#xFF0C;&#x4E14;&#x5305;&#x542B;&#x5FC5;&#x8981;&#x7684;&#x5217;&#x3002;</li>
+<li>&#x5728;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;<code>METRICS</code>&#x5B57;&#x5178;&#x5DF2;&#x5B9A;&#x4E49;&#xFF0C;&#x4E14;&#x5305;&#x542B;&#x6240;&#x6709;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x7684;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x6B64;&#x51FD;&#x6570;&#x5047;&#x8BBE;<code>df_true_list</code>&#x5DF2;&#x7ECF;&#x6B63;&#x786E;&#x5730;&#x4E0E;<code>xy_predict</code>&#x901A;&#x8FC7;&quot;user_id&quot;&#x5173;&#x8054;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;Recall@20&quot;</span>: <span class="hljs-number">0.1</span>,
+    <span class="hljs-string">&quot;Precision@20&quot;</span>: <span class="hljs-number">0.05</span>,
+    <span class="hljs-string">&quot;NDCG@20&quot;</span>: <span class="hljs-number">0.12</span>,
+    <span class="hljs-string">&quot;HT@20&quot;</span>: <span class="hljs-number">0.15</span>,
+    <span class="hljs-string">&quot;MAP@20&quot;</span>: <span class="hljs-number">0.07</span>,
+    <span class="hljs-string">&quot;MRR@20&quot;</span>: <span class="hljs-number">0.09</span>,
+    <span class="hljs-string">&quot;Recall@10&quot;</span>: <span class="hljs-number">0.08</span>,
+    <span class="hljs-string">&quot;Precision@10&quot;</span>: <span class="hljs-number">0.04</span>,
+    <span class="hljs-string">&quot;NDCG@10&quot;</span>: <span class="hljs-number">0.1</span>,
+    <span class="hljs-string">&quot;HT@10&quot;</span>: <span class="hljs-number">0.12</span>,
+    <span class="hljs-string">&quot;MAP@10&quot;</span>: <span class="hljs-number">0.05</span>,
+    <span class="hljs-string">&quot;MRR@10&quot;</span>: <span class="hljs-number">0.07</span>,
+    <span class="hljs-string">&quot;Recall@5&quot;</span>: <span class="hljs-number">0.05</span>,
+    <span class="hljs-string">&quot;Precision@5&quot;</span>: <span class="hljs-number">0.02</span>,
+    <span class="hljs-string">&quot;NDCG@5&quot;</span>: <span class="hljs-number">0.08</span>,
+    <span class="hljs-string">&quot;HT@5&quot;</span>: <span class="hljs-number">0.1</span>,
+    <span class="hljs-string">&quot;MAP@5&quot;</span>: <span class="hljs-number">0.03</span>,
+    <span class="hljs-string">&quot;MRR@5&quot;</span>: <span class="hljs-number">0.05</span>
+}
+</code></pre>
+<p>&#x6B64;&#x8F93;&#x51FA;&#x793A;&#x4F8B;&#x5C55;&#x793A;&#x4E86;&#x5728;&#x4E0D;&#x540C;&#x7684;K&#x503C;&#xFF08;20, 10, 5&#xFF09;&#x4E0B;&#xFF0C;&#x5404;&#x4E2A;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x7684;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="loggers.html" class="navigation navigation-prev " aria-label="Previous page: Loggers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="utils.html" class="navigation navigation-next " aria-label="Next page: Utils">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Metrics","level":"1.2.3.4","depth":3,"next":{"title":"Utils","level":"1.2.3.5","depth":3,"path":"src/core/evaluation/utils.md","ref":"src/core/evaluation/utils.md","articles":[]},"previous":{"title":"Loggers","level":"1.2.3.3","depth":3,"path":"src/core/evaluation/loggers.md","ref":"src/core/evaluation/loggers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/core/evaluation/metrics.md","mtime":"2024-03-18T12:56:52.421Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-18T14:39:28.553Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

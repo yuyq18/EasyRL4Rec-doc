@@ -1,0 +1,1253 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Collector Set · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../envs/" />
+    
+    
+    <link rel="prev" href="collector.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Welcome to EasyRL4Rec!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../Introduction/Installation.html">
+            
+                <a href="../../../Introduction/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../Introduction/RunningCommands.html">
+            
+                <a href="../../../Introduction/RunningCommands.html">
+            
+                    
+                    Running Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../Introduction/ImplementationDetails.html">
+            
+                <a href="../../../Introduction/ImplementationDetails.html">
+            
+                    
+                    Implementation Details
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Docs.html">
+            
+                <a href="../../Docs.html">
+            
+                    
+                    Documentation for src/core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="collector.html">
+            
+                <a href="collector.html">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.2" data-path="collector_set.html">
+            
+                <a href="collector_set.html">
+            
+                    
+                    Collector Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../envs/">
+            
+                <a href="../envs/">
+            
+                    
+                    Envs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../envs/Coat/">
+            
+                <a href="../envs/Coat/">
+            
+                    
+                    Coat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../envs/Coat/CoatData.html">
+            
+                <a href="../envs/Coat/CoatData.html">
+            
+                    
+                    Coat Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../envs/Coat/CoatEnv.html">
+            
+                <a href="../envs/Coat/CoatEnv.html">
+            
+                    
+                    Coat Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../envs/KuaiRand_Pure/">
+            
+                <a href="../envs/KuaiRand_Pure/">
+            
+                    
+                    KuaiRand Pure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                    
+                    Kuai Rand Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                    
+                    Kuai Rand Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                <a href="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                    
+                    Preprocessing Kuairand
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../envs/KuaiRec/">
+            
+                <a href="../envs/KuaiRec/">
+            
+                    
+                    KuaiRec
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../envs/KuaiRec/KuaiData.html">
+            
+                <a href="../envs/KuaiRec/KuaiData.html">
+            
+                    
+                    Kuai Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../envs/KuaiRec/KuaiEnv.html">
+            
+                <a href="../envs/KuaiRec/KuaiEnv.html">
+            
+                    
+                    Kuai Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                <a href="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                    
+                    Preprocessing Kuairec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../envs/MovieLens/">
+            
+                <a href="../envs/MovieLens/">
+            
+                    
+                    MovieLens
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../envs/MovieLens/MovieLensData.html">
+            
+                <a href="../envs/MovieLens/MovieLensData.html">
+            
+                    
+                    MovieLens Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../envs/MovieLens/MovieLensEnv.html">
+            
+                <a href="../envs/MovieLens/MovieLensEnv.html">
+            
+                    
+                    MovieLens Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../envs/Simulated_Env/">
+            
+                <a href="../envs/Simulated_Env/">
+            
+                    
+                    SimulatedEnv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../envs/Simulated_Env/base.html">
+            
+                <a href="../envs/Simulated_Env/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../envs/Simulated_Env/intrinsic.html">
+            
+                <a href="../envs/Simulated_Env/intrinsic.html">
+            
+                    
+                    Intrinsic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                <a href="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                    
+                    Penalty Ent Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="../envs/Simulated_Env/penalty_var.html">
+            
+                <a href="../envs/Simulated_Env/penalty_var.html">
+            
+                    
+                    Penalty Var
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../envs/YahooR3/">
+            
+                <a href="../envs/YahooR3/">
+            
+                    
+                    YahooR3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../envs/YahooR3/YahooData.html">
+            
+                <a href="../envs/YahooR3/YahooData.html">
+            
+                    
+                    Yahoo Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../envs/YahooR3/YahooEnv.html">
+            
+                <a href="../envs/YahooR3/YahooEnv.html">
+            
+                    
+                    Yahoo Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../envs/BaseData.html">
+            
+                <a href="../envs/BaseData.html">
+            
+                    
+                    Base Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../envs/BaseEnv.html">
+            
+                <a href="../envs/BaseEnv.html">
+            
+                    
+                    Base Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../evaluation/">
+            
+                <a href="../evaluation/">
+            
+                    
+                    Evaluation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../evaluation/evaluator_static.html">
+            
+                <a href="../evaluation/evaluator_static.html">
+            
+                    
+                    Evaluator Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../evaluation/evaluator.html">
+            
+                <a href="../evaluation/evaluator.html">
+            
+                    
+                    Evaluator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../evaluation/loggers.html">
+            
+                <a href="../evaluation/loggers.html">
+            
+                    
+                    Loggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../evaluation/metrics.html">
+            
+                <a href="../evaluation/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../evaluation/utils.html">
+            
+                <a href="../evaluation/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../policy/">
+            
+                <a href="../policy/">
+            
+                    
+                    Policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../policy/RecPolicy.html">
+            
+                <a href="../policy/RecPolicy.html">
+            
+                    
+                    RecPolicy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../state_tracker/">
+            
+                <a href="../state_tracker/">
+            
+                    
+                    State Tracker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../state_tracker/Average.html">
+            
+                <a href="../state_tracker/Average.html">
+            
+                    
+                    Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../state_tracker/base.html">
+            
+                <a href="../state_tracker/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../state_tracker/Caser.html">
+            
+                <a href="../state_tracker/Caser.html">
+            
+                    
+                    Caser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../state_tracker/GRU.html">
+            
+                <a href="../state_tracker/GRU.html">
+            
+                    
+                    GRU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../state_tracker/NextItNet.html">
+            
+                <a href="../state_tracker/NextItNet.html">
+            
+                    
+                    NextItNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="../state_tracker/SASRec.html">
+            
+                <a href="../state_tracker/SASRec.html">
+            
+                    
+                    SASRec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../userModel/">
+            
+                <a href="../userModel/">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../userModel/user_model_ensemble.html">
+            
+                <a href="../userModel/user_model_ensemble.html">
+            
+                    
+                    User Model Ensemble
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../userModel/user_model_mmoe.html">
+            
+                <a href="../userModel/user_model_mmoe.html">
+            
+                    
+                    User Model Mmoe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../userModel/user_model_pairwise_variance.html">
+            
+                <a href="../userModel/user_model_pairwise_variance.html">
+            
+                    
+                    User Model Pairwise Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../userModel/user_model_pairwise.html">
+            
+                <a href="../userModel/user_model_pairwise.html">
+            
+                    
+                    User Model Pairwise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../userModel/user_model_variance.html">
+            
+                <a href="../userModel/user_model_variance.html">
+            
+                    
+                    User Model Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../userModel/user_model.html">
+            
+                <a href="../userModel/user_model.html">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../util/">
+            
+                <a href="../util/">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../util/data.html">
+            
+                <a href="../util/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../util/inputs.html">
+            
+                <a href="../util/inputs.html">
+            
+                    
+                    Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../util/layers.html">
+            
+                <a href="../util/layers.html">
+            
+                    
+                    Layers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../util/loss.html">
+            
+                <a href="../util/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../util/static_dataset.html">
+            
+                <a href="../util/static_dataset.html">
+            
+                    
+                    Static Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../util/utils.html">
+            
+                <a href="../util/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Collector Set</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="classdef-collectorset">ClassDef CollectorSet</h2>
+<p><strong>CollectorSet</strong>: CollectorSet &#x7C7B;&#x7684;&#x529F;&#x80FD;&#x662F;&#x7BA1;&#x7406;&#x548C;&#x7EF4;&#x62A4;&#x4E00;&#x7EC4;&#x6570;&#x636E;&#x6536;&#x96C6;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x4E0B;&#x6536;&#x96C6;&#x7B56;&#x7565;&#x6267;&#x884C;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>:</p>
+<ul>
+<li>collector_dict: &#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x4E0D;&#x540C;&#x540D;&#x79F0;&#x7684;&#x6570;&#x636E;&#x6536;&#x96C6;&#x5668;&#x3002;</li>
+<li>env: &#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x6307;&#x5B9A;&#x4E3A;&#x201C;FB&#x201D;&#x7684;&#x73AF;&#x5883;&#x3002;</li>
+<li>policy: &#x6267;&#x884C;&#x7B56;&#x7565;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x73AF;&#x5883;&#x4E2D;&#x6267;&#x884C;&#x52A8;&#x4F5C;&#x3002;</li>
+<li>preprocess_fn: &#x9884;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x9009;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x9884;&#x5904;&#x7406;&#x3002;</li>
+<li>exploration_noise: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x5728;&#x7B56;&#x7565;&#x6267;&#x884C;&#x65F6;&#x6DFB;&#x52A0;&#x63A2;&#x7D22;&#x566A;&#x58F0;&#x3002;</li>
+<li>env_num: &#x73AF;&#x5883;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+CollectorSet &#x7C7B;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x5728;&#x591A;&#x4E2A;&#x73AF;&#x5883;&#x4E2D;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x6536;&#x96C6;&#x5668;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x64CD;&#x4F5C;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x7B56;&#x7565;&#xFF08;policy&#xFF09;&#x3001;&#x73AF;&#x5883;&#x5B57;&#x5178;&#xFF08;envs_dict&#xFF09;&#x3001;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#xFF08;buffer_size&#xFF09;&#x3001;&#x73AF;&#x5883;&#x6570;&#x91CF;&#xFF08;env_num&#xFF09;&#x3001;&#x53EF;&#x9009;&#x7684;&#x9884;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF08;preprocess_fn&#xFF09;&#x3001;&#x662F;&#x5426;&#x6DFB;&#x52A0;&#x63A2;&#x7D22;&#x566A;&#x58F0;&#xFF08;exploration_noise&#xFF09;&#x4EE5;&#x53CA;&#x5F3A;&#x5236;&#x957F;&#x5EA6;&#xFF08;force_length&#xFF09;&#x4F5C;&#x4E3A;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x3002;CollectorSet &#x6839;&#x636E;&#x63D0;&#x4F9B;&#x7684;&#x73AF;&#x5883;&#x5B57;&#x5178;&#x521B;&#x5EFA;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x6536;&#x96C6;&#x5668;&#xFF0C;&#x5E76;&#x5B58;&#x50A8;&#x5728;collector_dict&#x5B57;&#x5178;&#x4E2D;&#x3002;&#x8FD9;&#x4E9B;&#x6536;&#x96C6;&#x5668;&#x7528;&#x4E8E;&#x5728;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x4E0B;&#x6536;&#x96C6;&#x7B56;&#x7565;&#x6267;&#x884C;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x652F;&#x6301;&#x73AF;&#x5883;&#x7684;&#x91CD;&#x7F6E;&#x3001;&#x72B6;&#x6001;&#x7684;&#x91CD;&#x7F6E;&#x3001;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x91CD;&#x7F6E;&#x4EE5;&#x53CA;&#x6570;&#x636E;&#x7684;&#x6536;&#x96C6;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;CollectorSet &#x88AB;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x7B56;&#x7565;&#x6A21;&#x578B;&#x7684;&#x8BBE;&#x7F6E;&#x4E2D;&#xFF0C;&#x5982; A2C&#x3001;CIRS&#x3001;DORL&#x3001;Intrinsic&#x3001;MOPO&#x3001;SQN &#x7B49;&#x7B56;&#x7565;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#x3002;&#x5B83;&#x5141;&#x8BB8;&#x8FD9;&#x4E9B;&#x7B56;&#x7565;&#x5728;&#x591A;&#x4E2A;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x4E2D;&#x6709;&#x6548;&#x5730;&#x6536;&#x96C6;&#x6267;&#x884C;&#x6570;&#x636E;&#xFF0C;&#x7528;&#x4E8E;&#x7B56;&#x7565;&#x7684;&#x8BC4;&#x4F30;&#x548C;&#x4F18;&#x5316;&#x3002;CollectorSet &#x901A;&#x8FC7;&#x63D0;&#x4F9B;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#x6765;&#x7BA1;&#x7406;&#x591A;&#x4E2A;&#x73AF;&#x5883;&#x7684;&#x6570;&#x636E;&#x6536;&#x96C6;&#xFF0C;&#x7B80;&#x5316;&#x4E86;&#x5728;&#x590D;&#x6742;&#x73AF;&#x5883;&#x4E0B;&#x8FDB;&#x884C;&#x7B56;&#x7565;&#x6D4B;&#x8BD5;&#x548C;&#x6570;&#x636E;&#x6536;&#x96C6;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;CollectorSet&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x63D0;&#x4F9B;&#x7684;envs_dict&#x4E2D;&#x5305;&#x542B;&#x7684;&#x73AF;&#x5883;&#x4E0E;&#x7B56;&#x7565;&#x517C;&#x5BB9;&#x3002;</li>
+<li>exploration_noise &#x53C2;&#x6570;&#x5E94;&#x6839;&#x636E;&#x7B56;&#x7565;&#x7684;&#x9700;&#x6C42;&#x548C;&#x73AF;&#x5883;&#x7684;&#x7279;&#x6027;&#x8C28;&#x614E;&#x8BBE;&#x7F6E;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x8FC7;&#x5EA6;&#x63A2;&#x7D22;&#x5BFC;&#x81F4;&#x7684;&#x6027;&#x80FD;&#x4E0B;&#x964D;&#x3002;</li>
+<li>force_length &#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5728;&#x7279;&#x5B9A;&#x73AF;&#x5883;&#x4E2D;&#x5F3A;&#x5236;&#x6267;&#x884C;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x52A8;&#x4F5C;&#x5E8F;&#x5217;&#xFF0C;&#x8FD9;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x80FD;&#x6709;&#x52A9;&#x4E8E;&#x63D0;&#x9AD8;&#x7B56;&#x7565;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x548C;&#x6548;&#x679C;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+CollectorSet &#x7C7B;&#x672C;&#x8EAB;&#x4E0D;&#x76F4;&#x63A5;&#x4EA7;&#x751F;&#x8F93;&#x51FA;&#xFF0C;&#x4F46;&#x5176;&#x7BA1;&#x7406;&#x7684;&#x6570;&#x636E;&#x6536;&#x96C6;&#x5668;&#x5728;&#x6267;&#x884C;collect&#x65B9;&#x6CD5;&#x65F6;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6536;&#x96C6;&#x6570;&#x636E;&#x7684;&#x5B57;&#x5178;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6267;&#x884C;collect&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x5B57;&#x5178;&#xFF1A;</p>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;FB_rewards&quot;</span>: [<span class="hljs-number">1.0</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">-1.0</span>],
+    <span class="hljs-string">&quot;NX_0_actions&quot;</span>: [<span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">0</span>],
+    <span class="hljs-string">&quot;NX_10_observations&quot;</span>: [[<span class="hljs-number">0.1</span>, <span class="hljs-number">0.2</span>], [<span class="hljs-number">0.3</span>, <span class="hljs-number">0.4</span>], [<span class="hljs-number">0.5</span>, <span class="hljs-number">0.6</span>]]
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x5B57;&#x5178;&#x5305;&#x542B;&#x4E86;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x4E0B;&#x6536;&#x96C6;&#x7684;&#x5956;&#x52B1;&#x3001;&#x52A8;&#x4F5C;&#x548C;&#x89C2;&#x5BDF;&#x503C;&#x7B49;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x6570;&#x636E;&#x5206;&#x6790;&#x548C;&#x7B56;&#x7565;&#x4F18;&#x5316;&#x3002;</p>
+<h3 id="functiondef-initself-policy-envsdict-buffersize-envnum-preprocessfn-explorationnoise-forcelength">FunctionDef <strong>init</strong>(self, policy, envs_dict, buffer_size, env_num, preprocess_fn, exploration_noise, force_length)</h3>
+<p><strong><strong>init</strong></strong>: <code>__init__</code>&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x521D;&#x59CB;&#x5316;<code>CollectorSet</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>policy</code>: &#x91C7;&#x7528;&#x7684;&#x7B56;&#x7565;&#x5B9E;&#x4F8B;&#x3002;</li>
+<li><code>envs_dict</code>: &#x73AF;&#x5883;&#x5B57;&#x5178;&#xFF0C;&#x952E;&#x4E3A;&#x73AF;&#x5883;&#x540D;&#x79F0;&#xFF0C;&#x503C;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x73AF;&#x5883;&#x5B9E;&#x4F8B;&#x3002;</li>
+<li><code>buffer_size</code>: &#x6570;&#x636E;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#x3002;</li>
+<li><code>env_num</code>: &#x73AF;&#x5883;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>preprocess_fn</code>: &#x6570;&#x636E;&#x9884;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li><code>exploration_noise</code>: &#x662F;&#x5426;&#x5728;&#x52A8;&#x4F5C;&#x4E2D;&#x6DFB;&#x52A0;&#x63A2;&#x7D22;&#x566A;&#x58F0;&#xFF0C;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</li>
+<li><code>force_length</code>: &#x5F3A;&#x5236;&#x4EA4;&#x4E92;&#x957F;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;10&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x5B57;&#x5178;<code>collector_dict</code>&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x540D;&#x79F0;&#x5BF9;&#x5E94;&#x7684;<code>Collector</code>&#x5B9E;&#x4F8B;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;<code>envs_dict</code>&#xFF08;&#x73AF;&#x5883;&#x5B57;&#x5178;&#xFF09;&#xFF0C;&#x904D;&#x5386;&#x6BCF;&#x4E00;&#x4E2A;&#x73AF;&#x5883;&#xFF0C;&#x4E3A;&#x6BCF;&#x4E2A;&#x73AF;&#x5883;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>Collector</code>&#x5B9E;&#x4F8B;&#x3002;&#x5728;&#x521B;&#x5EFA;<code>Collector</code>&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x73AF;&#x5883;&#x540D;&#x79F0;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F8B;&#x5982;<code>exploration_noise</code>&#x3001;<code>remove_recommended_ids</code>&#x548C;<code>force_length</code>&#x3002;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x8BBE;&#x7F6E;&#x57FA;&#x4E8E;&#x73AF;&#x5883;&#x540D;&#x79F0;&#x8FDB;&#x884C;&#x4E86;&#x7279;&#x5B9A;&#x7684;&#x903B;&#x8F91;&#x5224;&#x65AD;&#x548C;&#x8D4B;&#x503C;&#x3002;&#x521B;&#x5EFA;&#x7684;<code>Collector</code>&#x5B9E;&#x4F8B;&#x968F;&#x540E;&#x88AB;&#x6DFB;&#x52A0;&#x5230;<code>collector_dict</code>&#x5B57;&#x5178;&#x4E2D;&#xFF0C;&#x4EE5;&#x73AF;&#x5883;&#x540D;&#x79F0;&#x4F5C;&#x4E3A;&#x952E;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x51FD;&#x6570;&#x8FD8;&#x521D;&#x59CB;&#x5316;&#x4E86;&#x51E0;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5305;&#x62EC;<code>env</code>&#xFF08;&#x8BBE;&#x7F6E;&#x4E3A;<code>envs_dict</code>&#x4E2D;&quot;FB&quot;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x73AF;&#x5883;&#xFF09;&#xFF0C;<code>policy</code>&#xFF08;&#x7B56;&#x7565;&#x5B9E;&#x4F8B;&#xFF09;&#xFF0C;<code>preprocess_fn</code>&#xFF08;&#x6570;&#x636E;&#x9884;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF09;&#xFF0C;<code>exploration_noise</code>&#xFF08;&#x662F;&#x5426;&#x6DFB;&#x52A0;&#x63A2;&#x7D22;&#x566A;&#x58F0;&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;<code>env_num</code>&#xFF08;&#x73AF;&#x5883;&#x6570;&#x91CF;&#xFF09;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;<code>CollectorSet</code>&#x7C7B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>envs_dict</code>&#x4E2D;&#x5305;&#x542B;&#x6B63;&#x786E;&#x7684;&#x73AF;&#x5883;&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x4E14;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;&quot;FB&quot;&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x56E0;&#x4E3A;<code>self.env</code>&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x6B64;&#x73AF;&#x5883;&#x3002;</li>
+<li><code>preprocess_fn</code>&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#xFF0C;&#x5B83;&#x5C06;&#x88AB;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x9884;&#x5904;&#x7406;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x9700;&#x8981;&#x80FD;&#x591F;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;<code>Batch</code>&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5904;&#x7406;&#x540E;&#x7684;<code>Batch</code>&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>exploration_noise</code>&#x53C2;&#x6570;&#x4EC5;&#x5728;&#x73AF;&#x5883;&#x540D;&#x79F0;&#x4E3A;&quot;FB&quot;&#x65F6;&#x624D;&#x53EF;&#x80FD;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;True&#xFF0C;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x73AF;&#x5883;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x53EA;&#x6709;&#x5728;&quot;FB&quot;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x52A8;&#x4F5C;&#x9009;&#x62E9;&#x8FC7;&#x7A0B;&#x4E2D;&#x624D;&#x4F1A;&#x8003;&#x8651;&#x6DFB;&#x52A0;&#x63A2;&#x7D22;&#x566A;&#x58F0;&#x3002;</li>
+<li><code>force_length</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x5F3A;&#x5236;&#x4EA4;&#x4E92;&#x957F;&#x5EA6;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x73AF;&#x5883;&#x53EF;&#x80FD;&#x662F;&#x5FC5;&#x8981;&#x7684;&#x3002;&#x5728;&#x521B;&#x5EFA;<code>Collector</code>&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x73AF;&#x5883;&#x540D;&#x79F0;&#x6765;&#x51B3;&#x5B9A;<code>force_length</code>&#x7684;&#x503C;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-assignbufferself-buffer">FunctionDef _assign_buffer(self, buffer)</h3>
+<p><strong>_assign_buffer</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4E3A;&#x6536;&#x96C6;&#x5668;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>buffer</code>: &#x53EF;&#x9009;&#x7684;ReplayBuffer&#x5BF9;&#x8C61;&#x3002;&#x6B64;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x4E86;&#x8981;&#x5206;&#x914D;&#x7ED9;&#x96C6;&#x5408;&#x4E2D;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x3002;&#x5982;&#x679C;&#x4E3A;None&#xFF0C;&#x5219;&#x8868;&#x793A;&#x4E0D;&#x5206;&#x914D;&#x4EFB;&#x4F55;&#x7F13;&#x51B2;&#x533A;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>_assign_buffer</code>&#x51FD;&#x6570;&#x662F;<code>CollectorSet</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x4E3A;&#x8BE5;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x5206;&#x914D;&#x76F8;&#x540C;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x904D;&#x5386;<code>collector_dict</code>&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6761;&#x76EE;&#xFF0C;&#x8BE5;&#x5B57;&#x5178;&#x5B58;&#x50A8;&#x4E86;&#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x7684;&#x540D;&#x79F0;&#x548C;&#x5BF9;&#x5E94;&#x7684;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#x3002;&#x5BF9;&#x4E8E;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x6536;&#x96C6;&#x5668;&#x7684;<code>_assign_buffer</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x5C06;<code>buffer</code>&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x90FD;&#x4F1A;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#x5B9E;&#x4F8B;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x5728;&#x591A;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x4E4B;&#x95F4;&#x540C;&#x6B65;&#x6570;&#x636E;&#x6216;&#x5B9E;&#x73B0;&#x9AD8;&#x6548;&#x7684;&#x6570;&#x636E;&#x5171;&#x4EAB;&#x673A;&#x5236;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li><code>_assign_buffer</code>&#x51FD;&#x6570;&#x8BBE;&#x8BA1;&#x4E3A;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x4EE5;&#x4E00;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;&#x5F00;&#x5934;&#xFF0C;&#x8868;&#x660E;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4E3B;&#x8981;&#x7528;&#x4E8E;<code>CollectorSet</code>&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x903B;&#x8F91;&#xFF0C;&#x800C;&#x4E0D;&#x5EFA;&#x8BAE;&#x76F4;&#x63A5;&#x4ECE;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#x8C03;&#x7528;&#x3002;</li>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x786E;&#x4FDD;&#x4F20;&#x9012;&#x7ED9;&#x5B83;&#x7684;<code>buffer</code>&#x53C2;&#x6570;&#x662F;&#x6B63;&#x786E;&#x7684;<code>ReplayBuffer</code>&#x5B9E;&#x4F8B;&#x6216;&#x8005;&#x4E3A;<code>None</code>&#x3002;&#x4F20;&#x9012;&#x9519;&#x8BEF;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x5F71;&#x54CD;&#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x8C28;&#x614E;&#xFF0C;&#x786E;&#x4FDD;&#x5728;&#x9002;&#x5F53;&#x7684;&#x65F6;&#x673A;&#x8FDB;&#x884C;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5206;&#x914D;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-resetstatself">FunctionDef reset_stat(self)</h3>
+<p><strong>reset_stat</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x91CD;&#x7F6E;&#x6536;&#x96C6;&#x5668;&#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>reset_stat</code> &#x51FD;&#x6570;&#x904D;&#x5386; <code>self.collector_dict</code> &#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF08;&#x5373;&#x6BCF;&#x4E00;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#xFF09;&#x8C03;&#x7528;&#x5176; <code>reset_stat</code> &#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5C06;&#x4F1A;&#x91CD;&#x7F6E;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x5185;&#x90E8;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x8BA1;&#x6570;&#x5668;&#x6216;&#x7D2F;&#x79EF;&#x7684;&#x5EA6;&#x91CF;&#x503C;&#x7B49;&#x3002;<code>self.collector_dict</code> &#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5176;&#x952E;&#xFF08;key&#xFF09;&#x662F;&#x6536;&#x96C6;&#x5668;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x503C;&#xFF08;value&#xFF09;&#x662F;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x901A;&#x8FC7;&#x5BF9;&#x8FD9;&#x4E2A;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x5B9E;&#x4F8B;&#x8C03;&#x7528; <code>reset_stat</code> &#x65B9;&#x6CD5;&#xFF0C;&#x786E;&#x4FDD;&#x4E86;&#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x90FD;&#x88AB;&#x91CD;&#x7F6E;&#x5230;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x90FD;&#x5B9E;&#x73B0;&#x4E86; <code>reset_stat</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5426;&#x5219;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x65B9;&#x6CD5;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x540E;&#xFF0C;&#x4E4B;&#x524D;&#x6536;&#x96C6;&#x7684;&#x6240;&#x6709;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x5C06;&#x4F1A;&#x4E22;&#x5931;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x8C03;&#x7528;&#x524D;&#x8BF7;&#x786E;&#x4FDD;&#x5DF2;&#x7ECF;&#x5904;&#x7406;&#x6216;&#x4FDD;&#x5B58;&#x4E86;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<hr>
+<h3 id="functiondef-resetbufferself-keepstatistics">FunctionDef reset_buffer(self, keep_statistics)</h3>
+<p><strong>reset_buffer</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x91CD;&#x7F6E;&#x6570;&#x636E;&#x7F13;&#x51B2;&#x533A;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>keep_statistics</strong>: &#x5E03;&#x5C14;&#x7C7B;&#x578B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;&#x6B64;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5728;&#x91CD;&#x7F6E;&#x7F13;&#x51B2;&#x533A;&#x65F6;&#x662F;&#x5426;&#x4FDD;&#x7559;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>reset_buffer</code> &#x51FD;&#x6570;&#x662F; <code>CollectorSet</code> &#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x91CD;&#x7F6E;&#x5176;&#x7BA1;&#x7406;&#x7684;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7F13;&#x51B2;&#x533A;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x904D;&#x5386; <code>collector_dict</code> &#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x5BF9;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x8C03;&#x7528;&#x5176; <code>reset_buffer</code> &#x65B9;&#x6CD5;&#x3002;<code>keep_statistics</code> &#x53C2;&#x6570;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x7684; <code>reset_buffer</code> &#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x5728;&#x91CD;&#x7F6E;&#x7F13;&#x51B2;&#x533A;&#x65F6;&#x4FDD;&#x7559;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5728;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C; <code>keep_statistics</code> &#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; <code>True</code>&#xFF0C;&#x5219;&#x5728;&#x91CD;&#x7F6E;&#x6570;&#x636E;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x4F1A;&#x4FDD;&#x7559;&#x5DF2;&#x7ECF;&#x6536;&#x96C6;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF1B;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A; <code>False</code>&#xFF0C;&#x5219;&#x4F1A;&#x5B8C;&#x5168;&#x6E05;&#x9664;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5305;&#x62EC;&#x4EFB;&#x4F55;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5E94;&#x5F53;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#x8003;&#x8651; <code>keep_statistics</code> &#x53C2;&#x6570;&#x7684;&#x8BBE;&#x7F6E;&#xFF0C;&#x56E0;&#x4E3A;&#x4FDD;&#x7559;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x53EF;&#x80FD;&#x4F1A;&#x5F71;&#x54CD;&#x540E;&#x7EED;&#x6570;&#x636E;&#x6536;&#x96C6;&#x548C;&#x5904;&#x7406;&#x7684;&#x7ED3;&#x679C;&#x3002;</li>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x91CD;&#x7F6E;&#x7F13;&#x51B2;&#x533A;&#x4E4B;&#x524D;&#xFF0C;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x7684;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x88AB;&#x9002;&#x5F53;&#x5904;&#x7406;&#x6216;&#x4FDD;&#x5B58;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x6570;&#x636E;&#x4E22;&#x5931;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-resetenvself">FunctionDef reset_env(self)</h3>
+<p><strong>reset_env</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x91CD;&#x7F6E;&#x6240;&#x6709;&#x73AF;&#x5883;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>reset_env</code> &#x51FD;&#x6570;&#x662F; <code>CollectorSet</code> &#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x91CD;&#x7F6E;&#x6240;&#x6709;&#x73AF;&#x5883;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x5B83;&#x904D;&#x5386; <code>collector_dict</code> &#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x7531;&#x4E00;&#x4E2A;&#x540D;&#x79F0;&#x548C;&#x4E00;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#x7EC4;&#x6210;&#x3002;&#x5BF9;&#x4E8E;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x8C03;&#x7528;&#x8BE5;&#x5BF9;&#x8C61;&#x7684; <code>reset_env</code> &#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x5C06;&#x6267;&#x884C;&#x5176;&#x5404;&#x81EA;&#x7684;&#x73AF;&#x5883;&#x91CD;&#x7F6E;&#x903B;&#x8F91;&#x3002;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x786E;&#x4FDD;&#x4E86; <code>CollectorSet</code> &#x7BA1;&#x7406;&#x7684;&#x6240;&#x6709;&#x73AF;&#x5883;&#x90FD;&#x88AB;&#x91CD;&#x7F6E;&#x5230;&#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x91CD;&#x542F;&#x6216;&#x91CD;&#x65B0;&#x521D;&#x59CB;&#x5316;&#x73AF;&#x5883;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#x90FD;&#x5B9E;&#x73B0;&#x4E86; <code>reset_env</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x7684;&#x884C;&#x4E3A;&#x662F;&#x5C06;&#x73AF;&#x5883;&#x91CD;&#x7F6E;&#x5230;&#x6240;&#x9700;&#x7684;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x4E22;&#x5931;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x8C03;&#x7528;&#x4E4B;&#x524D;&#x5E94;&#x786E;&#x4FDD;&#x4E0D;&#x9700;&#x8981;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x6216;&#x5DF2;&#x7ECF;&#x9002;&#x5F53;&#x5730;&#x4FDD;&#x5B58;&#x4E86;&#x72B6;&#x6001;&#x3002;</p>
+<hr>
+<h3 id="functiondef-resetstateself-id">FunctionDef _reset_state(self, id)</h3>
+<p><strong>_reset_state</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x91CD;&#x7F6E;&#x6307;&#x5B9A;ID&#x7684;&#x6536;&#x96C6;&#x5668;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>id</strong>: &#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x6216;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x6307;&#x5B9A;&#x4E86;&#x9700;&#x8981;&#x91CD;&#x7F6E;&#x72B6;&#x6001;&#x7684;&#x6536;&#x96C6;&#x5668;&#x7684;ID&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>_reset_state</code> &#x51FD;&#x6570;&#x662F; <code>CollectorSet</code> &#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x91CD;&#x7F6E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x7684;&#x72B6;&#x6001;&#x3002;&#x5B83;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570; <code>id</code>&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x6574;&#x6570;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x4EE3;&#x8868;&#x4E86;&#x9700;&#x8981;&#x91CD;&#x7F6E;&#x72B6;&#x6001;&#x7684;&#x6536;&#x96C6;&#x5668;&#x7684;ID&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x5185;&#x90E8;&#xFF0C;&#x901A;&#x8FC7;&#x904D;&#x5386; <code>self.collector_dict</code> &#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x8C03;&#x7528;&#x5176; <code>_reset_state</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x5C06; <code>id</code> &#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x6839;&#x636E;&#x63D0;&#x4F9B;&#x7684;ID&#xFF0C;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x5730;&#x91CD;&#x7F6E;&#x5176;&#x72B6;&#x6001;&#x3002;</p>
+<p><code>self.collector_dict</code> &#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5176;&#x952E;&#x662F;&#x6536;&#x96C6;&#x5668;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x503C;&#x662F;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x8FD9;&#x4E2A;&#x5B57;&#x5178;&#x5B58;&#x50A8;&#x4E86;&#x5F53;&#x524D; <code>CollectorSet</code> &#x5B9E;&#x4F8B;&#x7BA1;&#x7406;&#x7684;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li><code>_reset_state</code> &#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5B83;&#x4EC5;&#x5728; <code>CollectorSet</code> &#x7C7B;&#x7684;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x4ECE;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x3002;</li>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x9012;&#x7684; <code>id</code> &#x53C2;&#x6570;&#x7C7B;&#x578B;&#x6B63;&#x786E;&#xFF0C;&#x5373;&#x5FC5;&#x987B;&#x662F;&#x6574;&#x6570;&#x6216;&#x6574;&#x6570;&#x5217;&#x8868;&#x3002;&#x5982;&#x679C;&#x4F20;&#x9012;&#x4E86;&#x9519;&#x8BEF;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#x3002;</li>
+<li>&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x8BBE;&#x8BA1;&#x610F;&#x56FE;&#x662F;&#x4E3A;&#x4E86;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x673A;&#x5236;&#xFF0C;&#x901A;&#x8FC7;&#x8BE5;&#x673A;&#x5236;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x5730;&#x91CD;&#x7F6E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x5728;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x6536;&#x96C6;&#x6216;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x65F6;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-collectself-nstep-nepisode-random-render-nograd">FunctionDef collect(self, n_step, n_episode, random, render, no_grad)</h3>
+<p><strong>collect</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6536;&#x96C6;&#x6570;&#x636E;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>n_step</code>: &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x8981;&#x6536;&#x96C6;&#x7684;&#x6B65;&#x6570;&#x3002;</li>
+<li><code>n_episode</code>: &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x8981;&#x6536;&#x96C6;&#x7684;&#x5267;&#x96C6;&#x6570;&#x3002;</li>
+<li><code>random</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x968F;&#x673A;&#x6536;&#x96C6;&#x6570;&#x636E;&#x3002;</li>
+<li><code>render</code>: &#x53EF;&#x9009;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x6E32;&#x67D3;&#x4EE5;&#x53CA;&#x6E32;&#x67D3;&#x7684;&#x9891;&#x7387;&#x3002;</li>
+<li><code>no_grad</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x5B9A;&#x5728;&#x6536;&#x96C6;&#x6570;&#x636E;&#x65F6;&#x662F;&#x5426;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x904D;&#x5386;<code>collector_dict</code>&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x4EEC;&#x7684;<code>collect</code>&#x65B9;&#x6CD5;&#x6765;&#x6536;&#x96C6;&#x6570;&#x636E;&#x3002;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x7684;<code>collect</code>&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x76F8;&#x540C;&#x7684;&#x53C2;&#x6570;&#xFF1A;<code>n_step</code>, <code>n_episode</code>, <code>random</code>, <code>render</code>, <code>no_grad</code>&#x4EE5;&#x53CA;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;<code>is_train</code>&#xFF0C;&#x5176;&#x88AB;&#x786C;&#x7F16;&#x7801;&#x4E3A;<code>False</code>&#x3002;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x6536;&#x96C6;&#x5668;&#x7684;&#x540D;&#x79F0;&#x4E0D;&#x662F;&quot;FB&quot;&#xFF0C;&#x5219;&#x5C06;&#x5176;&#x952E;&#x540D;&#x524D;&#x52A0;&#x4E0A;&#x6536;&#x96C6;&#x5668;&#x7684;&#x540D;&#x79F0;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x952E;&#x540D;&#x51B2;&#x7A81;&#x3002;&#x5982;&#x679C;&#x6536;&#x96C6;&#x5668;&#x7684;&#x540D;&#x79F0;&#x662F;&quot;FB&quot;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5176;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x6240;&#x6709;&#x6536;&#x96C6;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x88AB;&#x5408;&#x5E76;&#x5230;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#x4E2D;&#xFF0C;&#x5E76;&#x66F4;&#x65B0;<code>collect_step</code>, <code>collect_episode</code>, <code>collect_time</code>&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x4E3A;&quot;FB&quot;&#x6536;&#x96C6;&#x5668;&#x7684;&#x76F8;&#x5E94;&#x503C;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x6240;&#x6709;&#x7ED3;&#x679C;&#x7684;&#x5B57;&#x5178;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5982;&#x679C;&#x540C;&#x65F6;&#x6307;&#x5B9A;&#x4E86;<code>n_step</code>&#x548C;<code>n_episode</code>&#xFF0C;&#x6536;&#x96C6;&#x5668;&#x7684;&#x884C;&#x4E3A;&#x53EF;&#x80FD;&#x4F1A;&#x6839;&#x636E;&#x5176;&#x5185;&#x90E8;&#x903B;&#x8F91;&#x800C;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;</li>
+<li>&#x8BBE;&#x7F6E;<code>render</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5728;&#x6536;&#x96C6;&#x6570;&#x636E;&#x65F6;&#x8FDB;&#x884C;&#x53EF;&#x89C6;&#x5316;&#xFF0C;&#x4F46;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x5F71;&#x54CD;&#x6536;&#x96C6;&#x6548;&#x7387;&#x3002;</li>
+<li><code>no_grad=True</code>&#x53EF;&#x4EE5;&#x5728;&#x6536;&#x96C6;&#x6570;&#x636E;&#x65F6;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x6D88;&#x8017;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x4E0D;&#x9700;&#x8981;&#x68AF;&#x5EA6;&#x8BA1;&#x7B97;&#x7684;&#x573A;&#x666F;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;collector1_step&quot;</span>: <span class="hljs-number">100</span>,
+    <span class="hljs-string">&quot;collector1_episode&quot;</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;collector1_time&quot;</span>: <span class="hljs-number">5.0</span>,
+    <span class="hljs-string">&quot;FB_step&quot;</span>: <span class="hljs-number">100</span>,
+    <span class="hljs-string">&quot;FB_episode&quot;</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;FB_time&quot;</span>: <span class="hljs-number">5.0</span>
+}
+</code></pre>
+<p>&#x6B64;&#x793A;&#x4F8B;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x4E24;&#x4E2A;&#x6536;&#x96C6;&#x5668;&#xFF08;&quot;collector1&quot;&#x548C;&quot;FB&quot;&#xFF09;&#x7684;&#x6B65;&#x6570;&#x3001;&#x5267;&#x96C6;&#x6570;&#x548C;&#x65F6;&#x95F4;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x5B9E;&#x9645;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5C06;&#x53D6;&#x51B3;&#x4E8E;&#x6536;&#x96C6;&#x5668;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x548C;&#x4F20;&#x9012;&#x7ED9;<code>collect</code>&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="collector.html" class="navigation navigation-prev " aria-label="Previous page: Collector">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../envs/" class="navigation navigation-next " aria-label="Next page: Envs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Collector Set","level":"1.2.1.2","depth":3,"next":{"title":"Envs","level":"1.2.2","depth":2,"path":"src/core/envs/README.md","ref":"src/core/envs/README.md","articles":[{"title":"Coat","level":"1.2.2.1","depth":3,"path":"src/core/envs/Coat/README.md","ref":"src/core/envs/Coat/README.md","articles":[{"title":"Coat Data","level":"1.2.2.1.1","depth":4,"path":"src/core/envs/Coat/CoatData.md","ref":"src/core/envs/Coat/CoatData.md","articles":[]},{"title":"Coat Env","level":"1.2.2.1.2","depth":4,"path":"src/core/envs/Coat/CoatEnv.md","ref":"src/core/envs/Coat/CoatEnv.md","articles":[]}]},{"title":"KuaiRand Pure","level":"1.2.2.2","depth":3,"path":"src/core/envs/KuaiRand_Pure/README.md","ref":"src/core/envs/KuaiRand_Pure/README.md","articles":[{"title":"Kuai Rand Data","level":"1.2.2.2.1","depth":4,"path":"src/core/envs/KuaiRand_Pure/KuaiRandData.md","ref":"src/core/envs/KuaiRand_Pure/KuaiRandData.md","articles":[]},{"title":"Kuai Rand Env","level":"1.2.2.2.2","depth":4,"path":"src/core/envs/KuaiRand_Pure/KuaiRandEnv.md","ref":"src/core/envs/KuaiRand_Pure/KuaiRandEnv.md","articles":[]},{"title":"Preprocessing Kuairand","level":"1.2.2.2.3","depth":4,"path":"src/core/envs/KuaiRand_Pure/preprocessing_kuairand.md","ref":"src/core/envs/KuaiRand_Pure/preprocessing_kuairand.md","articles":[]}]},{"title":"KuaiRec","level":"1.2.2.3","depth":3,"path":"src/core/envs/KuaiRec/README.md","ref":"src/core/envs/KuaiRec/README.md","articles":[{"title":"Kuai Data","level":"1.2.2.3.1","depth":4,"path":"src/core/envs/KuaiRec/KuaiData.md","ref":"src/core/envs/KuaiRec/KuaiData.md","articles":[]},{"title":"Kuai Env","level":"1.2.2.3.2","depth":4,"path":"src/core/envs/KuaiRec/KuaiEnv.md","ref":"src/core/envs/KuaiRec/KuaiEnv.md","articles":[]},{"title":"Preprocessing Kuairec","level":"1.2.2.3.3","depth":4,"path":"src/core/envs/KuaiRec/preprocessing_kuairec.md","ref":"src/core/envs/KuaiRec/preprocessing_kuairec.md","articles":[]}]},{"title":"MovieLens","level":"1.2.2.4","depth":3,"path":"src/core/envs/MovieLens/README.md","ref":"src/core/envs/MovieLens/README.md","articles":[{"title":"MovieLens Data","level":"1.2.2.4.1","depth":4,"path":"src/core/envs/MovieLens/MovieLensData.md","ref":"src/core/envs/MovieLens/MovieLensData.md","articles":[]},{"title":"MovieLens Env","level":"1.2.2.4.2","depth":4,"path":"src/core/envs/MovieLens/MovieLensEnv.md","ref":"src/core/envs/MovieLens/MovieLensEnv.md","articles":[]}]},{"title":"SimulatedEnv","level":"1.2.2.5","depth":3,"path":"src/core/envs/Simulated_Env/README.md","ref":"src/core/envs/Simulated_Env/README.md","articles":[{"title":"Base","level":"1.2.2.5.1","depth":4,"path":"src/core/envs/Simulated_Env/base.md","ref":"src/core/envs/Simulated_Env/base.md","articles":[]},{"title":"Intrinsic","level":"1.2.2.5.2","depth":4,"path":"src/core/envs/Simulated_Env/intrinsic.md","ref":"src/core/envs/Simulated_Env/intrinsic.md","articles":[]},{"title":"Penalty Ent Exp","level":"1.2.2.5.3","depth":4,"path":"src/core/envs/Simulated_Env/penalty_ent_exp.md","ref":"src/core/envs/Simulated_Env/penalty_ent_exp.md","articles":[]},{"title":"Penalty Var","level":"1.2.2.5.4","depth":4,"path":"src/core/envs/Simulated_Env/penalty_var.md","ref":"src/core/envs/Simulated_Env/penalty_var.md","articles":[]}]},{"title":"YahooR3","level":"1.2.2.6","depth":3,"path":"src/core/envs/YahooR3/README.md","ref":"src/core/envs/YahooR3/README.md","articles":[{"title":"Yahoo Data","level":"1.2.2.6.1","depth":4,"path":"src/core/envs/YahooR3/YahooData.md","ref":"src/core/envs/YahooR3/YahooData.md","articles":[]},{"title":"Yahoo Env","level":"1.2.2.6.2","depth":4,"path":"src/core/envs/YahooR3/YahooEnv.md","ref":"src/core/envs/YahooR3/YahooEnv.md","articles":[]}]},{"title":"Base Data","level":"1.2.2.7","depth":3,"path":"src/core/envs/BaseData.md","ref":"src/core/envs/BaseData.md","articles":[]},{"title":"Base Env","level":"1.2.2.8","depth":3,"path":"src/core/envs/BaseEnv.md","ref":"src/core/envs/BaseEnv.md","articles":[]}]},"previous":{"title":"Collector","level":"1.2.1.1","depth":3,"path":"src/core/collector/collector.md","ref":"src/core/collector/collector.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/core/collector/collector_set.md","mtime":"2024-03-18T12:56:52.418Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-18T14:39:28.553Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1481 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>User Model Variance · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="user_model.html" />
+    
+    
+    <link rel="prev" href="user_model_pairwise.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Welcome to EasyRL4Rec!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../Introduction/Installation.html">
+            
+                <a href="../../../Introduction/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../Introduction/RunningCommands.html">
+            
+                <a href="../../../Introduction/RunningCommands.html">
+            
+                    
+                    Running Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../Introduction/ImplementationDetails.html">
+            
+                <a href="../../../Introduction/ImplementationDetails.html">
+            
+                    
+                    Implementation Details
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Docs.html">
+            
+                <a href="../../Docs.html">
+            
+                    
+                    Documentation for src/core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../collector/">
+            
+                <a href="../collector/">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../collector/collector.html">
+            
+                <a href="../collector/collector.html">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../collector/collector_set.html">
+            
+                <a href="../collector/collector_set.html">
+            
+                    
+                    Collector Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../envs/">
+            
+                <a href="../envs/">
+            
+                    
+                    Envs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../envs/Coat/">
+            
+                <a href="../envs/Coat/">
+            
+                    
+                    Coat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../envs/Coat/CoatData.html">
+            
+                <a href="../envs/Coat/CoatData.html">
+            
+                    
+                    Coat Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../envs/Coat/CoatEnv.html">
+            
+                <a href="../envs/Coat/CoatEnv.html">
+            
+                    
+                    Coat Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../envs/KuaiRand_Pure/">
+            
+                <a href="../envs/KuaiRand_Pure/">
+            
+                    
+                    KuaiRand Pure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                    
+                    Kuai Rand Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                    
+                    Kuai Rand Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                <a href="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                    
+                    Preprocessing Kuairand
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../envs/KuaiRec/">
+            
+                <a href="../envs/KuaiRec/">
+            
+                    
+                    KuaiRec
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../envs/KuaiRec/KuaiData.html">
+            
+                <a href="../envs/KuaiRec/KuaiData.html">
+            
+                    
+                    Kuai Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../envs/KuaiRec/KuaiEnv.html">
+            
+                <a href="../envs/KuaiRec/KuaiEnv.html">
+            
+                    
+                    Kuai Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                <a href="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                    
+                    Preprocessing Kuairec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../envs/MovieLens/">
+            
+                <a href="../envs/MovieLens/">
+            
+                    
+                    MovieLens
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../envs/MovieLens/MovieLensData.html">
+            
+                <a href="../envs/MovieLens/MovieLensData.html">
+            
+                    
+                    MovieLens Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../envs/MovieLens/MovieLensEnv.html">
+            
+                <a href="../envs/MovieLens/MovieLensEnv.html">
+            
+                    
+                    MovieLens Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../envs/Simulated_Env/">
+            
+                <a href="../envs/Simulated_Env/">
+            
+                    
+                    SimulatedEnv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../envs/Simulated_Env/base.html">
+            
+                <a href="../envs/Simulated_Env/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../envs/Simulated_Env/intrinsic.html">
+            
+                <a href="../envs/Simulated_Env/intrinsic.html">
+            
+                    
+                    Intrinsic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                <a href="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                    
+                    Penalty Ent Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="../envs/Simulated_Env/penalty_var.html">
+            
+                <a href="../envs/Simulated_Env/penalty_var.html">
+            
+                    
+                    Penalty Var
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../envs/YahooR3/">
+            
+                <a href="../envs/YahooR3/">
+            
+                    
+                    YahooR3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../envs/YahooR3/YahooData.html">
+            
+                <a href="../envs/YahooR3/YahooData.html">
+            
+                    
+                    Yahoo Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../envs/YahooR3/YahooEnv.html">
+            
+                <a href="../envs/YahooR3/YahooEnv.html">
+            
+                    
+                    Yahoo Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../envs/BaseData.html">
+            
+                <a href="../envs/BaseData.html">
+            
+                    
+                    Base Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../envs/BaseEnv.html">
+            
+                <a href="../envs/BaseEnv.html">
+            
+                    
+                    Base Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../evaluation/">
+            
+                <a href="../evaluation/">
+            
+                    
+                    Evaluation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../evaluation/evaluator_static.html">
+            
+                <a href="../evaluation/evaluator_static.html">
+            
+                    
+                    Evaluator Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../evaluation/evaluator.html">
+            
+                <a href="../evaluation/evaluator.html">
+            
+                    
+                    Evaluator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../evaluation/loggers.html">
+            
+                <a href="../evaluation/loggers.html">
+            
+                    
+                    Loggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../evaluation/metrics.html">
+            
+                <a href="../evaluation/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../evaluation/utils.html">
+            
+                <a href="../evaluation/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../policy/">
+            
+                <a href="../policy/">
+            
+                    
+                    Policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../policy/RecPolicy.html">
+            
+                <a href="../policy/RecPolicy.html">
+            
+                    
+                    RecPolicy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../state_tracker/">
+            
+                <a href="../state_tracker/">
+            
+                    
+                    State Tracker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../state_tracker/Average.html">
+            
+                <a href="../state_tracker/Average.html">
+            
+                    
+                    Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../state_tracker/base.html">
+            
+                <a href="../state_tracker/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../state_tracker/Caser.html">
+            
+                <a href="../state_tracker/Caser.html">
+            
+                    
+                    Caser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../state_tracker/GRU.html">
+            
+                <a href="../state_tracker/GRU.html">
+            
+                    
+                    GRU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../state_tracker/NextItNet.html">
+            
+                <a href="../state_tracker/NextItNet.html">
+            
+                    
+                    NextItNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="../state_tracker/SASRec.html">
+            
+                <a href="../state_tracker/SASRec.html">
+            
+                    
+                    SASRec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="user_model_ensemble.html">
+            
+                <a href="user_model_ensemble.html">
+            
+                    
+                    User Model Ensemble
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="user_model_mmoe.html">
+            
+                <a href="user_model_mmoe.html">
+            
+                    
+                    User Model Mmoe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="user_model_pairwise_variance.html">
+            
+                <a href="user_model_pairwise_variance.html">
+            
+                    
+                    User Model Pairwise Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="user_model_pairwise.html">
+            
+                <a href="user_model_pairwise.html">
+            
+                    
+                    User Model Pairwise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6.5" data-path="user_model_variance.html">
+            
+                <a href="user_model_variance.html">
+            
+                    
+                    User Model Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="user_model.html">
+            
+                <a href="user_model.html">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../util/">
+            
+                <a href="../util/">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../util/data.html">
+            
+                <a href="../util/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../util/inputs.html">
+            
+                <a href="../util/inputs.html">
+            
+                    
+                    Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../util/layers.html">
+            
+                <a href="../util/layers.html">
+            
+                    
+                    Layers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../util/loss.html">
+            
+                <a href="../util/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../util/static_dataset.html">
+            
+                <a href="../util/static_dataset.html">
+            
+                    
+                    Static Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../util/utils.html">
+            
+                <a href="../util/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >User Model Variance</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="classdef-usermodelvariance">ClassDef UserModel_Variance</h2>
+<p><strong>UserModel_Variance</strong>: UserModel_Variance&#x7C7B;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x7528;&#x6237;&#x6A21;&#x578B;&#x53D8;&#x5F02;&#x6027;&#x7684;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x6A21;&#x578B;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>:</p>
+<ul>
+<li>feature_columns: &#x7279;&#x5F81;&#x5217;&#xFF0C;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x8F93;&#x5165;&#x7684;&#x7279;&#x5F81;&#x3002;</li>
+<li>y_columns: &#x76EE;&#x6807;&#x5217;&#xFF0C;&#x6A21;&#x578B;&#x9884;&#x6D4B;&#x7684;&#x76EE;&#x6807;&#x3002;</li>
+<li>l2_reg_embedding, l2_reg_linear, l2_reg_dnn: &#x5206;&#x522B;&#x5BF9;&#x5E94;&#x5D4C;&#x5165;&#x5C42;&#x3001;&#x7EBF;&#x6027;&#x5C42;&#x548C;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x7684;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x3002;</li>
+<li>init_std: &#x5D4C;&#x5165;&#x5C42;&#x6743;&#x91CD;&#x521D;&#x59CB;&#x5316;&#x7684;&#x6807;&#x51C6;&#x5DEE;&#x3002;</li>
+<li>task_dnn_units: &#x4EFB;&#x52A1;&#x7279;&#x5B9A;&#x7684;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5355;&#x5143;&#x3002;</li>
+<li>seed: &#x968F;&#x673A;&#x79CD;&#x5B50;&#xFF0C;&#x7528;&#x4E8E;&#x786E;&#x4FDD;&#x6A21;&#x578B;&#x521D;&#x59CB;&#x5316;&#x7684;&#x53EF;&#x91CD;&#x590D;&#x6027;&#x3002;</li>
+<li>dnn_dropout: &#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;dropout&#x6BD4;&#x7387;&#x3002;</li>
+<li>dnn_activation: &#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x3002;</li>
+<li>dnn_use_bn: &#x662F;&#x5426;&#x5728;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x4E2D;&#x4F7F;&#x7528;&#x6279;&#x91CF;&#x5F52;&#x4E00;&#x5316;&#x3002;</li>
+<li>device: &#x6A21;&#x578B;&#x8FD0;&#x884C;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x4F8B;&#x5982;&apos;cpu&apos;&#x6216;&apos;cuda:0&apos;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+UserModel_Variance&#x7C7B;&#x7EE7;&#x627F;&#x81EA;PyTorch&#x7684;nn.Module&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x548C;&#x8BAD;&#x7EC3;&#x7528;&#x6237;&#x884C;&#x4E3A;&#x9884;&#x6D4B;&#x6A21;&#x578B;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x63A5;&#x6536;&#x7279;&#x5F81;&#x5217;&#x548C;&#x76EE;&#x6807;&#x5217;&#x6765;&#x521D;&#x59CB;&#x5316;&#x6A21;&#x578B;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x62EC;&#x5D4C;&#x5165;&#x5C42;&#x3001;&#x7EBF;&#x6027;&#x6A21;&#x578B;&#x5C42;&#x548C;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8BE5;&#x7C7B;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x6B63;&#x5219;&#x5316;&#x6743;&#x91CD;&#x7684;&#x6DFB;&#x52A0;&#x3001;&#x6A21;&#x578B;&#x7F16;&#x8BD1;&#x3001;&#x6570;&#x636E;&#x62DF;&#x5408;&#x3001;&#x63A8;&#x8350;&#x9879;&#x76EE;&#x3001;&#x6570;&#x636E;&#x8BC4;&#x4F30;&#x548C;&#x9884;&#x6D4B;&#x7B49;&#x65B9;&#x6CD5;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5BF9;&#x7528;&#x6237;&#x884C;&#x4E3A;&#x7684;&#x9884;&#x6D4B;&#x548C;&#x5206;&#x6790;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;UserModel_Variance&#x7C7B;&#x88AB;UserModel_Pairwise_Variance&#x7C7B;&#x8C03;&#x7528;&#x3002;UserModel_Pairwise_Variance&#x7C7B;&#x7EE7;&#x627F;&#x81EA;UserModel_Variance&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x5904;&#x7406;&#x6210;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5728;&#x5904;&#x7406;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x6570;&#x636E;&#x65F6;&#x8003;&#x8651;&#x4E86;&#x53D8;&#x5F02;&#x6027;&#x3002;&#x8FD9;&#x8868;&#x660E;UserModel_Variance&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x57FA;&#x7840;&#x7684;&#x7528;&#x6237;&#x6A21;&#x578B;&#x6846;&#x67B6;&#xFF0C;&#x800C;UserModel_Pairwise_Variance&#x5728;&#x6B64;&#x57FA;&#x7840;&#x4E0A;&#x8FDB;&#x884C;&#x4E86;&#x6269;&#x5C55;&#xFF0C;&#x4EE5;&#x9002;&#x5E94;&#x66F4;&#x5177;&#x4F53;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;&#x6B64;&#x7C7B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;feature_columns&#x548C;y_columns&#x6B63;&#x786E;&#x5B9A;&#x4E49;&#x4E86;&#x6A21;&#x578B;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x3002;</li>
+<li>&#x8C03;&#x6574;l2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x3001;dropout&#x6BD4;&#x7387;&#x7B49;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x9632;&#x6B62;&#x6A21;&#x578B;&#x8FC7;&#x62DF;&#x5408;&#x3002;</li>
+<li>&#x9009;&#x62E9;&#x5408;&#x9002;&#x7684;dnn_activation&#x548C;&#x662F;&#x5426;&#x4F7F;&#x7528;dnn_use_bn&#x5BF9;&#x6A21;&#x578B;&#x6027;&#x80FD;&#x6709;&#x91CD;&#x8981;&#x5F71;&#x54CD;&#x3002;</li>
+<li>&#x6A21;&#x578B;&#x7684;&#x8BAD;&#x7EC3;&#x548C;&#x9884;&#x6D4B;&#x9700;&#x8981;&#x5728;&#x6307;&#x5B9A;&#x7684;device&#x4E0A;&#x8FDB;&#x884C;&#xFF0C;&#x786E;&#x4FDD;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x6B63;&#x786E;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x7531;&#x4E8E;UserModel_Variance&#x7C7B;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x548C;&#x8BAD;&#x7EC3;&#x6A21;&#x578B;&#xFF0C;&#x5176;&#x8F93;&#x51FA;&#x901A;&#x5E38;&#x4F9D;&#x8D56;&#x4E8E;&#x5177;&#x4F53;&#x7684;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8C03;&#x7528;fit_data&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4E0D;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x8F93;&#x51FA;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x6253;&#x5370;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x635F;&#x5931;&#x503C;&#x548C;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x6765;&#x76D1;&#x63A7;&#x6A21;&#x578B;&#x6027;&#x80FD;&#x3002;&#x8C03;&#x7528;predict_data&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#x65F6;&#xFF0C;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;Numpy&#x6570;&#x7EC4;&#x3002;</p>
+<h3 id="functiondef-initself-featurecolumns-ycolumns-l2regembedding-l2reglinear-l2regdnn-initstd-taskdnnunits-seed-dnndropout-dnnactivation-dnnusebn-device">FunctionDef <strong>init</strong>(self, feature_columns, y_columns, l2_reg_embedding, l2_reg_linear, l2_reg_dnn, init_std, task_dnn_units, seed, dnn_dropout, dnn_activation, dnn_use_bn, device)</h3>
+<p><strong><strong>init</strong></strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x521D;&#x59CB;&#x5316;UserModel_Variance&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>feature_columns</code>: &#x7279;&#x5F81;&#x5217;&#xFF0C;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7684;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x3002;</li>
+<li><code>y_columns</code>: &#x76EE;&#x6807;&#x5217;&#xFF0C;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7684;&#x8F93;&#x51FA;&#x76EE;&#x6807;&#x3002;</li>
+<li><code>l2_reg_embedding</code>: &#x5D4C;&#x5165;&#x5C42;&#x7684;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1e-5&#x3002;</li>
+<li><code>l2_reg_linear</code>: &#x7EBF;&#x6027;&#x5C42;&#x7684;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1e-5&#x3002;</li>
+<li><code>l2_reg_dnn</code>: &#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x7684;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#x3002;</li>
+<li><code>init_std</code>: &#x6743;&#x91CD;&#x521D;&#x59CB;&#x5316;&#x7684;&#x6807;&#x51C6;&#x5DEE;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0.0001&#x3002;</li>
+<li><code>task_dnn_units</code>: &#x4EFB;&#x52A1;&#x7279;&#x5B9A;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x5355;&#x5143;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li><code>seed</code>: &#x968F;&#x673A;&#x79CD;&#x5B50;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;2022&#x3002;</li>
+<li><code>dnn_dropout</code>: &#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x7684;dropout&#x6BD4;&#x7387;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#x3002;</li>
+<li><code>dnn_activation</code>: &#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&apos;relu&apos;&#x3002;</li>
+<li><code>dnn_use_bn</code>: &#x662F;&#x5426;&#x5728;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x4F7F;&#x7528;&#x6279;&#x91CF;&#x5F52;&#x4E00;&#x5316;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</li>
+<li><code>device</code>: &#x6307;&#x5B9A;&#x8FD0;&#x884C;&#x8BBE;&#x5907;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&apos;cpu&apos;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>super(UserModel_Variance, self).__init__()</code>&#x521D;&#x59CB;&#x5316;&#x7236;&#x7C7B;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x8BBE;&#x7F6E;&#x968F;&#x673A;&#x79CD;&#x5B50;&#x4EE5;&#x786E;&#x4FDD;&#x7ED3;&#x679C;&#x7684;&#x53EF;&#x91CD;&#x590D;&#x6027;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x4F7F;&#x7528;<code>build_input_features</code>&#x51FD;&#x6570;&#x6839;&#x636E;<code>feature_columns</code>&#x548C;<code>y_columns</code>&#x6784;&#x5EFA;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x7D22;&#x5F15;&#x548C;&#x8F93;&#x51FA;&#x76EE;&#x6807;&#x7D22;&#x5F15;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x6B63;&#x5219;&#x5316;&#x635F;&#x5931;&#x548C;&#x8F85;&#x52A9;&#x635F;&#x5931;&#x4E3A;0&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x8FD0;&#x884C;&#x8BBE;&#x5907;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x7EE7;&#x7EED;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>create_embedding_matrix</code>&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x5D4C;&#x5165;&#x77E9;&#x9635;&#x5B57;&#x5178;<code>embedding_dict</code>&#xFF0C;&#x8BE5;&#x5B57;&#x5178;&#x7528;&#x4E8E;&#x5C06;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x6620;&#x5C04;&#x5230;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x5B9E;&#x4F8B;&#x5316;<code>Linear</code>&#x7C7B;&#x521B;&#x5EFA;&#x7EBF;&#x6027;&#x6A21;&#x578B;<code>linear_model</code>&#xFF0C;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x7684;&#x7EBF;&#x6027;&#x53D8;&#x6362;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>add_regularization_weight</code>&#x65B9;&#x6CD5;&#x4E3A;&#x5D4C;&#x5165;&#x5B57;&#x5178;&#x548C;&#x7EBF;&#x6027;&#x6A21;&#x578B;&#x7684;&#x53C2;&#x6570;&#x6DFB;&#x52A0;&#x6B63;&#x5219;&#x5316;&#x6743;&#x91CD;&#xFF0C;&#x4EE5;&#x63A7;&#x5236;&#x6A21;&#x578B;&#x590D;&#x6742;&#x5EA6;&#x5E76;&#x9632;&#x6B62;&#x8FC7;&#x62DF;&#x5408;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E9B;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x7684;&#x5185;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x56FE;&#x7F51;&#x7EDC;&#x6807;&#x5FD7;<code>_is_graph_network</code>&#x3001;&#x68C0;&#x67E5;&#x70B9;&#x4FDD;&#x5B58;&#x6807;&#x5FD7;<code>_ckpt_saved_epoch</code>&#x3001;&#x8BAD;&#x7EC3;&#x5386;&#x53F2;&#x8BB0;&#x5F55;<code>history</code>&#x3001;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x8BC4;&#x4F30;&#x51FD;&#x6570;<code>RL_eval_fun</code>&#x548C;softmax&#x51FD;&#x6570;<code>softmax</code>&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;&#x6B64;&#x7C7B;&#x521D;&#x59CB;&#x5316;&#x6A21;&#x578B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>feature_columns</code>&#x548C;<code>y_columns</code>&#x53C2;&#x6570;&#x6B63;&#x786E;&#xFF0C;&#x5305;&#x542B;&#x6240;&#x6709;&#x9700;&#x8981;&#x7684;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x548C;&#x8F93;&#x51FA;&#x76EE;&#x6807;&#x3002;</li>
+<li><code>device</code>&#x53C2;&#x6570;&#x5E94;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x9009;&#x62E9;&#x5408;&#x9002;&#x7684;&#x503C;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x6A21;&#x578B;&#x80FD;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x8BBE;&#x5907;&#x4E0A;&#x8FD0;&#x884C;&#x3002;</li>
+<li>&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;<code>l2_reg_embedding</code>&#x3001;<code>l2_reg_linear</code>&#x548C;<code>l2_reg_dnn</code>&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x6A21;&#x578B;&#x7684;&#x5177;&#x4F53;&#x9700;&#x6C42;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x4EE5;&#x4F18;&#x5316;&#x6A21;&#x578B;&#x7684;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#x3002;</li>
+<li><code>init_std</code>&#x53C2;&#x6570;&#x5BF9;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x7684;&#x521D;&#x59CB;&#x5316;&#x6709;&#x91CD;&#x8981;&#x5F71;&#x54CD;&#xFF0C;&#x4E0D;&#x5F53;&#x7684;&#x503C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x4E0D;&#x7A33;&#x5B9A;&#x3002;</li>
+<li><code>dnn_dropout</code>&#x3001;<code>dnn_activation</code>&#x548C;<code>dnn_use_bn</code>&#x53C2;&#x6570;&#x5141;&#x8BB8;&#x5BF9;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5C42;&#x8FDB;&#x884C;&#x7EC6;&#x81F4;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4EE5;&#x6EE1;&#x8DB3;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x578B;&#x6027;&#x80FD;&#x9700;&#x6C42;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-compilerltestself-rlevalfun">FunctionDef compile_RL_test(self, RL_eval_fun)</h3>
+<p><strong>compile_RL_test</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4E3A;&#x7528;&#x6237;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x7ED1;&#x5B9A;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x8BC4;&#x4F30;&#x51FD;&#x6570;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>RL_eval_fun</strong>: &#x9700;&#x8981;&#x88AB;&#x7ED1;&#x5B9A;&#x4E3A;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x8BC4;&#x4F30;&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>compile_RL_test</code>&#x51FD;&#x6570;&#x662F;<code>UserModel_Variance</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x5C06;&#x4F20;&#x5165;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x8BC4;&#x4F30;&#x51FD;&#x6570;<code>RL_eval_fun</code>&#x7ED1;&#x5B9A;&#x5230;&#x5F53;&#x524D;&#x7528;&#x6237;&#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x4E0A;&#x3002;&#x8FD9;&#x4E00;&#x64CD;&#x4F5C;&#x901A;&#x8FC7;&#x5C06;<code>RL_eval_fun</code>&#x8D4B;&#x503C;&#x7ED9;&#x5B9E;&#x4F8B;&#x7684;<code>RL_eval_fun</code>&#x5C5E;&#x6027;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x6B64;&#x65B9;&#x6CD5;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x6A21;&#x578B;&#x5728;&#x540E;&#x7EED;&#x7684;&#x64CD;&#x4F5C;&#x4E2D;&#xFF0C;&#x80FD;&#x591F;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8FD9;&#x4E00;&#x8BC4;&#x4F30;&#x51FD;&#x6570;&#x6765;&#x8FDB;&#x884C;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x76F8;&#x5173;&#x7684;&#x8BC4;&#x4F30;&#x6216;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>RL_eval_fun</code>&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x51FD;&#x6570;&#x6216;&#x53EF;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#xFF0C;&#x4E14;&#x5176;&#x903B;&#x8F91;&#x4E0E;&#x9884;&#x671F;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x8BC4;&#x4F30;&#x6D41;&#x7A0B;&#x76F8;&#x5339;&#x914D;&#x3002;</li>
+<li>&#x8BE5;&#x65B9;&#x6CD5;&#x4E0D;&#x8FD4;&#x56DE;&#x4EFB;&#x4F55;&#x503C;&#xFF0C;&#x4EC5;&#x5BF9;&#x5B9E;&#x4F8B;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x7684;<code>RL_eval_fun</code>&#x5C5E;&#x6027;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x548C;&#x4F7F;&#x7528;&#x7ED1;&#x5B9A;&#x7684;&#x8BC4;&#x4F30;&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-compileself-optimizer-lossdict-metrics-metricfun-lossfunc-metricfunranking">FunctionDef compile(self, optimizer, loss_dict, metrics, metric_fun, loss_func, metric_fun_ranking)</h3>
+<p><strong>compile</strong>: &#x6B64;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x7F16;&#x8BD1;&#x7528;&#x6237;&#x6A21;&#x578B;&#xFF0C;&#x5305;&#x62EC;&#x8BBE;&#x7F6E;&#x4F18;&#x5316;&#x5668;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x7B49;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>optimizer</code>: &#x4F18;&#x5316;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x7684;&#x4F18;&#x5316;&#x5668;&#x540D;&#x79F0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5DF2;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x4F18;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>loss_dict</code>: &#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x952E;&#x4E3A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x503C;&#x4E3A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7684;&#x540D;&#x79F0;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x3002;&#x6B64;&#x53C2;&#x6570;&#x5DF2;&#x88AB;&#x5F03;&#x7528;&#x3002;</li>
+<li><code>metrics</code>: &#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x6027;&#x80FD;&#x8BC4;&#x4EF7;&#x3002;</li>
+<li><code>metric_fun</code>: &#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5EA6;&#x91CF;&#x51FD;&#x6570;&#x3002;</li>
+<li><code>loss_func</code>: &#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3002;</li>
+<li><code>metric_fun_ranking</code>: &#x7528;&#x4E8E;&#x6392;&#x540D;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x5EA6;&#x91CF;&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x5C06;<code>metrics_names</code>&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x5305;&#x542B;&quot;loss&quot;&#x7684;&#x5217;&#x8868;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>_get_optim</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6839;&#x636E;<code>optimizer</code>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6A21;&#x578B;&#x7684;&#x4F18;&#x5316;&#x5668;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>_get_metrics</code>&#x65B9;&#x6CD5;&#xFF0C;&#x6839;&#x636E;<code>metrics</code>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6A21;&#x578B;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x8FD8;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x5EA6;&#x91CF;&#x51FD;&#x6570;<code>metric_fun</code>&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x6392;&#x540D;&#x5EA6;&#x91CF;&#x51FD;&#x6570;<code>metric_fun_ranking</code>&#xFF0C;&#x4EE5;&#x53CA;&#x81EA;&#x5B9A;&#x4E49;&#x635F;&#x5931;&#x51FD;&#x6570;<code>loss_func</code>&#x3002;&#x5BF9;&#x4E8E;<code>loss_dict</code>&#x53C2;&#x6570;&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x68C0;&#x67E5;&#x5176;&#x662F;&#x5426;&#x4E3A;<code>None</code>&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#xFF0C;&#x5219;&#x904D;&#x5386;&#x5B57;&#x5178;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x635F;&#x5931;&#x51FD;&#x6570;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>_get_loss_func</code>&#x65B9;&#x6CD5;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x8F6C;&#x6362;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>loss_dict</code>&#x53C2;&#x6570;&#x5DF2;&#x88AB;&#x5F03;&#x7528;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>compile</code>&#x51FD;&#x6570;&#x662F;<code>UserModel_Variance</code>&#x7C7B;&#x7684;&#x6838;&#x5FC3;&#x65B9;&#x6CD5;&#x4E4B;&#x4E00;&#xFF0C;&#x8D1F;&#x8D23;&#x6A21;&#x578B;&#x7684;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x3002;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>_get_optim</code>&#x3001;<code>_get_metrics</code>&#x548C;<code>_get_loss_func</code>&#x7B49;&#x65B9;&#x6CD5;&#xFF0C;<code>compile</code>&#x51FD;&#x6570;&#x80FD;&#x591F;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x914D;&#x7F6E;&#x52A8;&#x6001;&#x5730;&#x8BBE;&#x7F6E;&#x6A21;&#x578B;&#x7684;&#x4F18;&#x5316;&#x5668;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x548C;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#xFF0C;&#x4ECE;&#x800C;&#x4E3A;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x63D0;&#x4F9B;&#x7075;&#x6D3B;&#x6027;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5F53;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x6307;&#x5B9A;&#x4F18;&#x5316;&#x5668;&#x65F6;&#xFF0C;&#x786E;&#x4FDD;&#x5176;&#x4E3A;&#x652F;&#x6301;&#x7684;&#x4F18;&#x5316;&#x5668;&#x4E4B;&#x4E00;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</li>
+<li><code>loss_dict</code>&#x53C2;&#x6570;&#x5DF2;&#x88AB;&#x5F03;&#x7528;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;<code>loss_func</code>&#x53C2;&#x6570;&#x6765;&#x6307;&#x5B9A;&#x81EA;&#x5B9A;&#x4E49;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x5EA6;&#x91CF;&#x51FD;&#x6570;<code>metric_fun</code>&#x548C;<code>metric_fun_ranking</code>&#x5E94;&#x6839;&#x636E;&#x6A21;&#x578B;&#x7684;&#x5177;&#x4F53;&#x9700;&#x6C42;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x3002;</li>
+<li>&#x5728;&#x8BBE;&#x7F6E;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x65F6;&#xFF0C;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>metrics</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x540D;&#x79F0;&#x662F;&#x88AB;&#x652F;&#x6301;&#x7684;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-fitdataself-datasettrain-datasetval-batchsize-epochs-verbose-initialepoch-callbacks-shuffle">FunctionDef fit_data(self, dataset_train, dataset_val, batch_size, epochs, verbose, initial_epoch, callbacks, shuffle)</h3>
+<p><strong>fit_data</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5BF9;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x62DF;&#x5408;&#xFF0C;&#x5E76;&#x53EF;&#x9009;&#x62E9;&#x5BF9;&#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>dataset_train: &#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x96C6;&#x3002;</li>
+<li>dataset_val: &#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li>batch_size: &#x6279;&#x91CF;&#x5927;&#x5C0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;256&#x3002;</li>
+<li>epochs: &#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1&#x3002;</li>
+<li>verbose: &#x65E5;&#x5FD7;&#x663E;&#x793A;&#x6A21;&#x5F0F;&#xFF0C;1&#x8868;&#x793A;&#x663E;&#x793A;&#x8FDB;&#x5EA6;&#x6761;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1&#x3002;</li>
+<li>initial_epoch: &#x8D77;&#x59CB;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#x3002;</li>
+<li>callbacks: &#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li>shuffle: &#x662F;&#x5426;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x524D;&#x6253;&#x4E71;&#x6570;&#x636E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;True&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>fit_data</code>&#x51FD;&#x6570;&#x9996;&#x5148;&#x6253;&#x5370;&#x51FA;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;<code>train</code>&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x6A21;&#x578B;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x6839;&#x636E;&#x662F;&#x5426;&#x6307;&#x5B9A;&#x4E86;GPU&#x6765;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x4F7F;&#x7528;<code>torch.nn.DataParallel</code>&#x6765;&#x5E76;&#x884C;&#x8FD0;&#x884C;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x76F8;&#x5E94;&#x5730;&#x8C03;&#x6574;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x3002;&#x51FD;&#x6570;&#x63A5;&#x7740;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>DataLoader</code>&#x5B9E;&#x4F8B;&#x6765;&#x52A0;&#x8F7D;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7684;&#x6B65;&#x6570;&#x3002;</p>
+<p>&#x5728;&#x5F00;&#x59CB;&#x8BAD;&#x7EC3;&#x4E4B;&#x524D;&#xFF0C;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>callbacks</code>&#x5217;&#x8868;&#x5E76;&#x8C03;&#x7528;&#x6BCF;&#x4E2A;&#x56DE;&#x8C03;&#x7684;<code>on_train_begin</code>&#x65B9;&#x6CD5;&#x6765;&#x6267;&#x884C;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x524D;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E86;&#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x5728;&#x8BAD;&#x7EC3;&#x5F00;&#x59CB;&#x524D;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#xFF0C;&#x5E76;&#x5C06;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x66F4;&#x65B0;&#x5230;<code>epoch_logs</code>&#x5B57;&#x5178;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x5B9A;&#x4E49;&#x4E86;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x8BC4;&#x4F30;&#x51FD;&#x6570;<code>RL_eval_fun</code>&#xFF0C;&#x4E5F;&#x4F1A;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x5E76;&#x66F4;&#x65B0;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x51FD;&#x6570;&#x8FDB;&#x5165;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#xFF0C;&#x6BCF;&#x4E2A;&#x5468;&#x671F;&#x5F00;&#x59CB;&#x65F6;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>callbacks</code>&#x5217;&#x8868;&#x5E76;&#x8C03;&#x7528;&#x6BCF;&#x4E2A;&#x56DE;&#x8C03;&#x7684;<code>on_epoch_begin</code>&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x5185;&#xFF0C;&#x51FD;&#x6570;&#x4F7F;&#x7528;<code>DataLoader</code>&#x8FED;&#x4EE3;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#xFF0C;&#x8BA1;&#x7B97;&#x635F;&#x5931;&#x503C;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x53CD;&#x5411;&#x4F20;&#x64AD;&#x548C;&#x4F18;&#x5316;&#x5668;&#x6B65;&#x9AA4;&#x3002;&#x5982;&#x679C;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x635F;&#x5931;&#x503C;&#x4E3A;NaN&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x5E76;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x6BCF;&#x4E2A;&#x5468;&#x671F;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x4F1A;&#x5BF9;&#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#xFF08;&#x5982;&#x679C;&#x63D0;&#x4F9B;&#xFF09;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>callbacks</code>&#x5217;&#x8868;&#x8C03;&#x7528;&#x6BCF;&#x4E2A;&#x56DE;&#x8C03;&#x7684;<code>on_epoch_end</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>callbacks</code>&#x5217;&#x8868;&#x5E76;&#x8C03;&#x7528;&#x6BCF;&#x4E2A;&#x56DE;&#x8C03;&#x7684;<code>on_train_end</code>&#x65B9;&#x6CD5;&#x6765;&#x6267;&#x884C;&#x8BAD;&#x7EC3;&#x7ED3;&#x675F;&#x540E;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x8BAD;&#x7EC3;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x63D0;&#x4F9B;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5177;&#x6709;&#x6B63;&#x786E;&#x7684;&#x683C;&#x5F0F;&#x548C;&#x6240;&#x9700;&#x7684;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F7F;&#x7528;GPU&#x5E76;&#x884C;&#x8BAD;&#x7EC3;&#xFF0C;&#x786E;&#x4FDD;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;&#x4E86;<code>self.gpus</code>&#x548C;<code>self.device</code>&#x3002;</li>
+<li>&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x6839;&#x636E;&#x5177;&#x4F53;&#x60C5;&#x51B5;&#x8C03;&#x6574;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#x3001;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x6570;&#x7B49;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5728;&#x8BAD;&#x7EC3;&#x7684;&#x4E0D;&#x540C;&#x9636;&#x6BB5;&#x6267;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x65E9;&#x505C;&#x3001;&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x7B49;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>: &#x6B64;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8BAD;&#x7EC3;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x80FD;&#x5305;&#x62EC;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x5468;&#x671F;&#x7684;&#x635F;&#x5931;&#x503C;&#x3001;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x7B49;&#x4FE1;&#x606F;&#x3002;</p>
+<hr>
+<h3 id="functiondef-compileucbself-narm">FunctionDef compile_UCB(self, n_arm)</h3>
+<p><strong>compile_UCB</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x521D;&#x59CB;&#x5316;UCB&#x7B97;&#x6CD5;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>n_arm</code>: &#x6B64;&#x53C2;&#x6570;&#x8868;&#x793A;&#x6B66;&#x5668;&#xFF08;&#x6216;&#x9009;&#x9879;&#xFF09;&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>compile_UCB</code>&#x51FD;&#x6570;&#x662F;<code>UserModel_Variance</code>&#x7C7B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x4E0A;&#x7F6E;&#x4FE1;&#x754C;&#x9650;&#xFF08;Upper Confidence Bound, UCB&#xFF09;&#x7B97;&#x6CD5;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x53C2;&#x6570;&#xFF1A;<code>n_rec</code>&#x548C;<code>n_each</code>&#x3002;<code>n_rec</code>&#x8BB0;&#x5F55;&#x4E86;&#x603B;&#x7684;&#x63A8;&#x8350;&#x6B21;&#x6570;&#xFF0C;&#x800C;<code>n_each</code>&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x8BB0;&#x5F55;&#x4E86;&#x6BCF;&#x4E2A;&#x6B66;&#x5668;&#xFF08;&#x6216;&#x9009;&#x9879;&#xFF09;&#x88AB;&#x63A8;&#x8350;&#x7684;&#x6B21;&#x6570;&#x3002;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;<code>n_rec</code>&#x88AB;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x4F20;&#x5165;&#x7684;<code>n_arm</code>&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x8868;&#x793A;&#x603B;&#x7684;&#x63A8;&#x8350;&#x6B21;&#x6570;&#x4E0E;&#x6B66;&#x5668;&#x7684;&#x6570;&#x91CF;&#x76F8;&#x7B49;&#x3002;&#x540C;&#x65F6;&#xFF0C;<code>n_each</code>&#x88AB;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x7B49;&#x4E8E;<code>n_arm</code>&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;1&#xFF0C;&#x8868;&#x793A;&#x6BCF;&#x4E2A;&#x6B66;&#x5668;&#x6700;&#x5F00;&#x59CB;&#x90FD;&#x88AB;&#x63A8;&#x8350;&#x4E86;&#x4E00;&#x6B21;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>compile_UCB</code>&#x51FD;&#x6570;&#x88AB;<code>recommend_k_item</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;&#x5728;<code>recommend_k_item</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;UCB&#x7B97;&#x6CD5;&#xFF08;&#x5373;<code>is_ucb</code>&#x53C2;&#x6570;&#x4E3A;True&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x6CA1;&#x6709;&#x63A8;&#x8350;&#x9879;&#xFF08;<code>recommended_ids</code>&#x4E3A;&#x7A7A;&#xFF09;&#xFF0C;&#x5219;&#x4F1A;&#x8C03;&#x7528;<code>compile_UCB</code>&#x51FD;&#x6570;&#x6765;&#x521D;&#x59CB;&#x5316;UCB&#x7B97;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x5728;&#x4F7F;&#x7528;UCB&#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x63A8;&#x8350;&#x65F6;&#xFF0C;&#x80FD;&#x591F;&#x6839;&#x636E;&#x6BCF;&#x4E2A;&#x6B66;&#x5668;&#x88AB;&#x63A8;&#x8350;&#x7684;&#x6B21;&#x6570;&#x548C;&#x603B;&#x7684;&#x63A8;&#x8350;&#x6B21;&#x6570;&#x6765;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x6B66;&#x5668;&#x7684;&#x4E0A;&#x7F6E;&#x4FE1;&#x754C;&#x9650;&#xFF0C;&#x8FDB;&#x800C;&#x9009;&#x62E9;&#x5177;&#x6709;&#x6700;&#x9AD8;&#x4E0A;&#x7F6E;&#x4FE1;&#x754C;&#x9650;&#x7684;&#x6B66;&#x5668;&#x8FDB;&#x884C;&#x63A8;&#x8350;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;<code>compile_UCB</code>&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;<code>n_arm</code>&#x53C2;&#x6570;&#x6B63;&#x786E;&#x5730;&#x53CD;&#x6620;&#x4E86;&#x53EF;&#x4F9B;&#x9009;&#x62E9;&#x7684;&#x6B66;&#x5668;&#xFF08;&#x6216;&#x9009;&#x9879;&#xFF09;&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>compile_UCB</code>&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x901A;&#x5E38;&#x4E0E;UCB&#x7B97;&#x6CD5;&#x7684;&#x542F;&#x7528;&#x5BC6;&#x5207;&#x76F8;&#x5173;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x4E0D;&#x4F7F;&#x7528;UCB&#x7B97;&#x6CD5;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</li>
+<li>&#x5728;<code>recommend_k_item</code>&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x6839;&#x636E;UCB&#x7B97;&#x6CD5;&#x66F4;&#x65B0;&#x7684;<code>n_rec</code>&#x548C;<code>n_each</code>&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x76F4;&#x63A5;&#x5F71;&#x54CD;&#x540E;&#x7EED;&#x63A8;&#x8350;&#x7684;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-recommendkitemself-user-datasetval-k-issoftmax-epsilon-isucb-recommendedids">FunctionDef recommend_k_item(self, user, dataset_val, k, is_softmax, epsilon, is_ucb, recommended_ids)</h3>
+<p><strong>recommend_k_item</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6839;&#x636E;&#x7528;&#x6237;&#x504F;&#x597D;&#x548C;&#x9879;&#x76EE;&#x7279;&#x5F81;&#xFF0C;&#x63A8;&#x8350;K&#x4E2A;&#x9879;&#x76EE;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>user</code>: &#x7528;&#x6237;&#x6807;&#x8BC6;&#x3002;</li>
+<li><code>dataset_val</code>: &#x5305;&#x542B;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x9A8C;&#x8BC1;&#x96C6;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>k</code>: &#x9700;&#x8981;&#x63A8;&#x8350;&#x7684;&#x9879;&#x76EE;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1&#x3002;</li>
+<li><code>is_softmax</code>: &#x662F;&#x5426;&#x4F7F;&#x7528;softmax&#x8FDB;&#x884C;&#x6982;&#x7387;&#x8F6C;&#x6362;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;True&#x3002;</li>
+<li><code>epsilon</code>: &#x7528;&#x4E8E;epsilon-greedy&#x7B56;&#x7565;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x63A7;&#x5236;&#x63A2;&#x7D22;&#x548C;&#x5229;&#x7528;&#x7684;&#x5E73;&#x8861;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#x3002;</li>
+<li><code>is_ucb</code>: &#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E0A;&#x7F6E;&#x4FE1;&#x754C;&#x9650;&#xFF08;UCB&#xFF09;&#x7B97;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</li>
+<li><code>recommended_ids</code>: &#x5DF2;&#x63A8;&#x8350;&#x9879;&#x76EE;&#x7684;&#x7D22;&#x5F15;&#x5217;&#x8868;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#x5217;&#x8868;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x4ECE;<code>dataset_val</code>&#x4E2D;&#x63D0;&#x53D6;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x7684;&#x9A8C;&#x8BC1;&#x96C6;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5B83;&#x4F1A;&#x6839;&#x636E;<code>recommended_ids</code>&#x53C2;&#x6570;&#x8FC7;&#x6EE4;&#x51FA;&#x672A;&#x88AB;&#x63A8;&#x8350;&#x7684;&#x9879;&#x76EE;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x4F7F;&#x7528;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x548C;&#x9879;&#x76EE;&#x7279;&#x5F81;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x5F20;&#x91CF;<code>u_all_item</code>&#xFF0C;&#x8BE5;&#x5F20;&#x91CF;&#x5305;&#x542B;&#x4E86;&#x7528;&#x6237;&#x6807;&#x8BC6;&#x3001;&#x7528;&#x6237;&#x7279;&#x5F81;&#x3001;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x548C;&#x9879;&#x76EE;&#x7279;&#x5F81;&#x3002;&#x6B64;&#x5F20;&#x91CF;&#x88AB;&#x7528;&#x4E8E;&#x6A21;&#x578B;&#x7684;&#x524D;&#x5411;&#x4F20;&#x64AD;&#xFF0C;&#x4EE5;&#x9884;&#x6D4B;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x8BC4;&#x5206;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;UCB&#x7B97;&#x6CD5;&#x4E14;&#x5F53;&#x524D;&#x6CA1;&#x6709;&#x63A8;&#x8350;&#x9879;&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x8C03;&#x7528;<code>compile_UCB</code>&#x65B9;&#x6CD5;&#x521D;&#x59CB;&#x5316;UCB&#x7B97;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x3002;UCB&#x7B97;&#x6CD5;&#x901A;&#x8FC7;&#x8003;&#x8651;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x63A8;&#x8350;&#x6B21;&#x6570;&#x548C;&#x603B;&#x63A8;&#x8350;&#x6B21;&#x6570;&#x6765;&#x8C03;&#x6574;&#x9879;&#x76EE;&#x7684;&#x8BC4;&#x5206;&#xFF0C;&#x4EE5;&#x5E73;&#x8861;&#x63A2;&#x7D22;&#x548C;&#x5229;&#x7528;&#x3002;</p>
+<p>&#x6839;&#x636E;<code>is_softmax</code>&#x53C2;&#x6570;&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x4F7F;&#x7528;softmax&#x8F6C;&#x6362;&#x6216;&#x76F4;&#x63A5;&#x9009;&#x62E9;&#x6700;&#x9AD8;&#x8BC4;&#x5206;&#x7684;K&#x4E2A;&#x9879;&#x76EE;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;<code>epsilon</code>&#x53C2;&#x6570;&#x5E76;&#x6EE1;&#x8DB3;&#x968F;&#x673A;&#x6761;&#x4EF6;&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x968F;&#x673A;&#x9009;&#x62E9;K&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x5B9E;&#x73B0;epsilon-greedy&#x7B56;&#x7565;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x66F4;&#x65B0;UCB&#x7B97;&#x6CD5;&#x7684;&#x63A8;&#x8350;&#x6B21;&#x6570;&#x548C;&#x6BCF;&#x4E2A;&#x63A8;&#x8350;&#x9879;&#x76EE;&#x7684;&#x88AB;&#x63A8;&#x8350;&#x6B21;&#x6570;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x63A8;&#x8350;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x3001;&#x539F;&#x59CB;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x548C;&#x9879;&#x76EE;&#x8BC4;&#x5206;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;<code>dataset_val</code>&#x6B63;&#x786E;&#x4F20;&#x5165;&#xFF0C;&#x5305;&#x542B;&#x5FC5;&#x8981;&#x7684;&#x7528;&#x6237;&#x548C;&#x9879;&#x76EE;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x5F53;<code>is_ucb</code>&#x4E3A;True&#x65F6;&#xFF0C;&#x786E;&#x4FDD;<code>compile_UCB</code>&#x65B9;&#x6CD5;&#x5DF2;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;UCB&#x7B97;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x4F7F;&#x7528;<code>epsilon-greedy</code>&#x7B56;&#x7565;&#x65F6;&#xFF0C;&#x5408;&#x7406;&#x8BBE;&#x7F6E;<code>epsilon</code>&#x503C;&#x4EE5;&#x5E73;&#x8861;&#x63A2;&#x7D22;&#x548C;&#x5229;&#x7528;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<pre><code class="lang-python">([<span class="hljs-number">2</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">101</span>, <span class="hljs-number">205</span>], [<span class="hljs-number">0.95</span>, <span class="hljs-number">0.89</span>])
+</code></pre>
+<p>&#x6B64;&#x8F93;&#x51FA;&#x793A;&#x4F8B;&#x8868;&#x793A;&#x63A8;&#x8350;&#x7684;&#x9879;&#x76EE;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x7D22;&#x5F15;&#x4E3A;2&#x548C;5&#xFF0C;&#x539F;&#x59CB;&#x9879;&#x76EE;&#x7D22;&#x5F15;&#x4E3A;101&#x548C;205&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x9879;&#x76EE;&#x8BC4;&#x5206;&#x4E3A;0.95&#x548C;0.89&#x3002;</p>
+<hr>
+<h3 id="functiondef-evaluatedataself-datasetval-batchsize-epoch">FunctionDef evaluate_data(self, dataset_val, batch_size, epoch)</h3>
+<p><strong>evaluate_data</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5BF9;&#x7ED9;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>dataset_val</strong>: &#x9700;&#x8981;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x6570;&#x636E;&#x96C6;&#x5E94;&#x8BE5;&#x63D0;&#x4F9B;<code>get_y</code>&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x771F;&#x5B9E;&#x6807;&#x7B7E;&#x503C;&#xFF0C;&#x4EE5;&#x53CA;<code>ground_truth</code>&#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x6392;&#x540D;&#x8BC4;&#x4F30;&#x3002;</li>
+<li><strong>batch_size</strong>: &#x6574;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x6BCF;&#x6B21;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;256&#x3002;</li>
+<li><strong>epoch</strong>: &#x5F53;&#x524D;&#x7684;&#x8BAD;&#x7EC3;&#x8F6E;&#x6B21;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x8BC4;&#x4F30;&#x53D1;&#x751F;&#x5728;&#x8BAD;&#x7EC3;&#x7684;&#x54EA;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>evaluate_data</code>&#x51FD;&#x6570;&#x9996;&#x5148;&#x4F7F;&#x7528;<code>predict_data</code>&#x65B9;&#x6CD5;&#x5BF9;&#x8F93;&#x5165;&#x7684;<code>dataset_val</code>&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#xFF0C;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x5B58;&#x50A8;&#x5728;<code>y_predict</code>&#x4E2D;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x901A;&#x8FC7;<code>dataset_val.get_y()</code>&#x83B7;&#x53D6;&#x771F;&#x5B9E;&#x7684;&#x6807;&#x7B7E;&#x503C;<code>y</code>&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x51FD;&#x6570;&#x904D;&#x5386;<code>self.metric_fun</code>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6240;&#x6709;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#xFF0C;&#x5BF9;&#x6BCF;&#x4E2A;&#x6307;&#x6807;&#x4F7F;&#x7528;&#x9884;&#x6D4B;&#x503C;<code>y_predict</code>&#x548C;&#x771F;&#x5B9E;&#x503C;<code>y</code>&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#xFF0C;&#x5E76;&#x5C06;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x5B58;&#x50A8;&#x5728;&#x5B57;&#x5178;<code>eval_result</code>&#x4E2D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5B9A;&#x4E49;&#x4E86;&#x6392;&#x540D;&#x8BC4;&#x4F30;&#x51FD;&#x6570;<code>self.metric_fun_ranking</code>&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x8FDB;&#x4E00;&#x6B65;&#x6267;&#x884C;&#x6392;&#x540D;&#x8BC4;&#x4F30;&#x3002;&#x6839;&#x636E;<code>dataset_val.all_item_ranking</code>&#x7684;&#x503C;&#xFF0C;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x4F1A;&#x5BF9;&#x5B8C;&#x6574;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#xFF0C;&#x5E76;&#x6784;&#x5EFA;&#x5305;&#x542B;&#x7528;&#x6237;ID&#x3001;&#x7269;&#x54C1;ID&#x548C;&#x9884;&#x6D4B;&#x5F97;&#x5206;&#x7684;<code>xy_predict</code> DataFrame&#x3002;&#x6700;&#x540E;&#xFF0C;&#x5C06;&#x771F;&#x5B9E;&#x6807;&#x7B7E;&#x503C;<code>y</code>&#x6DFB;&#x52A0;&#x5230;<code>xy_predict</code>&#x4E2D;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x4E3A;&#x9002;&#x5F53;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x6392;&#x540D;&#x8BC4;&#x4F30;&#x51FD;&#x6570;<code>self.metric_fun_ranking</code>&#x5BF9;<code>xy_predict</code>&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#xFF0C;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x66F4;&#x65B0;&#x5230;<code>eval_result</code>&#x5B57;&#x5178;&#x4E2D;&#x3002;</p>
+<p>&#x4ECE;&#x529F;&#x80FD;&#x89D2;&#x5EA6;&#x770B;&#xFF0C;<code>evaluate_data</code>&#x65B9;&#x6CD5;&#x88AB;<code>fit_data</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x9636;&#x6BB5;&#x5BF9;&#x9A8C;&#x8BC1;&#x96C6;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#xFF0C;&#x4EE5;&#x76D1;&#x63A7;&#x6A21;&#x578B;&#x7684;&#x6027;&#x80FD;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x4F7F;&#x7528;&#xFF0C;&#x5BF9;&#x4EFB;&#x610F;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x6027;&#x80FD;&#x8BC4;&#x4F30;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>dataset_val</code>&#x5177;&#x6709;<code>get_y</code>&#x65B9;&#x6CD5;&#x548C;<code>ground_truth</code>&#x5C5E;&#x6027;&#xFF0C;&#x4EE5;&#x53CA;<code>x_numpy</code>&#x548C;<code>user_col</code>&#x3001;<code>item_col</code>&#x5C5E;&#x6027;&#xFF08;&#x5982;&#x679C;&#x8FDB;&#x884C;&#x6392;&#x540D;&#x8BC4;&#x4F30;&#xFF09;&#x3002;</li>
+<li><code>predict_data</code>&#x65B9;&#x6CD5;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x8003;&#x5176;&#x76F8;&#x5E94;&#x6587;&#x6863;&#xFF0C;&#x4E86;&#x89E3;&#x5176;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;accuracy&quot;</span>: <span class="hljs-number">0.95</span>,
+    <span class="hljs-string">&quot;precision&quot;</span>: <span class="hljs-number">0.92</span>,
+    <span class="hljs-string">&quot;recall&quot;</span>: <span class="hljs-number">0.93</span>,
+    <span class="hljs-string">&quot;f1_score&quot;</span>: <span class="hljs-number">0.925</span>
+}
+</code></pre>
+<p>&#x6B64;&#x8F93;&#x51FA;&#x793A;&#x4F8B;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x8BC4;&#x4F30;&#x7ED3;&#x679C;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x51C6;&#x786E;&#x7387;&#x3001;&#x7CBE;&#x786E;&#x7387;&#x3001;&#x53EC;&#x56DE;&#x7387;&#x548C;F1&#x5206;&#x6570;&#x7B49;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x7684;&#x503C;&#x3002;&#x5B9E;&#x9645;&#x8F93;&#x51FA;&#x5C06;&#x6839;&#x636E;&#x5B9A;&#x4E49;&#x5728;<code>self.metric_fun</code>&#x548C;<code>self.metric_fun_ranking</code>&#x4E2D;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#x800C;&#x53D8;&#x5316;&#x3002;</p>
+<hr>
+<h3 id="functiondef-predictdataself-datasetpredict-batchsize-verbose">FunctionDef predict_data(self, dataset_predict, batch_size, verbose)</h3>
+<p><strong>predict_data</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5BF9;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;Numpy&#x6570;&#x7EC4;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>dataset_predict</strong>: &#x9700;&#x8981;&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x8BE5;&#x6570;&#x636E;&#x96C6;&#x5E94;&#x8BE5;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<code>get_dataset_eval</code>&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x7528;&#x4E8E;&#x8BC4;&#x4F30;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x591F;&#x901A;&#x8FC7;<code>len()</code>&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x96C6;&#x7684;&#x5927;&#x5C0F;&#x3002;</li>
+<li><strong>batch_size</strong>: &#x6574;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x6BCF;&#x6B21;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x6279;&#x91CF;&#x5927;&#x5C0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;256&#x3002;</li>
+<li><strong>verbose</strong>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x662F;&#x5426;&#x5728;&#x9884;&#x6D4B;&#x8FC7;&#x7A0B;&#x4E2D;&#x8F93;&#x51FA;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>predict_data</code>&#x51FD;&#x6570;&#x9996;&#x5148;&#x786E;&#x4FDD;&#x6570;&#x636E;&#x4E0D;&#x4F1A;&#x5728;&#x52A0;&#x8F7D;&#x65F6;&#x88AB;&#x6253;&#x4E71;&#xFF08;<code>is_shuffle=False</code>&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;<code>DataLoader</code>&#x4ECE;<code>dataset_predict</code>&#x52A0;&#x8F7D;&#x6570;&#x636E;&#xFF0C;&#x5176;&#x4E2D;<code>batch_size</code>&#x53C2;&#x6570;&#x63A7;&#x5236;&#x6BCF;&#x4E2A;&#x6279;&#x6B21;&#x7684;&#x6570;&#x636E;&#x91CF;&#xFF0C;<code>num_workers</code>&#x53C2;&#x6570;&#x7531;<code>dataset_predict</code>&#x63D0;&#x4F9B;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x8FDB;&#x7A0B;&#x6570;&#x91CF;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x9700;&#x8981;&#x904D;&#x5386;&#x7684;&#x6B65;&#x6570;&#xFF08;<code>steps_per_epoch</code>&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x5217;&#x8868;<code>pred_ans</code>&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6BCF;&#x4E2A;&#x6279;&#x6B21;&#x7684;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x3002;&#x5728;&#x4E0D;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF08;<code>torch.no_grad()</code>&#xFF09;&#xFF0C;&#x51FD;&#x6570;&#x904D;&#x5386;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x5668;<code>test_loader</code>&#xFF0C;&#x5C06;&#x6BCF;&#x4E2A;&#x6279;&#x6B21;&#x7684;&#x6570;&#x636E;&#x9001;&#x5165;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x524D;&#x5411;&#x4F20;&#x64AD;&#xFF0C;&#x8BA1;&#x7B97;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x3002;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;Numpy&#x6570;&#x7EC4;&#x5E76;&#x5B58;&#x50A8;&#x5728;<code>pred_ans</code>&#x5217;&#x8868;&#x4E2D;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x5C06;<code>pred_ans</code>&#x4E2D;&#x7684;&#x6240;&#x6709;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;Numpy&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;<code>float64</code>&#x540E;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x4ECE;&#x529F;&#x80FD;&#x89D2;&#x5EA6;&#x770B;&#xFF0C;<code>predict_data</code>&#x51FD;&#x6570;&#x88AB;<code>evaluate_data</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x6A21;&#x578B;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x83B7;&#x53D6;&#x6A21;&#x578B;&#x5BF9;&#x9A8C;&#x8BC1;&#x96C6;&#x6216;&#x5B8C;&#x6574;&#x6570;&#x636E;&#x96C6;&#x7684;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x3002;&#x8FD9;&#x4E9B;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x968F;&#x540E;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x4E0D;&#x540C;&#x7684;&#x8BC4;&#x4F30;&#x6307;&#x6807;&#xFF0C;&#x4EE5;&#x8BC4;&#x4F30;&#x6A21;&#x578B;&#x7684;&#x6027;&#x80FD;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>dataset_predict</code>&#x5177;&#x6709;<code>get_dataset_eval</code>&#x65B9;&#x6CD5;&#x548C;<code>num_workers</code>&#x5C5E;&#x6027;&#xFF0C;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>len()</code>&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5176;&#x5927;&#x5C0F;&#x3002;</li>
+<li>&#x8BE5;&#x51FD;&#x6570;&#x4E0D;&#x76F4;&#x63A5;&#x8F93;&#x51FA;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;<code>verbose=True</code>&#x6765;&#x542F;&#x7528;&#x8FDB;&#x5EA6;&#x6761;&#x7B49;&#x989D;&#x5916;&#x4FE1;&#x606F;&#x7684;&#x8F93;&#x51FA;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5047;&#x8BBE;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x4E3A;&#x4E24;&#x4E2A;&#x6837;&#x672C;&#x7684;&#x9884;&#x6D4B;&#x503C;</span>
+np.array([<span class="hljs-number">0.5</span>, <span class="hljs-number">0.7</span>])
+</code></pre>
+<hr>
+<h3 id="functiondef-getregularizationlossself">FunctionDef get_regularization_loss(self)</h3>
+<p><strong>get_regularization_loss</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#x7684;&#x6B63;&#x5219;&#x5316;&#x635F;&#x5931;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>get_regularization_loss</code> &#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#x4E2D;&#x6240;&#x6709;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x7684;&#x6B63;&#x5219;&#x5316;&#x635F;&#x5931;&#xFF0C;&#x4EE5;&#x9632;&#x6B62;&#x6A21;&#x578B;&#x8FC7;&#x62DF;&#x5408;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x904D;&#x5386;<code>self.regularization_weight</code>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x8BE5;&#x5217;&#x8868;&#x5305;&#x542B;&#x4E86;&#x6A21;&#x578B;&#x4E2D;&#x9700;&#x8981;&#x6B63;&#x5219;&#x5316;&#x7684;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;L1&#x548C;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x3002;&#x5BF9;&#x4E8E;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6743;&#x91CD;&#x53C2;&#x6570;&#xFF08;&#x6216;&#x53C2;&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x51FD;&#x6570;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x53C2;&#x6570;&#x662F;&#x5355;&#x4E2A;&#x6743;&#x91CD;&#x8FD8;&#x662F;&#x547D;&#x540D;&#x6743;&#x91CD;&#xFF08;&#x5373;&#x5143;&#x7EC4;&#x5F62;&#x5F0F;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;L1&#x548C;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x8BA1;&#x7B97;&#x76F8;&#x5E94;&#x7684;&#x6B63;&#x5219;&#x5316;&#x635F;&#x5931;&#x3002;L1&#x6B63;&#x5219;&#x5316;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;&#x6743;&#x91CD;&#x7684;&#x7EDD;&#x5BF9;&#x503C;&#x4E4B;&#x548C;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x800C;L2&#x6B63;&#x5219;&#x5316;&#x5219;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;&#x6743;&#x91CD;&#x7684;&#x5E73;&#x65B9;&#x4E4B;&#x548C;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x603B;&#x6B63;&#x5219;&#x5316;&#x635F;&#x5931;&#x968F;&#x540E;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>get_regularization_loss</code> &#x51FD;&#x6570;&#x88AB;<code>fit_data</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x8BA1;&#x7B97;&#x6B63;&#x5219;&#x5316;&#x635F;&#x5931;&#x5E76;&#x5C06;&#x5176;&#x52A0;&#x5230;&#x603B;&#x635F;&#x5931;&#x4E2D;&#x3002;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x63A7;&#x5236;&#x6A21;&#x578B;&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x907F;&#x514D;&#x8FC7;&#x62DF;&#x5408;&#x73B0;&#x8C61;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x6A21;&#x578B;&#x5728;&#x672A;&#x89C1;&#x6570;&#x636E;&#x4E0A;&#x7684;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x5728;&#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;<code>self.regularization_weight</code>&#x5DF2;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x6A21;&#x578B;&#x4E2D;&#x6240;&#x6709;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x6B63;&#x5219;&#x5316;&#x7684;&#x6743;&#x91CD;&#x53C2;&#x6570;&#x53CA;&#x5176;L1&#x548C;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;<code>torch</code>&#x5E93;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x9879;&#x76EE;&#x4E2D;&#x5DF2;&#x6B63;&#x786E;&#x5B89;&#x88C5;&#x4E86;<code>torch</code>&#x3002;</p>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>: &#x5047;&#x8BBE;&#x6A21;&#x578B;&#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x6743;&#x91CD;&#x53C2;&#x6570;&#xFF0C;&#x4E14;&#x5B83;&#x4EEC;&#x7684;L1&#x548C;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x5206;&#x522B;&#x4E3A;0.01&#x548C;0.02&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#x5982;<code>torch.tensor([0.05])</code>&#xFF0C;&#x8868;&#x793A;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x603B;&#x6B63;&#x5219;&#x5316;&#x635F;&#x5931;&#x3002;</p>
+<hr>
+<h3 id="functiondef-addregularizationweightself-weightlist-l1-l2">FunctionDef add_regularization_weight(self, weight_list, l1, l2)</h3>
+<p><strong>add_regularization_weight</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5411;&#x6A21;&#x578B;&#x4E2D;&#x6DFB;&#x52A0;&#x6B63;&#x5219;&#x5316;&#x6743;&#x91CD;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>weight_list</strong>: &#x5F85;&#x6DFB;&#x52A0;&#x6B63;&#x5219;&#x5316;&#x7684;&#x6743;&#x91CD;&#x5217;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x5355;&#x4E2A;<code>torch.nn.parameter.Parameter</code>&#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x751F;&#x6210;&#x5668;&#x3001;&#x8FC7;&#x6EE4;&#x5668;&#x6216;<code>ParameterList</code>&#x3002;</li>
+<li><strong>l1</strong>: L1&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0.0&#x3002;</li>
+<li><strong>l2</strong>: L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0.0&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>add_regularization_weight</code>&#x51FD;&#x6570;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5411;&#x6A21;&#x578B;&#x4E2D;&#x6DFB;&#x52A0;&#x6B63;&#x5219;&#x5316;&#x6743;&#x91CD;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x5E94;&#x7528;L1&#x6216;L2&#x6B63;&#x5219;&#x5316;&#xFF0C;&#x4ECE;&#x800C;&#x5E2E;&#x52A9;&#x9632;&#x6B62;&#x8FC7;&#x62DF;&#x5408;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x9996;&#x5148;&#x68C0;&#x67E5;<code>weight_list</code>&#x53C2;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5982;&#x679C;<code>weight_list</code>&#x662F;&#x5355;&#x4E2A;<code>torch.nn.parameter.Parameter</code>&#x5BF9;&#x8C61;&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x4E3A;&#x5305;&#x542B;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x4FDD;&#x6301;&#x4E0E;<code>get_regularization_loss()</code>&#x51FD;&#x6570;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x3002;&#x5982;&#x679C;<code>weight_list</code>&#x662F;&#x751F;&#x6210;&#x5668;&#x3001;&#x8FC7;&#x6EE4;&#x5668;&#x6216;<code>ParameterList</code>&#xFF0C;&#x51FD;&#x6570;&#x4F1A;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x4E3A;&#x5F20;&#x91CF;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x5728;&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x65F6;&#x51FA;&#x73B0;&#x65E0;&#x6CD5;&#x5E8F;&#x5217;&#x5316;&#x751F;&#x6210;&#x5668;&#x5BF9;&#x8C61;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x4E4B;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x5305;&#x542B;&#x6743;&#x91CD;&#x5217;&#x8868;&#x3001;L1&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x548C;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x7684;&#x5143;&#x7EC4;&#x6DFB;&#x52A0;&#x5230;<code>self.regularization_weight</code>&#x5217;&#x8868;&#x4E2D;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>add_regularization_weight</code>&#x51FD;&#x6570;&#x88AB;<code>UserModel_Variance</code>&#x548C;<code>UserModel_Pairwise_Variance</code>&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x4E9B;&#x8C03;&#x7528;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5411;&#x6A21;&#x578B;&#x6DFB;&#x52A0;&#x4E0D;&#x540C;&#x7EC4;&#x4EF6;&#xFF08;&#x5982;&#x5D4C;&#x5165;&#x5B57;&#x5178;&#x3001;&#x7EBF;&#x6027;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x7B49;&#xFF09;&#x7684;&#x6B63;&#x5219;&#x5316;&#x6743;&#x91CD;&#x3002;&#x901A;&#x8FC7;&#x6307;&#x5B9A;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#xFF0C;&#x8FD9;&#x4E9B;&#x8C03;&#x7528;&#x6709;&#x52A9;&#x4E8E;&#x63A7;&#x5236;&#x6A21;&#x578B;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x548C;&#x8FC7;&#x62DF;&#x5408;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>weight_list</code>&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x6B63;&#x786E;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x8FD0;&#x884C;&#x65F6;&#x9519;&#x8BEF;&#x3002;</li>
+<li>&#x867D;&#x7136;L1&#x548C;L2&#x6B63;&#x5219;&#x5316;&#x7CFB;&#x6570;&#x9ED8;&#x8BA4;&#x4E3A;0.0&#xFF0C;&#x4F46;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x6A21;&#x578B;&#x7684;&#x5177;&#x4F53;&#x9700;&#x6C42;&#x548C;&#x8FC7;&#x62DF;&#x5408;&#x60C5;&#x51B5;&#xFF0C;&#x9002;&#x5F53;&#x8C03;&#x6574;&#x8FD9;&#x4E9B;&#x7CFB;&#x6570;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x3002;</li>
+<li>&#x6B64;&#x51FD;&#x6570;&#x7684;&#x8BBE;&#x8BA1;&#x8003;&#x8651;&#x4E86;&#x6A21;&#x578B;&#x4FDD;&#x5B58;&#x65F6;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x5C06;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x6DFB;&#x52A0;&#x5230;&#x6B63;&#x5219;&#x5316;&#x6743;&#x91CD;&#x5217;&#x8868;&#x65F6;&#xFF0C;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x65E0;&#x6CD5;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#xFF08;&#x5982;&#x751F;&#x6210;&#x5668;&#xFF09;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-computeinputdimself-featurecolumns-includesparse-includedense-featuregroup">FunctionDef compute_input_dim(self, feature_columns, include_sparse, include_dense, feature_group)</h3>
+<p><strong>compute_input_dim</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x7684;&#x7EF4;&#x5EA6;&#x603B;&#x548C;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>feature_columns</code>: &#x7279;&#x5F81;&#x5217;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x7A00;&#x758F;&#x548C;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x5217;&#x3002;</li>
+<li><code>include_sparse</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x5305;&#x542B;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x5217;&#x7684;&#x7EF4;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;True&#x3002;</li>
+<li><code>include_dense</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x5305;&#x542B;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x5217;&#x7684;&#x7EF4;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;True&#x3002;</li>
+<li><code>feature_group</code>: &#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x5C06;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x5217;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x8BA1;&#x7B97;&#x7EF4;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x9996;&#x5148;&#x6839;&#x636E;&#x7279;&#x5F81;&#x5217;&#x7C7B;&#x578B;&#xFF08;&#x7A00;&#x758F;&#x6216;&#x5BC6;&#x96C6;&#xFF09;&#x5C06;<code>feature_columns</code>&#x5217;&#x8868;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x5B50;&#x5217;&#x8868;&#xFF1A;<code>sparse_feature_columns</code>&#x548C;<code>dense_feature_columns</code>&#x3002;&#x5B83;&#x4F7F;&#x7528;Python&#x7684;<code>filter</code>&#x51FD;&#x6570;&#x548C;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#xFF08;<code>isinstance</code>&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x5176;&#x4E2D;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x5217;&#x7C7B;&#x578B;&#x4E3A;<code>SparseFeatP</code>&#x6216;<code>VarLenSparseFeat</code>&#xFF0C;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x5217;&#x7C7B;&#x578B;&#x4E3A;<code>DenseFeat</code>&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x5217;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x5BF9;&#x6BCF;&#x4E2A;&#x7279;&#x5F81;&#x5217;&#x7684;<code>dimension</code>&#x5C5E;&#x6027;&#x6C42;&#x548C;&#x6765;&#x8BA1;&#x7B97;<code>dense_input_dim</code>&#x3002;&#x5BF9;&#x4E8E;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x5217;&#xFF0C;&#x5982;&#x679C;<code>feature_group</code>&#x4E3A;True&#xFF0C;&#x5219;&#x7B80;&#x5355;&#x5730;&#x8BA1;&#x7B97;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x5217;&#x7684;&#x6570;&#x91CF;&#x4F5C;&#x4E3A;<code>sparse_input_dim</code>&#xFF1B;&#x5426;&#x5219;&#xFF0C;&#x5B83;&#x4F1A;&#x5BF9;&#x6BCF;&#x4E2A;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x5217;&#x7684;<code>embedding_dim</code>&#x5C5E;&#x6027;&#x6C42;&#x548C;&#x6765;&#x8BA1;&#x7B97;<code>sparse_input_dim</code>&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6839;&#x636E;<code>include_sparse</code>&#x548C;<code>include_dense</code>&#x53C2;&#x6570;&#x7684;&#x503C;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x76F8;&#x5E94;&#x7684;&#x7EF4;&#x5EA6;&#x76F8;&#x52A0;&#xFF0C;&#x5F97;&#x5230;&#x6A21;&#x578B;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x7684;&#x603B;&#x7EF4;&#x5EA6;<code>input_dim</code>&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8FD4;&#x56DE;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x786E;&#x4FDD;<code>feature_columns</code>&#x5217;&#x8868;&#x6B63;&#x786E;&#x5730;&#x5305;&#x542B;&#x4E86;&#x6A21;&#x578B;&#x6240;&#x9700;&#x7684;&#x6240;&#x6709;&#x7279;&#x5F81;&#x5217;&#x3002;</li>
+<li>&#x53C2;&#x6570;<code>include_sparse</code>&#x548C;<code>include_dense</code>&#x5141;&#x8BB8;&#x5728;&#x8BA1;&#x7B97;&#x603B;&#x7EF4;&#x5EA6;&#x65F6;&#x6709;&#x9009;&#x62E9;&#x6027;&#x5730;&#x8003;&#x8651;&#x7A00;&#x758F;&#x6216;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x5217;&#xFF0C;&#x8FD9;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x6A21;&#x578B;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x3002;</li>
+<li>&#x5F53;<code>feature_group</code>&#x4E3A;True&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x5217;&#x88AB;&#x89C6;&#x4E3A;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#xFF0C;&#x8FD9;&#x5728;&#x5904;&#x7406;&#x5177;&#x6709;&#x76F8;&#x540C;&#x5D4C;&#x5165;&#x7EF4;&#x5EA6;&#x7684;&#x7279;&#x5F81;&#x7EC4;&#x65F6;&#x7279;&#x522B;&#x6709;&#x7528;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x6709;2&#x4E2A;&#x5BC6;&#x96C6;&#x7279;&#x5F81;&#x5217;&#xFF0C;&#x6BCF;&#x4E2A;&#x7684;&#x7EF4;&#x5EA6;&#x4E3A;10&#xFF0C;&#x548C;3&#x4E2A;&#x7A00;&#x758F;&#x7279;&#x5F81;&#x5217;&#xFF0C;&#x6BCF;&#x4E2A;&#x7684;&#x5D4C;&#x5165;&#x7EF4;&#x5EA6;&#x4E3A;4&#xFF0C;&#x4E14;<code>include_sparse</code>&#x548C;<code>include_dense</code>&#x5747;&#x4E3A;True&#xFF0C;<code>feature_group</code>&#x4E3A;False&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5C06;&#x4E3A;<code>2*10 + 3*4 = 32</code>&#x3002;</p>
+<hr>
+<h3 id="functiondef-getoptimself-optimizer">FunctionDef _get_optim(self, optimizer)</h3>
+<p><strong>_get_optim</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x4F18;&#x5316;&#x5668;&#x540D;&#x79F0;&#x6216;&#x4F18;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x4F18;&#x5316;&#x5668;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li>optimizer: &#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8868;&#x793A;&#x4F18;&#x5316;&#x5668;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5982;&quot;sgd&quot;&#x3001;&quot;adam&quot;&#x3001;&quot;adagrad&quot;&#x3001;&quot;rmsprop&quot;&#xFF1B;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x4F18;&#x5316;&#x5668;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+_get_optim&#x51FD;&#x6570;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x4F20;&#x5165;&#x7684;optimizer&#x53C2;&#x6570;&#x662F;&#x5426;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B83;&#x5C06;&#x6839;&#x636E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x4F18;&#x5316;&#x5668;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x5B66;&#x4E60;&#x7387;&#x53C2;&#x6570;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;&#x5B9E;&#x4F8B;&#x5316;&#x8BE5;&#x4F18;&#x5316;&#x5668;&#x3002;&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6709;&quot;sgd&quot;&#x3001;&quot;adam&quot;&#x3001;&quot;adagrad&quot;&#x3001;&quot;rmsprop&quot;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x4E8E;SGD&#x3001;Adam&#x3001;Adagrad&#x3001;RMSprop&#x56DB;&#x79CD;&#x4F18;&#x5316;&#x7B97;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;optimizer&#x4E0D;&#x662F;&#x652F;&#x6301;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x4E00;&#xFF0C;&#x5219;&#x4F1A;&#x629B;&#x51FA;NotImplementedError&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;optimizer&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x5047;&#x5B9A;&#x5B83;&#x5DF2;&#x7ECF;&#x662F;&#x4E00;&#x4E2A;&#x4F18;&#x5316;&#x5668;&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x76F4;&#x63A5;&#x5C06;&#x5176;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;_get_optim&#x51FD;&#x6570;&#x88AB;compile&#x51FD;&#x6570;&#x8C03;&#x7528;&#x3002;compile&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x6A21;&#x578B;&#x7684;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#xFF0C;&#x5305;&#x62EC;&#x8BBE;&#x7F6E;&#x4F18;&#x5316;&#x5668;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x548C;&#x8BC4;&#x4EF7;&#x6307;&#x6807;&#x7B49;&#x3002;&#x901A;&#x8FC7;&#x8C03;&#x7528;_get_optim&#xFF0C;compile&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x52A8;&#x6001;&#x5730;&#x9009;&#x62E9;&#x5E76;&#x8BBE;&#x7F6E;&#x6A21;&#x578B;&#x7684;&#x4F18;&#x5316;&#x5668;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5F53;&#x4F20;&#x5165;&#x7684;optimizer&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x786E;&#x4FDD;&#x5B83;&#x662F;&quot;sgd&quot;&#x3001;&quot;adam&quot;&#x3001;&quot;adagrad&quot;&#x3001;&quot;rmsprop&quot;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6709;&#x4E00;&#x4E2A;&#x4F18;&#x5316;&#x5668;&#x5B9E;&#x4F8B;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F20;&#x5165;&#x8BE5;&#x5B9E;&#x4F8B;&#x800C;&#x4E0D;&#x662F;&#x4F18;&#x5316;&#x5668;&#x7684;&#x540D;&#x79F0;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x8C03;&#x7528;_get_optim(&quot;adam&quot;)&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x4E00;&#x4E2A;Adam&#x4F18;&#x5316;&#x5668;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5176;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x5DF2;&#x7ECF;&#x88AB;&#x8BBE;&#x7F6E;&#x597D;&#xFF08;&#x4F8B;&#x5982;&#x5B66;&#x4E60;&#x7387;&#x7B49;&#xFF09;&#x3002;</p>
+<hr>
+<h3 id="functiondef-getlossfuncself-loss">FunctionDef _get_loss_func(self, loss)</h3>
+<p><strong>_get_loss_func</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x6216;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;PyTorch&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><strong>loss</strong>: &#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8868;&#x793A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5982;&quot;binary_crossentropy&quot;&#x3001;&quot;mse&quot;&#x3001;&quot;mae&quot;&#xFF1B;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+_get_loss_func&#x51FD;&#x6570;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x4F20;&#x5165;&#x7684;loss&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x3002;&#x5982;&#x679C;loss&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x51FD;&#x6570;&#x5C06;&#x6839;&#x636E;loss&#x7684;&#x503C;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;PyTorch&#x635F;&#x5931;&#x51FD;&#x6570;&#x3002;&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6709;&quot;binary_crossentropy&quot;&#x3001;&quot;mse&quot;&#x3001;&quot;mae&quot;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x4E8E;&#x4E8C;&#x5143;&#x4EA4;&#x53C9;&#x71B5;&#x635F;&#x5931;&#x3001;&#x5747;&#x65B9;&#x8BEF;&#x5DEE;&#x635F;&#x5931;&#x548C;&#x5E73;&#x5747;&#x7EDD;&#x5BF9;&#x8BEF;&#x5DEE;&#x635F;&#x5931;&#x3002;&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;loss&#x4E0D;&#x662F;&#x652F;&#x6301;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x4E00;&#xFF0C;&#x5219;&#x4F1A;&#x629B;&#x51FA;NotImplementedError&#x5F02;&#x5E38;&#xFF0C;&#x8868;&#x793A;&#x8BE5;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5C1A;&#x672A;&#x5B9E;&#x73B0;&#x3002;&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;loss&#x5DF2;&#x7ECF;&#x662F;&#x4E00;&#x4E2A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x8BE5;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;_get_loss_func&#x51FD;&#x6570;&#x88AB;UserModel_Variance&#x7C7B;&#x7684;compile&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;compile&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;_get_loss_func&#x7528;&#x4E8E;&#x5904;&#x7406;&#x4F20;&#x5165;&#x7684;loss_dict&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x5176;&#x952E;&#x4E3A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x503C;&#x4E3A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7684;&#x540D;&#x79F0;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x3002;compile&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x904D;&#x5386;loss_dict&#x5B57;&#x5178;&#xFF0C;&#x5E76;&#x5BF9;&#x6BCF;&#x4E2A;&#x503C;&#x8C03;&#x7528;_get_loss_func&#x51FD;&#x6570;&#xFF0C;&#x6765;&#x786E;&#x4FDD;loss_dict&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x90FD;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;PyTorch&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x5730;&#x652F;&#x6301;&#x4E0D;&#x540C;&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#x914D;&#x7F6E;&#xFF0C;&#x540C;&#x65F6;&#x4FDD;&#x6301;&#x4EE3;&#x7801;&#x7684;&#x7B80;&#x6D01;&#x6027;&#x548C;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5F53;&#x4F20;&#x5165;&#x7684;loss&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x786E;&#x4FDD;&#x5B57;&#x7B26;&#x4E32;&#x662F;&quot;binary_crossentropy&quot;&#x3001;&quot;mse&quot;&#x3001;&quot;mae&quot;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x629B;&#x51FA;NotImplementedError&#x5F02;&#x5E38;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x76F4;&#x63A5;&#x4F20;&#x5165;&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;PyTorch&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;loss&#x4E3A;&quot;mse&quot;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;<code>torch.nn.functional.mse_loss</code>&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;loss&#x4E3A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;PyTorch&#x635F;&#x5931;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x8BE5;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-loglossself-ytrue-ypred-eps-normalize-sampleweight-labels">FunctionDef _log_loss(self, y_true, y_pred, eps, normalize, sample_weight, labels)</h3>
+<p><strong>_log_loss</strong>: &#x6B64;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x5BF9;&#x6570;&#x635F;&#x5931;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x903B;&#x8F91;&#x56DE;&#x5F52;&#x635F;&#x5931;&#x6216;&#x4EA4;&#x53C9;&#x71B5;&#x635F;&#x5931;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>y_true</code>: &#x771F;&#x5B9E;&#x6807;&#x7B7E;&#x6570;&#x7EC4;&#x3002;</li>
+<li><code>y_pred</code>: &#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x6570;&#x7EC4;&#x3002;</li>
+<li><code>eps</code>: &#x7528;&#x4E8E;&#x6539;&#x5584;&#x8BA1;&#x7B97;&#x7CBE;&#x5EA6;&#x7684;&#x5C0F;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1e-7&#x3002;</li>
+<li><code>normalize</code>: &#x662F;&#x5426;&#x5BF9;&#x635F;&#x5931;&#x8FDB;&#x884C;&#x5F52;&#x4E00;&#x5316;&#x5904;&#x7406;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;True&#x3002;</li>
+<li><code>sample_weight</code>: &#x6837;&#x672C;&#x6743;&#x91CD;&#x6570;&#x7EC4;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+<li><code>labels</code>: &#x6807;&#x7B7E;&#x6570;&#x7EC4;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;None&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>_log_loss</code>&#x51FD;&#x6570;&#x662F;<code>UserModel_Variance</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;&#x5BF9;&#x6570;&#x635F;&#x5931;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>log_loss</code>&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x5176;&#x4E2D;<code>log_loss</code>&#x662F;&#x6765;&#x81EA;&#x4E8E;<code>sklearn.metrics</code>&#x7684;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x8BC4;&#x4F30;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x6027;&#x80FD;&#x3002;&#x5728;<code>_log_loss</code>&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8C03;&#x6574;<code>eps</code>&#x53C2;&#x6570;&#x6765;&#x63D0;&#x9AD8;&#x8BA1;&#x7B97;&#x7684;&#x7CBE;&#x5EA6;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8FD8;&#x652F;&#x6301;&#x5BF9;&#x635F;&#x5931;&#x7684;&#x5F52;&#x4E00;&#x5316;&#x5904;&#x7406;&#x4EE5;&#x53CA;&#x8003;&#x8651;&#x6837;&#x672C;&#x6743;&#x91CD;&#x548C;&#x6807;&#x7B7E;&#x7684;&#x4E0D;&#x540C;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>_log_loss</code>&#x51FD;&#x6570;&#x88AB;<code>_get_metrics</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;<code>_get_metrics</code>&#x65B9;&#x6CD5;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;<code>metrics</code>&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x4F7F;&#x7528;<code>_log_loss</code>&#x51FD;&#x6570;&#x6765;&#x8BA1;&#x7B97;<code>binary_crossentropy</code>&#x6216;<code>logloss</code>&#x3002;&#x5F53;<code>set_eps</code>&#x6807;&#x5FD7;&#x4E3A;True&#x65F6;&#xFF0C;<code>_get_metrics</code>&#x4F1A;&#x9009;&#x62E9;&#x4F7F;&#x7528;<code>_log_loss</code>&#x51FD;&#x6570;&#x6765;&#x8BA1;&#x7B97;&#x5BF9;&#x6570;&#x635F;&#x5931;&#xFF0C;&#x8FD9;&#x5141;&#x8BB8;&#x5728;&#x8BA1;&#x7B97;&#x5BF9;&#x6570;&#x635F;&#x5931;&#x65F6;&#x8C03;&#x6574;<code>eps</code>&#x53C2;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x8BA1;&#x7B97;&#x7CBE;&#x5EA6;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;<code>_log_loss</code>&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x786E;&#x4FDD;<code>y_true</code>&#x548C;<code>y_pred</code>&#x7684;&#x957F;&#x5EA6;&#x76F8;&#x540C;&#xFF0C;&#x4E14;&#x90FD;&#x662F;&#x6709;&#x6548;&#x7684;&#x6982;&#x7387;&#x503C;&#x3002;</li>
+<li><code>eps</code>&#x53C2;&#x6570;&#x7684;&#x8C03;&#x6574;&#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8C28;&#x614E;&#x8FDB;&#x884C;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x56E0;&#x7CBE;&#x5EA6;&#x8FC7;&#x9AD8;&#x800C;&#x5BFC;&#x81F4;&#x7684;&#x8BA1;&#x7B97;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x5F53;<code>normalize</code>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;True&#x65F6;&#xFF0C;&#x5BF9;&#x6570;&#x635F;&#x5931;&#x4F1A;&#x88AB;&#x5F52;&#x4E00;&#x5316;&#xFF0C;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x5728;&#x4E0D;&#x540C;&#x89C4;&#x6A21;&#x7684;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x6BD4;&#x8F83;&#x6A21;&#x578B;&#x6027;&#x80FD;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5047;&#x8BBE;&#x771F;&#x5B9E;&#x6807;&#x7B7E;&#x548C;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x5982;&#x4E0B;</span>
+y_true = [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>]
+y_pred = [<span class="hljs-number">0.9</span>, <span class="hljs-number">0.1</span>, <span class="hljs-number">0.8</span>, <span class="hljs-number">0.65</span>]
+<span class="hljs-comment"># &#x8C03;&#x7528;_log_loss&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x5BF9;&#x6570;&#x635F;&#x5931;</span>
+loss = _log_loss(y_true, y_pred)
+<span class="hljs-comment"># &#x5047;&#x8BBE;&#x8F93;&#x51FA;&#x4E3A;</span>
+<span class="hljs-number">0.216</span>
+</code></pre>
+<p>&#x6B64;&#x793A;&#x4F8B;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528;<code>_log_loss</code>&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x7ED9;&#x5B9A;&#x771F;&#x5B9E;&#x6807;&#x7B7E;&#x548C;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x7684;&#x5BF9;&#x6570;&#x635F;&#x5931;&#x503C;&#x3002;</p>
+<hr>
+<h3 id="functiondef-getmetricsself-metrics-seteps">FunctionDef _get_metrics(self, metrics, set_eps)</h3>
+<p><strong>_get_metrics</strong>: &#x6B64;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x5217;&#x8868;&#x751F;&#x6210;&#x5EA6;&#x91CF;&#x51FD;&#x6570;&#x7684;&#x5B57;&#x5178;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>metrics</code>: &#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x540D;&#x79F0;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><code>set_eps</code>: &#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x5728;&#x8BA1;&#x7B97;&#x5BF9;&#x6570;&#x635F;&#x5931;&#x65F6;&#x8BBE;&#x7F6E;<code>eps</code>&#x53C2;&#x6570;&#x4EE5;&#x63D0;&#x9AD8;&#x8BA1;&#x7B97;&#x7CBE;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>_get_metrics</code>&#x51FD;&#x6570;&#x662F;<code>UserModel_Variance</code>&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x662F;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x540D;&#x79F0;&#x5217;&#x8868;<code>metrics</code>&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5EA6;&#x91CF;&#x51FD;&#x6570;&#x7684;&#x5B57;&#x5178;<code>metrics_</code>&#x3002;&#x8FD9;&#x4E2A;&#x5B57;&#x5178;&#x7684;&#x952E;&#x662F;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x503C;&#x662F;&#x5BF9;&#x5E94;&#x7684;&#x5EA6;&#x91CF;&#x51FD;&#x6570;&#x3002;&#x652F;&#x6301;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x5305;&#x62EC;&#x4E8C;&#x5143;&#x4EA4;&#x53C9;&#x71B5;(<code>binary_crossentropy</code>&#x6216;<code>logloss</code>)&#x3001;AUC(<code>auc</code>)&#x3001;&#x5747;&#x65B9;&#x8BEF;&#x5DEE;(<code>mse</code>)&#x4EE5;&#x53CA;&#x51C6;&#x786E;&#x7387;(<code>accuracy</code>&#x6216;<code>acc</code>)&#x3002;&#x7279;&#x522B;&#x5730;&#xFF0C;&#x5F53;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x4E3A;<code>binary_crossentropy</code>&#x6216;<code>logloss</code>&#x65F6;&#xFF0C;&#x6839;&#x636E;<code>set_eps</code>&#x53C2;&#x6570;&#x7684;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;<code>_log_loss</code>&#x51FD;&#x6570;&#x6765;&#x63D0;&#x9AD8;&#x8BA1;&#x7B97;&#x7CBE;&#x5EA6;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x51FD;&#x6570;&#x8FD8;&#x4F1A;&#x66F4;&#x65B0;<code>metrics_names</code>&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;&#x6240;&#x6709;&#x4F20;&#x5165;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;<code>_get_metrics</code>&#x65B9;&#x6CD5;&#x88AB;<code>compile</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;<code>compile</code>&#x65B9;&#x6CD5;&#x5728;&#x6A21;&#x578B;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x4E2D;&#x8BBE;&#x7F6E;&#x4F18;&#x5316;&#x5668;&#x3001;&#x635F;&#x5931;&#x51FD;&#x6570;&#x548C;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x3002;&#x901A;&#x8FC7;<code>_get_metrics</code>&#x65B9;&#x6CD5;&#xFF0C;<code>compile</code>&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7528;&#x6237;&#x6307;&#x5B9A;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x5217;&#x8868;&#xFF0C;&#x83B7;&#x53D6;&#x76F8;&#x5E94;&#x7684;&#x5EA6;&#x91CF;&#x51FD;&#x6570;&#xFF0C;&#x8FDB;&#x800C;&#x5728;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x548C;&#x8BC4;&#x4F30;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;<code>metrics</code>&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x540D;&#x79F0;&#x662F;&#x652F;&#x6301;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F20;&#x5165;&#x4E86;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x540D;&#x79F0;&#xFF0C;&#x8BE5;&#x540D;&#x79F0;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x5EA6;&#x91CF;&#x51FD;&#x6570;&#x5B57;&#x5178;&#x4E2D;&#x3002;</li>
+<li>&#x5F53;&#x4F7F;&#x7528;<code>binary_crossentropy</code>&#x6216;<code>logloss</code>&#x4F5C;&#x4E3A;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;<code>set_eps</code>&#x4E3A;True&#x6765;&#x4F7F;&#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x7684;<code>_log_loss</code>&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x63D0;&#x9AD8;&#x5BF9;&#x6570;&#x635F;&#x5931;&#x8BA1;&#x7B97;&#x7684;&#x7CBE;&#x5EA6;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x8C03;&#x7528;<code>_get_metrics</code>&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">metrics = [<span class="hljs-string">&quot;auc&quot;</span>, <span class="hljs-string">&quot;binary_crossentropy&quot;</span>, <span class="hljs-string">&quot;acc&quot;</span>]
+metrics_ = _get_metrics(metrics, set_eps=<span class="hljs-keyword">True</span>)
+</code></pre>
+<p>&#x5219;&#x53EF;&#x80FD;&#x7684;&#x8FD4;&#x56DE;&#x503C;<code>metrics_</code>&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-python">{
+    <span class="hljs-string">&quot;auc&quot;</span>: roc_auc_score,
+    <span class="hljs-string">&quot;binary_crossentropy&quot;</span>: &lt;function UserModel_Variance._log_loss at <span class="hljs-number">0</span>x...&gt;,
+    <span class="hljs-string">&quot;acc&quot;</span>: &lt;function &lt;<span class="hljs-keyword">lambda</span>&gt; at <span class="hljs-number">0</span>x...&gt;
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x5B57;&#x5178;&#x5305;&#x542B;&#x4E86;&#x6BCF;&#x4E2A;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x540D;&#x79F0;&#x5BF9;&#x5E94;&#x7684;&#x5EA6;&#x91CF;&#x51FD;&#x6570;&#xFF0C;&#x5176;&#x4E2D;<code>binary_crossentropy</code>&#x4F7F;&#x7528;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;&#x7684;<code>_log_loss</code>&#x51FD;&#x6570;&#xFF0C;&#x800C;<code>acc</code>&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;lambda&#x51FD;&#x6570;&#x6765;&#x8BA1;&#x7B97;&#x51C6;&#x786E;&#x7387;&#x3002;</p>
+<hr>
+<h3 id="functiondef-savemodelembeddingself">FunctionDef save_model_embedding(self)</h3>
+<p><strong>save_model_embedding</strong>: &#x6B64;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x5D4C;&#x5165;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>: &#x6B64;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>: <code>save_model_embedding</code> &#x51FD;&#x6570;&#x662F; <code>UserModel_Variance</code> &#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x65E8;&#x5728;&#x4FDD;&#x5B58;&#x6A21;&#x578B;&#x7684;&#x5D4C;&#x5165;&#x4FE1;&#x606F;&#x3002;&#x5728;&#x63D0;&#x4F9B;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x4E2D;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x8BBF;&#x95EE;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF; <code>self.embedding_dict</code> &#x6765;&#x5B9E;&#x73B0;&#x5176;&#x529F;&#x80FD;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x57FA;&#x4E8E;&#x63D0;&#x4F9B;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x4FDD;&#x5B58;&#x903B;&#x8F91;&#x5E76;&#x672A;&#x5C55;&#x793A;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x8BE5;&#x51FD;&#x6570;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#x6216;&#x8005;&#x662F;&#x5F85;&#x8FDB;&#x4E00;&#x6B65;&#x5B9E;&#x73B0;&#x7684;&#x90E8;&#x5206;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6A21;&#x578B;&#x5D4C;&#x5165;&#x662F;&#x6307;&#x5C06;&#x6A21;&#x578B;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x79CD;&#x66F4;&#x52A0;&#x6613;&#x4E8E;&#x5904;&#x7406;&#x548C;&#x7406;&#x89E3;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x8FD9;&#x5728;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x548C;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x6A21;&#x578B;&#x4E2D;&#x5C24;&#x4E3A;&#x91CD;&#x8981;&#x3002;<code>embedding_dict</code> &#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x8FD9;&#x4E9B;&#x5D4C;&#x5165;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x7528;&#x6237;ID&#x5230;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x7684;&#x6620;&#x5C04;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>: &#x4F7F;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD; <code>self.embedding_dict</code> &#x5DF2;&#x7ECF;&#x88AB;&#x6B63;&#x786E;&#x521D;&#x59CB;&#x5316;&#x5E76;&#x5305;&#x542B;&#x4E86;&#x6709;&#x6548;&#x7684;&#x5D4C;&#x5165;&#x4FE1;&#x606F;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x5E76;&#x672A;&#x5B8C;&#x5168;&#x5C55;&#x793A;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#x5B8C;&#x6210;&#x5D4C;&#x5165;&#x4FE1;&#x606F;&#x7684;&#x4FDD;&#x5B58;&#x903B;&#x8F91;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x5D4C;&#x5165;&#x4FE1;&#x606F;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x6216;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x786E;&#x4FDD;&#x5D4C;&#x5165;&#x4FE1;&#x606F;&#x7684;&#x5B89;&#x5168;&#x548C;&#x9690;&#x79C1;&#x4E5F;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x3002;</p>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="user_model_pairwise.html" class="navigation navigation-prev " aria-label="Previous page: User Model Pairwise">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="user_model.html" class="navigation navigation-next " aria-label="Next page: User Model">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"User Model Variance","level":"1.2.6.5","depth":3,"next":{"title":"User Model","level":"1.2.6.6","depth":3,"path":"src/core/userModel/user_model.md","ref":"src/core/userModel/user_model.md","articles":[]},"previous":{"title":"User Model Pairwise","level":"1.2.6.4","depth":3,"path":"src/core/userModel/user_model_pairwise.md","ref":"src/core/userModel/user_model_pairwise.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/core/userModel/user_model_variance.md","mtime":"2024-03-18T12:56:52.422Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-18T14:39:28.553Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

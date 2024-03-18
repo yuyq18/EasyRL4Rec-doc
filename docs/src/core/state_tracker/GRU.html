@@ -1,0 +1,1195 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GRU · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="NextItNet.html" />
+    
+    
+    <link rel="prev" href="Caser.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Welcome to EasyRL4Rec!
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../Introduction/Installation.html">
+            
+                <a href="../../../Introduction/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../Introduction/RunningCommands.html">
+            
+                <a href="../../../Introduction/RunningCommands.html">
+            
+                    
+                    Running Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../Introduction/ImplementationDetails.html">
+            
+                <a href="../../../Introduction/ImplementationDetails.html">
+            
+                    
+                    Implementation Details
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Docs.html">
+            
+                <a href="../../Docs.html">
+            
+                    
+                    Documentation for src/core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../collector/">
+            
+                <a href="../collector/">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../collector/collector.html">
+            
+                <a href="../collector/collector.html">
+            
+                    
+                    Collector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../collector/collector_set.html">
+            
+                <a href="../collector/collector_set.html">
+            
+                    
+                    Collector Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../envs/">
+            
+                <a href="../envs/">
+            
+                    
+                    Envs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../envs/Coat/">
+            
+                <a href="../envs/Coat/">
+            
+                    
+                    Coat
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../envs/Coat/CoatData.html">
+            
+                <a href="../envs/Coat/CoatData.html">
+            
+                    
+                    Coat Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../envs/Coat/CoatEnv.html">
+            
+                <a href="../envs/Coat/CoatEnv.html">
+            
+                    
+                    Coat Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../envs/KuaiRand_Pure/">
+            
+                <a href="../envs/KuaiRand_Pure/">
+            
+                    
+                    KuaiRand Pure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandData.html">
+            
+                    
+                    Kuai Rand Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                <a href="../envs/KuaiRand_Pure/KuaiRandEnv.html">
+            
+                    
+                    Kuai Rand Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                <a href="../envs/KuaiRand_Pure/preprocessing_kuairand.html">
+            
+                    
+                    Preprocessing Kuairand
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../envs/KuaiRec/">
+            
+                <a href="../envs/KuaiRec/">
+            
+                    
+                    KuaiRec
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../envs/KuaiRec/KuaiData.html">
+            
+                <a href="../envs/KuaiRec/KuaiData.html">
+            
+                    
+                    Kuai Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../envs/KuaiRec/KuaiEnv.html">
+            
+                <a href="../envs/KuaiRec/KuaiEnv.html">
+            
+                    
+                    Kuai Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                <a href="../envs/KuaiRec/preprocessing_kuairec.html">
+            
+                    
+                    Preprocessing Kuairec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../envs/MovieLens/">
+            
+                <a href="../envs/MovieLens/">
+            
+                    
+                    MovieLens
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../envs/MovieLens/MovieLensData.html">
+            
+                <a href="../envs/MovieLens/MovieLensData.html">
+            
+                    
+                    MovieLens Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../envs/MovieLens/MovieLensEnv.html">
+            
+                <a href="../envs/MovieLens/MovieLensEnv.html">
+            
+                    
+                    MovieLens Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../envs/Simulated_Env/">
+            
+                <a href="../envs/Simulated_Env/">
+            
+                    
+                    SimulatedEnv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.5.1" data-path="../envs/Simulated_Env/base.html">
+            
+                <a href="../envs/Simulated_Env/base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.2" data-path="../envs/Simulated_Env/intrinsic.html">
+            
+                <a href="../envs/Simulated_Env/intrinsic.html">
+            
+                    
+                    Intrinsic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.3" data-path="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                <a href="../envs/Simulated_Env/penalty_ent_exp.html">
+            
+                    
+                    Penalty Ent Exp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5.4" data-path="../envs/Simulated_Env/penalty_var.html">
+            
+                <a href="../envs/Simulated_Env/penalty_var.html">
+            
+                    
+                    Penalty Var
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../envs/YahooR3/">
+            
+                <a href="../envs/YahooR3/">
+            
+                    
+                    YahooR3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../envs/YahooR3/YahooData.html">
+            
+                <a href="../envs/YahooR3/YahooData.html">
+            
+                    
+                    Yahoo Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../envs/YahooR3/YahooEnv.html">
+            
+                <a href="../envs/YahooR3/YahooEnv.html">
+            
+                    
+                    Yahoo Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../envs/BaseData.html">
+            
+                <a href="../envs/BaseData.html">
+            
+                    
+                    Base Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../envs/BaseEnv.html">
+            
+                <a href="../envs/BaseEnv.html">
+            
+                    
+                    Base Env
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../evaluation/">
+            
+                <a href="../evaluation/">
+            
+                    
+                    Evaluation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../evaluation/evaluator_static.html">
+            
+                <a href="../evaluation/evaluator_static.html">
+            
+                    
+                    Evaluator Static
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../evaluation/evaluator.html">
+            
+                <a href="../evaluation/evaluator.html">
+            
+                    
+                    Evaluator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../evaluation/loggers.html">
+            
+                <a href="../evaluation/loggers.html">
+            
+                    
+                    Loggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../evaluation/metrics.html">
+            
+                <a href="../evaluation/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../evaluation/utils.html">
+            
+                <a href="../evaluation/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../policy/">
+            
+                <a href="../policy/">
+            
+                    
+                    Policy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../policy/RecPolicy.html">
+            
+                <a href="../policy/RecPolicy.html">
+            
+                    
+                    RecPolicy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    State Tracker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="Average.html">
+            
+                <a href="Average.html">
+            
+                    
+                    Average
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="base.html">
+            
+                <a href="base.html">
+            
+                    
+                    Base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="Caser.html">
+            
+                <a href="Caser.html">
+            
+                    
+                    Caser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5.4" data-path="GRU.html">
+            
+                <a href="GRU.html">
+            
+                    
+                    GRU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="NextItNet.html">
+            
+                <a href="NextItNet.html">
+            
+                    
+                    NextItNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="SASRec.html">
+            
+                <a href="SASRec.html">
+            
+                    
+                    SASRec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../userModel/">
+            
+                <a href="../userModel/">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../userModel/user_model_ensemble.html">
+            
+                <a href="../userModel/user_model_ensemble.html">
+            
+                    
+                    User Model Ensemble
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../userModel/user_model_mmoe.html">
+            
+                <a href="../userModel/user_model_mmoe.html">
+            
+                    
+                    User Model Mmoe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../userModel/user_model_pairwise_variance.html">
+            
+                <a href="../userModel/user_model_pairwise_variance.html">
+            
+                    
+                    User Model Pairwise Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../userModel/user_model_pairwise.html">
+            
+                <a href="../userModel/user_model_pairwise.html">
+            
+                    
+                    User Model Pairwise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../userModel/user_model_variance.html">
+            
+                <a href="../userModel/user_model_variance.html">
+            
+                    
+                    User Model Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../userModel/user_model.html">
+            
+                <a href="../userModel/user_model.html">
+            
+                    
+                    User Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../util/">
+            
+                <a href="../util/">
+            
+                    
+                    Util
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../util/data.html">
+            
+                <a href="../util/data.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="../util/inputs.html">
+            
+                <a href="../util/inputs.html">
+            
+                    
+                    Inputs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="../util/layers.html">
+            
+                <a href="../util/layers.html">
+            
+                    
+                    Layers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="../util/loss.html">
+            
+                <a href="../util/loss.html">
+            
+                    
+                    Loss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="../util/static_dataset.html">
+            
+                <a href="../util/static_dataset.html">
+            
+                    
+                    Static Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="../util/utils.html">
+            
+                <a href="../util/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >GRU</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="classdef-statetrackergru">ClassDef StateTracker_GRU</h2>
+<p><strong>StateTracker_GRU</strong>: StateTracker_GRU &#x7C7B;&#x7684;&#x529F;&#x80FD;&#x662F;&#x5229;&#x7528;GRU&#x7F51;&#x7EDC;&#x5BF9;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x8DDF;&#x8E2A;&#x548C;&#x7F16;&#x7801;&#xFF0C;&#x4EE5;&#x652F;&#x6301;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x4E2D;&#x7684;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>:</p>
+<ul>
+<li>user_columns: &#x7528;&#x6237;&#x7279;&#x5F81;&#x5217;&#x3002;</li>
+<li>action_columns: &#x52A8;&#x4F5C;&#x7279;&#x5F81;&#x5217;&#x3002;</li>
+<li>feedback_columns: &#x53CD;&#x9988;&#x7279;&#x5F81;&#x5217;&#x3002;</li>
+<li>dim_model: &#x5D4C;&#x5165;&#x5411;&#x91CF;&#x7684;&#x7EF4;&#x5EA6;&#x3002;</li>
+<li>train_max, train_min, test_max, test_min: &#x8BAD;&#x7EC3;&#x548C;&#x6D4B;&#x8BD5;&#x9636;&#x6BB5;&#x5956;&#x52B1;&#x7684;&#x6700;&#x5927;&#x503C;&#x548C;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x5956;&#x52B1;&#x5F52;&#x4E00;&#x5316;&#x3002;</li>
+<li>reward_handle: &#x5956;&#x52B1;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x3002;</li>
+<li>saved_embedding: &#x9884;&#x5148;&#x4FDD;&#x5B58;&#x7684;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x3002;</li>
+<li>device: &#x8BA1;&#x7B97;&#x8BBE;&#x5907;&#xFF0C;&#x5982;&quot;cpu&quot;&#x6216;&quot;cuda&quot;&#x3002;</li>
+<li>window_size: &#x72B6;&#x6001;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x3002;</li>
+<li>use_userEmbedding: &#x662F;&#x5426;&#x4F7F;&#x7528;&#x7528;&#x6237;&#x5D4C;&#x5165;&#x3002;</li>
+<li>gru_layers: GRU&#x7F51;&#x7EDC;&#x7684;&#x5C42;&#x6570;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+StateTracker_GRU &#x7C7B;&#x7EE7;&#x627F;&#x81EA; StateTracker_Base &#x7C7B;&#xFF0C;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x72B6;&#x6001;&#x8DDF;&#x8E2A;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x5B83;&#x901A;&#x8FC7;GRU&#xFF08;&#x95E8;&#x63A7;&#x5FAA;&#x73AF;&#x5355;&#x5143;&#xFF09;&#x7F51;&#x7EDC;&#x6765;&#x5904;&#x7406;&#x548C;&#x7F16;&#x7801;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x4E3A;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x63D0;&#x4F9B;&#x6709;&#x6548;&#x7684;&#x72B6;&#x6001;&#x8868;&#x793A;&#x3002;&#x5728;&#x521D;&#x59CB;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4ECE;&#x57FA;&#x7C7B;&#x7EE7;&#x627F;&#x7684;&#x53C2;&#x6570;&#x5916;&#xFF0C;&#x8FD8;&#x989D;&#x5916;&#x63A5;&#x6536;&#x4E86;GRU&#x7F51;&#x7EDC;&#x5C42;&#x6570;&#xFF08;gru_layers&#xFF09;&#x7684;&#x914D;&#x7F6E;&#x3002;&#x8BE5;&#x7C7B;&#x91CD;&#x5199;&#x4E86; forward &#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5C06;&#x8F93;&#x5165;&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x901A;&#x8FC7;GRU&#x7F51;&#x7EDC;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7F16;&#x7801;&#x540E;&#x7684;&#x72B6;&#x6001;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;StateTracker_GRU &#x7C7B;&#x88AB;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x72B6;&#x6001;&#x8DDF;&#x8E2A;&#x5668;&#xFF0C;&#x4EE5;&#x652F;&#x6301;&#x4E0D;&#x540C;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7B56;&#x7565;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728; examples/policy/policy_utils.py &#x4E2D;&#x7684; setup_state_tracker &#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x914D;&#x7F6E;&#x9009;&#x62E9;&#x4F7F;&#x7528; StateTracker_GRU &#x4F5C;&#x4E3A;&#x72B6;&#x6001;&#x8DDF;&#x8E2A;&#x5668;&#x7684;&#x5B9E;&#x73B0;&#x4E4B;&#x4E00;&#x3002;&#x8FD9;&#x8868;&#x660E; StateTracker_GRU &#x5728;&#x5904;&#x7406;&#x5E8F;&#x5217;&#x5316;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x65B9;&#x9762;&#x5177;&#x6709;&#x91CD;&#x8981;&#x4F5C;&#x7528;&#xFF0C;&#x5C24;&#x5176;&#x9002;&#x7528;&#x4E8E;&#x9700;&#x8981;&#x8003;&#x8651;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x573A;&#x666F;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528; StateTracker_GRU &#x7C7B;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x63D0;&#x4F9B;&#x7684;&#x7528;&#x6237;&#x3001;&#x52A8;&#x4F5C;&#x548C;&#x53CD;&#x9988;&#x7279;&#x5F81;&#x5217;&#x4E0E;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x76F8;&#x5339;&#x914D;&#x3002;</li>
+<li>&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#x9009;&#x62E9;&#x5408;&#x9002;&#x7684;&#x5956;&#x52B1;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#xFF08;reward_handle&#xFF09;&#x548C;GRU&#x7F51;&#x7EDC;&#x7684;&#x5C42;&#x6570;&#xFF08;gru_layers&#xFF09;&#x3002;</li>
+<li>&#x5F53;&#x4F7F;&#x7528;&#x9884;&#x5148;&#x4FDD;&#x5B58;&#x7684;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x65F6;&#xFF0C;&#x5E94;&#x6CE8;&#x610F;&#x5411;&#x91CF;&#x7684;&#x7EF4;&#x5EA6;&#x4E0E;&#x6A21;&#x578B;&#x914D;&#x7F6E;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x6279;&#x6B21;&#x7684;&#x6570;&#x636E;&#xFF0C;StateTracker_GRU &#x7684; forward &#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5F62;&#x72B6;&#x4E3A; (batch_size, hidden_size) &#x7684;&#x5F20;&#x91CF;&#xFF0C;&#x8868;&#x793A;&#x6BCF;&#x4E2A;&#x6837;&#x672C;&#x7ECF;&#x8FC7;GRU&#x7F51;&#x7EDC;&#x5904;&#x7406;&#x540E;&#x7684;&#x72B6;&#x6001;&#x8868;&#x793A;&#x3002;&#x8FD9;&#x4E2A;&#x8F93;&#x51FA;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x4E8E;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;&#x4EE5;&#x8FDB;&#x884C;&#x540E;&#x7EED;&#x7684;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#x3002;</p>
+<h3 id="functiondef-initself-usercolumns-actioncolumns-feedbackcolumns-dimmodel-trainmax-trainmin-testmax-testmin-rewardhandle-savedembedding-device-useuserembedding-windowsize-grulayers">FunctionDef <strong>init</strong>(self, user_columns, action_columns, feedback_columns, dim_model, train_max, train_min, test_max, test_min, reward_handle, saved_embedding, device, use_userEmbedding, window_size, gru_layers)</h3>
+<p><strong><strong>init</strong></strong>: &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;StateTracker_GRU&#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>user_columns</code>: &#x7528;&#x6237;&#x7279;&#x5F81;&#x5217;&#x540D;&#x5217;&#x8868;&#x3002;</li>
+<li><code>action_columns</code>: &#x884C;&#x52A8;&#x7279;&#x5F81;&#x5217;&#x540D;&#x5217;&#x8868;&#x3002;</li>
+<li><code>feedback_columns</code>: &#x53CD;&#x9988;&#x7279;&#x5F81;&#x5217;&#x540D;&#x5217;&#x8868;&#x3002;</li>
+<li><code>dim_model</code>: &#x6A21;&#x578B;&#x7EF4;&#x5EA6;&#x3002;</li>
+<li><code>train_max</code>: &#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5F52;&#x4E00;&#x5316;&#x3002;</li>
+<li><code>train_min</code>: &#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x7684;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5F52;&#x4E00;&#x5316;&#x3002;</li>
+<li><code>test_max</code>: &#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5F52;&#x4E00;&#x5316;&#x3002;</li>
+<li><code>test_min</code>: &#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x7684;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5F52;&#x4E00;&#x5316;&#x3002;</li>
+<li><code>reward_handle</code>: &#x5956;&#x52B1;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3002;</li>
+<li><code>saved_embedding</code>: &#x4FDD;&#x5B58;&#x7684;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x3002;</li>
+<li><code>device</code>: &#x8BA1;&#x7B97;&#x8BBE;&#x5907;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&quot;cpu&quot;&#x3002;</li>
+<li><code>use_userEmbedding</code>: &#x662F;&#x5426;&#x4F7F;&#x7528;&#x7528;&#x6237;&#x5D4C;&#x5165;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;False&#x3002;</li>
+<li><code>window_size</code>: &#x7A97;&#x53E3;&#x5927;&#x5C0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;10&#x3002;</li>
+<li><code>gru_layers</code>: GRU&#x5C42;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+&#x6B64;&#x51FD;&#x6570;&#x662F;<code>StateTracker_GRU</code>&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x8D1F;&#x8D23;&#x521D;&#x59CB;&#x5316;&#x8BE5;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x8C03;&#x7528;<code>super().__init__</code>&#x65B9;&#x6CD5;&#xFF0C;&#x7EE7;&#x627F;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x7236;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5305;&#x62EC;&#x7528;&#x6237;&#x7279;&#x5F81;&#x5217;&#x3001;&#x884C;&#x52A8;&#x7279;&#x5F81;&#x5217;&#x3001;&#x53CD;&#x9988;&#x7279;&#x5F81;&#x5217;&#x3001;&#x6A21;&#x578B;&#x7EF4;&#x5EA6;&#x3001;&#x6570;&#x636E;&#x5F52;&#x4E00;&#x5316;&#x53C2;&#x6570;&#x3001;&#x5956;&#x52B1;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3001;&#x4FDD;&#x5B58;&#x7684;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x3001;&#x8BA1;&#x7B97;&#x8BBE;&#x5907;&#x3001;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x4EE5;&#x53CA;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x7528;&#x6237;&#x5D4C;&#x5165;&#x7B49;&#x3002;</p>
+<p>&#x63A5;&#x7740;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;<code>self.final_dim</code>&#x5C5E;&#x6027;&#x4E3A;&#x9690;&#x85CF;&#x5C42;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x540E;&#x7EED;&#x5904;&#x7406;&#x65F6;&#x786E;&#x5B9A;&#x8F93;&#x51FA;&#x7EF4;&#x5EA6;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x4E86;&#x4E00;&#x4E2A;GRU&#x7F51;&#x7EDC;&#x5C42;&#xFF0C;&#x8D4B;&#x503C;&#x7ED9;<code>self.gru</code>&#x5C5E;&#x6027;&#x3002;&#x8FD9;&#x4E2A;GRU&#x5C42;&#x7684;&#x8F93;&#x5165;&#x5927;&#x5C0F;&#x548C;&#x9690;&#x85CF;&#x5C42;&#x5927;&#x5C0F;&#x5747;&#x4E3A;<code>self.hidden_size</code>&#xFF0C;&#x5C42;&#x6570;&#x4E3A;&#x4F20;&#x5165;&#x7684;<code>gru_layers</code>&#x53C2;&#x6570;&#xFF0C;&#x4E14;&#x8BBE;&#x7F6E;<code>batch_first=True</code>&#x4EE5;&#x9002;&#x5E94;&#x6570;&#x636E;&#x7684;&#x6279;&#x5904;&#x7406;&#x683C;&#x5F0F;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x5728;&#x4F7F;&#x7528;&#x6B64;&#x7C7B;&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x8303;&#x56F4;&#x7B26;&#x5408;&#x9884;&#x671F;&#xFF0C;&#x7279;&#x522B;&#x662F;<code>user_columns</code>&#x3001;<code>action_columns</code>&#x548C;<code>feedback_columns</code>&#xFF0C;&#x5B83;&#x4EEC;&#x9700;&#x8981;&#x662F;&#x5217;&#x540D;&#x7684;&#x5217;&#x8868;&#x3002;</li>
+<li><code>device</code>&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x4E3A;&quot;cpu&quot;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x6709;GPU&#x8D44;&#x6E90;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A;&quot;cuda&quot;&#x4EE5;&#x52A0;&#x901F;&#x8BA1;&#x7B97;&#x3002;</li>
+<li><code>window_size</code>&#x548C;<code>gru_layers</code>&#x7684;&#x8BBE;&#x7F6E;&#x4F1A;&#x5F71;&#x54CD;&#x6A21;&#x578B;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x548C;&#x6027;&#x80FD;&#xFF0C;&#x5E94;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8C03;&#x6574;&#x3002;</li>
+</ul>
+<hr>
+<h3 id="functiondef-forwardself-buffer-indices-isobs-batch-istrain-usebatchinstatetracker">FunctionDef forward(self, buffer, indices, is_obs, batch, is_train, use_batch_in_statetracker)</h3>
+<p><strong>forward</strong>: &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;&#x901A;&#x8FC7;GRU&#x6A21;&#x578B;&#x5904;&#x7406;&#x72B6;&#x6001;&#x5D4C;&#x5165;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x7EC8;&#x7684;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;</strong>:</p>
+<ul>
+<li><code>buffer</code>: &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x6570;&#x636E;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x901A;&#x5E38;&#x5305;&#x542B;&#x7528;&#x6237;&#x7684;&#x5386;&#x53F2;&#x4EA4;&#x4E92;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>indices</code>: &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x7D22;&#x5F15;&#x6570;&#x7EC4;&#xFF0C;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x7279;&#x5B9A;&#x6570;&#x636E;&#x70B9;&#x3002;</li>
+<li><code>is_obs</code>: &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x5F53;&#x524D;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x662F;&#x5426;&#x4E3A;&#x89C2;&#x5BDF;&#x503C;&#x3002;</li>
+<li><code>batch</code>: &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x6279;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x6279;&#x5904;&#x7406;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x6B64;&#x53C2;&#x6570;&#x975E;&#x7A7A;&#x3002;</li>
+<li><code>is_train</code>: &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x5F53;&#x524D;&#x662F;&#x5426;&#x5904;&#x4E8E;&#x8BAD;&#x7EC3;&#x6A21;&#x5F0F;&#x3002;</li>
+<li><code>use_batch_in_statetracker</code>: &#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x6307;&#x793A;&#x662F;&#x5426;&#x5728;&#x72B6;&#x6001;&#x8DDF;&#x8E2A;&#x5668;&#x4E2D;&#x4F7F;&#x7528;&#x6279;&#x5904;&#x7406;&#x6570;&#x636E;&#x3002;</li>
+<li><code>**kwargs</code>: &#x63A5;&#x6536;&#x989D;&#x5916;&#x7684;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<p><strong>&#x4EE3;&#x7801;&#x63CF;&#x8FF0;</strong>:
+<code>forward</code> &#x51FD;&#x6570;&#x9996;&#x5148;&#x8C03;&#x7528; <code>convert_to_k_state_embedding</code> &#x65B9;&#x6CD5;&#x5C06;&#x8F93;&#x5165;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x4E3A;K&#x72B6;&#x6001;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;&#x8FD9;&#x4E00;&#x6B65;&#x9AA4;&#x6D89;&#x53CA;&#x5230;&#x4ECE;&#x6570;&#x636E;&#x7F13;&#x51B2;&#x533A;&#x6216;&#x6279;&#x5904;&#x7406;&#x6570;&#x636E;&#x4E2D;&#x63D0;&#x53D6;&#x5386;&#x53F2;&#x4EA4;&#x4E92;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x4E3A;&#x5D4C;&#x5165;&#x8868;&#x793A;&#xFF0C;&#x4EE5;&#x4FBF;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;&#x3002;&#x8F6C;&#x6362;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x662F;&#x5426;&#x5904;&#x4E8E;&#x8BAD;&#x7EC3;&#x6A21;&#x5F0F;&#x3001;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x6279;&#x5904;&#x7406;&#x6570;&#x636E;&#x7B49;&#x6761;&#x4EF6;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#x548C;&#x5F52;&#x4E00;&#x5316;&#x3002;</p>
+<p>&#x63A5;&#x7740;&#xFF0C;&#x4F7F;&#x7528; <code>torch.nn.utils.rnn.pack_padded_sequence</code> &#x65B9;&#x6CD5;&#x5C06;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x6253;&#x5305;&#x6210;PackedSequence&#x5BF9;&#x8C61;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;GRU&#x6A21;&#x578B;&#x80FD;&#x591F;&#x6709;&#x6548;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x957F;&#x5EA6;&#x7684;&#x5E8F;&#x5217;&#x3002;&#x8FD9;&#x4E00;&#x6B65;&#x9AA4;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x5E8F;&#x5217;&#x7684;&#x5B9E;&#x9645;&#x957F;&#x5EA6;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x5E8F;&#x5217;&#x80FD;&#x591F;&#x6B63;&#x786E;&#x5730;&#x5728;GRU&#x6A21;&#x578B;&#x4E2D;&#x88AB;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x6253;&#x5305;&#x540E;&#x7684;&#x5E8F;&#x5217;&#x8F93;&#x5165;&#x5230;GRU&#x6A21;&#x578B;&#x4E2D;&#xFF0C;GRU&#x6A21;&#x578B;&#x4F1A;&#x6839;&#x636E;&#x5E8F;&#x5217;&#x7684;&#x52A8;&#x6001;&#x957F;&#x5EA6;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x7EC8;&#x7684;&#x8F93;&#x51FA;&#x548C;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x3002;&#x5728;&#x672C;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x5173;&#x6CE8;&#x9690;&#x85CF;&#x72B6;&#x6001;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EE3;&#x8868;&#x4E86;&#x5E8F;&#x5217;&#x7684;&#x6700;&#x7EC8;&#x7F16;&#x7801;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x5C06;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x7684;&#x7EF4;&#x5EA6;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x540E;&#x7EED;&#x7684;&#x5904;&#x7406;&#x6216;&#x8F93;&#x51FA;&#x3002;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x8C03;&#x6574;&#x540E;&#x7684;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x4F5C;&#x4E3A;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>:</p>
+<ul>
+<li>&#x786E;&#x4FDD;&#x5728;&#x8C03;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x5DF2;&#x6B63;&#x786E;&#x8BBE;&#x7F6E;GRU&#x6A21;&#x578B;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x7684;&#x5D4C;&#x5165;&#x5C42;&#x3002;</li>
+<li>&#x5F53;&#x4F7F;&#x7528;&#x6279;&#x5904;&#x7406;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x786E;&#x4FDD;<code>batch</code>&#x53C2;&#x6570;&#x975E;&#x7A7A;&#xFF0C;&#x5E76;&#x4E14;<code>use_batch_in_statetracker</code>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;True&#x3002;</li>
+<li>&#x6B64;&#x51FD;&#x6570;&#x4F9D;&#x8D56;&#x4E8E;<code>convert_to_k_state_embedding</code>&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x9884;&#x5904;&#x7406;&#xFF0C;&#x786E;&#x4FDD;&#x8BE5;&#x65B9;&#x6CD5;&#x5DF2;&#x6B63;&#x786E;&#x5B9E;&#x73B0;&#x5E76;&#x80FD;&#x591F;&#x88AB;&#x8C03;&#x7528;&#x3002;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x793A;&#x4F8B;</strong>:
+&#x5047;&#x8BBE;GRU&#x6A21;&#x578B;&#x7684;&#x9690;&#x85CF;&#x5C42;&#x7EF4;&#x5EA6;&#x4E3A;128&#xFF0C;&#x6279;&#x5904;&#x7406;&#x5927;&#x5C0F;&#x4E3A;32&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x5F62;&#x72B6;&#x4E3A;[32, 128]&#x7684;&#x5F20;&#x91CF;&#xFF0C;&#x4EE3;&#x8868;&#x4E86;&#x6BCF;&#x4E2A;&#x5E8F;&#x5217;&#x7684;&#x6700;&#x7EC8;&#x9690;&#x85CF;&#x72B6;&#x6001;&#x3002;</p>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Caser.html" class="navigation navigation-prev " aria-label="Previous page: Caser">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="NextItNet.html" class="navigation navigation-next " aria-label="Next page: NextItNet">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GRU","level":"1.2.5.4","depth":3,"next":{"title":"NextItNet","level":"1.2.5.5","depth":3,"path":"src/core/state_tracker/NextItNet.md","ref":"src/core/state_tracker/NextItNet.md","articles":[]},"previous":{"title":"Caser","level":"1.2.5.3","depth":3,"path":"src/core/state_tracker/Caser.md","ref":"src/core/state_tracker/Caser.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/core/state_tracker/GRU.md","mtime":"2024-03-18T12:56:52.421Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-18T14:39:28.553Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
